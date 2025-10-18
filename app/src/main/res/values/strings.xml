@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">MusicApp</string>
+    
+
+    <string name="null_software">null software</string>
+    <string name="app_name">music_app</string>
+    <string name="music_app">name_app</string>
 </resources>
