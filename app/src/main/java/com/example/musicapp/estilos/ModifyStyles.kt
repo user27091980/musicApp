@@ -6,6 +6,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.ui.Alignment
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
@@ -40,3 +42,16 @@ val estiloTextoTitulo = TextStyle(
         textAlign = TextAlign.Center,
     )
 
+    val boxModifier = Modifier
+        .background(color = Color.Blue)
+        .fillMaxSize()
+
+    val rowModifierMiddle =  Modifier
+        .padding(top = 150.dp)
+    val rowModifierButtom = Modifier
+        .padding()
+    val estiloTexto = TextStyle(
+        color = (Color.White),
+        fontSize = 25.sp,
+        textAlign = TextAlign.End
+    )

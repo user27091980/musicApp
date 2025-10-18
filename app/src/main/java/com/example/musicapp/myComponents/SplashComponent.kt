@@ -30,6 +30,24 @@ fun Splash(){
         Column(columnModifierButtom){
             Text(
                 text = stringResource(R.string.null_software),
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Row
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.tooling.preview.Preview
+import com.example.musicapp.estilos.boxModifier
+import com.example.musicapp.estilos.estiloTexto
+import com.example.musicapp.estilos.rowModifierButtom
+import com.example.musicapp.estilos.rowModifierMiddle
+
+@Composable
+fun Splash(){
+
+    Box(boxModifier) {
+
+        Row(rowModifierButtom){
+            Text(
+                text = "null software",
                 style = estiloTexto,
             )
         }
@@ -44,6 +62,10 @@ fun Splash(){
             painter = painterResource(R.drawable.cassette_tape_clipart_illustration),
             contentDescription = "",
             )
+                text="MusicApp",
+                style= estiloTexto,
+            )
+        }
     }
 }
 
