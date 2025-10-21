@@ -2,10 +2,8 @@ package com.example.musicapp.estilos
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.fillMaxHeight
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.ui.Alignment
 
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -25,9 +23,8 @@ val boxModifier = Modifier
 val rowModifierMiddle =  Modifier
         .padding()
 
-val columnModifierButtom = Modifier
-        .padding(start=275.dp,top=650.dp)
-
+val rowModifierButtom = Modifier
+    .padding()
 
 val estiloTexto = TextStyle(
     color = (Color.White),
@@ -41,7 +38,10 @@ val estiloTextoTitulo = TextStyle(
         textAlign = TextAlign.Center,
     )
 
-val rowModifierButtom = Modifier
-        .padding()
+val estiloTextoBotones = TextStyle(
+    color = (Color.White),
+    fontSize = 10.sp,
+    textAlign = TextAlign.Center)
+val botonLogin = Modifier.padding(start=250.dp,top=600.dp)
 
-
+val botonRegister = Modifier.padding(start=275.dp,top=650.dp)
