@@ -15,7 +15,7 @@ import com.example.musicapp.estilos.botonRegister
 import com.example.musicapp.estilos.boxModifier
 import com.example.musicapp.myComponents.BotonLogin
 import com.example.musicapp.myComponents.BotonRegister
-import com.example.musicapp.myComponents.SkipReg
+
 
 @Composable
 fun LoginScreen(){
@@ -32,7 +32,7 @@ fun LoginScreen(){
 
             BotonRegister(botonRegister)
 
-            SkipReg()
+            //SkipReg()
 
         }
 
