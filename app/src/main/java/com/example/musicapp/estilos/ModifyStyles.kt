@@ -5,9 +5,7 @@ import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.ui.Alignment
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
+
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
@@ -45,3 +43,8 @@ val estiloTextoTitulo = TextStyle(
 val rowModifierButtom = Modifier
         .padding()
 
+val botonLogin = Modifier.padding(start=250.dp,top=600.dp)
+
+
+
+val botonRegister = Modifier.padding(start=275.dp,top=650.dp)
