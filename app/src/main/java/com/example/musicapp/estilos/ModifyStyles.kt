@@ -42,16 +42,6 @@ val estiloTextoTitulo = TextStyle(
         textAlign = TextAlign.Center,
     )
 
-    val boxModifier = Modifier
-        .background(color = Color.Blue)
-        .fillMaxSize()
-
-    val rowModifierMiddle =  Modifier
-        .padding(top = 150.dp)
-    val rowModifierButtom = Modifier
+val rowModifierButtom = Modifier
         .padding()
-    val estiloTexto = TextStyle(
-        color = (Color.White),
-        fontSize = 25.sp,
-        textAlign = TextAlign.End
-    )
+
