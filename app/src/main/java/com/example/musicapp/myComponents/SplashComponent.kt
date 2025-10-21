@@ -16,7 +16,7 @@ import com.example.musicapp.estilos.rowModifierButtom
 import com.example.musicapp.estilos.rowModifierMiddle
 
 @Composable
-fun Splash(){
+fun SplashScreen(){
 
     Box(boxModifier) {
 
@@ -46,5 +46,5 @@ fun Splash(){
 @Composable
 fun SplashPreview(){
 
-    Splash()
+    SplashScreen()
 }

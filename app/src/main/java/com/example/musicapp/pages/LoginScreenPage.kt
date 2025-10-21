@@ -11,9 +11,9 @@ import androidx.compose.ui.unit.dp
 import com.example.musicapp.estilos.boxModifier
 import com.example.musicapp.myComponents.BotonLogin
 import com.example.musicapp.myComponents.BotonRegister
+import com.example.musicapp.pages.botonRegister
 
 val botonLogin = Modifier.padding(start=250.dp,top=600.dp)
-
 
 val botonRegister = Modifier.padding(start=275.dp,top=650.dp)
 @Composable
@@ -23,10 +23,9 @@ fun LoginScreen(){
 
 
         Column(){
-            BotonLogin(botonLogin
-                )
+            BotonLogin(botonLogin)
 
-            BotonRegister(botonRegister
+            BotonRegister(botonRegister)
 
                 )
 
