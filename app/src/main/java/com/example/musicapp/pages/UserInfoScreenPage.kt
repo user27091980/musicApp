@@ -6,7 +6,6 @@ import androidx.compose.runtime.Composable
 fun UserInfo(){
 
 
-    TODO()
 
 
 }
