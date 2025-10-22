@@ -9,8 +9,7 @@ import com.example.musicapp.myComponents.TopBarraMain
 fun MainScreen(){
 
     TopBarraMain()
-
-
+    
 }
 @Preview
 @Composable
