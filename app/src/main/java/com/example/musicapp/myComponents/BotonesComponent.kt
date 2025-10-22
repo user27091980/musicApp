@@ -6,8 +6,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import com.example.musicapp.R
+import com.example.musicapp.estilos.estiloTexto
 import com.example.musicapp.estilos.estiloTextoBotones
-
 
 @Composable
 fun BotonLogin(modifier: Modifier){
@@ -19,32 +19,24 @@ fun BotonLogin(modifier: Modifier){
        )
 
    }
-
 }
 
 @Composable
 fun BotonRegister(modifier: Modifier){
 
-    Button(onClick = {}){
+    Button(onClick = {},
+        ){
 
         Text(text = stringResource(R.string.boton_register),
             style = estiloTextoBotones)
 
-
     }
 }
 
-/*@Composable
-fun SkipReg(){
+@Composable
+fun SkipReg(modifier: Modifier) {
 
-    Modifier.clickable(
-        interactionSource = TODO(),
-        indication = TODO(),
-        enabled = true,
-        onClickLabel ="skip",
-        role = TODO(),
-        onClick =
-    )
+        Text(text=stringResource(R.string.skip),
+            style = estiloTexto)
 }
 
- */

@@ -6,6 +6,8 @@
     <string name="music_app">music app</string>
     <string name="boton_login">login</string>
     <string name="boton_register">register</string>
+    <string name="skip">skip</string>
+    <string name="top_bar">top bar</string>
 
 
 </resources>
