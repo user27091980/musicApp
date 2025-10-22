@@ -2,13 +2,21 @@ package com.example.musicapp.pages
 
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
-import com.example.musicapp.myComponents.TopBar
+import androidx.compose.ui.tooling.preview.Preview
+import com.example.musicapp.myComponents.TopBarraMain
+
 
 @Composable
 fun MainScreen(){
 
-    TopBar()
+    TopBarraMain()
 
 
 
+}
+@Preview
+@Composable
+fun mainPreview(){
+
+    MainScreen()
 }
