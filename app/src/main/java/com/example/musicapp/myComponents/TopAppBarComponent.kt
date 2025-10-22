@@ -7,6 +7,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.AccountCircle
 import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material3.CenterAlignedTopAppBar
@@ -37,26 +38,42 @@ import com.example.musicapp.R
 fun TopBarraMain(){
 
     Scaffold(
+
         topBar = {
 
             CenterAlignedTopAppBar(
                 colors = TopAppBarDefaults.topAppBarColors(
                     containerColor = MaterialTheme.colorScheme.primaryContainer,
-                    titleContentColor = MaterialTheme.colorScheme.primary,
+                    titleContentColor = MaterialTheme.colorScheme.background,
                 ),
                 title = {
-                    Text(stringResource(R.string.music_app))
-                    Spacer(Modifier.width(16.dp))
+                    Image(
+                        painter = painterResource(R.drawable.top),
 
+                        contentDescription = "",
+                        contentScale = ContentScale.None,
+
+                    )
+                    //Text(stringResource(R.string.music_app))
+                    //Spacer(Modifier.width(16.dp))
                 },
+
                 actions = {
                     IconButton(onClick = { /* do something */ }) {
                         Icon(
                             imageVector = Icons.Filled.Menu,
-                            contentDescription = "Localized description"
+                            contentDescription = "menu"
+                        )
+                    }
+                    IconButton(onClick = { /* do something */ }) {
+                        Icon(
+                            imageVector = Icons.Filled.AccountCircle,
+                            contentDescription = "cuenta"
                         )
                     }
                 },
+
+
             )
         }
     ) { }

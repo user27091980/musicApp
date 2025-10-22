@@ -15,8 +15,7 @@ fun BotonLogin(modifier: Modifier){
     Button(onClick = {}) {
 
        Text(text = stringResource(R.string.boton_login),
-           style = estiloTextoBotones
-       )
+           style = estiloTextoBotones)
 
    }
 }
