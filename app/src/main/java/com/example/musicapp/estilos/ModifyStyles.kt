@@ -30,14 +30,14 @@ val estiloTextoTitulo = TextStyle(
     )
 val estiloTextoBotones = TextStyle(
     color = (Color.White),
-    fontSize = 10.sp,
+    fontSize = 7.sp,
     textAlign = TextAlign.Center)
 
 val botonLogin = Modifier.padding(start=270.dp,top=640.dp)
-    .size(width=80.dp, height = 40.dp)
+    .size(width=80.dp, height = 30.dp)
 
 val botonRegister = Modifier.padding(start=275.dp,top=650.dp)
-    .size(width=90.dp, height = 40.dp)
+    .size(width=100.dp, height = 30.dp)
 
 /*val skip =Modifier.clickable(
 
