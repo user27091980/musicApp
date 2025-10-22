@@ -20,21 +20,8 @@ fun SplashScreen(){
 
     Box(boxModifier) {
 
-        Row(rowModifierButtom){
-            Text(
-                text = stringResource(R.string.null_software),
-                style = estiloTexto,
-            )
-        }
-
-        Row(rowModifierMiddle){
-            Text(
-                text= stringResource(R.string.music_app),
-                style= estiloTextoTitulo,
-            )
-        }
         Image(
-            painter = painterResource(R.drawable.cassette_tape_clipart_illustration),
+            painter = painterResource(R.drawable.portrait),
             contentDescription = "",
             )
 

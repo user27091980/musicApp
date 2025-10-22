@@ -18,6 +18,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.musicapp.R
 
+//componente de topAppBar
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -26,9 +27,10 @@ fun TopBarraMain(){
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(stringResource(R.string.top_bar))
-                            Spacer(Modifier.width(16.dp))
-                            Icon(Icons.Default.CheckCircle, contentDescription = null)}
+                title = {
+                    Text(stringResource(R.string.top_bar))
+                    Spacer(Modifier.width(16.dp))
+                    Icon(Icons.Default.CheckCircle, contentDescription = null)}
             )
         }
     ) { TODO() }

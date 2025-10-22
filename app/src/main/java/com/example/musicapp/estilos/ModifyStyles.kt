@@ -16,19 +16,28 @@ import androidx.compose.ui.unit.sp
 
 //values para modificar características visuales.
 
+//modifier para Box
 val boxModifier = Modifier
         .background(color = Color.Blue)
         .fillMaxWidth()
         .fillMaxHeight()
+
+//value modifier para las fila del medio del SplashScreen
 val rowModifierMiddle =  Modifier
         .padding()
+
+//value modifier para el botón de debajo del SplashScreen
 val rowModifierButtom = Modifier
     .padding()
+
+//value para el estilo de texto
 val estiloTexto = TextStyle(
     color = (Color.White),
     fontSize = 25.sp,
     textAlign = TextAlign.Center,
 )
+
+//value para el estilo de texto del titulo
 val estiloTextoTitulo = TextStyle(
         color = (Color.White),
         fontSize = 25.sp,
@@ -53,3 +62,4 @@ val skip =Modifier.clickable(
     role = TODO(),
     onClick =TODO()
 ).padding(start=90.dp,top=670.dp)
+
