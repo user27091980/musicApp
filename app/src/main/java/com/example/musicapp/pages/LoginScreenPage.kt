@@ -23,7 +23,7 @@ fun LoginScreen(){
     Box(boxModifier){
 
 
-        Column(modifier=Modifier.padding(150.dp,250.dp)
+        Column(modifier=Modifier.padding(160.dp,250.dp)
 
             ){
             BotonLogin(botonLogin)
