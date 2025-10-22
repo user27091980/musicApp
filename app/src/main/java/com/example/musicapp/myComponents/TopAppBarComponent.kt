@@ -33,7 +33,7 @@ fun TopBarraMain(){
                     Icon(Icons.Default.CheckCircle, contentDescription = null)}
             )
         }
-    ) { TODO() }
+    ) { }
 
 
 

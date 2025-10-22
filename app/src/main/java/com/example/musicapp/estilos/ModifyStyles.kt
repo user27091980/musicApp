@@ -55,11 +55,9 @@ val botonRegister = Modifier.padding(start=275.dp,top=650.dp)
     .size(width=90.dp, height = 40.dp)
 
 val skip =Modifier.clickable(
-    interactionSource = TODO(),
-    indication = TODO(),
+
     enabled = true,
     onClickLabel ="skip",
-    role = TODO(),
-    onClick =TODO()
+
 ).padding(start=90.dp,top=670.dp)
 
