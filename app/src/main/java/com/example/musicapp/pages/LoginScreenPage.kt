@@ -9,17 +9,16 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.musicapp.estilos.botonLogin
 import com.example.musicapp.estilos.botonRegister
-import com.example.musicapp.estilos.boxModifier
-import com.example.musicapp.estilos.skip
+
 import com.example.musicapp.myComponents.BotonLogin
 import com.example.musicapp.myComponents.BotonRegister
-import com.example.musicapp.myComponents.SkipReg
+
 
 
 @Composable
 fun LoginScreen(){
 
-    Box(boxModifier){
+    Box(){
 
         Column(modifier=Modifier.padding(160.dp,250.dp)
 
@@ -28,7 +27,7 @@ fun LoginScreen(){
 
             BotonRegister(botonRegister)
 
-            SkipReg(skip)
+           // SkipReg(skip)
 
         }
     }
