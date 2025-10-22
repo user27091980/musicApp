@@ -14,5 +14,5 @@ fun MusicBandScreen(){
 @Composable
 fun MusicBandPreview(){
 
-    LazyRowComponent()
+    MusicBandScreen()
 }
