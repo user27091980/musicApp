@@ -35,7 +35,7 @@ import com.example.musicapp.R
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun TopBarraMain(){
+fun TopBarraMain( content : @Composable () -> Unit){
 
     Scaffold(
 
@@ -76,7 +76,10 @@ fun TopBarraMain(){
 
             )
         }
-    ) { }
+    ) {
+
+        content
+    }
 
 
 
