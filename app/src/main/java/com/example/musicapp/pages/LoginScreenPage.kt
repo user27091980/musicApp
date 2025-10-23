@@ -27,7 +27,7 @@ fun LoginScreen(){
 
             BotonRegister(botonRegister)
 
-           // SkipReg(skip)
+
 
         }
     }
