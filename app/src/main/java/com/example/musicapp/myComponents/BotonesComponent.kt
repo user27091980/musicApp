@@ -32,10 +32,4 @@ fun BotonRegister(modifier: Modifier){
     }
 }
 
-@Composable
-fun SkipReg(modifier: Modifier) {
-
-        Text(text=stringResource(R.string.skip),
-            style = estiloTexto)
-}
 
