@@ -32,24 +32,27 @@ private val LightColorScheme = lightColorScheme(
     onSurface = Color(0xFF1C1B1F),
     */
 )
-
+//configuraión de temas por parámetros
 @Composable
 fun MusicAppTheme(
-    darkTheme: Boolean = isSystemInDarkTheme(),
+    darkTheme: Boolean = isSystemInDarkTheme(),//true (para poner siempre en tema óscuro)
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {
+
         dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
             val context = LocalContext.current
             if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
         }
-
+/*tema óscuro o tema claro, podriamos seleccionarlos por usuarios
+    accesibilidad podriamos cambiar los colores de toda la aplicación
+ */
         darkTheme -> DarkColorScheme
         else -> LightColorScheme
     }
-
+    //cambiamos elso colores
     MaterialTheme(
         colorScheme = colorScheme,
         typography = Typography,
