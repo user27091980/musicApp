@@ -17,17 +17,15 @@ fun SplashScreenComponent(){
 
     Box {
 
-        Text(stringResource(R.string.app_name),
-            style = estiloTextoTitulo)
+
 
         Image(
             painter = painterResource(R.drawable.portrait),
             contentDescription = "",
             modifier = imageModifier,
-            contentScale = ContentScale.Crop            )
+            contentScale = ContentScale.Crop)
 
-        Text(stringResource(R.string.null_software),
-            style = estiloTexto)
+
 
     }
 }

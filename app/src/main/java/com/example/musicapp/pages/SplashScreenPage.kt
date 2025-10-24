@@ -8,7 +8,6 @@ import com.example.musicapp.myComponents.SplashScreenComponent
 @Composable
 fun SplashScreen(){
 
-
     SplashScreenComponent();
 
 }
@@ -18,4 +17,5 @@ fun SplashScreen(){
 fun SplasPreview(){
 
     SplashScreen()
+
 }

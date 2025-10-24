@@ -43,19 +43,13 @@ fun TopBarraMain( content : @Composable () -> Unit){
 
             CenterAlignedTopAppBar(
                 colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = MaterialTheme.colorScheme.primaryContainer,
+                    containerColor = MaterialTheme.colorScheme.surface,
                     titleContentColor = MaterialTheme.colorScheme.background,
                 ),
                 title = {
-                    Image(
-                        painter = painterResource(R.drawable.top),
 
-                        contentDescription = "",
-                        contentScale = ContentScale.None,
-
-                    )
-                    //Text(stringResource(R.string.music_app))
-                    //Spacer(Modifier.width(16.dp))
+                    Text(stringResource(R.string.music_app))
+                    Spacer(Modifier.width(16.dp))
                 },
 
                 actions = {
