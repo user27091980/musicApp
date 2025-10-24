@@ -19,14 +19,14 @@ import androidx.compose.ui.unit.sp
 //value para el estilo de texto
 val estiloTexto = TextStyle(
 
-    fontSize = 25.sp,
+    fontSize = 30.sp,
     textAlign = TextAlign.Center,
 )
 
 //value para el estilo de texto del titulo
 val estiloTextoTitulo = TextStyle(
 
-        fontSize = 25.sp,
+        fontSize = 30.sp,
         textAlign = TextAlign.Center,
     )
 val estiloTextoBotones = TextStyle(
@@ -36,7 +36,7 @@ val estiloTextoBotones = TextStyle(
     color = Color.DarkGray)
 
 val botonLogin = Modifier.padding(start=270.dp,top=640.dp)
-    .size(width=80.dp, height = 30.dp)
+    .size(width=100.dp, height = 30.dp)
 
 val botonRegister = Modifier.padding(start=275.dp,top=650.dp)
     .size(width=100.dp, height = 30.dp)
