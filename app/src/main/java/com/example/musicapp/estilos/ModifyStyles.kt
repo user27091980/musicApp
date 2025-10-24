@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.material3.MaterialTheme
 
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -17,21 +18,22 @@ import androidx.compose.ui.unit.sp
 
 //value para el estilo de texto
 val estiloTexto = TextStyle(
-    color = (Color.White),
+
     fontSize = 25.sp,
     textAlign = TextAlign.Center,
 )
 
 //value para el estilo de texto del titulo
 val estiloTextoTitulo = TextStyle(
-        color = (Color.White),
+
         fontSize = 25.sp,
         textAlign = TextAlign.Center,
     )
 val estiloTextoBotones = TextStyle(
-    color = (Color.White),
+
     fontSize = 7.sp,
-    textAlign = TextAlign.Center)
+    textAlign = TextAlign.Center,
+    color = Color.DarkGray)
 
 val botonLogin = Modifier.padding(start=270.dp,top=640.dp)
     .size(width=80.dp, height = 30.dp)
@@ -39,14 +41,8 @@ val botonLogin = Modifier.padding(start=270.dp,top=640.dp)
 val botonRegister = Modifier.padding(start=275.dp,top=650.dp)
     .size(width=100.dp, height = 30.dp)
 
-/*val skip =Modifier.clickable(
-
-    enabled = true,
-    onClickLabel =
-
-).padding(start=90.dp,top=670.dp)
-*/
 
 val imageModifier = Modifier
     .fillMaxHeight()
     .fillMaxWidth()
+

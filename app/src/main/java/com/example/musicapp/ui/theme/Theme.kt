@@ -13,13 +13,17 @@ import androidx.compose.ui.platform.LocalContext
 private val DarkColorScheme = darkColorScheme(
     primary = SoftGreen80,
     secondary = SoftBlue80,
-    tertiary = SoftBlue
+    tertiary = SoftBlue,
+    surface = DarkBlue,
+    background = DarkBlue,
 )
 
 private val LightColorScheme = lightColorScheme(
     primary = DarkGreen80,
     secondary = DarkerGreen,
-    tertiary = DarkBlue
+    tertiary = DarkBlue,
+    surface = DarkBlue,
+    background = DarkBlue
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),
@@ -53,7 +57,7 @@ fun MusicAppTheme(
     }
     //cambiamos elso colores
     MaterialTheme(
-        colorScheme = colorScheme,
+        colorScheme = DarkColorScheme,
         typography = Typography,
         content = content
     )

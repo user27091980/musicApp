@@ -1,31 +1,21 @@
 package com.example.musicapp.myComponents
 
-import android.R.attr.data
-import android.graphics.Color
-import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
+
 @Composable
 fun LazyColumnComponent() {
 
-    LazyColumn {
-        items(data) { item ->
-            Box(
-                modifier = Modifier
-                    .height(100.dp)
-                    .fillMaxWidth()
-                    .padding(16.dp)
-            )
-            Spacer(modifier = Modifier.padding(8.dp))
-        }
+    LazyColumn(
+        modifier = Modifier.padding(16.dp)
+    ) {
+
+       
+
     }
 
 }

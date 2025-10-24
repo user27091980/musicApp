@@ -22,10 +22,10 @@ fun LazyRowComponent(){
                 modifier = Modifier
                     .width(100.dp)
                     .height(200.dp)
-                    .background(Color.Magenta)
+                    .background(Color.DarkGray)
                     .padding(16.dp)
             )
-            Spacer(modifier = Modifier.padding(8.dp))
+
         }
     }
 }
