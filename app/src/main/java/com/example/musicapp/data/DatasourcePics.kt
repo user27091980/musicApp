@@ -12,7 +12,7 @@ class DatasourcePics() {
         return listOf<ImagesId>(
 
             ImagesId(R.drawable.metal_covers_header),
-            ImagesId(R.drawable.canciones_rap_1),
+            ImagesId(R.drawable.world_trade_center_gettyimages_97280582),
             ImagesId (R.drawable.synthesizer_3296626458),
             ImagesId (R.drawable.cactus_widescreen_wallpaper),
             ImagesId(R.drawable._84856),
