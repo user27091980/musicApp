@@ -10,14 +10,11 @@ import com.example.musicapp.myComponents.TopBarraMain
 @Composable
 fun MainScreen(){
 
+    TopBarraMain() {
 
+        LazyColumnComponent()
 
-        TopBarraMain() {
-
-                LazyColumnComponent()
-
-
-        }
+    }
 
 
 }
