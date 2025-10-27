@@ -11,14 +11,14 @@ class DatasourcePics() {
 
         return listOf<ImagesId>(
 
-            ImagesId(R.drawable.metal_covers_header),
+            ImagesId(R.drawable.metal),
+            ImagesId(R.drawable._020dischordbandcamp_web),
             ImagesId(R.drawable.world_trade_center_gettyimages_97280582),
             ImagesId (R.drawable.synthesizer_3296626458),
             ImagesId (R.drawable.cactus_widescreen_wallpaper),
             ImagesId(R.drawable._84856),
-            ImagesId(R.drawable.punk_skull_with_mohawk_hair_vector_2247981175),
-            ImagesId(R.drawable.s_l1600))
-
+            ImagesId(R.drawable.thumb_1920_891206)
+        )
     }
 }
 
