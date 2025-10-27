@@ -1,9 +1,5 @@
 package com.example.musicapp.data
 
 import androidx.annotation.DrawableRes
+data class IndustrialBandsId(@DrawableRes val insdustrialResourceId: Int)
 
-class IndustrialBandsId {
-
-    data class BandsId(@DrawableRes val insdustrialResourceId: Int)
-
-}
