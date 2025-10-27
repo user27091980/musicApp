@@ -36,13 +36,10 @@ fun LoginScreen(){
 
             ){
 
+
             BotonLogin(botonLogin)
 
             BotonRegister(botonRegister)
-
-
-
-
 
         }
     }

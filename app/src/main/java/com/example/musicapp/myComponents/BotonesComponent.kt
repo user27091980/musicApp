@@ -34,12 +34,12 @@ fun BotonLogin(modifier: Modifier = Modifier){
 @Composable
 fun BotonRegister(modifier: Modifier = Modifier){
 
-    Button(onClick = {},
+    Button(
+        onClick = {},
         colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.surface
-        )
-        ){
-
+            )
+    ){
         Text(text = stringResource(R.string.boton_register),
             style = estiloTextoBotones)
 

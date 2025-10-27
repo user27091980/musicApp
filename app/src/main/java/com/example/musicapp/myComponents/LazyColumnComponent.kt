@@ -33,6 +33,7 @@ fun ImagesList(imagesList:List<ImagesId>,modifier: Modifier=Modifier){
 
 }
 //creamos la función imagen para poder acceder a ellas y poder realizar el contenscale
+//pasamos como parámetro un imagesId
 @Composable
 fun Images(imagesId: ImagesId){
     Box() {
