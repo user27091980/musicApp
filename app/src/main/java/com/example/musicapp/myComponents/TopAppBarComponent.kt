@@ -71,12 +71,8 @@ fun TopBarraMain( content : @Composable () -> Unit){
             )
         }
     ) {
-
-        content
+        LazyColumnComponent()
     }
-
-
-
 }
 
 
