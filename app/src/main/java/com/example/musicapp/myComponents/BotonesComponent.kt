@@ -19,16 +19,14 @@ fun BotonLogin(modifier: Modifier = Modifier){
 
     Button(onClick = {},
             colors = ButtonDefaults.buttonColors(
-            containerColor = MaterialTheme.colorScheme.surface
-        )) {
-
+            containerColor = MaterialTheme.colorScheme.surface)
+    )
+    {
 
        Text(text = stringResource(R.string.boton_login),
            style = estiloTextoBotones,
            )
-
-
-   }
+    }
 }
 
 @Composable

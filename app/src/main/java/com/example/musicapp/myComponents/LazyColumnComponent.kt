@@ -48,7 +48,7 @@ fun Images(imagesId: ImagesId){
 @Composable
 fun LazyColumnComponent(){
 
-    ImagesList(imagesList = DatasourcePics().loadImagesId())
+    ImagesList(imagesList = DatasourcePics().LoadImagesId())
 
 }
 
