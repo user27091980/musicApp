@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.musicapp.pages.LoginScreen
 import com.example.musicapp.pages.MainScreen
+import com.example.musicapp.pages.MusicBandScreen
 import com.example.musicapp.pages.SplashScreen
 import com.example.musicapp.ui.theme.MusicAppTheme
 
@@ -22,7 +23,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             MusicAppTheme {
-                MainScreen()
+                MusicBandScreen()
             }
         }
     }
@@ -31,9 +32,11 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MusicAppPreview(){
 
-    MusicAppTheme(){
-        MainScreen()
+    MusicAppTheme {
+        MusicBandScreen()
     }
+
+
 
 }
 

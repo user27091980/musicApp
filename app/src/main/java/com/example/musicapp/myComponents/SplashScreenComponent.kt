@@ -13,8 +13,6 @@ fun SplashScreenComponent(){
 
     Box {
 
-
-
         Image(
             painter = painterResource(R.drawable.portrait),
             contentDescription = "",

@@ -1,5 +1,7 @@
 package com.example.musicapp.myComponents
 
+
+import LazyRowComponent
 import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.width
@@ -24,7 +26,7 @@ import com.example.musicapp.R
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun TopBarMain(content : @Composable () -> Unit){
+fun TopBarBands( content : @Composable () -> Unit){
     //andamiaje para la topBar
     Scaffold(
 
@@ -55,10 +57,10 @@ fun TopBarMain(content : @Composable () -> Unit){
                     }
                 },
 
-            )
+                )
         }
     ) {
-        LazyColumnComponent()
+        LazyRowComponent()
     }
 }
 

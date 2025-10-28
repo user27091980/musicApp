@@ -1,13 +1,12 @@
 package com.example.musicapp.data
 
-import androidx.compose.foundation.Image
 import com.example.musicapp.R
 
 class DatasourcePics() {
 
     //The loadImagesId() method gathers all of the data provided in the starter code
     // and returns it as a list. You will use this later to build the scrollable list.
-    fun loadImagesId(): List<ImagesId> {
+    fun LoadImagesId(): List<ImagesId> {
 
         return listOf<ImagesId>(
 
