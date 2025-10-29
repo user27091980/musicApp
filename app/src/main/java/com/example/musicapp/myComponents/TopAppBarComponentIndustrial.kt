@@ -3,6 +3,7 @@ package com.example.musicapp.myComponents
 
 import LazyRowComponent
 import android.annotation.SuppressLint
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
@@ -60,7 +61,9 @@ fun TopBarBands( content : @Composable () -> Unit){
                 )
         }
     ) {
+
         LazyRowComponent()
+
     }
 }
 
