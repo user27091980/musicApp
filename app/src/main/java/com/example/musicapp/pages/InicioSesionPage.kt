@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.musicapp.myComponents.ButtonInicioSesionUsuario.BotonUI
 import com.example.musicapp.myComponents.ButtonInicioSesionUsuario.CampoTextoUI
@@ -17,7 +18,7 @@ import com.example.musicapp.myComponents.ButtonInicioSesionUsuario.LigazonTextoU
 import com.example.musicapp.myComponents.ButtonInicioSesionUsuario.TextoTituloUI
 
 @Composable
-fun InicioSesionUI() {
+fun InicioSesionPage() {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -49,4 +50,10 @@ fun InicioSesionUI() {
 
         LigazonTextoUI(texto = "Non tes conta? Rexístrate aquí")
     }
+}
+
+@Preview
+@Composable
+fun inicioSesionPagePreview() {
+    InicioSesionPage()
 }
