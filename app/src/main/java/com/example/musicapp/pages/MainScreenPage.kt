@@ -8,7 +8,7 @@ import com.example.musicapp.myComponents.TopBarMain
 
 
 @Composable
-fun MainScreen(){
+fun MainScreenPage(){
 
     TopBarMain() {
 
@@ -20,8 +20,8 @@ fun MainScreen(){
 }
 @Preview
 @Composable
-fun MainPreview(){
+fun MainPreviewPage(){
 
-    MainScreen()
+    MainScreenPage()
 
 }

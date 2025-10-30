@@ -19,7 +19,7 @@ import com.example.musicapp.styles.estiloTexto
 //card component para la pantalla MusicBandScreenPage
 @SuppressLint("SuspiciousIndentation")
 @Composable
-fun CardComponent(modifier: Modifier){
+fun CardComponent(modifier: Modifier = Modifier){
 
     val boxModifier = Modifier
         .background(color = MaterialTheme.colorScheme.background)
@@ -36,20 +36,9 @@ fun CardComponent(modifier: Modifier){
                     style= estiloTexto
                 )
             }
-            Row(modifier = modifier.absolutePadding(left = 20.dp, top = 60.dp, 20.dp)) {
-
-
-
-            }
 
             Row(modifier = modifier.absolutePadding(left = 20.dp, top = 100.dp, 20.dp)) {
-                //fila priemra
-                Card(cardModifier, colors = CardDefaults.cardColors(containerColor = Color.DarkGray)) {
-                    Text(
-                        text = "enlaces de interés:",
-                        style= estiloTexto
-                    )
-                }
+
                 //fila priemra
                 Card(
                     cardModifier,

@@ -5,7 +5,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.musicapp.myComponents.SplashScreenComponent
 
 @Composable
-fun SplashScreen(){
+fun SplashScreenPage(){
 
     SplashScreenComponent();
 
@@ -15,6 +15,6 @@ fun SplashScreen(){
 @Composable
 fun SplasPreview(){
 
-    SplashScreen()
+    SplashScreenPage()
 
 }

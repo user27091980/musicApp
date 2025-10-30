@@ -6,7 +6,7 @@ import com.example.musicapp.myComponents.TopBarUser
 import com.example.musicapp.myComponents.UserCardsComponents
 
 @Composable
-fun UserInfo(){
+fun UserInfoScreenPage(){
 
     TopBarUser() {
         UserCardsComponents()
@@ -18,7 +18,5 @@ fun UserInfo(){
 @Composable
 fun UserPrev(){
 
-    TopBarUser() {
-        UserCardsComponents()
-    }
+    UserInfoScreenPage()
 }

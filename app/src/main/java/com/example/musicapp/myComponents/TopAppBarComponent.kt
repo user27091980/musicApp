@@ -3,9 +3,6 @@ package com.example.musicapp.myComponents
 import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.width
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.AccountCircle
-import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -16,6 +13,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.example.musicapp.R
@@ -43,13 +41,13 @@ fun TopBarMain(content : @Composable () -> Unit){
                 actions = {
                     IconButton(onClick = { /* do something */ }) {
                         Icon(
-                            imageVector = Icons.Filled.Menu,
+                            painter= painterResource(R.drawable.menu_20dp_ffffff_fill0_wght400_grad0_opsz20),
                             contentDescription = "menu"
                         )
                     }
                     IconButton(onClick = { /* do something */ }) {
                         Icon(
-                            imageVector = Icons.Filled.AccountCircle,
+                            painter = painterResource(R.drawable.person_20dp_ffffff_fill0_wght400_grad0_opsz20),
                             contentDescription = "cuenta"
                         )
                     }
