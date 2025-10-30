@@ -6,16 +6,12 @@ import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.example.musicapp.data.DatasourceIndustrialBands
-import com.example.musicapp.data.DatasourcePics
-import com.example.musicapp.data.ImagesId
 import com.example.musicapp.data.IndustrialBandsId
-import com.example.musicapp.myComponents.Images
-import com.example.musicapp.myComponents.ImagesList
+
 @Composable
 fun ImagesIndustrialList(industrialList:List<IndustrialBandsId>, modifier: Modifier=Modifier){
 
