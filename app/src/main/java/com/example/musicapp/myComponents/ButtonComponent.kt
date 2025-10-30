@@ -8,7 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import com.example.musicapp.R
-import com.example.musicapp.estilos.estiloTextoBotones
+import com.example.musicapp.styles.estiloTextoBotones
 
 @Composable
 fun BotonLogin(modifier: Modifier = Modifier){
@@ -36,7 +36,6 @@ fun BotonRegister(modifier: Modifier = Modifier){
     ){
         Text(text = stringResource(R.string.boton_register),
             style = estiloTextoBotones)
-
     }
 }
 
@@ -51,9 +50,21 @@ fun BotonAceptar(modifier: Modifier=Modifier){
     ){
         Text(text = stringResource(R.string.boton_aceptar),
             style = estiloTextoBotones)
-
     }
+}
 
+@Composable
+fun BotonCancelar(modifier: Modifier= Modifier){
+
+    Button(
+        onClick = {},
+        colors = ButtonDefaults.buttonColors(
+            containerColor = MaterialTheme.colorScheme.surface
+        )
+    ){
+        Text(text = stringResource(R.string.boton_cancelar),
+            style = estiloTextoBotones)
+    }
 }
 
 

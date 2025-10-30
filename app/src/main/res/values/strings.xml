@@ -9,6 +9,7 @@
     <string name="skip">skip</string>
     <string name="top_bar">top bar</string>
     <string name="boton_aceptar">aceptar</string>
+    <string name="boton_cancelar">cancelar</string>
 
 
 </resources>

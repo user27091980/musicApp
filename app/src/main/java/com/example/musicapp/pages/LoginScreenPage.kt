@@ -9,8 +9,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.musicapp.estilos.botonLogin
-import com.example.musicapp.estilos.botonRegister
+import com.example.musicapp.styles.botonLogin
+import com.example.musicapp.styles.botonRegister
 import com.example.musicapp.myComponents.BotonLogin
 import com.example.musicapp.myComponents.BotonRegister
 
