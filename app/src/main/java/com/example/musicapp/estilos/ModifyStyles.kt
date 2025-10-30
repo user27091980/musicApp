@@ -1,14 +1,9 @@
 package com.example.musicapp.estilos
 
-import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.fillMaxHeight
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
@@ -19,7 +14,7 @@ import androidx.compose.ui.unit.sp
 //value para el estilo de texto
 val estiloTexto = TextStyle(
 
-    fontSize = 15.sp,
+    fontSize = 10.sp,
     textAlign = TextAlign.Center,
     color = Color.LightGray
 )

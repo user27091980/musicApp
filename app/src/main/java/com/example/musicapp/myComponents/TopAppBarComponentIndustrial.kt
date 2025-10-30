@@ -1,7 +1,6 @@
 package com.example.musicapp.myComponents
 
 
-import LazyRowComponent
 import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.width
