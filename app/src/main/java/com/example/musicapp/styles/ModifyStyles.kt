@@ -21,9 +21,9 @@ val estiloTexto = TextStyle(
 
 val estiloTextoBotones = TextStyle(
 
-    fontSize = 7.sp,
+    fontSize = 10.sp,
     textAlign = TextAlign.Center,
-    color = Color.DarkGray)
+    color = Color.Black)
 
 val botonLogin = Modifier.padding(start=270.dp,top=640.dp)
     .size(width=100.dp, height = 30.dp)

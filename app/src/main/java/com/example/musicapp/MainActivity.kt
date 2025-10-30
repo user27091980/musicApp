@@ -4,39 +4,47 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.musicapp.pages.LoginScreen
-import com.example.musicapp.pages.MainScreen
-import com.example.musicapp.pages.MusicBandScreen
-import com.example.musicapp.pages.SplashScreen
+import com.example.musicapp.pages.MainScreenPage
+import com.example.musicapp.pages.MusicBandScreenPage
+import com.example.musicapp.pages.RegisterScreenPage
+import com.example.musicapp.pages.UserInfoScreenPage
 import com.example.musicapp.ui.theme.MusicAppTheme
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
+
             MusicAppTheme {
-                MusicBandScreen()
+                Scaffold() {
+                    innerPadding->
+                    Box(Modifier.padding(innerPadding)){
+                        //SplashScreenPage()
+                        //LoginScreenPage()
+                        RegisterScreenPage()
+                        //MainScreenPage()
+                        //MusicBandScreenPage()
+                        //UserInfoScreenPage()}
+                }
             }
         }
     }
 }
-@Preview
-@Composable
-fun MusicAppPreview(){
 
-    MusicAppTheme {
-        MusicBandScreen()
+    @Preview
+    @Composable
+    fun MusicAppPreviewPage() {
+
+        MusicAppTheme {
+            RegisterScreenPage()
+        }
     }
-
-
-
 }
-

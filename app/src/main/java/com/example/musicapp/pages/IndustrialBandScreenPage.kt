@@ -7,14 +7,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.musicapp.myComponents.CardComponent
 import com.example.musicapp.myComponents.LazyRowComponent
 
 import com.example.musicapp.styles.estiloTexto
 import com.example.musicapp.myComponents.TopBarBands
 
-
 @Composable
-fun MusicBandScreen(){
+fun MusicBandScreenPage(){
 
     TopBarBands {
 
@@ -47,17 +47,18 @@ fun MusicBandScreenContent(){
                         "sino que incluyó también arte correo, performance, instalaciones artísticas " +
                         "y otras formas de expresión."
             )
-            Row(modifier = Modifier.padding(30.dp, 400.dp)){
 
-              /*  CardComponent(
-                    modifier = MaterialTheme.
-                )*/
-            }
+
+              CardComponent()
+
+
+
         }
 }
 
+
 @Preview
 @Composable
-fun MusicBandPreview(){
-        MusicBandScreen()
+fun MusicBandPreviewPage(){
+        MusicBandScreenPage()
 }
