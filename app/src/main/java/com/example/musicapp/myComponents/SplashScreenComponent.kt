@@ -6,7 +6,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import com.example.musicapp.R
-import com.example.musicapp.estilos.imageModifier
+import com.example.musicapp.styles.imageModifier
 
 @Composable
 fun SplashScreenComponent(){

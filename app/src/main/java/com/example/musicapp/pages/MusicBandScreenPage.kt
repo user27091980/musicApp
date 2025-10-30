@@ -1,18 +1,15 @@
 package com.example.musicapp.pages
 
 import LazyRowComponent
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
-import com.example.musicapp.estilos.estiloTexto
-import com.example.musicapp.myComponents.CardComponent
+import com.example.musicapp.styles.estiloTexto
 import com.example.musicapp.myComponents.TopBarBands
 
 
@@ -52,16 +49,12 @@ fun MusicBandScreenContent(){
             )
             Row(modifier = Modifier.padding(30.dp, 400.dp)){
 
-                CardComponent()
-
+              /*  CardComponent(
+                    modifier = MaterialTheme.
+                )*/
             }
         }
-
-
-    }
-
-
-
+}
 
 @Preview
 @Composable

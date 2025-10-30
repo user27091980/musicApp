@@ -1,4 +1,4 @@
-package com.example.musicapp.estilos
+package com.example.musicapp.styles
 
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth

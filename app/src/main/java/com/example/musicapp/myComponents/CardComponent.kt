@@ -1,5 +1,6 @@
 package com.example.musicapp.myComponents
 
+import android.annotation.SuppressLint
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
@@ -14,8 +15,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import com.example.musicapp.estilos.estiloTexto
-
+import com.example.musicapp.styles.estiloTexto
+//card component para la pantalla MusicBandScreenPage
+@SuppressLint("SuspiciousIndentation")
 @Composable
 fun CardComponent(modifier: Modifier){
 

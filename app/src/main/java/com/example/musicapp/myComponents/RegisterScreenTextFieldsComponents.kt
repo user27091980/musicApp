@@ -5,6 +5,7 @@ import android.R.attr.text
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -30,7 +31,7 @@ fun RegisterScreenTextFieldComponent() {
 
            TextField(
                 value = text,
-                label = { Text(text = "password") },
+                label = { Text(text = "usuario") },
                 singleLine = true,
 
                 /*onValueChange = {
@@ -62,6 +63,12 @@ fun RegisterScreenTextFieldComponent() {
                 }*/
             )
 
+
+        }
+        Row(){
+
+            BotonAceptar()
+            BotonCancelar()
         }
     }
 }
