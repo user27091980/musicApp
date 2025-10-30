@@ -7,12 +7,11 @@ class DatasourceIndustrialBands {
 
         return listOf<IndustrialBandsId>(
 
-            IndustrialBandsId(R.drawable.nine_inch_nails_logo),
-            IndustrialBandsId(R.drawable.m_icon_21red),
-            IndustrialBandsId (R.drawable.synthesizer_3296626458),
-            IndustrialBandsId (R.drawable.cactus_widescreen_wallpaper),
-            IndustrialBandsId(R.drawable._84856),
-            IndustrialBandsId(R.drawable.thumb_1920_891206)
+            IndustrialBandsId(R.drawable.nin),
+            IndustrialBandsId(R.drawable.ministry_tickets_10_04_21_17_6054b27f5e197),
+            IndustrialBandsId (R.drawable.skinny_puppy),
+            IndustrialBandsId(R.drawable._01204251326333675),
+            IndustrialBandsId(R.drawable.coil_john_peter_wide_1628803312)
 
         )
     }
