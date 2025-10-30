@@ -40,4 +40,20 @@ fun BotonRegister(modifier: Modifier = Modifier){
     }
 }
 
+@Composable
+fun BotonAceptar(modifier: Modifier=Modifier){
+
+    Button(
+        onClick = {},
+        colors = ButtonDefaults.buttonColors(
+            containerColor = MaterialTheme.colorScheme.surface
+        )
+    ){
+        Text(text = stringResource(R.string.boton_aceptar),
+            style = estiloTextoBotones)
+
+    }
+
+}
+
 

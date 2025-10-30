@@ -8,6 +8,7 @@
     <string name="boton_register">register</string>
     <string name="skip">skip</string>
     <string name="top_bar">top bar</string>
+    <string name="boton_aceptar">aceptar</string>
 
 
 </resources>

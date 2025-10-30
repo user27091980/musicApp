@@ -17,7 +17,8 @@ import androidx.compose.ui.unit.dp
 import com.example.musicapp.estilos.estiloTexto
 
 @Composable
-fun CardComponent(modifier: Modifier = Modifier){
+fun CardComponent(modifier: Modifier){
+
     val boxModifier = Modifier
         .background(color = MaterialTheme.colorScheme.background)
         .fillMaxSize()
