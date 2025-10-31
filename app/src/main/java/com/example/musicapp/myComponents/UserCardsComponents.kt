@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.absolutePadding
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Card
 import androidx.compose.material3.MaterialTheme
@@ -20,7 +21,7 @@ fun UserCardsComponents(modifier: Modifier = Modifier) {
 
     val boxModifier = Modifier
         .background(color = MaterialTheme.colorScheme.background)
-        .fillMaxSize()
+        .fillMaxSize().padding(5.dp,100.dp,5.dp,100.dp)
 
     val cardModifier = Modifier
         .size(width = 175.dp, height = 65.dp)
@@ -42,7 +43,7 @@ fun UserCardsComponents(modifier: Modifier = Modifier) {
             //fila priemra
             Card(cardModifier) {
                 Text(
-                    text = "nombre usuario:",
+                    text = "usuario:",
                     style = estiloTexto
                 )
             }
@@ -52,7 +53,9 @@ fun UserCardsComponents(modifier: Modifier = Modifier) {
             ) {
 
 
-                Text("email:")
+                Text("nombre:",
+                    style = estiloTexto)
+
             }
 
         }
@@ -60,29 +63,18 @@ fun UserCardsComponents(modifier: Modifier = Modifier) {
             //fila priemra
             Card(cardModifier) {
 
-                Text("ciudad")
+                Text("ciudad",
+                    style = estiloTexto,)
             }
 
             //fila priemra
             Card(cardModifier) {
 
-                Text("")
-            }
-
-        }
-        Row(modifier = modifier.absolutePadding(left = 20.dp, top = 240.dp, 20.dp)) {
-            //fila priemra
-            Card(cardModifier) {
-
-                Text("")
-            }
-            //tercera fila
-            Card(cardModifier) {
-
-
-                Text("elemento 3X2")
+                Text("país",
+                    style = estiloTexto,)
             }
         }
+
     }
 }
 

@@ -5,7 +5,7 @@ class DatasourceIndustrialBandsPics {
 
     fun LoadIndustrialBands():List<IndustrialBandsId>{
 
-        return listOf<IndustrialBandsId>(
+        return listOf(
 
             IndustrialBandsId(R.drawable.nin),
             IndustrialBandsId(R.drawable.ministry_tickets_10_04_21_17_6054b27f5e197),
