@@ -2,7 +2,7 @@ package com.example.musicapp.data
 
 import com.example.musicapp.R
 
-class DatasourcePics() {
+class DatasourceMainScreenPics() {
 
     //The loadImagesId() method gathers all of the data provided in the starter code
     // and returns it as a list. You will use this later to build the scrollable list.

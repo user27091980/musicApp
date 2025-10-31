@@ -39,15 +39,16 @@ fun TopBarBands( content : @Composable () -> Unit){
                 },
 
                 actions = {
+
                     IconButton(onClick = { /* do something */ }) {
                         Icon(
-                            painter = painterResource(R.drawable.menu_20dp_ffffff_fill0_wght400_grad0_opsz20),
-                            contentDescription = "menú",
+                            painter = painterResource(R.drawable.menu_50dp_e3e3e3_fill0_wght400_grad0_opsz48),
+                            contentDescription = "menu",
                         )
                     }
                     IconButton(onClick = { /* do something */ }) {
                         Icon(
-                            painter = painterResource(R.drawable.person_20dp_ffffff_fill0_wght400_grad0_opsz20),
+                            painter = painterResource(R.drawable.account_circle_50dp_e3e3e3_fill0_wght400_grad0_opsz48),
                             contentDescription = "cuenta",
                         )
                     }

@@ -8,7 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
-import com.example.musicapp.data.DatasourcePics
+import com.example.musicapp.data.DatasourceMainScreenPics
 import com.example.musicapp.data.ImagesId
 
 
@@ -48,7 +48,7 @@ fun Images(imagesId: ImagesId){
 @Composable
 fun LazyColumnComponent(){
 
-    ImagesList(imagesList = DatasourcePics().LoadImagesId())
+    ImagesList(imagesList = DatasourceMainScreenPics().LoadImagesId())
 
 }
 
