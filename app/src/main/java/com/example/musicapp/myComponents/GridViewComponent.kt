@@ -58,6 +58,6 @@ fun ImagesAlbums(albumsId: AlbumsId){
 @Composable
 fun GridViewComponent(){
 
-    ImagesAlbumsList(albumsList = DatasourceAlbumsPics().LoadAlbumsBands())
+    ImagesAlbumsList(albumsList = DatasourceAlbumsPics().loadAlbumsBands())
 
 }

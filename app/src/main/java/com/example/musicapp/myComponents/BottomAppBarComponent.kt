@@ -10,9 +10,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import com.example.musicapp.R
+import com.example.musicapp.pages.MusicBandScreenContent
 
 @Composable
-fun BottomAppBar() {
+fun BottomAppBarComponent() {
     Scaffold(
         bottomBar = {
             BottomAppBar(
@@ -20,14 +21,14 @@ fun BottomAppBar() {
                     IconButton(onClick = { /* do something */ }) {
                         Icon(
                         painter = painterResource(R.drawable.menu_50dp_e3e3e3_fill0_wght400_grad0_opsz48),
-                        contentDescription = "menu"
+                        contentDescription = "volver"
                     )
 
                     }
                     IconButton(onClick = { /* do something */ }) {
                         Icon(
                             painter = painterResource(R.drawable.menu_50dp_e3e3e3_fill0_wght400_grad0_opsz48),
-                            contentDescription = "Localized description",
+                            contentDescription = "búsqueda",
                         )
                     }
 
@@ -35,10 +36,8 @@ fun BottomAppBar() {
 
             )
         },
-    ) { innerPadding ->
-        Text(
-            modifier = Modifier.padding(innerPadding),
-            text = "Example of a scaffold with a bottom app bar."
-        )
+    ) {
+
+
     }
 }

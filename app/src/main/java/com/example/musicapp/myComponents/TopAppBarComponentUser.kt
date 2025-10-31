@@ -62,6 +62,7 @@ fun TopBarUser(content : @Composable () -> Unit) {
             }
         )
     {
+        UserCardsComponents()
     }
 }
 

@@ -8,7 +8,7 @@ class DatasourceMainScreenPics() {
     // and returns it as a list. You will use this later to build the scrollable list.
     fun LoadImagesId(): List<ImagesId> {
 
-        return listOf<ImagesId>(
+        return listOf(
 
             ImagesId(R.drawable.metal),
             ImagesId(R.drawable._020dischordbandcamp_web),
