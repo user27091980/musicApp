@@ -29,8 +29,8 @@ class MainActivity : ComponentActivity() {
                     Box(Modifier.padding(innerPadding)){
                         //SplashScreenPage()
                         //LoginScreenPage()
-                        RegisterScreenPage()
-                        //MainScreenPage()
+                        //RegisterScreenPage()
+                        MainScreenPage()
                         //MusicBandScreenPage()
                         //UserInfoScreenPage()}
                 }
