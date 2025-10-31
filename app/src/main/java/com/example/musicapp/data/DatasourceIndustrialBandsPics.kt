@@ -1,7 +1,7 @@
 package com.example.musicapp.data
 
 import com.example.musicapp.R
-class DatasourceIndustrialBands {
+class DatasourceIndustrialBandsPics {
 
     fun LoadIndustrialBands():List<IndustrialBandsId>{
 

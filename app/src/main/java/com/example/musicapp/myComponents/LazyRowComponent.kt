@@ -11,7 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.example.musicapp.data.DatasourceIndustrialBands
+import com.example.musicapp.data.DatasourceIndustrialBandsPics
 import com.example.musicapp.data.IndustrialBandsId
 
 @Composable
@@ -53,6 +53,6 @@ fun ImagesIndustrial(industrialId: IndustrialBandsId){
 @Composable
 fun LazyRowComponent(){
 
-    ImagesIndustrialList(industrialList = DatasourceIndustrialBands().LoadIndustrialBands())
+    ImagesIndustrialList(industrialList = DatasourceIndustrialBandsPics().LoadIndustrialBands())
 
 }
