@@ -35,6 +35,7 @@ val botonRegister = Modifier.padding(start=275.dp,top=650.dp)
 val imageModifier = Modifier
     .fillMaxHeight()
     .fillMaxWidth()
+    .size(100.dp)
 
 
 

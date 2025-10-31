@@ -10,6 +10,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.musicapp.pages.DiscographyScreenPage
 import com.example.musicapp.pages.MainScreenPage
 import com.example.musicapp.pages.MusicBandScreenPage
 import com.example.musicapp.pages.RegisterScreenPage
@@ -24,15 +25,16 @@ class MainActivity : ComponentActivity() {
         setContent {
 
             MusicAppTheme {
-                Scaffold() {
+                Scaffold {
                     innerPadding->
                     Box(Modifier.padding(innerPadding)){
                         //SplashScreenPage()
                         //LoginScreenPage()
                         //RegisterScreenPage()
-                        MainScreenPage()
+                        //MainScreenPage()
                         //MusicBandScreenPage()
-                        //UserInfoScreenPage()}
+                        //UserInfoScreenPage()
+                        DiscographyScreenPage()}
                 }
             }
         }
@@ -44,7 +46,7 @@ class MainActivity : ComponentActivity() {
     fun MusicAppPreviewPage() {
 
         MusicAppTheme {
-            RegisterScreenPage()
+            DiscographyScreenPage()
         }
     }
-}
+

@@ -1,13 +1,19 @@
 package com.example.musicapp.pages
 
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.tooling.preview.Preview
+import com.example.musicapp.myComponents.GridViewComponent
+
+@Composable
+fun DiscographyScreenPage(){
+
+    GridViewComponent()
+}
 
 
+@Preview
+@Composable
+fun DiscoPreview(){
 
-/*items(imagesList){
-
-    imagesId ->Images(
-    imagesId = imagesId,
-    //añadir clickable
-
-    )
-}*/
+    DiscographyScreenPage()
+}
