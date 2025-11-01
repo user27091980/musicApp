@@ -79,6 +79,7 @@ fun TopBarMain(content : @Composable () -> Unit){
     ) {
         LazyColumnComponent()
     }
+
 }
 
 
