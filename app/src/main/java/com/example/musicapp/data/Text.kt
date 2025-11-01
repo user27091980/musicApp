@@ -1,4 +1,4 @@
-package com.example.musicapp.myComponents
+package com.example.musicapp.data
 
 data class Text(
     val email: String,
@@ -6,6 +6,3 @@ data class Text(
     val password: String
 
 )
-
-
-
