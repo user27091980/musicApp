@@ -31,9 +31,9 @@ class MainActivity : ComponentActivity() {
                         //SplashScreenPage()
                         //LoginScreenPage()
                         //RegisterScreenPage()
-                        //MainScreenPage()
+                        MainScreenPage()
                         //MusicBandScreenPage()
-                        UserInfoScreenPage()
+                        //UserInfoScreenPage()
                         //DiscographyScreenPage()}
                 }
             }
@@ -46,7 +46,8 @@ class MainActivity : ComponentActivity() {
     fun MusicAppPreviewPage() {
 
         MusicAppTheme {
-            UserInfoScreenPage()
+            //UserInfoScreenPage()
+            MainScreenPage()
         }
     }
 }
