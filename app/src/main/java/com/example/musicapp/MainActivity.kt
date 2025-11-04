@@ -27,6 +27,7 @@ class MainActivity : ComponentActivity() {
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
                     topBar = { TopBar() },
+                    bottomBar = {  },
                     content = { innerPadding ->
                         //SplashScreenPage()
                         //LoginScreenPage()
@@ -37,12 +38,10 @@ class MainActivity : ComponentActivity() {
                         DiscographyScreenPage(modifier=Modifier.padding(innerPadding))
                     }
                 )
-
             }
         }
     }
 }
-
 
 @Preview(showBackground = true)
 @Composable
