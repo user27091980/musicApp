@@ -11,10 +11,10 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.musicapp.myComponents.BottomBar
 import com.example.musicapp.myComponents.TopBar
 import com.example.musicapp.pages.DiscographyScreenPage
 import com.example.musicapp.ui.theme.MusicAppTheme
-
 
 class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterial3Api::class)
@@ -27,6 +27,7 @@ class MainActivity : ComponentActivity() {
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
                     topBar = { TopBar() },
+                    bottomBar = { BottomBar() },
                     content = { innerPadding ->
                         //SplashScreenPage()
                         //LoginScreenPage()
@@ -37,12 +38,10 @@ class MainActivity : ComponentActivity() {
                         DiscographyScreenPage(modifier=Modifier.padding(innerPadding))
                     }
                 )
-
             }
         }
     }
 }
-
 
 @Preview(showBackground = true)
 @Composable
