@@ -2,6 +2,7 @@ package com.example.musicapp.pages
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.TextAutoSize
 import androidx.compose.material3.Text
@@ -11,23 +12,23 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.musicapp.myComponents.LazyRowComponent
-import com.example.musicapp.myComponents.TopBarMain
 import com.example.musicapp.styles.estiloTexto
 
 @Composable
-fun MusicBandScreenPage() {
+fun MusicBandScreenPage(modifier: Modifier=Modifier) {
 
-    TopBarMain {
+
         LazyRowComponent()
+
+
+    Row {
+        MusicBandScreenContent()
     }
-
-    MusicBandScreenContent()
-
 }
 @Composable
 fun MusicBandScreenContent(){
 
-    Box() {
+    Box {
         Column (modifier = Modifier.padding(20.dp, 360.dp))
         {
             Text(
