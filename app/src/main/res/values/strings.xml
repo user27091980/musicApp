@@ -10,6 +10,8 @@
     <string name="top_bar">top bar</string>
     <string name="boton_aceptar">aceptar</string>
     <string name="boton_cancelar">cancelar</string>
-
+    <string name="menu_discos">discos</string>
+    <string name="menu_inicio">inicio</string>
+    <string name="menu_configuracion">configuración</string>
 
 </resources>
