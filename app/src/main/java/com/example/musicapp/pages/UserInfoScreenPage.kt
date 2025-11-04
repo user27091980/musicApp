@@ -11,6 +11,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.musicapp.R
 import com.example.musicapp.myComponents.BottomAppBarComponent
+import com.example.musicapp.myComponents.TopBarMain
 import com.example.musicapp.myComponents.TopBarUser
 import com.example.musicapp.myComponents.UserCardsComponents
 import com.example.musicapp.styles.imageModifier
@@ -18,7 +19,7 @@ import com.example.musicapp.styles.imageModifier
 @Composable
 fun UserInfoScreenPage(){
 
-    TopBarUser() {
+    TopBarMain {
         UserCardsComponents()
     }
 

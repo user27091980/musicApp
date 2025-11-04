@@ -9,12 +9,13 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.musicapp.myComponents.GridViewComponent
 import com.example.musicapp.myComponents.TopBarAlbums
+import com.example.musicapp.myComponents.TopBarMain
 
 
 @Composable
 fun DiscographyScreenPage(){
 
-    TopBarAlbums() {
+    TopBarMain {
 
     }
     Box {
