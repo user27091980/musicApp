@@ -8,11 +8,18 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.musicapp.myComponents.GridViewComponent
+import com.example.musicapp.myComponents.TopBarAlbums
+import com.example.musicapp.myComponents.TopBarMain
+
 
 @Composable
-fun DiscographyScreenPage(modifier: Modifier=Modifier){
+fun DiscographyScreenPage(){
 
+    TopBarMain {
+
+    }
     Box {
+
         Column(Modifier.padding(1.dp, 75.dp, 1.dp, 1.dp)) {
             GridViewComponent()
         }
@@ -20,10 +27,10 @@ fun DiscographyScreenPage(modifier: Modifier=Modifier){
 
 }
 
+
 @Preview
 @Composable
 fun DiscoPreview(){
 
     DiscographyScreenPage()
-
 }
