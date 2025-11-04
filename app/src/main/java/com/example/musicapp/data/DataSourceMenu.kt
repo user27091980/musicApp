@@ -9,11 +9,11 @@ class DataSourceMenu {
 
     fun LoadMenuId(): List<MenuId> {
 
-        return listOf(
+        return listOf<MenuId>(
 
-            MenuId(stringResource(R.string.menu_discos)),
-            MenuId(),
-            MenuId()
+            MenuId(R.string.menu_discos),
+            MenuId(R.string.menu_configuracion),
+
 
         )
     }
