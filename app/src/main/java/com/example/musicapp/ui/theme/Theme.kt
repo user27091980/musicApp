@@ -41,7 +41,7 @@ fun MusicAppTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),//true (para poner siempre en tema óscuro)
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,
-    content: @Composable () -> Unit
+    content: @Composable (() -> Unit)
 ) {
     val colorScheme = when {
 

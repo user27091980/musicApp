@@ -11,7 +11,7 @@ import com.example.musicapp.R
 import com.example.musicapp.styles.estiloTextoBotones
 
 @Composable
-fun BotonLogin(modifier: Modifier = Modifier){
+fun ButtonLogin(modifer: Modifier =Modifier){
 
     Button(onClick = {},
             colors = ButtonDefaults.buttonColors(
@@ -26,7 +26,7 @@ fun BotonLogin(modifier: Modifier = Modifier){
 }
 
 @Composable
-fun BotonRegister(modifier: Modifier = Modifier){
+fun ButtonRegister(modifer: Modifier =Modifier){
 
     Button(
         onClick = {},
@@ -40,7 +40,7 @@ fun BotonRegister(modifier: Modifier = Modifier){
 }
 
 @Composable
-fun BotonAceptar(modifier: Modifier=Modifier){
+fun ButtonAcept(modifer: Modifier =Modifier){
 
     Button(
         onClick = {},
@@ -54,7 +54,7 @@ fun BotonAceptar(modifier: Modifier=Modifier){
 }
 
 @Composable
-fun BotonCancelar(modifier: Modifier= Modifier){
+fun ButtonCancel(modifer: Modifier =Modifier){
 
     Button(
         onClick = {},

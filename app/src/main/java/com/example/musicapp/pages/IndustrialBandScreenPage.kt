@@ -5,33 +5,30 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.TextAutoSize
-import androidx.compose.foundation.text.TextAutoSizeDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.musicapp.myComponents.LazyRowComponent
-
 import com.example.musicapp.styles.estiloTexto
-import com.example.musicapp.myComponents.TopBarIndustrial
 
 @Composable
-fun MusicBandScreenPage() {
+fun MusicBandScreenPage(modifier: Modifier=Modifier) {
 
-    TopBarIndustrial {
+
         LazyRowComponent()
+
+
+    Row {
+        MusicBandScreenContent()
     }
-
-    MusicBandScreenContent()
-
 }
 @Composable
 fun MusicBandScreenContent(){
 
-    Box() {
+    Box {
         Column (modifier = Modifier.padding(20.dp, 360.dp))
         {
             Text(

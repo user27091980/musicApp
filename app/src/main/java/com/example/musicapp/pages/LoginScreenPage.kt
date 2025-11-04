@@ -15,8 +15,8 @@ import androidx.compose.ui.unit.dp
 import com.example.musicapp.R
 import com.example.musicapp.styles.botonLogin
 import com.example.musicapp.styles.botonRegister
-import com.example.musicapp.myComponents.BotonLogin
-import com.example.musicapp.myComponents.BotonRegister
+import com.example.musicapp.myComponents.ButtonLogin
+import com.example.musicapp.myComponents.ButtonRegister
 import com.example.musicapp.styles.imageModifier
 
 
@@ -34,14 +34,12 @@ fun LoginScreenPage(){
 
         Column(modifier=Modifier
             .padding(160.dp,350.dp)
+        ){
 
 
-            ){
+            ButtonLogin(botonLogin)
 
-
-            BotonLogin(botonLogin)
-
-            BotonRegister(botonRegister)
+            ButtonRegister(botonRegister)
 
         }
     }
