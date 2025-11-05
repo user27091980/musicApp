@@ -20,7 +20,7 @@ fun BottomBar() {
     )
 
     NavigationBar(
-        containerColor = MaterialTheme.colorScheme.primaryContainer,
+        containerColor = MaterialTheme.colorScheme.background,
         contentColor = MaterialTheme.colorScheme.onPrimaryContainer
     ) {
         items.forEachIndexed { index, item ->

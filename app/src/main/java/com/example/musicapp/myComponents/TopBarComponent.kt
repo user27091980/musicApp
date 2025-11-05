@@ -5,8 +5,11 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentSize
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -36,21 +39,19 @@ fun TopBar(){
             IconButton(onClick = {
                 expanded = true
             }) {
+
                 Icon(
-                    painter = painterResource(R.drawable.menu_50dp_e3e3e3_fill0_wght400_grad0_opsz48),
-                    contentDescription = "menu"
-                )
-            }
-            //cuenta
-            IconButton(onClick = {/*do something*/ }) {
-                Icon(
-                    painter = painterResource(R.drawable.account_circle_50dp_e3e3e3_fill0_wght400_grad0_opsz48),
-                    contentDescription = "cuenta"
+                    imageVector = Icons.Default.Menu,
+                    contentDescription = "menu",
+
                 )
             }
         }
+        //cuenta
+
+        }
     }
-}
+
 
 
 
