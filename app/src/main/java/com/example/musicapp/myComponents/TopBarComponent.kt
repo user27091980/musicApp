@@ -1,12 +1,17 @@
 package com.example.musicapp.myComponents
 
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentSize
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -18,7 +23,7 @@ import androidx.compose.ui.unit.dp
 
 //componente de topAppBar
 @Composable
-fun TopBar(){
+fun TopBar() {
 
     var expanded by remember { mutableStateOf(false) }
 
@@ -42,22 +47,10 @@ fun TopBar(){
 
             }
 
-            }) {
-                Icon(
-                    painter = painterResource(R.drawable.menu_50dp_e3e3e3_fill0_wght400_grad0_opsz48),
-                    contentDescription = "menu"
-                )
-            }
-            //cuenta
-            IconButton(onClick = {/*do something*/ }) {
-                Icon(
-                    painter = painterResource(R.drawable.account_circle_50dp_e3e3e3_fill0_wght400_grad0_opsz48),
-                    contentDescription = "cuenta"
-                )
-            }
         }
     }
 }
+
 
 
 @Composable
@@ -91,10 +84,6 @@ fun DropMenu() {
 
     }
 }
-
-
-fun drow{}
-fun drow
 
 
 
