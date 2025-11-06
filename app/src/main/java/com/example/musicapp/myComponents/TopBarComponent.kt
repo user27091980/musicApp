@@ -13,7 +13,6 @@ import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -22,53 +21,46 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import com.example.musicapp.R
 
 //componente de topAppBar
-
-/**
- * @param
- */
 @Composable
 fun TopBar() {
-//variable que se encarga de manejar el estado del menú que se descarga.
-    var isExpanded by remember {
-        mutableStateOf(false)
-    }
+
+    var expanded by remember { mutableStateOf(false) }
+
     Row(modifier = Modifier.fillMaxSize()) {
         //cuenta
         Box(
             modifier = Modifier
                 .fillMaxSize()
+                .padding(start = 10.dp)
                 .wrapContentSize(align = Alignment.TopStart),
             contentAlignment = Alignment.Center
         ) {
-            IconButton(onClick = { isExpanded=true}) {
+            IconButton(onClick = {
+                expanded = true
 
+            }) {
                 Icon(
                     imageVector = Icons.Default.Menu,
-                    contentDescription = "menú",
-                    tint =
-                        MaterialTheme.colorScheme.primary
+                    contentDescription = "More"
                 )
-
             }
-            /*tnemos  que tener uan variable que sea capaz de manejar el cambio en el menu(isExpanded)
-            esa variable tiene como entorno en la función topBar, tenemos que "jugar con los contextos"
-            topBar conoce la variable isExpanded es la que se encarga de la acción, acto seguido simplemente
-            en la fun dropMenu invocamos al dismiss request
-            */
-            DropMenu(extended=isExpanded, { isExpanded = false})
 
         }
     }
 }
 
-/**
- * @param
- */
+
 @Composable
-fun DropMenu(extended: Boolean, dismissRequest: () -> Unit) {
+fun DropMenu() {
+    var isExpanded by remember {
+        mutableStateOf(false)
+    }
+    // var isButtonClicked by remember { mutableStateOf(false) }
 
     Column(Modifier.padding(8.dp)) {
         Box(
@@ -76,29 +68,24 @@ fun DropMenu(extended: Boolean, dismissRequest: () -> Unit) {
                 .fillMaxWidth()
                 .wrapContentSize(Alignment.TopEnd)
         ) {
-            IconButton(onClick = { }) {
+            IconButton(onClick = { isExpanded = !isExpanded }) {
 
             }
-            DropdownMenu(
-                extended,
-                onDismissRequest = dismissRequest
-            ){
-
+            DropdownMenu(expanded = isExpanded, onDismissRequest = { isExpanded = false }) {
                 DropdownMenuItem(
-                    text = { Text(text = "inicio") },
+                    text = { Text(text = "") },
                     onClick = { })
                 DropdownMenuItem(
-                    text = { Text(text = "pérfil") },
+                    text = { Text(text = "") },
                     onClick = { })
                 DropdownMenuItem(
-                    text = { Text(text = "exit") },
+                    text = { Text(text = "") },
                     onClick = { })
             }
         }
+
     }
 }
-
-
 
 
 
