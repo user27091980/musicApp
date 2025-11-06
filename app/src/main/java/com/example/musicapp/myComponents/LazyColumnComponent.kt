@@ -11,6 +11,10 @@ import androidx.compose.ui.res.painterResource
 import com.example.musicapp.data.DatasourceMainScreenPics
 import com.example.musicapp.data.ImagesId
 
+/**
+ * @param
+ * @function
+ */
 
 //Función que recorrerá el DataSourcesPics le pasamos un modifier y una lista por parámetro
 
@@ -30,6 +34,10 @@ fun ImagesList(imagesList:List<ImagesId>,modifier: Modifier=Modifier){
     }
 
 }
+/**
+ * @param
+ * @function
+ */
 //creamos la función imagen para poder acceder a ellas y poder realizar el contenscale
 //pasamos como parámetro un imagesId
 @Composable
@@ -42,7 +50,10 @@ fun Images(imagesId: ImagesId){
         )
     }
 }
-
+/**
+ *
+ * @function
+ */
 //a esta función le mandamos la función ImagesList se crea un imagesList para
 //que recorra el DataSourcesPics.
 @Composable

@@ -8,6 +8,10 @@ import androidx.compose.ui.res.painterResource
 import com.example.musicapp.R
 import com.example.musicapp.styles.imageModifier
 
+/**
+ * @param
+ * @function
+ */
 @Composable
 fun SplashScreenComponent(){
 

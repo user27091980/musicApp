@@ -9,6 +9,10 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 
+/**
+ * @param
+ * @function
+ */
 @Composable
 fun TextFieldsComponent(){
 
@@ -19,6 +23,10 @@ fun TextFieldsComponent(){
     }
 }
 
+/**
+ * @param
+ * @function
+ */
 @Composable
 fun TextFieldUserComponent(){
 
@@ -31,6 +39,10 @@ fun TextFieldUserComponent(){
     )
 }
 
+/**
+ * @param
+ * @function
+ */
 @Composable
 fun TextFieldPassComponent(){
 
@@ -44,6 +56,10 @@ fun TextFieldPassComponent(){
 
 }
 
+/**
+ * @param
+ * @function
+ */
 @Composable
 fun TextFieldEmailComponent(){
 
