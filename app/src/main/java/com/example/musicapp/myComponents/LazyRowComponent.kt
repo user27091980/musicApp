@@ -35,6 +35,7 @@ fun ImagesIndustrialList(industrialList:List<IndustrialBandsId>, modifier: Modif
 }
 /**
  * @param
+ * @function
  */
 @Composable
 fun ImagesIndustrial(industrialId: IndustrialBandsId){
@@ -53,7 +54,10 @@ fun ImagesIndustrial(industrialId: IndustrialBandsId){
         )
     }
 }
-
+/**
+ * @param
+ * @function
+ */
 //a esta función le mandamos la función ImagesList se crea un imagesList para
 //que recorra el DataSourcesPics.
 @Composable
