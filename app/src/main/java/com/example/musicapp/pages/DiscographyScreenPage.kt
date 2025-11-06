@@ -11,7 +11,6 @@ import com.example.musicapp.myComponents.GridViewComponent
 
 /**
  * @param
- * @function
  */
 @Composable
 fun DiscographyScreenPage(modifier: Modifier=Modifier){

@@ -5,10 +5,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.musicapp.myComponents.UserCardsComponents
 
-/**
- * @param
- * @function
- */
+
+//pantalla de usuario
 @Composable
 fun UserInfoScreenPage(modifier: Modifier=Modifier){
 

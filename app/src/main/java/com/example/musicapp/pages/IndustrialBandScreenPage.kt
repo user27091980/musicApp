@@ -16,7 +16,6 @@ import com.example.musicapp.styles.estiloTexto
 
 /**
  * @param
- * @function
  */
 @Composable
 fun MusicBandScreenPage(modifier: Modifier=Modifier) {

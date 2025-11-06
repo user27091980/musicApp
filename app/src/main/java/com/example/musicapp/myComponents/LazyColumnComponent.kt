@@ -17,7 +17,10 @@ import com.example.musicapp.data.ImagesId
  */
 
 //Función que recorrerá el DataSourcesPics le pasamos un modifier y una lista por parámetro
-
+/**
+ * @param
+ * @author andres
+ */
 @Composable
 fun ImagesList(imagesList:List<ImagesId>,modifier: Modifier=Modifier){
 

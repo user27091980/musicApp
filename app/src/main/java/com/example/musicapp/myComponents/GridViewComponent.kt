@@ -64,6 +64,9 @@ fun ImagesAlbums(albumsId: AlbumsId){
         )
     }
 }
+/**
+ * @function
+ */
 //se encarga de recoger
 @Composable
 fun GridViewComponent(){
