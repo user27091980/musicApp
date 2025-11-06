@@ -47,6 +47,7 @@ fun TopBar(dropdownMenu: Unit, function: () -> Unit) {
                     contentDescription = "More"
                 )
             }
+            DropMenu()
 
         }
     }
