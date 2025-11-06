@@ -13,7 +13,10 @@ import com.example.musicapp.data.ImagesId
 
 
 //Función que recorrerá el DataSourcesPics le pasamos un modifier y una lista por parámetro
-
+/**
+ * @param
+ * @author andres
+ */
 @Composable
 fun ImagesList(imagesList:List<ImagesId>,modifier: Modifier=Modifier){
 
@@ -30,6 +33,9 @@ fun ImagesList(imagesList:List<ImagesId>,modifier: Modifier=Modifier){
     }
 
 }
+/**
+ * @param
+ */
 //creamos la función imagen para poder acceder a ellas y poder realizar el contenscale
 //pasamos como parámetro un imagesId
 @Composable

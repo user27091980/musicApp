@@ -9,6 +9,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.musicapp.myComponents.GridViewComponent
 
+/**
+ * @param
+ */
 @Composable
 fun DiscographyScreenPage(modifier: Modifier=Modifier){
 

@@ -18,6 +18,9 @@ import com.example.musicapp.myComponents.ButtonCancel
 import com.example.musicapp.myComponents.TextFieldsComponent
 import com.example.musicapp.styles.imageModifier
 
+/**
+ * @function
+ */
 @Composable
 
 fun RegisterScreenPage(){

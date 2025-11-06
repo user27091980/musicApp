@@ -2,8 +2,16 @@ package com.example.musicapp.data
 
 import com.example.musicapp.R
 
-class DatasourceAlbumsPics {
+//clase que gestiona las imágenes de las caratulas de los discos.
 
+/**
+ * @author andrés
+ * @param
+ */
+class DatasourceAlbumsPics {
+    /**
+     * @param
+     */
     fun loadAlbumsBands():List<AlbumsId> {
 
         return listOf(

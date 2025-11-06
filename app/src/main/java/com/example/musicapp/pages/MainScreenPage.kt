@@ -5,7 +5,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.musicapp.myComponents.LazyColumnComponent
 
-
+/**
+ * @author Perfecto
+ * @param
+ */
 @Composable
 fun MainScreenPage(modifier: Modifier=Modifier){
 

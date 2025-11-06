@@ -7,7 +7,10 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import com.example.musicapp.R
 import com.example.musicapp.styles.imageModifier
-
+/**
+ * @param
+ * @author: Perfecto
+ */
 @Composable
 fun SplashScreenComponent(){
 

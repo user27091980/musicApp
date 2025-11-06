@@ -49,7 +49,9 @@ fun ImagesAlbumsList(albumsList:List<AlbumsId>, modifier: Modifier=Modifier){
     }
 }
 
-
+/**
+ * @param
+ */
 //función que se encarga de la gestión de las imágenes en cuanto a carcterísticas visuales
 @Composable
 fun ImagesAlbums(albumsId: AlbumsId){
@@ -64,6 +66,9 @@ fun ImagesAlbums(albumsId: AlbumsId){
         )
     }
 }
+/**
+ * @function
+ */
 //se encarga de recoger
 @Composable
 fun GridViewComponent(){

@@ -14,6 +14,9 @@ import androidx.compose.ui.unit.sp
 import com.example.musicapp.myComponents.LazyRowComponent
 import com.example.musicapp.styles.estiloTexto
 
+/**
+ * @param
+ */
 @Composable
 fun MusicBandScreenPage(modifier: Modifier=Modifier) {
 

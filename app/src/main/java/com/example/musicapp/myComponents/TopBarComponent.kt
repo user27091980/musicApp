@@ -24,6 +24,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
+/**
+ * @author andres
+ * @param
+ */
 //componente de topAppBar
 @Composable
 fun TopBar() {

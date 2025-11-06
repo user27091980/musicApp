@@ -14,6 +14,10 @@ import androidx.compose.ui.unit.dp
 import com.example.musicapp.data.DatasourceIndustrialBandsPics
 import com.example.musicapp.data.IndustrialBandsId
 
+/**
+ * @param
+ * @author andrés
+ */
 @Composable
 fun ImagesIndustrialList(industrialList:List<IndustrialBandsId>, modifier: Modifier=Modifier){
 
@@ -29,7 +33,9 @@ fun ImagesIndustrialList(industrialList:List<IndustrialBandsId>, modifier: Modif
         }
     }
 }
-
+/**
+ * @param
+ */
 @Composable
 fun ImagesIndustrial(industrialId: IndustrialBandsId){
 
