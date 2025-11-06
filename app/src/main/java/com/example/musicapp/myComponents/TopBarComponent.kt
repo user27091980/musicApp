@@ -74,6 +74,13 @@ fun DropMenu() {
             }
             DropdownMenu(expanded = isExpanded, onDismissRequest = { isExpanded = false }) {
                 DropdownMenuItem(
+                    text = { Text(text = "") },
+                    onClick = { })
+                DropdownMenuItem(
+                    text = { Text(text = "") },
+                    onClick = { })
+                DropdownMenuItem(
+                    text = { Text(text = "") },
                     text = { Text(text = "inicio") },
                     onClick = { })
                 DropdownMenuItem(
@@ -86,6 +93,8 @@ fun DropMenu() {
         }
     }
 }
+
+
 
 
 
