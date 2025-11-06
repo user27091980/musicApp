@@ -14,22 +14,22 @@ import androidx.compose.ui.unit.sp
 //value para el estilo de texto
 val estiloTexto = TextStyle(
 
-    fontSize = 10.sp,
+    fontSize = 15.sp,
     textAlign = TextAlign.Center,
-    color = Color.Black
+    color = Color.LightGray
 )
 
 val estiloTextoBotones = TextStyle(
 
-    fontSize = 10.sp,
+    fontSize = 15.sp,
     textAlign = TextAlign.Center,
-    color = Color.Black)
+    color = Color.LightGray)
 
 val botonLogin = Modifier.padding(start=270.dp,top=640.dp)
-    .size(width=100.dp, height = 30.dp)
+    .size(width=150.dp, height = 30.dp)
 
 val botonRegister = Modifier.padding(start=275.dp,top=650.dp)
-    .size(width=150.dp, height = 30.dp)
+    .size(width=175.dp, height = 30.dp)
 
 
 val imageModifier = Modifier
