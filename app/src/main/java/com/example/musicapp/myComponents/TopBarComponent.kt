@@ -48,6 +48,7 @@ fun TopBar() {
                     tint =
                         MaterialTheme.colorScheme.primary
                 )
+
             }
             /*tnemos  que tener uan variable que sea capaz de manejar el cambio en el menu(isExpanded)
             esa variable tiene como entorno en la función topBar, tenemos que "jugar con los contextos"
@@ -61,10 +62,9 @@ fun TopBar() {
 }
 
 
+
 @Composable
 fun DropMenu(extended: Boolean, dismissRequest: () -> Unit) {
-
-    // var isButtonClicked by remember { mutableStateOf(false) }
 
     Column(Modifier.padding(8.dp)) {
         Box(
@@ -79,14 +79,15 @@ fun DropMenu(extended: Boolean, dismissRequest: () -> Unit) {
                 extended,
                 onDismissRequest = dismissRequest
             ){
+
                 DropdownMenuItem(
-                    text = { Text(text = "") },
+                    text = { Text(text = "inicio") },
                     onClick = { })
                 DropdownMenuItem(
-                    text = { Text(text = "") },
+                    text = { Text(text = "pérfil") },
                     onClick = { })
                 DropdownMenuItem(
-                    text = { Text(text = "") },
+                    text = { Text(text = "exit") },
                     onClick = { })
             }
         }
