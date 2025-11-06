@@ -66,8 +66,6 @@ fun TopBar() {
 @Composable
 fun DropMenu(extended: Boolean, dismissRequest: () -> Unit) {
 
-    // var isButtonClicked by remember { mutableStateOf(false) }
-
     Column(Modifier.padding(8.dp)) {
         Box(
             modifier = Modifier
@@ -81,14 +79,8 @@ fun DropMenu(extended: Boolean, dismissRequest: () -> Unit) {
                 extended,
                 onDismissRequest = dismissRequest
             ){
+
                 DropdownMenuItem(
-                    text = { Text(text = "") },
-                    onClick = { })
-                DropdownMenuItem(
-                    text = { Text(text = "") },
-                    onClick = { })
-                DropdownMenuItem(
-                    text = { Text(text = "") },
                     text = { Text(text = "inicio") },
                     onClick = { })
                 DropdownMenuItem(
