@@ -46,7 +46,7 @@ fun TopBar() {
             }) {
                 Icon(
                     imageVector = Icons.Default.Menu,
-                    contentDescription = "More"
+                    contentDescription = "menú"
                 )
             }
             DropMenu()
