@@ -15,6 +15,7 @@ import com.example.musicapp.myComponents.BottomBar
 import com.example.musicapp.myComponents.TopBar
 import com.example.musicapp.pages.MainScreenPage
 import com.example.musicapp.pages.MusicBandScreenPage
+import com.example.musicapp.pages.SplashScreenPage
 import com.example.musicapp.ui.theme.MusicAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -29,10 +30,10 @@ class MainActivity : ComponentActivity() {
                     topBar = { TopBar() },
                     bottomBar = { BottomBar() },
                     content = { innerPadding ->
-                        //SplashScreenPage()
+                        SplashScreenPage()
                         //LoginScreenPage()
                         //RegisterScreenPage()
-                        MainScreenPage(modifier=Modifier.padding(innerPadding))
+                        //MainScreenPage(modifier=Modifier.padding(innerPadding))
                         //MusicBandScreenPage(modifier=Modifier.padding(innerPadding))
                         //UserInfoScreenPage(modifier=Modifier.padding(innerPadding))
                         //DiscographyScreenPage(modifier=Modifier.padding(innerPadding))
@@ -47,10 +48,10 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MusicAppPreviewPage() {
     MusicAppTheme {
-        //SplashScreenPage()
+        SplashScreenPage()
         //LoginScreenPage()
         //RegisterScreenPage()
-        MainScreenPage()
+        //MainScreenPage()
         //MusicBandScreenPage()
         //UserInfoScreenPage()
         //DiscographyScreenPage()
