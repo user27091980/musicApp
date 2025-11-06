@@ -12,6 +12,7 @@ import com.example.musicapp.styles.estiloTextoBotones
 
 /**
  * @param
+ *
  */
 //Componentes botones de todo el programa.
 //boton login
@@ -29,6 +30,7 @@ fun ButtonLogin(modifer: Modifier =Modifier){
            )
     }
 }
+
 /**
  * @param
  */
@@ -46,6 +48,7 @@ fun ButtonRegister(modifer: Modifier =Modifier){
             style = estiloTextoBotones)
     }
 }
+
 /**
  * @param
  */
@@ -63,6 +66,7 @@ fun ButtonAcept(modifer: Modifier =Modifier){
             style = estiloTextoBotones)
     }
 }
+
 /**
  * @param
  */

@@ -16,8 +16,8 @@ import androidx.compose.ui.unit.dp
 import com.example.musicapp.styles.estiloTexto
 
 /**
- * @author perfecto
  * @param
+ * @function
  */
 @Composable
 fun UserCardsComponents(modifier: Modifier = Modifier) {

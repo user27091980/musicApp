@@ -13,10 +13,9 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.example.musicapp.data.DatasourceIndustrialBandsPics
 import com.example.musicapp.data.IndustrialBandsId
-
 /**
  * @param
- * @author andrés
+ * @function
  */
 @Composable
 fun ImagesIndustrialList(industrialList:List<IndustrialBandsId>, modifier: Modifier=Modifier){
@@ -35,6 +34,7 @@ fun ImagesIndustrialList(industrialList:List<IndustrialBandsId>, modifier: Modif
 }
 /**
  * @param
+ * @function
  */
 @Composable
 fun ImagesIndustrial(industrialId: IndustrialBandsId){
@@ -53,7 +53,10 @@ fun ImagesIndustrial(industrialId: IndustrialBandsId){
         )
     }
 }
-
+/**
+ * @param
+ * @function
+ */
 //a esta función le mandamos la función ImagesList se crea un imagesList para
 //que recorra el DataSourcesPics.
 @Composable
