@@ -48,7 +48,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MusicAppPreviewPage() {
     MusicAppTheme {
-
         //DiscographyScreenPage()
         //MainScreenPage()
         MusicBandScreenPage()
