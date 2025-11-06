@@ -10,10 +10,6 @@ import androidx.compose.ui.res.stringResource
 import com.example.musicapp.R
 import com.example.musicapp.styles.estiloTextoBotones
 
-/**
- * @param
- *
- */
 //Componentes botones de todo el programa.
 //boton login
 @Composable
@@ -30,10 +26,6 @@ fun ButtonLogin(modifer: Modifier =Modifier){
            )
     }
 }
-
-/**
- * @param
- */
 //boton para el registro
 @Composable
 fun ButtonRegister(modifer: Modifier =Modifier){
@@ -49,9 +41,6 @@ fun ButtonRegister(modifer: Modifier =Modifier){
     }
 }
 
-/**
- * @param
- */
 //botón para aceptar
 @Composable
 fun ButtonAcept(modifer: Modifier =Modifier){
@@ -66,10 +55,6 @@ fun ButtonAcept(modifer: Modifier =Modifier){
             style = estiloTextoBotones)
     }
 }
-
-/**
- * @param
- */
 //botón de cancelación
 @Composable
 fun ButtonCancel(modifer: Modifier =Modifier){
