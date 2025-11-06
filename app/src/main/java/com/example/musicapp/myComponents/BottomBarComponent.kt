@@ -8,7 +8,13 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import com.example.musicapp.data.BottomItems
 
-
+/*
+Función que se encarga de la barra de debajo(BottomBar)
+ */
+/**
+ * @author: Perfecto
+ * @param
+ */
 @Composable
 fun BottomBar() {
     var selectedItem by remember { mutableStateOf(0) }
