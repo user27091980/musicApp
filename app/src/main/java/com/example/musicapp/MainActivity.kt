@@ -18,8 +18,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.musicapp.myComponents.BottomBar
 import com.example.musicapp.myComponents.TopBar
-import com.example.musicapp.pages.DiscographyScreenPage
-import com.example.musicapp.pages.MainScreenPage
 import com.example.musicapp.pages.MusicBandScreenPage
 import com.example.musicapp.ui.theme.MusicAppTheme
 
