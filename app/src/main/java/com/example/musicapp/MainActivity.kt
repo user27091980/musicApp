@@ -53,7 +53,7 @@ fun MusicAppPreviewPage() {
         //LoginScreenPage()
         //RegisterScreenPage()
         //MainScreenPage()
-        MusicBandScreenPage()
+        //MusicBandScreenPage()
         //UserInfoScreenPage()
         //DiscographyScreenPage()
     }
