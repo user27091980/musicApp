@@ -25,13 +25,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 //componente de topAppBar
-
-/**
- * @param
- */
 @Composable
 fun TopBar() {
-//variable que se encarga de manejar el estado del menú que se descarga.
+
     var isExpanded by remember {
         mutableStateOf(false)
     }
@@ -64,8 +60,10 @@ fun TopBar() {
     }
 }
 
+
 /**
  * @param
+ *
  */
 @Composable
 fun DropMenu(extended: Boolean, dismissRequest: () -> Unit) {
