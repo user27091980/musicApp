@@ -1,5 +1,6 @@
 package com.example.musicapp.myComponents
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -40,7 +41,8 @@ fun TopBar() {
         Box(
             modifier = Modifier
                 .fillMaxSize()
-                .wrapContentSize(align = Alignment.TopStart),
+                .wrapContentSize(align = Alignment.TopStart)
+                .background(MaterialTheme.colorScheme.background),
             contentAlignment = Alignment.Center
         ) {
             IconButton(onClick = { isExpanded=true}) {

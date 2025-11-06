@@ -6,15 +6,14 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.musicapp.myComponents.BottomBar
-import com.example.musicapp.myComponents.DropMenu
 import com.example.musicapp.myComponents.TopBar
+import com.example.musicapp.pages.MainScreenPage
 import com.example.musicapp.pages.MusicBandScreenPage
 import com.example.musicapp.ui.theme.MusicAppTheme
 
@@ -25,7 +24,6 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             MusicAppTheme {
-
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
                     topBar = { TopBar() },
@@ -34,8 +32,8 @@ class MainActivity : ComponentActivity() {
                         //SplashScreenPage()
                         //LoginScreenPage()
                         //RegisterScreenPage()
-                        //MainScreenPage(modifier=Modifier.padding(innerPadding))
-                        MusicBandScreenPage(modifier=Modifier.padding(innerPadding))
+                        MainScreenPage(modifier=Modifier.padding(innerPadding))
+                        //MusicBandScreenPage(modifier=Modifier.padding(innerPadding))
                         //UserInfoScreenPage(modifier=Modifier.padding(innerPadding))
                         //DiscographyScreenPage(modifier=Modifier.padding(innerPadding))
                     }
@@ -52,7 +50,7 @@ fun MusicAppPreviewPage() {
         //SplashScreenPage()
         //LoginScreenPage()
         //RegisterScreenPage()
-        //MainScreenPage()
+        MainScreenPage()
         //MusicBandScreenPage()
         //UserInfoScreenPage()
         //DiscographyScreenPage()
