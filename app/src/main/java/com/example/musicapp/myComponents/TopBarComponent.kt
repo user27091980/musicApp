@@ -13,7 +13,6 @@ import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -28,9 +27,8 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun TopBar() {
 
-    var isExpanded by remember {
-        mutableStateOf(false)
-    }
+    var expanded by remember { mutableStateOf(false) }
+
     Row(modifier = Modifier.fillMaxSize()) {
         //cuenta
         Box(
@@ -40,21 +38,16 @@ fun TopBar() {
                 .wrapContentSize(align = Alignment.TopStart),
             contentAlignment = Alignment.Center
         ) {
-            IconButton(onClick = { isExpanded=true}) {
+            IconButton(onClick = {
+                expanded = true
 
+            }) {
                 Icon(
                     imageVector = Icons.Default.Menu,
-                    contentDescription = "menú",
-                    tint =
-                        MaterialTheme.colorScheme.primary
+                    contentDescription = "menú"
                 )
+
             }
-            /*tnemos  que tener uan variable que sea capaz de manejar el cambio en el menu(isExpanded)
-            esa variable tiene como entorno en la función topBar, tenemos que "jugar con los contextos"
-            topBar conoce la variable isExpanded es la que se encarga de la acción, acto seguido simplemente
-            en la fun dropMenu invocamos al dismiss request
-            */
-            DropMenu(extended=isExpanded, { isExpanded = false})
 
         }
     }
@@ -62,8 +55,10 @@ fun TopBar() {
 
 
 @Composable
-fun DropMenu(extended: Boolean, dismissRequest: () -> Unit) {
-
+fun DropMenu() {
+    var isExpanded by remember {
+        mutableStateOf(false)
+    }
     // var isButtonClicked by remember { mutableStateOf(false) }
 
     Column(Modifier.padding(8.dp)) {
@@ -72,28 +67,24 @@ fun DropMenu(extended: Boolean, dismissRequest: () -> Unit) {
                 .fillMaxWidth()
                 .wrapContentSize(Alignment.TopEnd)
         ) {
-            IconButton(onClick = { }) {
+            IconButton(onClick = { isExpanded = !isExpanded }) {
 
             }
-            DropdownMenu(
-                extended,
-                onDismissRequest = dismissRequest
-            ){
+            DropdownMenu(expanded = isExpanded, onDismissRequest = { isExpanded = false }) {
                 DropdownMenuItem(
-                    text = { Text(text = "") },
+                    text = { Text(text = "inicio") },
                     onClick = { })
                 DropdownMenuItem(
-                    text = { Text(text = "") },
+                    text = { Text(text = "pérfil") },
                     onClick = { })
                 DropdownMenuItem(
-                    text = { Text(text = "") },
+                    text = { Text(text = "exit") },
                     onClick = { })
             }
         }
+
     }
 }
-
-
 
 
 
