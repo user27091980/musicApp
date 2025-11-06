@@ -36,7 +36,6 @@ fun TopBar() {
         Box(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(start = 10.dp)
                 .wrapContentSize(align = Alignment.TopStart),
             contentAlignment = Alignment.Center
         ) {
