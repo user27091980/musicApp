@@ -46,12 +46,14 @@ fun TopBar() {
                     imageVector = Icons.Default.Menu,
                     contentDescription = "menú"
                 )
+
             }
             DropMenu()
 
         }
     }
 }
+
 
 
 @Composable
@@ -79,6 +81,13 @@ fun DropMenu() {
                     onClick = { })
                 DropdownMenuItem(
                     text = { Text(text = "") },
+                    text = { Text(text = "inicio") },
+                    onClick = { })
+                DropdownMenuItem(
+                    text = { Text(text = "pérfil") },
+                    onClick = { })
+                DropdownMenuItem(
+                    text = { Text(text = "exit") },
                     onClick = { })
             }
         }
