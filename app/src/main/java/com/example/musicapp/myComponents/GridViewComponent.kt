@@ -22,7 +22,10 @@ import com.example.musicapp.styles.imageModifier
  */
 //vista en mosaico recogerá los datos de DataSourceAlbumsPics para mostrar las imágenes en mosaico
 
-
+/**
+ * @author="Andrés"
+ * @param
+ */
 @Composable
 fun ImagesAlbumsList(albumsList:List<AlbumsId>, modifier: Modifier=Modifier){
 
@@ -45,10 +48,7 @@ fun ImagesAlbumsList(albumsList:List<AlbumsId>, modifier: Modifier=Modifier){
             }
     }
 }
-/**
- * @author="Andrés"
- * @param
- */
+
 
 //función que se encarga de la gestión de las imágenes en cuanto a carcterísticas visuales
 @Composable
@@ -64,9 +64,6 @@ fun ImagesAlbums(albumsId: AlbumsId){
         )
     }
 }
-/**
- * @function
- */
 //se encarga de recoger
 @Composable
 fun GridViewComponent(){

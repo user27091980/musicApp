@@ -21,7 +21,7 @@ import com.example.musicapp.styles.imageModifier
 
 /**
  * @param
- * @author perfecto
+ * @function
  */
 @Composable
 fun LoginScreenPage(){

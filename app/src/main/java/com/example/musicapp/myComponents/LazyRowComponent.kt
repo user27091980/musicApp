@@ -13,10 +13,9 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.example.musicapp.data.DatasourceIndustrialBandsPics
 import com.example.musicapp.data.IndustrialBandsId
-
 /**
  * @param
- * @author andrés
+ * @function
  */
 @Composable
 fun ImagesIndustrialList(industrialList:List<IndustrialBandsId>, modifier: Modifier=Modifier){
