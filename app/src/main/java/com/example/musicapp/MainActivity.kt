@@ -13,6 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.musicapp.myComponents.BottomBar
+import com.example.musicapp.myComponents.DropMenu
 import com.example.musicapp.myComponents.TopBar
 import com.example.musicapp.pages.MusicBandScreenPage
 import com.example.musicapp.ui.theme.MusicAppTheme
@@ -27,7 +28,7 @@ class MainActivity : ComponentActivity() {
 
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
-                    topBar = { TopBar(DropdownMenu()){} },
+                    topBar = { TopBar() },
                     bottomBar = { BottomBar() },
                     content = { innerPadding ->
                         //SplashScreenPage()
@@ -48,10 +49,13 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MusicAppPreviewPage() {
     MusicAppTheme {
-        //DiscographyScreenPage()
+        //SplashScreenPage()
+        //LoginScreenPage()
+        //RegisterScreenPage()
         //MainScreenPage()
         MusicBandScreenPage()
         //UserInfoScreenPage()
+        //DiscographyScreenPage()
     }
 }
 
