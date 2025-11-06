@@ -27,7 +27,7 @@ class MainActivity : ComponentActivity() {
 
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
-                    topBar = { TopBar(DropdownMenu()){} },
+                    topBar = { TopBar() },
                     bottomBar = { BottomBar() },
                     content = { innerPadding ->
                         //SplashScreenPage()

@@ -25,7 +25,7 @@ import androidx.compose.ui.unit.dp
 
 //componente de topAppBar
 @Composable
-fun TopBar(dropdownMenu: Unit, function: () -> Unit) {
+fun TopBar() {
 
     var expanded by remember { mutableStateOf(false) }
 
