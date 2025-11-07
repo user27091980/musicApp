@@ -12,10 +12,10 @@ import com.example.musicapp.data.DatasourceMainScreenPics
 import com.example.musicapp.data.ImagesId
 
 /**
+ * @author="Andrés"
  * @param
  * @function
  */
-
 //Función que recorrerá el DataSourcesPics le pasamos un modifier y una lista por parámetro
 
 @Composable
@@ -35,6 +35,7 @@ fun ImagesList(imagesList:List<ImagesId>,modifier: Modifier=Modifier){
 
 }
 /**
+ * @author="Andrés"
  * @param
  * @function
  */
@@ -51,9 +52,10 @@ fun Images(imagesId: ImagesId){
     }
 }
 /**
- *
- * @function
- */
+* @author="Andrés"
+* @param
+* @function
+*/
 //a esta función le mandamos la función ImagesList se crea un imagesList para
 //que recorra el DataSourcesPics.
 @Composable

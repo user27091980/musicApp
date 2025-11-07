@@ -16,6 +16,7 @@ import androidx.compose.ui.unit.dp
 import com.example.musicapp.styles.estiloTexto
 
 /**
+ * @author Perfecto
  * @param
  * @function
  */

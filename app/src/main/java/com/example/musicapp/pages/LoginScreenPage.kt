@@ -20,6 +20,7 @@ import com.example.musicapp.myComponents.ButtonRegister
 import com.example.musicapp.styles.imageModifier
 
 /**
+ * @author Perfecto
  * @param
  * @function
  */

@@ -9,6 +9,7 @@ import com.example.musicapp.R
 import com.example.musicapp.styles.imageModifier
 
 /**
+ * @author Perfecto
  * @param
  * @function
  */

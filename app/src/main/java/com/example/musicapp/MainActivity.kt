@@ -22,6 +22,12 @@ import com.example.musicapp.pages.SplashScreenPage
 import com.example.musicapp.pages.UserInfoScreenPage
 import com.example.musicapp.ui.theme.MusicAppTheme
 
+/**
+ * @author="Andrés"
+ * @param
+ * @function
+ *
+ */
 class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,7 +41,6 @@ class MainActivity : ComponentActivity() {
                     bottomBar = { BottomBar() },
                     content = { innerPadding ->
                         
-
                         //MainScreenPage(modifier=Modifier.padding(innerPadding))
                         //MusicBandScreenPage(modifier=Modifier.padding(innerPadding))
                         //UserInfoScreenPage(modifier=Modifier.padding(innerPadding))

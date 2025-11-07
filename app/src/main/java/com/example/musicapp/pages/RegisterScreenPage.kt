@@ -19,6 +19,7 @@ import com.example.musicapp.myComponents.TextFieldsComponent
 import com.example.musicapp.styles.imageModifier
 
 /**
+ * @author="Andrés"
  * @param
  * @function
  */

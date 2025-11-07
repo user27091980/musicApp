@@ -17,14 +17,16 @@ import com.example.musicapp.data.DatasourceAlbumsPics
 import com.example.musicapp.styles.imageModifier
 
 /**
- * @author=Andrés
+ * @author="Andrés"
  * @param
+ * @function
  */
 //vista en mosaico recogerá los datos de DataSourceAlbumsPics para mostrar las imágenes en mosaico
 
-/**
- * @author="Andrés"
- * @param
+
+/*función qué se encarga de gestionar el comportamiento del grid
+ configurando el comportamiento de las columnas, su número, los valores de margen entre imágenes,
+ etc
  */
 @Composable
 fun ImagesAlbumsList(albumsList:List<AlbumsId>, modifier: Modifier=Modifier){

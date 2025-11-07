@@ -10,6 +10,7 @@ import androidx.compose.ui.unit.dp
 import com.example.musicapp.myComponents.GridViewComponent
 
 /**
+ * @author="Andrés"
  * @param
  * @function
  */

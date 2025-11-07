@@ -1,6 +1,11 @@
 package com.example.musicapp.data
 
 import com.example.musicapp.R
+
+/**
+ * @author="Andrés"
+ *
+ */
 class DatasourceIndustrialBandsPics {
 
     fun LoadIndustrialBands():List<IndustrialBandsId>{

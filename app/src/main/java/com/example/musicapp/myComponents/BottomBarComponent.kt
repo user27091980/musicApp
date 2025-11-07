@@ -8,13 +8,15 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import com.example.musicapp.data.BottomItems
 
-/*
-Función que se encarga de la barra de debajo(BottomBar)
- */
 /**
- * @author: Perfecto
- * @param
+* @author: Perfecto
+* @function
+*/
+/*
+Función que se encarga de la barra de debajo(BottomBar), con sus correspondientes iconos
+guardados en una lista denominada como items.
  */
+
 @Composable
 fun BottomBar() {
     var selectedItem by remember { mutableStateOf(0) }
@@ -24,7 +26,7 @@ fun BottomBar() {
         BottomItems.BottomBarItem("Buscar", Icons.Default.Search),
         BottomItems.BottomBarItem("Perfil", Icons.Default.Person)
     )
-
+//barrra de navegación.
     NavigationBar(
         containerColor = MaterialTheme.colorScheme.background,
         contentColor = MaterialTheme.colorScheme.onPrimaryContainer

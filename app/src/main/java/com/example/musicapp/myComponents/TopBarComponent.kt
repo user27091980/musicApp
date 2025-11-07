@@ -68,8 +68,9 @@ fun TopBar() {
 
 
 /**
+ * @author="Andrés"
  * @param
- *
+ * @function
  */
 @Composable
 fun DropMenu(extended: Boolean, dismissRequest: () -> Unit) {

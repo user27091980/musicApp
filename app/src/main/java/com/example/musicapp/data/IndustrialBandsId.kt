@@ -1,5 +1,10 @@
 package com.example.musicapp.data
 
 import androidx.annotation.DrawableRes
-data class IndustrialBandsId(@DrawableRes val insdustrialResourceId: Int)
+data class
+/**
+ * @author="Andrés"
+ *
+ */
+IndustrialBandsId(@DrawableRes val insdustrialResourceId: Int)
 

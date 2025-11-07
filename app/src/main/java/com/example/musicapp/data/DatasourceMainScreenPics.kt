@@ -1,7 +1,10 @@
 package com.example.musicapp.data
 
 import com.example.musicapp.R
-
+/**
+ * @author="Andrés"
+ *
+ */
 class DatasourceMainScreenPics() {
 
     //The loadImagesId() method gathers all of the data provided in the starter code
