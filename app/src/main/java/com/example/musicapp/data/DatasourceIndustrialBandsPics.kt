@@ -6,6 +6,9 @@ import com.example.musicapp.R
  * @author="Andrés"
  *
  */
+/*
+/*EStá clase es una función con una lista para el lazyy row  de la pagina bandScreen.*/
+ */
 class DatasourceIndustrialBandsPics {
 
     fun LoadIndustrialBands():List<IndustrialBandsId>{

@@ -8,6 +8,7 @@ import com.example.musicapp.R
  * @author andrés
  * @param
  */
+/*EStá clase es una función con una lista para el grid de la discorgrafía.*/
 class DatasourceAlbumsPics {
     /**
      * @param

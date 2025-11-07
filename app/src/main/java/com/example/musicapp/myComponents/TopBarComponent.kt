@@ -29,7 +29,7 @@ import androidx.compose.ui.unit.dp
  * @author andres
  * @param
  */
-//componente de topAppBar
+//componente de topAppBar se compome de una topbar y un menú desplegable
 @Composable
 fun TopBar() {
 
@@ -72,6 +72,7 @@ fun TopBar() {
  * @param
  * @function
  */
+//función que se encarga del comportamiento del menú desplegable y de los elementos que lo conitenen
 @Composable
 fun DropMenu(extended: Boolean, dismissRequest: () -> Unit) {
 

@@ -18,6 +18,11 @@ import com.example.musicapp.data.IndustrialBandsId
  * @param
  * @function
  */
+
+/*
+Componente LazyRow recoge las imagnes de la listas de el paquete data de las clases IndustrialBandsId
+y DataSourceIndustrialBandPics para poder añadirlas a la fila.
+ */
 @Composable
 fun ImagesIndustrialList(industrialList:List<IndustrialBandsId>, modifier: Modifier=Modifier){
 
@@ -38,6 +43,10 @@ fun ImagesIndustrialList(industrialList:List<IndustrialBandsId>, modifier: Modif
 * @param
 * @function
 */
+/*
+Recoge los ids de industrialBandsId para poder configurar esas imágenes dentro de cada recuadro
+del lazyRow
+ */
 @Composable
 fun ImagesIndustrial(industrialId: IndustrialBandsId){
 

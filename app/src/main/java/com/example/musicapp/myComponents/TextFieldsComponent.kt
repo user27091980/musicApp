@@ -14,6 +14,9 @@ import androidx.compose.runtime.setValue
  * @param
  * @function
  */
+/*
+Se encarga de gestionar los TextFields y añadir sus etiquetas
+ */
 @Composable
 fun TextFieldsComponent(){
 

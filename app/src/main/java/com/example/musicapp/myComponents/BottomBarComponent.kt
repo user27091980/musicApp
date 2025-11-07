@@ -13,7 +13,7 @@ import com.example.musicapp.data.BottomItems
 * @function
 */
 /*
-Función que se encarga de la barra de debajo(BottomBar), con sus correspondientes iconos
+Función que se encarga de la barra inferior(BottomBar), con sus correspondientes iconos
 guardados en una lista denominada como items.
  */
 
