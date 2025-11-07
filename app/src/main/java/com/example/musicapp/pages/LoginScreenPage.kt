@@ -24,7 +24,7 @@ import com.example.musicapp.styles.imageModifier
  * @function
  */
 @Composable
-fun LoginScreenPage(){
+fun LoginScreenPage() {
 
     Box(Modifier
         .background(MaterialTheme.colorScheme.onBackground)
