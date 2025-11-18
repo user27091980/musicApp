@@ -1,7 +1,9 @@
 package com.example.musicapp.myComponents
 
+import android.R.attr.padding
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.absolutePadding
 import androidx.compose.foundation.layout.fillMaxSize
@@ -12,6 +14,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import com.example.musicapp.styles.estiloTexto
 
@@ -24,26 +27,25 @@ import com.example.musicapp.styles.estiloTexto
 fun UserCardsComponents(modifier: Modifier = Modifier) {
 
     val boxModifier = Modifier
-        .background(color = MaterialTheme.colorScheme.background)
-        .fillMaxSize().padding(5.dp,100.dp,5.dp,100.dp)
+        .background(color = Color.Transparent)
+        .fillMaxSize()
+        .padding(5.dp, 100.dp, 5.dp, 100.dp)
 
+    val colModifier =  Modifier
+        .padding(20.dp,110.dp,20.dp,110.dp)
     val cardModifier = Modifier
-        .size(width = 175.dp, height = 65.dp)
-        .background(MaterialTheme.colorScheme.surface)
+        .size(width = 250.dp, height = 65.dp)
+        .background(color = Color.Transparent)
+        .padding(10.dp)
 
     Box(boxModifier) {
-        Row(modifier = modifier.absolutePadding(left = 20.dp, top = 60.dp, 20.dp)) {
+        Column(colModifier) {
+
             Text(
                 text = "Pérfil de usuario:",
                 style = estiloTexto
             )
-        }
-        Row(modifier = modifier.absolutePadding(left = 20.dp, top = 60.dp, 20.dp)) {
 
-
-        }
-
-        Row(modifier = modifier.absolutePadding(left = 20.dp, top = 100.dp, 20.dp)) {
             //fila priemra
             Card(cardModifier) {
                 Text(
@@ -57,28 +59,34 @@ fun UserCardsComponents(modifier: Modifier = Modifier) {
             ) {
 
 
-                Text("nombre:",
-                    style = estiloTexto)
+                Text(
+                    "nombre:",
+                    style = estiloTexto
+                )
 
             }
 
-        }
-        Row(modifier = modifier.absolutePadding(left = 20.dp, top = 170.dp, 20.dp)) {
-            //fila priemra
-            Card(cardModifier) {
-
-                Text("ciudad",
-                    style = estiloTexto,)
-            }
 
             //fila priemra
             Card(cardModifier) {
 
-                Text("país",
-                    style = estiloTexto,)
+                Text(
+                    "ciudad",
+                    style = estiloTexto,
+                )
+            }
+
+            //fila priemra
+            Card(cardModifier) {
+
+                Text(
+                    "país",
+                    style = estiloTexto,
+                )
             }
         }
 
     }
 }
+
 

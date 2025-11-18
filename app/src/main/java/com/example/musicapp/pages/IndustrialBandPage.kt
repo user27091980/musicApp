@@ -20,18 +20,18 @@ import com.example.musicapp.styles.estiloTexto
  * @function
  */
 @Composable
-fun MusicBandScreenPage(modifier: Modifier=Modifier) {
+fun IndustrialBandScreenPage(modifier: Modifier=Modifier) {
 
 
         LazyRowComponent()
 
 
     Row {
-        MusicBandScreenContent()
+        IndustrialBandScreenContent()
     }
 }
 @Composable
-fun MusicBandScreenContent(){
+fun IndustrialBandScreenContent(){
 
     Box {
         Column (modifier = Modifier.padding(20.dp, 360.dp))
@@ -59,6 +59,6 @@ fun MusicBandScreenContent(){
 
 @Preview
 @Composable
-fun MusicBandPreviewPage(){
-        MusicBandScreenPage()
+fun IndustrialBandPreviewPage(){
+        IndustrialBandScreenPage()
 }
