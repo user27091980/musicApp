@@ -20,18 +20,18 @@ import com.example.musicapp.styles.estiloTexto
  * @function
  */
 @Composable
-fun ElectronicArtScreen(modifier: Modifier=Modifier) {
+fun IndustrialBandScreenPage(modifier: Modifier=Modifier) {
 
 
-    LazyRowComponent()
+        LazyRowComponent()
 
 
     Row {
-        ElectronicArtistContent()
+        IndustrialBandScreenContent()
     }
 }
 @Composable
-fun ElectronicArtistContent(){
+fun IndustrialBandScreenContent(){
 
     Box {
         Column (modifier = Modifier.padding(20.dp, 360.dp))
@@ -40,7 +40,7 @@ fun ElectronicArtistContent(){
                 autoSize = TextAutoSize.StepBased(maxFontSize = 16.sp),
                 maxLines = 50,
                 style = estiloTexto,
-                text = "Electrónica:\n" +
+                text = "Industrial:\n" +
                         "un género de música electrónica/experimental que hace uso de temas transgresivos " +
                         "y suele estar asociada con angustia e ira contraculturales. " +
                         "Aunque ideológicamente asociada al punk, la música industrial es generalmente" +
@@ -59,6 +59,6 @@ fun ElectronicArtistContent(){
 
 @Preview
 @Composable
-fun ElectronicArtistContentPreviewPage(){
-    MusicBandScreenPage()
+fun IndustrialBandPreviewPage(){
+        IndustrialBandScreenPage()
 }

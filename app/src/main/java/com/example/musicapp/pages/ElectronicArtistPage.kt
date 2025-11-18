@@ -12,6 +12,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.musicapp.myComponents.LazyRowComponent
+import com.example.musicapp.myComponents.LazyRowComponentElectronics
 import com.example.musicapp.styles.estiloTexto
 
 /**
@@ -20,18 +21,17 @@ import com.example.musicapp.styles.estiloTexto
  * @function
  */
 @Composable
-fun MusicBandScreenPage(modifier: Modifier=Modifier) {
+fun ElectronicArtScreen(modifier: Modifier=Modifier) {
 
 
-        LazyRowComponent()
-
+    LazyRowComponentElectronics()
 
     Row {
-        MusicBandScreenContent()
+        ElectronicArtistContent()
     }
 }
 @Composable
-fun MusicBandScreenContent(){
+fun ElectronicArtistContent(){
 
     Box {
         Column (modifier = Modifier.padding(20.dp, 360.dp))
@@ -40,7 +40,7 @@ fun MusicBandScreenContent(){
                 autoSize = TextAutoSize.StepBased(maxFontSize = 16.sp),
                 maxLines = 50,
                 style = estiloTexto,
-                text = "Industrial:\n" +
+                text = "Electrónica:\n" +
                         "un género de música electrónica/experimental que hace uso de temas transgresivos " +
                         "y suele estar asociada con angustia e ira contraculturales. " +
                         "Aunque ideológicamente asociada al punk, la música industrial es generalmente" +
@@ -59,6 +59,6 @@ fun MusicBandScreenContent(){
 
 @Preview
 @Composable
-fun MusicBandPreviewPage(){
-        MusicBandScreenPage()
+fun ElectronicArtistContentPreviewPage(){
+    ElectronicArtScreen()
 }
