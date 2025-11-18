@@ -21,7 +21,7 @@ import com.example.musicapp.styles.estiloTexto
  * @function
  */
 @Composable
-fun ElectronicArtScreen(modifier: Modifier=Modifier) {
+fun ElectronicArtScreen(modifier: Modifier = Modifier) {
 
 
     LazyRowComponentElectronics()
@@ -30,26 +30,29 @@ fun ElectronicArtScreen(modifier: Modifier=Modifier) {
         ElectronicArtistContent()
     }
 }
+
 @Composable
-fun ElectronicArtistContent(){
+fun ElectronicArtistContent() {
 
     Box {
-        Column (modifier = Modifier.padding(20.dp, 360.dp))
+        Column(modifier = Modifier.padding(20.dp, 360.dp))
         {
             Text(
                 autoSize = TextAutoSize.StepBased(maxFontSize = 16.sp),
-                maxLines = 50,
+                maxLines = 30,
                 style = estiloTexto,
-                text = "Electrónica:\n" +
-                        "un género de música electrónica/experimental que hace uso de temas transgresivos " +
-                        "y suele estar asociada con angustia e ira contraculturales. " +
-                        "Aunque ideológicamente asociada al punk, la música industrial es generalmente" +
-                        " más compleja y diversa, tanto a nivel sonoro como lírico. " +
-                        "El término fue acuñado hacia mediados de los años 1970 a raíz " +
-                        "de la fundación de Industrial Records por la banda de Yorkshire (Inglaterra)" +
-                        " Throbbing Gristle y con la creación del eslogan irónico " +
-                        "industrial music for industrial people (en castellano, música industrial " +
-                        "para gente industrial)\n"
+                text = "Electrónica experimental:\n" +
+                        "Intelligent dance music(IDM; en inglés:música inteligente de baile)" +
+                        "es un género de música electrónica que surgió a principios de los años 1990." +
+                        " Su creación estuvo influenciada por los avances de la música " +
+                        "dance underground, tales como el Detroit techno y varios estilos breakbeat " +
+                        "que estaban emergiendo en el Reino Unido en esa época. " +
+                        "Estilísticamente, IDM tendía a basarse en la experimentación individualista," +
+                        " en lugar de adherirse a características musicales asociadas " +
+                        "a géneros específicos de la música de baile." +
+                        " La gama de estilos post-techno que emergieron a principios" +
+                        " de la década de 1990 fueron descritos de maneras diversas, como art techno," +
+                        "ambient techno, intelligent techno y electronica."
 
             )
         }
@@ -59,6 +62,6 @@ fun ElectronicArtistContent(){
 
 @Preview
 @Composable
-fun ElectronicArtistContentPreviewPage(){
+fun ElectronicArtistContentPreviewPage() {
     ElectronicArtScreen()
 }

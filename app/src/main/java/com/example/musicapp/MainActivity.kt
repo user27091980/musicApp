@@ -16,6 +16,7 @@ import com.example.musicapp.myComponents.TopBar
 import com.example.musicapp.pages.DiscographyScreenPage
 import com.example.musicapp.pages.ElectronicArtScreen
 import com.example.musicapp.pages.IndustrialBandScreenPage
+import com.example.musicapp.pages.StonerScreen
 import com.example.musicapp.pages.UserInfoScreenPage
 import com.example.musicapp.ui.theme.MusicAppTheme
 
@@ -42,7 +43,8 @@ class MainActivity : ComponentActivity() {
                         //MainScreenPage(modifier=Modifier.padding(innerPadding))
                         //IndustrialBandScreenPage(modifier=Modifier.padding(innerPadding))
                         //ElectronicArtScreen(modifier=Modifier.padding(innerPadding))
-                        UserInfoScreenPage(modifier=Modifier.padding(innerPadding))
+                        StonerScreen(modifier=Modifier.padding(innerPadding))
+                        //UserInfoScreenPage(modifier=Modifier.padding(innerPadding))
                         //DiscographyScreenPage(modifier=Modifier.padding(innerPadding))
                     }
                 )
@@ -61,10 +63,11 @@ fun MusicAppPreviewPage() {
         //SplashScreenPage()
         //LoginScreenPage()
         //RegisterScreenPage()
+        StonerScreen()
         //MainScreenPage()
         //MusicBandScreenPage()
         //ElectronicArtScreen()
-        UserInfoScreenPage()
+        //UserInfoScreenPage()
         //DiscographyScreenPage()
     }
 }
