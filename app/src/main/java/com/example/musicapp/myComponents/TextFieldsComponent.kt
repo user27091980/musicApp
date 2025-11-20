@@ -1,6 +1,5 @@
 package com.example.musicapp.myComponents
 
-import android.R.attr.password
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
@@ -30,7 +29,7 @@ Se encarga de gestionar los TextFields y añadir sus etiquetas
 @Composable
 fun TextFieldsComponent() {
 
-    Column() {
+    Column{
         TextFieldUserComponent()
         TextFieldPassComponent()
         TextFieldEmailComponent()
@@ -106,7 +105,6 @@ fun TextFieldEmailComponent() {
         singleLine = true,
         label = {
             Text("email")
-
         }
     )
 }
