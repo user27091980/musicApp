@@ -45,7 +45,7 @@ fun TopBar() {
                 .background(MaterialTheme.colorScheme.background),
             contentAlignment = Alignment.Center
         ) {
-            IconButton(onClick = { isExpanded=true}) {
+            IconButton(onClick = { isExpanded = true }) {
 
                 Icon(
                     imageVector = Icons.Default.Menu,
@@ -60,7 +60,7 @@ fun TopBar() {
             topBar conoce la variable isExpanded es la que se encarga de la acción, acto seguido simplemente
             en la fun dropMenu invocamos al dismiss request
             */
-            DropMenu(extended=isExpanded, { isExpanded = false})
+            DropMenu(extended = isExpanded, { isExpanded = false })
 
         }
     }
@@ -76,11 +76,12 @@ fun TopBar() {
 @Composable
 fun DropMenu(extended: Boolean, dismissRequest: () -> Unit) {
 
-    Column(Modifier.padding(8.dp)) {
+    Column(Modifier.padding()) {
         Box(
             modifier = Modifier
                 .fillMaxWidth()
                 .wrapContentSize(Alignment.TopEnd)
+
         ) {
             IconButton(onClick = { }) {
 
@@ -88,13 +89,13 @@ fun DropMenu(extended: Boolean, dismissRequest: () -> Unit) {
             DropdownMenu(
                 extended,
                 onDismissRequest = dismissRequest
-            ){
+            ) {
 
                 DropdownMenuItem(
                     text = { Text(text = "inicio") },
                     onClick = { })
                 DropdownMenuItem(
-                    text = { Text(text = "pérfil") },
+                    text = { Text(text = "más discos") },
                     onClick = { })
                 DropdownMenuItem(
                     text = { Text(text = "exit") },

@@ -9,9 +9,9 @@ import androidx.compose.runtime.*
 import com.example.musicapp.data.BottomItems
 
 /**
-* @author: Perfecto
-* @function
-*/
+ * @author: Perfecto
+ * @function
+ */
 /*
 Función que se encarga de la barra inferior(BottomBar), con sus correspondientes iconos
 guardados en una lista denominada como items.

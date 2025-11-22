@@ -29,7 +29,7 @@ Se encarga de gestionar los TextFields y añadir sus etiquetas
 @Composable
 fun TextFieldsComponent() {
 
-    Column{
+    Column {
         TextFieldUserComponent()
         TextFieldPassComponent()
         TextFieldEmailComponent()

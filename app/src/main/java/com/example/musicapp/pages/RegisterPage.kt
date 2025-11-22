@@ -28,13 +28,6 @@ import com.example.musicapp.styles.imageModifier
 fun RegisterScreenPage(){
 
     Box (Modifier.fillMaxSize()){
-
-        Image(
-            painter = painterResource(com.example.musicapp.R.drawable.portrait),
-            contentDescription = "",
-            modifier = imageModifier,
-            contentScale = ContentScale.Crop)
-
         Column(Modifier.padding(30.dp,200.dp),
             verticalArrangement = Arrangement.SpaceAround
         ) {

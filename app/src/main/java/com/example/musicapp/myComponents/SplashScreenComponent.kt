@@ -14,7 +14,7 @@ import com.example.musicapp.styles.imageModifier
  * @function
  */
 @Composable
-fun SplashScreenComponent(){
+fun SplashScreenComponent() {
 
     Box {
 
@@ -22,7 +22,8 @@ fun SplashScreenComponent(){
             painter = painterResource(R.drawable.portrait),
             contentDescription = "",
             modifier = imageModifier,
-            contentScale = ContentScale.Crop)
+            contentScale = ContentScale.Crop
+        )
 
     }
 }

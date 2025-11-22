@@ -1,6 +1,8 @@
 package com.example.musicapp.styles
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -41,4 +43,24 @@ val imageModifier = Modifier
     .fillMaxHeight()
     .fillMaxWidth()
     .size(100.dp)
+
+
+
+val boxModifier = Modifier
+    .background(color = Color.Transparent)
+    .fillMaxSize()
+    .padding(5.dp, 100.dp, 5.dp, 100.dp)
+
+val colModifier =  Modifier
+    .padding(20.dp,110.dp,20.dp,110.dp)
+
+val rowModifier = Modifier.padding(1.dp,5.dp,1.dp,375.dp)
+
+val anotherRowMod= Modifier.padding(5.dp,500.dp,5.dp,5.dp)
+
+val cardModifier = Modifier
+    .size(width = 250.dp, height = 65.dp)
+    .background(color = Color.Transparent)
+    .padding(20.dp)
+
 
