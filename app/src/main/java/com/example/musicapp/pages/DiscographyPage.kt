@@ -22,7 +22,6 @@ fun DiscographyScreenPage(modifier: Modifier=Modifier){
             GridViewComponent()
         }
     }
-
 }
 
 @Preview

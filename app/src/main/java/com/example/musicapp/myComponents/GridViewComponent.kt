@@ -29,7 +29,7 @@ import com.example.musicapp.styles.imageModifier
  etc
  */
 @Composable
-fun ImagesAlbumsList(albumsList:List<AlbumsId>, modifier: Modifier=Modifier){
+fun ImagesAlbumsList(albumsList: List<AlbumsId>, modifier: Modifier = Modifier) {
 
     LazyVerticalGrid(
         columns = GridCells.Fixed(4),
@@ -37,24 +37,25 @@ fun ImagesAlbumsList(albumsList:List<AlbumsId>, modifier: Modifier=Modifier){
         horizontalArrangement = Arrangement.spacedBy(1.dp),
         verticalArrangement = Arrangement.spacedBy(1.dp),
 
-    ) {
+        ) {
 
-            items(albumsList) {
+        items(albumsList) {
 
-                albumsId -> ImagesAlbums(
+                albumsId ->
+            ImagesAlbums(
 
                 albumsId = albumsId,
-                    //añadir clickable
+                //añadir clickable
 
-                )
-            }
+            )
+        }
     }
 }
 
 
 //función que se encarga de la gestión de las imágenes en cuanto a carcterísticas visuales
 @Composable
-fun ImagesAlbums(albumsId: AlbumsId){
+fun ImagesAlbums(albumsId: AlbumsId) {
 
     Box() {
         Image(
@@ -66,9 +67,10 @@ fun ImagesAlbums(albumsId: AlbumsId){
         )
     }
 }
+
 //se encarga de recoger
 @Composable
-fun GridViewComponent(){
+fun GridViewComponent() {
 
     ImagesAlbumsList(albumsList = DatasourceAlbumsPics().loadAlbumsBands())
 

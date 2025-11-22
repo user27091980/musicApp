@@ -13,13 +13,14 @@ class DatasourceMainScreenPics() {
 
         return listOf(
 
-            ImagesId(R.drawable.metal),
-            ImagesId(R.drawable._020dischordbandcamp_web),
-            ImagesId(R.drawable.world_trade_center_gettyimages_97280582),
-            ImagesId (R.drawable.synthesizer_3296626458),
-            ImagesId (R.drawable.cactus_widescreen_wallpaper),
-            ImagesId(R.drawable._84856),
-            ImagesId(R.drawable.thumb_1920_891206)
+            ImagesId(R.drawable.a1664460568_10),
+            ImagesId(R.drawable.kyuss),
+            ImagesId(R.drawable.autechre_tree1),
+            ImagesId( R.drawable.nine_inch_nails_reunite_2000x1500),
+            ImagesId(R.drawable.boards_20of_20canada_20new_20mix_20warp),
+            ImagesId(R.drawable.venetiansnares)
+
+
 
         )
     }

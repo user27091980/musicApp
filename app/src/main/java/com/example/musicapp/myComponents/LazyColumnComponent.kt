@@ -19,13 +19,14 @@ import com.example.musicapp.data.ImagesId
 //Función que recorrerá el DataSourcesPics le pasamos un modifier y una lista por parámetro
 
 @Composable
-fun ImagesList(imagesList:List<ImagesId>,modifier: Modifier=Modifier){
+fun ImagesList(imagesList: List<ImagesId>, modifier: Modifier = Modifier) {
 
-    LazyColumn(modifier=modifier) {
+    LazyColumn(modifier = modifier) {
 
-        items(imagesList){
+        items(imagesList) {
 
-            imagesId ->Images(
+                imagesId ->
+            Images(
                 imagesId = imagesId,
                 //añadir clickable
 
@@ -34,6 +35,7 @@ fun ImagesList(imagesList:List<ImagesId>,modifier: Modifier=Modifier){
     }
 
 }
+
 /**
  * @author="Andrés"
  * @param
@@ -42,7 +44,7 @@ fun ImagesList(imagesList:List<ImagesId>,modifier: Modifier=Modifier){
 //creamos la función imagen para poder acceder a ellas y poder realizar el contenscale
 //pasamos como parámetro un imagesId
 @Composable
-fun Images(imagesId: ImagesId){
+fun Images(imagesId: ImagesId) {
     Box() {
         Image(
             painter = painterResource(imagesId.imageResourceId),
@@ -51,15 +53,16 @@ fun Images(imagesId: ImagesId){
         )
     }
 }
+
 /**
-* @author="Andrés"
-* @param
-* @function
-*/
+ * @author="Andrés"
+ * @param
+ * @function
+ */
 //a esta función le mandamos la función ImagesList se crea un imagesList para
 //que recorra el DataSourcesPics.
 @Composable
-fun LazyColumnComponent(){
+fun LazyColumnComponent() {
 
     ImagesList(imagesList = DatasourceMainScreenPics().LoadImagesId())
 

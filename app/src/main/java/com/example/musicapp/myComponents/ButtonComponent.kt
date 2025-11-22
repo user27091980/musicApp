@@ -18,19 +18,23 @@ import com.example.musicapp.styles.estiloTextoBotones
 //Componentes botones de todo el programa.
 //boton login
 @Composable
-fun ButtonLogin(modifer: Modifier =Modifier){
+fun ButtonLogin(modifer: Modifier = Modifier) {
 
-    Button(onClick = {},
-            colors = ButtonDefaults.buttonColors(
-            containerColor = MaterialTheme.colorScheme.surface)
+    Button(
+        onClick = {},
+        colors = ButtonDefaults.buttonColors(
+            containerColor = MaterialTheme.colorScheme.surface
+        )
     )
     {
 
-       Text(text = stringResource(R.string.boton_login),
-           style = estiloTextoBotones,
-           )
+        Text(
+            text = stringResource(R.string.boton_login),
+            style = estiloTextoBotones,
+        )
     }
 }
+
 /**
  * @author perfecto
  * @function
@@ -38,18 +42,21 @@ fun ButtonLogin(modifer: Modifier =Modifier){
  */
 //boton para el registro
 @Composable
-fun ButtonRegister(modifer: Modifier =Modifier){
+fun ButtonRegister(modifer: Modifier = Modifier) {
 
     Button(
         onClick = {},
         colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.surface
-            )
-    ){
-        Text(text = stringResource(R.string.boton_register),
-            style = estiloTextoBotones)
+        )
+    ) {
+        Text(
+            text = stringResource(R.string.boton_register),
+            style = estiloTextoBotones
+        )
     }
 }
+
 /**
  * @author perfecto
  * @function
@@ -57,18 +64,21 @@ fun ButtonRegister(modifer: Modifier =Modifier){
  */
 //botón para aceptar
 @Composable
-fun ButtonAcept(modifer: Modifier =Modifier){
+fun ButtonAcept(modifer: Modifier = Modifier) {
 
     Button(
         onClick = {},
         colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.surface
         )
-    ){
-        Text(text = stringResource(R.string.boton_aceptar),
-            style = estiloTextoBotones)
+    ) {
+        Text(
+            text = stringResource(R.string.boton_aceptar),
+            style = estiloTextoBotones
+        )
     }
 }
+
 /**
  * @author perfecto
  * @function
@@ -76,16 +86,18 @@ fun ButtonAcept(modifer: Modifier =Modifier){
  */
 //botón de cancelación
 @Composable
-fun ButtonCancel(modifer: Modifier =Modifier){
+fun ButtonCancel(modifer: Modifier = Modifier) {
 
     Button(
         onClick = {},
         colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.surface
         )
-    ){
-        Text(text = stringResource(R.string.boton_cancelar),
-            style = estiloTextoBotones)
+    ) {
+        Text(
+            text = stringResource(R.string.boton_cancelar),
+            style = estiloTextoBotones
+        )
     }
 }
 

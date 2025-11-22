@@ -11,8 +11,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.example.musicapp.data.DatasourceElectronicBandsPics
-import com.example.musicapp.data.ElectBandsId
+import com.example.musicapp.data.AlbumsId
+import com.example.musicapp.data.DatasourceAePics
+import com.example.musicapp.data.DatasourceMainScreenPics
+import com.example.musicapp.data.ImagesId
+import com.example.musicapp.styles.imageModifier
 
 /**
  * @author="Andrés"
@@ -25,16 +28,17 @@ Componente LazyRow recoge las imagnes de la listas de el paquete data de las cla
 y DataSourceElectronicBandPics para poder añadirlas a la fila.
  */
 @Composable
-fun ImagesElectronicList(electronicList: List<ElectBandsId>, modifier: Modifier = Modifier) {
+fun ImagesAeList(aeList: List<AlbumsId>, modifier: Modifier = Modifier) {
 
-    LazyRow(modifier = modifier.padding(5.dp, 75.dp)) {
+    LazyRow() {
 
-        items(electronicList) {
+        items(aeList) {
 
-                electronicsBandsId ->
-            ImagesElectronic(
+                albumsId ->
+            ImagesAe(
 
-                electronicsId = electronicsBandsId,
+                albumsId = albumsId,
+                //añadir clickable
 
                 )
         }
@@ -51,15 +55,11 @@ Recoge los ids de ElectBandsId para poder configurar esas imágenes dentro de ca
 del lazyRow
  */
 @Composable
-fun ImagesElectronic(electronicsId: ElectBandsId) {
-
-    val imageModifier = Modifier
-        .size(300.dp)
-
+fun ImagesAe(albumsId: AlbumsId) {
 
     Box() {
         Image(
-            painter = painterResource(electronicsId.electResourceId),
+            painter = painterResource(albumsId.discsResourceId),
             contentDescription = "",
             contentScale = ContentScale.FillWidth,
             modifier = imageModifier
@@ -74,8 +74,8 @@ fun ImagesElectronic(electronicsId: ElectBandsId) {
 //a esta función le mandamos la función ImagesList se crea un imagesList para
 //que recorra el DataSourcesPics.
 @Composable
-fun LazyRowComponentElectronics() {
+fun LazyRowComponentAe() {
 
-    ImagesElectronicList(electronicList = DatasourceElectronicBandsPics().LoadElectronicBands())
+    ImagesAeList(aeList = DatasourceAePics().loadAlbumsAe())
 
 }
