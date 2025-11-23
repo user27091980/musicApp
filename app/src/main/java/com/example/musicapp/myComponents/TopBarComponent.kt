@@ -37,13 +37,13 @@ fun TopBar() {
         mutableStateOf(false)
     }
     Row(modifier = Modifier.fillMaxSize()) {
-        //cuenta
+
         Box(
             modifier = Modifier
                 .fillMaxSize()
                 .wrapContentSize(align = Alignment.TopStart)
                 .background(MaterialTheme.colorScheme.background),
-            contentAlignment = Alignment.Center
+            contentAlignment = Alignment.TopStart
         ) {
             IconButton(onClick = { isExpanded = true }) {
 
@@ -80,7 +80,7 @@ fun DropMenu(extended: Boolean, dismissRequest: () -> Unit) {
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .wrapContentSize(Alignment.TopEnd)
+                .wrapContentSize(Alignment.TopCenter)
 
         ) {
             IconButton(onClick = { }) {
