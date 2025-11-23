@@ -23,14 +23,16 @@ val estiloTexto = TextStyle(
 
     fontSize = 15.sp,
     textAlign = TextAlign.Center,
-    color = Color.White
+
 )
 //value para el etilo de texto en los botones
 val estiloTextoBotones = TextStyle(
 
     fontSize = 15.sp,
     textAlign = TextAlign.Center,
-    color = Color.LightGray)
+    color = Color.LightGray
+
+)
 
 //value para el tamñao y orientación del boton de Login
 val botonLogin = Modifier.padding(start=270.dp,top=640.dp)
@@ -44,10 +46,8 @@ val imageModifier = Modifier
     .fillMaxWidth()
     .size(100.dp)
 
-
-
 val boxModifier = Modifier
-    .background(color = Color.Transparent)
+
     .fillMaxSize()
     .padding(5.dp, 100.dp, 5.dp, 100.dp)
 
@@ -59,8 +59,7 @@ val rowModifier = Modifier.padding(1.dp,5.dp,1.dp,375.dp)
 val anotherRowMod= Modifier.padding(5.dp,500.dp,5.dp,5.dp)
 
 val cardModifier = Modifier
-    .size(width = 250.dp, height = 65.dp)
-    .background(color = Color.Transparent)
+    .size(width = 275.dp, height = 75.dp)
     .padding(20.dp)
 
 
