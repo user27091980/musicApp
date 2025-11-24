@@ -4,6 +4,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
@@ -30,21 +31,19 @@ fun LoginScreenPage() {
     Box(Modifier
         .background(MaterialTheme.colorScheme.onBackground)
     ){
-        Image(
-            painter = painterResource(R.drawable.portrait),
-            contentDescription = "",
-            modifier = imageModifier,
-            contentScale = ContentScale.Crop)
 
-        Column(modifier=Modifier
-            .padding(160.dp,350.dp)
+
+        Row(modifier=Modifier
+            .padding(150.dp,350.dp)
         ){
-
 
             ButtonLogin(botonLogin)
 
-            ButtonRegister(botonRegister)
 
+        }
+        Row(modifier=Modifier
+            .padding(141.dp,400.dp)){
+            ButtonRegister(botonRegister)
         }
     }
 }

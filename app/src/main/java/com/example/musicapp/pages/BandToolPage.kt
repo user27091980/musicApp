@@ -9,25 +9,26 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.musicapp.R
-import com.example.musicapp.myComponents.LazyRowComponentKyuss
+import com.example.musicapp.myComponents.LazyRowComponentTool
 import com.example.musicapp.styles.anotherRowMod
 import com.example.musicapp.styles.boxModifier
 import com.example.musicapp.styles.rowModifier
 
 @Composable
-fun BandKyuss(modifier: Modifier = Modifier) {
+fun BandTool(modifier: Modifier = Modifier) {
 
     Box(boxModifier) {
         Row(rowModifier) {
             Image(
-                painter = painterResource(R.drawable._98_logo),
+                painter = painterResource(R.drawable._72c6afb9c9fe878a6fa0796dcc74648),
                 contentDescription = "",
                 contentScale = ContentScale.Inside,
-            )
-        }
-        Row(anotherRowMod) {
 
-            LazyRowComponentKyuss()
+                )
+        }
+        Row(anotherRowMod){
+
+            LazyRowComponentTool()
 
         }
     }
@@ -35,6 +36,6 @@ fun BandKyuss(modifier: Modifier = Modifier) {
 
 @Preview
 @Composable
-fun BandKyussPrev() {
-    BandKyuss()
+fun BandToolPrev() {
+    BandTool()
 }

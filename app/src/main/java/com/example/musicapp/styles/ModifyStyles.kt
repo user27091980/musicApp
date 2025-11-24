@@ -28,7 +28,7 @@ val estiloTexto = TextStyle(
 //value para el etilo de texto en los botones
 val estiloTextoBotones = TextStyle(
 
-    fontSize = 15.sp,
+    fontSize = 14.sp,
     textAlign = TextAlign.Center,
     color = Color.LightGray
 
@@ -36,10 +36,10 @@ val estiloTextoBotones = TextStyle(
 
 //value para el tamñao y orientación del boton de Login
 val botonLogin = Modifier.padding(start=270.dp,top=640.dp)
-    .size(width=150.dp, height = 30.dp)
+    .size(width=200.dp, height = 30.dp)
 //value para el tamñao y orientación del boton de Registro
 val botonRegister = Modifier.padding(start=275.dp,top=650.dp)
-    .size(width=175.dp, height = 30.dp)
+    .size(width=200.dp, height = 30.dp)
 
 val imageModifier = Modifier
     .fillMaxHeight()
