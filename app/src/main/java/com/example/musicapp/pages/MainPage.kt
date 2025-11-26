@@ -11,14 +11,15 @@ import com.example.musicapp.myComponents.LazyColumnComponent
  * @function
  */
 @Composable
-fun MainScreenPage(modifier: Modifier=Modifier){
+fun MainScreenPage(modifier: Modifier = Modifier) {
 
-        LazyColumnComponent()
+    LazyColumnComponent()
 
 }
+
 @Preview
 @Composable
-fun MainPreviewPage(){
+fun MainPreviewPage() {
 
     MainScreenPage()
 

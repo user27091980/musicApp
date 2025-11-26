@@ -31,9 +31,9 @@ fun BandAe(modifier: Modifier = Modifier) {
                 contentDescription = "",
                 contentScale = ContentScale.Inside,
 
-            )
+                )
         }
-        Row(anotherRowMod){
+        Row(anotherRowMod) {
 
             LazyRowComponentAe()
 

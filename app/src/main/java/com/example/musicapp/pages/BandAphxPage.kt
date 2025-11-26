@@ -25,7 +25,7 @@ fun BandAphx(modifier: Modifier = Modifier) {
                 contentScale = ContentScale.Inside,
             )
         }
-        Row(anotherRowMod){
+        Row(anotherRowMod) {
 
             LazyRowComponentAphx()
 

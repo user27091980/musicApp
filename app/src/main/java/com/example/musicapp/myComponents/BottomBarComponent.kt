@@ -6,7 +6,9 @@ import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.ui.res.stringResource
 import com.example.musicapp.data.BottomItems
+import com.example.musicapp.R
 
 /**
  * @author: Perfecto
@@ -16,15 +18,15 @@ import com.example.musicapp.data.BottomItems
 Función que se encarga de la barra inferior(BottomBar), con sus correspondientes iconos
 guardados en una lista denominada como items.
  */
-
+// TODO("INTRODUCIR STRINGRESOURCES")
 @Composable
 fun BottomBar() {
     var selectedItem by remember { mutableStateOf(0) }
 
     val items = listOf(
-        BottomItems.BottomBarItem("Inicio", Icons.Default.Home),
-        BottomItems.BottomBarItem("Buscar", Icons.Default.Search),
-        BottomItems.BottomBarItem("Perfil", Icons.Default.Person)
+        BottomItems.BottomBarItem(label = stringResource(R.string.inicio), Icons.Default.Home),
+        BottomItems.BottomBarItem(label = stringResource(R.string.buscar), Icons.Default.Search),
+        BottomItems.BottomBarItem(label = stringResource(R.string.perfil), Icons.Default.Person)
     )
 //barrra de navegación.
     NavigationBar(

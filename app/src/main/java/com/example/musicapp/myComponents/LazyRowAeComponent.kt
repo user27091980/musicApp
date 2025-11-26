@@ -40,7 +40,7 @@ fun ImagesAeList(aeList: List<AlbumsId>, modifier: Modifier = Modifier) {
                 albumsId = albumsId,
                 //añadir clickable
 
-                )
+            )
         }
     }
 }

@@ -27,11 +27,11 @@ fun BandBoc(modifier: Modifier = Modifier) {
                 contentScale = ContentScale.Inside,
             )
         }
-        Row{
+        Row {
 
             //Text()
         }
-        Row(anotherRowMod){
+        Row(anotherRowMod) {
 
             LazyRowComponentBoc()
 

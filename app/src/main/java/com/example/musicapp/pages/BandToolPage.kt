@@ -26,7 +26,7 @@ fun BandTool(modifier: Modifier = Modifier) {
 
                 )
         }
-        Row(anotherRowMod){
+        Row(anotherRowMod) {
 
             LazyRowComponentTool()
 

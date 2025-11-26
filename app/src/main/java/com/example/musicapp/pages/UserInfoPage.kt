@@ -13,7 +13,7 @@ import com.example.musicapp.myComponents.UserCardsComponents
  * @function
  */
 @Composable
-fun UserInfoScreenPage(modifier: Modifier=Modifier) {
+fun UserInfoScreenPage(modifier: Modifier = Modifier) {
 
     Row {
         UserCardsComponents(

@@ -13,6 +13,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+
 /**
  * @author="Andrés"
  * @param
@@ -24,22 +25,26 @@ val estiloTexto = TextStyle(
     fontSize = 15.sp,
     textAlign = TextAlign.Center,
 
-)
+    )
+
 //value para el etilo de texto en los botones
 val estiloTextoBotones = TextStyle(
 
     fontSize = 14.sp,
     textAlign = TextAlign.Center,
-    color = Color.LightGray
+    color = Color.Black
 
 )
 
 //value para el tamñao y orientación del boton de Login
-val botonLogin = Modifier.padding(start=270.dp,top=640.dp)
-    .size(width=200.dp, height = 30.dp)
+val botonLogin = Modifier
+    .padding(start = 270.dp, top = 640.dp)
+    .size(width = 200.dp, height = 30.dp)
+
 //value para el tamñao y orientación del boton de Registro
-val botonRegister = Modifier.padding(start=275.dp,top=650.dp)
-    .size(width=200.dp, height = 30.dp)
+val botonRegister = Modifier
+    .padding(start = 275.dp, top = 650.dp)
+    .size(width = 200.dp, height = 30.dp)
 
 val imageModifier = Modifier
     .fillMaxHeight()
@@ -51,12 +56,14 @@ val boxModifier = Modifier
     .fillMaxSize()
     .padding(5.dp, 100.dp, 5.dp, 100.dp)
 
-val colModifier =  Modifier
-    .padding(20.dp,110.dp,20.dp,110.dp)
+val colModifier = Modifier
+    .padding(20.dp, 110.dp, 20.dp, 110.dp)
 
-val rowModifier = Modifier.padding(1.dp,5.dp,1.dp,375.dp)
+val rowModifier = Modifier
+    .padding(1.dp, 5.dp, 1.dp, 375.dp)
 
-val anotherRowMod= Modifier.padding(5.dp,500.dp,5.dp,5.dp)
+val anotherRowMod = Modifier
+    .padding(5.dp, 500.dp, 5.dp, 5.dp)
 
 val cardModifier = Modifier
     .size(width = 275.dp, height = 75.dp)

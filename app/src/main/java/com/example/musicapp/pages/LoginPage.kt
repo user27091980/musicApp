@@ -29,7 +29,7 @@ import com.example.musicapp.styles.imageModifier
 fun LoginScreenPage() {
 
     Box(Modifier
-        .background(MaterialTheme.colorScheme.onBackground)
+        .background(MaterialTheme.colorScheme.background)
     ){
 
 
