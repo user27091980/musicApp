@@ -17,8 +17,10 @@ import com.example.musicapp.pages.BandAe
 import com.example.musicapp.pages.BandBoc
 import com.example.musicapp.pages.BandKyuss
 import com.example.musicapp.pages.BandTool
+import com.example.musicapp.pages.LoginScreenPage
 import com.example.musicapp.pages.MainScreenPage
 import com.example.musicapp.pages.RegisterScreenPage
+import com.example.musicapp.pages.SplashScreenPage
 import com.example.musicapp.pages.UserInfoScreenPage
 import com.example.musicapp.ui.theme.MusicAppTheme
 
@@ -46,13 +48,12 @@ class MainActivity : ComponentActivity() {
                         //BandAphx(modifier=Modifier.padding(innerPadding))
                         //BandBoc(modifier=Modifier.padding(innerPadding))
                         //BandKyuss(modifier=Modifier.padding(innerPadding))
-                        BandTool(modifier=Modifier.padding(innerPadding))
-                        //UserInfoScreenPage(modifier=Modifier.padding(innerPadding))
-                        //DiscographyScreenPage(modifier=Modifier.padding(innerPadding))
+                        //BandTool(modifier=Modifier.padding(innerPadding))
+                        //UserInfoScreenPage(modifier = Modifier.padding(innerPadding))
                     }
                 )
                 //SplashScreenPage()
-                //RegisterScreenPage()
+                RegisterScreenPage()
                 //LoginScreenPage()
             }
         }
@@ -65,16 +66,14 @@ fun MusicAppPreviewPage() {
     MusicAppTheme {
         //SplashScreenPage()
         //LoginScreenPage()
-        //RegisterScreenPage()
+        RegisterScreenPage()
         //MainScreenPage()
         //BandAe()
         //BandAphx()
         //BandBoc()
         //BandKyuss()
-        BandTool()
-        //DiscographyScreenPage()
+        //BandTool()
         //UserInfoScreenPage()
-
     }
 }
 

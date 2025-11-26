@@ -25,18 +25,20 @@ import com.example.musicapp.styles.imageModifier
  */
 @Composable
 
-fun RegisterScreenPage(){
+fun RegisterScreenPage() {
 
-    Box (Modifier.fillMaxSize()){
-        Column(Modifier.padding(30.dp,200.dp),
+    Box(Modifier.fillMaxSize()) {
+        Column(
+            Modifier.padding(30.dp, 200.dp),
             verticalArrangement = Arrangement.SpaceAround
         ) {
             TextFieldsComponent()
         }
 
-        Row(Modifier.padding(89.dp,400.dp),
-            horizontalArrangement =Arrangement.SpaceAround,
-            ) {
+        Row(
+            Modifier.padding(89.dp, 400.dp),
+            horizontalArrangement = Arrangement.SpaceAround,
+        ) {
             ButtonAcept()
             ButtonCancel()
         }
@@ -46,6 +48,6 @@ fun RegisterScreenPage(){
 
 @Preview
 @Composable
-fun RegPreview(){
+fun RegPreview() {
     RegisterScreenPage()
 }

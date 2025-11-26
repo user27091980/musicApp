@@ -1,18 +1,24 @@
 <resources>
-    
-
-    <string name="null_software">null software</string>
-    <string name="app_name">music_app</string>
-    <string name="music_app">music app</string>
+    <string name="app_name">music</string>
+    <string name="boton_aceptar">aceptar</string>
+    <string name="boton_cancelar">cancelar</string>
     <string name="boton_login">login</string>
     <string name="boton_register">register</string>
     <string name="skip">skip</string>
     <string name="top_bar">top bar</string>
-    <string name="boton_aceptar">aceptar</string>
-    <string name="boton_cancelar">cancelar</string>
     <string name="menu_discos">discos</string>
     <string name="menu_inicio">inicio</string>
     <string name="menu_configuracion">configuración</string>
     <string name="menu_salir">salir</string>
+    <string name="perfil">Pérfil de usuario:</string>
+    <string name="usuario">usuario</string>
+    <string name="email">email</string>
+    <string name="nombre">nombre completo</string>
+    <string name="ciudad">ciudad</string>
+    <string name="pais">país</string>
+    <string name="inicio">inicio</string>
+    <string name="buscar">búsqueda</string>
+    <string name="salir">salir</string>
+    <string name="links">links</string>
 
 </resources>

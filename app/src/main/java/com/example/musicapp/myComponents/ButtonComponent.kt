@@ -23,7 +23,7 @@ fun ButtonLogin(modifer: Modifier = Modifier) {
     Button(
         onClick = {},
         colors = ButtonDefaults.buttonColors(
-            containerColor = MaterialTheme.colorScheme.surface
+            containerColor = MaterialTheme.colorScheme.primary
         )
     )
     {
@@ -47,7 +47,7 @@ fun ButtonRegister(modifer: Modifier = Modifier) {
     Button(
         onClick = {},
         colors = ButtonDefaults.buttonColors(
-            containerColor = MaterialTheme.colorScheme.surface
+            containerColor = MaterialTheme.colorScheme.primary
         )
     ) {
         Text(
@@ -69,7 +69,7 @@ fun ButtonAcept(modifer: Modifier = Modifier) {
     Button(
         onClick = {},
         colors = ButtonDefaults.buttonColors(
-            containerColor = MaterialTheme.colorScheme.surface
+            containerColor = MaterialTheme.colorScheme.primary
         )
     ) {
         Text(
@@ -91,7 +91,7 @@ fun ButtonCancel(modifer: Modifier = Modifier) {
     Button(
         onClick = {},
         colors = ButtonDefaults.buttonColors(
-            containerColor = MaterialTheme.colorScheme.surface
+            containerColor = MaterialTheme.colorScheme.primary
         )
     ) {
         Text(

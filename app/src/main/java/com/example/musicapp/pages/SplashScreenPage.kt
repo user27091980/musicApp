@@ -3,7 +3,6 @@ package com.example.musicapp.pages
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.musicapp.myComponents.GridViewComponent
-import com.example.musicapp.myComponents.SplashScreenComponent
 
 /**
  * @author Perfecto
@@ -11,16 +10,16 @@ import com.example.musicapp.myComponents.SplashScreenComponent
  * @function
  */
 @Composable
-fun SplashScreenPage(){
+fun SplashScreenPage() {
 
-    //SplashScreenComponent()
     GridViewComponent()
+
 
 }
 
 @Preview
 @Composable
-fun SplashPreview(){
+fun SplashPreview() {
 
     SplashScreenPage()
 

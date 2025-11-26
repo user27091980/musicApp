@@ -23,7 +23,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
+import androidx.compose.ui.res.stringResource
+import com.example.musicapp.R
 
 /**
  * @author andres
@@ -92,13 +93,13 @@ fun DropMenu(extended: Boolean, dismissRequest: () -> Unit) {
             ) {
 
                 DropdownMenuItem(
-                    text = { Text(text = "inicio") },
+                    text = { Text(text = stringResource(R.string.inicio)) },
                     onClick = { })
                 DropdownMenuItem(
-                    text = { Text(text = "más discos") },
+                    text = { Text(text = stringResource(R.string.links)) },
                     onClick = { })
                 DropdownMenuItem(
-                    text = { Text(text = "exit") },
+                    text = { Text(text = stringResource(R.string.salir)) },
                     onClick = { })
             }
         }

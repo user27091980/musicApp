@@ -64,7 +64,7 @@ fun ImagesTool(albumsId: AlbumsId) {
 }
 
 /**
- *
+ *ws
  * @function
  */
 //a esta función le mandamos la función ImagesList se crea un imagesList para

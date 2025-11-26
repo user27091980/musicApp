@@ -10,7 +10,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import com.example.musicapp.data.AlbumsId
-import com.example.musicapp.data.DatasourceBocPics
 import com.example.musicapp.data.DatasourceKyussPics
 import com.example.musicapp.styles.imageModifier
 

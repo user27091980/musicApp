@@ -14,9 +14,11 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
+import com.example.musicapp.R
 
 /**
  * @author="Andrés"
@@ -104,7 +106,7 @@ fun TextFieldEmailComponent() {
         onValueChange = { text = it },
         singleLine = true,
         label = {
-            Text("email")
+            Text(text = stringResource(R.string.email))
         }
     )
 }
