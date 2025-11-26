@@ -34,7 +34,7 @@ fun RegisterScreenPage(){
             TextFieldsComponent()
         }
 
-        Row(Modifier.padding(100.dp,400.dp),
+        Row(Modifier.padding(89.dp,400.dp),
             horizontalArrangement =Arrangement.SpaceAround,
             ) {
             ButtonAcept()
