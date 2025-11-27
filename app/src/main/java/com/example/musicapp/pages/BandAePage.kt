@@ -23,17 +23,17 @@ import com.example.musicapp.styles.rowTextModifier
 fun BandAe(modifier: Modifier = Modifier) {
 
     Box(boxModifier) {
-        Row (rowModifier){
+        Row(rowModifier) {
             Image(
                 painter = painterResource(R.drawable.autechre_sticker),
                 contentDescription = "",
                 contentScale = ContentScale.Inside,
             )
         }
+
         Row(rowTextModifier) {
             Text(stringResource(R.string.aeText))
         }
-
         Row(rowCardModifier) {
             CardBandAeComponent()
         }
@@ -42,6 +42,7 @@ fun BandAe(modifier: Modifier = Modifier) {
         }
     }
 }
+
 
 @Preview
 @Composable
