@@ -1,3 +1,5 @@
+Enlace: https://medium.com/@akshaysarapure/intents-in-android-for-jetpack-compose-users-dc0391601b9b
+
 Intent:
 
     implicito----> no tiene una aplicación concreta, realizar una acción sin identificar
