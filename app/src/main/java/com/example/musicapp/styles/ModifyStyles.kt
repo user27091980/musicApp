@@ -24,12 +24,6 @@ val estiloTexto = TextStyle(
     textAlign = TextAlign.Center,
 
     )
-val estiloTextoCardBand = TextStyle(
-
-    fontSize = 18.sp,
-    textAlign = TextAlign.Start,
-
-    )
 
 //value para el etilo de texto en los botones
 val estiloTextoBotones = TextStyle(
@@ -62,7 +56,9 @@ val rowModifier = Modifier
     .padding(1.dp, 3.dp, 1.dp, 20.dp)
 //row para los textos
 val rowTextModifier = Modifier
-    .padding(1.dp,100.dp,1.dp,90.dp)
+    .padding(1.dp,110.dp,1.dp,90.dp)
+val rowBocTextModifier = Modifier
+    .padding(1.dp,130.dp,1.dp,90.dp)
 //row para las cards de info
 val rowCardModifier = Modifier
     .padding(10.dp, 380.dp, 10.dp, 5.dp)

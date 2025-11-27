@@ -1,0 +1,19 @@
+Intent:
+
+    implicito----> no tiene una aplicación concreta, realizar una acción sin identificar
+                    a la app que lo hace.
+
+    explicito---> llamamos por nombre y le decimos que realice una acción.
+
+    Es importante separarlos por las aplicaciones predeterminadas de cada fabricante, el explicito
+
+
+    <queires> va en AndroidManifest.xml
+
+    <queries>
+        <intent>
+            <action>
+            <data>
+        </intent>
+        </queries>
+
