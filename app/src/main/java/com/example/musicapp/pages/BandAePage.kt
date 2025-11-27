@@ -15,6 +15,7 @@ import com.example.musicapp.myComponents.CardBandComponent
 import com.example.musicapp.myComponents.LazyRowComponentAe
 import com.example.musicapp.styles.anotherRowMod
 import com.example.musicapp.styles.boxModifier
+import com.example.musicapp.styles.estiloTextoCardBand
 import com.example.musicapp.styles.rowCardModifier
 import com.example.musicapp.styles.rowModifier
 
@@ -27,13 +28,14 @@ fun BandAe(modifier: Modifier = Modifier) {
                 painter = painterResource(R.drawable.autechre_sticker),
                 contentDescription = "",
                 contentScale = ContentScale.Inside,
-
-                )
+            )
         }
         Row(rowCardModifier) {
 
             CardBandComponent(
-                Text(stringResource(R.string.aeText)))
+                estiloTextoCardBand,
+                Text(stringResource(R.string.aeText))
+            )
 
         }
         Row(anotherRowMod) {
