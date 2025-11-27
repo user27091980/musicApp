@@ -13,35 +13,32 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.musicapp.R
 import com.example.musicapp.myComponents.CardBandComponent
 import com.example.musicapp.myComponents.LazyRowComponentAe
-import com.example.musicapp.styles.anotherRowMod
+import com.example.musicapp.styles.lazyRowMod
 import com.example.musicapp.styles.boxModifier
-import com.example.musicapp.styles.estiloTextoCardBand
 import com.example.musicapp.styles.rowCardModifier
 import com.example.musicapp.styles.rowModifier
+import com.example.musicapp.styles.rowTextModifier
 
 @Composable
 fun BandAe(modifier: Modifier = Modifier) {
 
     Box(boxModifier) {
-        Row(rowModifier) {
+        Row (rowModifier){
             Image(
                 painter = painterResource(R.drawable.autechre_sticker),
                 contentDescription = "",
                 contentScale = ContentScale.Inside,
             )
         }
-        Row(rowCardModifier) {
-
-            CardBandComponent(
-                estiloTextoCardBand,
-                Text(stringResource(R.string.aeText))
-            )
-
+        Row(rowTextModifier) {
+            Text(stringResource(R.string.aeText))
         }
-        Row(anotherRowMod) {
 
+        Row(rowCardModifier) {
+            CardBandComponent(Text(stringResource(R.string.aeInfo)))
+        }
+        Row(lazyRowMod) {
             LazyRowComponentAe()
-
         }
     }
 }

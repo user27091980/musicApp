@@ -50,30 +50,34 @@ val imageModifier = Modifier
     .fillMaxWidth()
     .size(100.dp)
 
-//modificadores para elementos box, column y row
-val boxModifier = Modifier
-    .fillMaxSize()
-    .padding(5.dp, 60.dp, 5.dp, 100.dp)
-
+//modificadores para elementos box, column y row empleados para manejar los padding
 val colModifier = Modifier
     .padding(20.dp, 130.dp, 20.dp, 110.dp)
+val boxModifier = Modifier
+    .fillMaxSize()
+    .padding(5.dp, 20.dp, 5.dp, 50.dp)
 
+//row para la imagen de cabecera
 val rowModifier = Modifier
     .padding(1.dp, 3.dp, 1.dp, 20.dp)
-
+//row para los textos
+val rowTextModifier = Modifier
+    .padding(1.dp,100.dp,1.dp,90.dp)
+//row para las cards de info
 val rowCardModifier = Modifier
-    .padding(10.dp, 120.dp, 10.dp, 200.dp)
+    .padding(10.dp, 380.dp, 10.dp, 5.dp)
 
-val anotherRowMod = Modifier
-    .padding(5.dp, 500.dp, 5.dp, 5.dp)
+//row para el lazyRow
+val lazyRowMod = Modifier
+    .padding(5.dp, 600.dp, 5.dp, 5.dp)
 
 //modificadores para cards
 val cardModifier = Modifier
-    .size(width = 275.dp, height = 75.dp)
-    .padding(20.dp)
-
-val cardWithTextMod = Modifier
-    .size(width = 400.dp, height = 600.dp)
-    .padding(15.dp)
+    .size(width = 180.dp, height = 100.dp)
+    .padding(10.dp)
+//usado para la info del grupo
+val cardTextModifier = Modifier
+    .size(width = 500.dp, height = 300.dp)
+    .padding(10.dp)
 
 

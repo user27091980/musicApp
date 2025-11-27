@@ -27,11 +27,17 @@
         \nson uno de los artistas más destacados de Warp Records,
         \nun sello conocido por su pionera música electrónica y a través del cual
         \ntodos los álbumes de Autechre han sido publicados.
-        \nAunque son asociados en gran medida con el IDM (intelligent dance music),
-        \nBooth y Brown se han mostrado ambivalentes acerca de relacionar su sonido con géneros establecidos.
-        \nSu música ha exhibido un cambio gradual en estética a lo largo de su carrera,
-        \ndesde su trabajo anterior con claras raíces en el techno, house y electro,
-        \nhasta álbumes que a menudo son considerados de naturaleza experimental,
-        \nincluyendo complejos patrones de ritmo y melodías tenues.</string>
-    <string name="bocText"></string>
+        </string>
+    <string name="aeInfo">
+        Género: IDM, ambient, techno, glitch, experimental\n
+        Miembros:Sean Booth, Robert Brown\n
+        Website: http://autechre.ws/
+
+
+
+    </string>
+    <string name="bocText">
+        Boards of Canada es un dúo de música electrónica escocés,
+        \nformado por los hermanos Michael Sandison y Marcus Eoin.
+    </string>
 </resources>

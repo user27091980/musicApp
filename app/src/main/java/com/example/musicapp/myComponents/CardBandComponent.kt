@@ -2,13 +2,13 @@ package com.example.musicapp.myComponents
 
 import androidx.compose.material3.Card
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.TextStyle
-import com.example.musicapp.styles.cardWithTextMod
+import com.example.musicapp.styles.cardTextModifier
 
 @Composable
-fun CardBandComponent(modifier: TextStyle, text: Unit){
+fun CardBandComponent(text: Unit){
 
-    Card(cardWithTextMod)
-    {}
+    Card(cardTextModifier)
+    {
+
+    }
 }
