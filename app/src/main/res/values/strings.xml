@@ -4,7 +4,7 @@
     <string name="boton_cancelar">cancelar</string>
     <string name="boton_login">login</string>
     <string name="boton_register">register</string>
-    <string name="skip">skip</string>
+
     <string name="top_bar">top bar</string>
     <string name="menu_discos">discos</string>
     <string name="menu_inicio">inicio</string>
@@ -21,4 +21,15 @@
     <string name="salir">salir</string>
     <string name="links">links</string>
 
+    <string name="aeText">Autechre es un dúo de música electrónica conformado por Rob Brown y Sean Booth
+        \n,ambos provenientes de Rochdale, Gran Mánchester.Fundado en 1987,
+        \nson uno de los artistas más destacados de Warp Records,
+        \nun sello conocido por su pionera música electrónica y a través del cual
+        \ntodos los álbumes de Autechre han sido publicados.
+        \nAunque son asociados en gran medida con el IDM (intelligent dance music),
+        \nBooth y Brown se han mostrado ambivalentes acerca de relacionar su sonido con géneros establecidos.
+        \nSu música ha exhibido un cambio gradual en estética a lo largo de su carrera,
+        \ndesde su trabajo anterior con claras raíces en el techno, house y electro,
+        \nhasta álbumes que a menudo son considerados de naturaleza experimental,
+        \nincluyendo complejos patrones de ritmo y melodías tenues.[7]​ </string>
 </resources>

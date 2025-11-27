@@ -1,19 +1,19 @@
 package com.example.musicapp.styles
 
-import androidx.compose.foundation.background
+import androidx.compose.foundation.gestures.scrollable
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.material3.MaterialTheme
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-
 /**
  * @author="Andrés"
  * @param
@@ -22,7 +22,7 @@ import androidx.compose.ui.unit.sp
 //value para el estilo de texto
 val estiloTexto = TextStyle(
 
-    fontSize = 15.sp,
+    fontSize = 18.sp,
     textAlign = TextAlign.Center,
 
     )
@@ -30,21 +30,15 @@ val estiloTexto = TextStyle(
 //value para el etilo de texto en los botones
 val estiloTextoBotones = TextStyle(
 
-    fontSize = 14.sp,
+    fontSize = 15.sp,
     textAlign = TextAlign.Center,
     color = Color.Black
 
 )
 
-//value para el tamñao y orientación del boton de Login
-val botonLogin = Modifier
-    .padding(start = 270.dp, top = 640.dp)
-    .size(width = 200.dp, height = 30.dp)
-
-//value para el tamñao y orientación del boton de Registro
-val botonRegister = Modifier
-    .padding(start = 275.dp, top = 650.dp)
-    .size(width = 200.dp, height = 30.dp)
+//value para el tamñao y de los botones
+val button = Modifier
+    .size(width = 300.dp, height = 50.dp)
 
 val imageModifier = Modifier
     .fillMaxHeight()
@@ -52,15 +46,17 @@ val imageModifier = Modifier
     .size(100.dp)
 
 val boxModifier = Modifier
-
     .fillMaxSize()
-    .padding(5.dp, 100.dp, 5.dp, 100.dp)
+    .padding(5.dp, 60.dp, 5.dp, 100.dp)
 
 val colModifier = Modifier
-    .padding(20.dp, 110.dp, 20.dp, 110.dp)
+    .padding(20.dp, 130.dp, 20.dp, 110.dp)
 
 val rowModifier = Modifier
     .padding(1.dp, 5.dp, 1.dp, 375.dp)
+
+val rowCardModifier = Modifier
+    .padding(10.dp, 120.dp, 10.dp, 200.dp)
 
 val anotherRowMod = Modifier
     .padding(5.dp, 500.dp, 5.dp, 5.dp)
@@ -68,5 +64,9 @@ val anotherRowMod = Modifier
 val cardModifier = Modifier
     .size(width = 275.dp, height = 75.dp)
     .padding(20.dp)
+
+val cardWithTextMod = Modifier
+    .size(width = 400.dp, height = 600.dp)
+    .padding(15.dp)
 
 
