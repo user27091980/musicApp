@@ -10,7 +10,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.musicapp.R
 import com.example.musicapp.myComponents.LazyRowComponentAphx
-import com.example.musicapp.styles.anotherRowMod
+import com.example.musicapp.styles.lazyRowMod
 import com.example.musicapp.styles.boxModifier
 import com.example.musicapp.styles.rowModifier
 
@@ -25,7 +25,7 @@ fun BandAphx(modifier: Modifier = Modifier) {
                 contentScale = ContentScale.Inside,
             )
         }
-        Row(anotherRowMod) {
+        Row(lazyRowMod) {
 
             LazyRowComponentAphx()
 
