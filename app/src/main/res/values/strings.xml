@@ -21,24 +21,29 @@
     <string name="buscar">búsqueda</string>
     <string name="salir">salir</string>
     <string name="links">links</string>
-<!--cadenas de texto para los bandas-->
-    <string name="aeText">Autechre es un dúo de música electrónica conformado por Rob Brown y Sean Booth
-        \n,ambos provenientes de Rochdale, Gran Mánchester.Fundado en 1987,
-        \nson uno de los artistas más destacados de Warp Records,
-        \nun sello conocido por su pionera música electrónica y a través del cual
-        \ntodos los álbumes de Autechre han sido publicados.
+    <!--cadenas de texto para los bandas-->
+    <string name="aeText">
+        Autechre es un dúo de música electrónica conformado por Rob Brown y Sean Booth
+        ,ambos provenientes de Rochdale, Gran Mánchester.Fundado en 1987,
+        son uno de los artistas más destacados de Warp Records,
+        un sello conocido por su pionera música electrónica y a través del cual
+        todos los álbumes de Autechre han sido publicados.
         </string>
     <string name="aeInfo">
-        \n
-        Género: IDM, ambient, techno,\n experimental\n
+        Género: IDM, ambient, techno,\nexperimental\n
         Miembros:Sean Booth, Robert Brown\n
+        Discografíca: Warp Records
         Website: http://autechre.ws/
-
-
-
     </string>
     <string name="bocText">
-        Boards of Canada es un dúo de música electrónica escocés,
-        \nformado por los hermanos Michael Sandison y Marcus Eoin.
+        Dúo de música electrónica escocés, formado por los hermanos Michael Sandison y Marcus Eoin.
+        En sus canciones se notan influencias psicodélicas y ciertos virajes puramente hip hop,
+        aunque en su álbum "The Campfire Headphase", impera un aire folk.
     </string>
+    <string name="bocInfo">
+        Género: IDM, ambient, techno,\nexperimental\n
+        Miembros:Mike Sandison, Marcus Eoins
+        Discografía: Warp Records/Skam records
+    </string>
+
 </resources>

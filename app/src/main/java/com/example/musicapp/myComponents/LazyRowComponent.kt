@@ -9,6 +9,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import com.example.musicapp.data.AlbumsId
+import com.example.musicapp.data.DatasourceAePics
+import com.example.musicapp.data.DatasourceAphxPics
+import com.example.musicapp.data.DatasourceBocPics
 import com.example.musicapp.data.DatasourceKyussPics
 import com.example.musicapp.data.DatasourceToolPics
 import com.example.musicapp.styles.imageModifier
@@ -20,18 +23,17 @@ import com.example.musicapp.styles.imageModifier
  */
 
 /*
-Componente LazyRow recoge las imagnes de la listas de el paquete data de las clases ElectBandsId
-y DataSourceElectronicBandPics para poder añadirlas a la fila.
+Componente LazyRow recoge las imagnes de la listas de el paquete data de las clases  para poder añadirlas a la fila.
  */
 @Composable
-fun ImagesToolList(toolList: List<AlbumsId>, modifier: Modifier = Modifier) {
+fun ImagesRowList(imagesRowList: List<AlbumsId>, modifier: Modifier = Modifier) {
 
-    LazyRow() {
+    LazyRow(modifier=Modifier) {
 
-        items(toolList) {
+        items(imagesRowList ){
 
                 albumsId ->
-            ImagesTool(
+            Images(
 
                 albumsId = albumsId,
                 //añadir clickable
@@ -47,11 +49,11 @@ fun ImagesToolList(toolList: List<AlbumsId>, modifier: Modifier = Modifier) {
  * @function
  */
 /*
-Recoge los ids de ElectBandsId para poder configurar esas imágenes dentro de cada recuadro
+Recoge los ids de AlbumsId para poder configurar esas imágenes dentro de cada recuadro
 del lazyRow
  */
 @Composable
-fun ImagesTool(albumsId: AlbumsId) {
+fun Images(albumsId: AlbumsId) {
 
     Box() {
         Image(
@@ -62,16 +64,46 @@ fun ImagesTool(albumsId: AlbumsId) {
         )
     }
 }
-
 /**
- *ws
+ *
  * @function
  */
 //a esta función le mandamos la función ImagesList se crea un imagesList para
 //que recorra el DataSourcesPics.
 @Composable
+fun LazyRowComponentAe() {
+
+    ImagesRowList(imagesRowList = DatasourceAePics().loadAlbumsAe())
+
+}
+
+/**
+ *
+ * @function
+ */
+@Composable
+fun LazyRowComponentBoc() {
+
+    ImagesRowList(imagesRowList = DatasourceBocPics().loadAlbumsBoc())
+
+}
+@Composable
+fun LazyRowComponentAphx() {
+
+    ImagesRowList(imagesRowList = DatasourceAphxPics().loadAlbumsAphx())
+
+}
+
+@Composable
+fun LazyRowComponentKyuss() {
+
+    ImagesRowList(imagesRowList = DatasourceKyussPics().loadAlbumsKyuss())
+
+}
+
+@Composable
 fun LazyRowComponentTool() {
 
-    ImagesToolList(toolList = DatasourceToolPics().loadAlbumsTool())
+    ImagesRowList(imagesRowList = DatasourceToolPics().loadAlbumsTool())
 
 }

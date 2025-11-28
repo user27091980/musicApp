@@ -39,7 +39,6 @@ fun UserCardsComponents(modifier: Modifier = Modifier, materialTheme: Any) {
                 cardModifier
             ) {
 
-
                 Text(
                     text = stringResource(R.string.nombre),
                     style = estiloTexto

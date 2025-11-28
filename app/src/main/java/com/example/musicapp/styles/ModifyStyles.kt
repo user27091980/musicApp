@@ -49,19 +49,15 @@ val colModifier = Modifier
     .padding(20.dp, 130.dp, 20.dp, 110.dp)
 val boxModifier = Modifier
     .fillMaxSize()
-    .padding(5.dp, 20.dp, 5.dp, 50.dp)
+    .padding(5.dp, 30.dp, 5.dp, 50.dp)
 
 //row para la imagen de cabecera
 val rowModifier = Modifier
-    .padding(1.dp, 3.dp, 1.dp, 20.dp)
-//row para los textos
-val rowTextModifier = Modifier
-    .padding(1.dp,110.dp,1.dp,90.dp)
-val rowBocTextModifier = Modifier
-    .padding(1.dp,130.dp,1.dp,90.dp)
+    .padding(1.dp, 5.dp, 1.dp, 20.dp)
+
 //row para las cards de info
 val rowCardModifier = Modifier
-    .padding(10.dp, 380.dp, 10.dp, 5.dp)
+    .padding(10.dp, 120.dp, 10.dp, 5.dp)
 
 //row para el lazyRow
 val lazyRowMod = Modifier
@@ -71,9 +67,9 @@ val lazyRowMod = Modifier
 val cardModifier = Modifier
     .size(width = 180.dp, height = 100.dp)
     .padding(10.dp)
+
+val cardText = TextStyle()
 //usado para la info del grupo
-val cardTextModifier = Modifier
-    .size(width = 500.dp, height = 300.dp)
-    .padding(10.dp)
+
 
 
