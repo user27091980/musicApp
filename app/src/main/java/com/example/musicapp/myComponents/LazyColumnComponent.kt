@@ -45,7 +45,7 @@ fun ImagesList(imagesList: List<ImagesId>, modifier: Modifier = Modifier) {
 //pasamos como parámetro un imagesId
 @Composable
 fun Images(imagesId: ImagesId) {
-    Box() {
+    Box {
         Image(
             painter = painterResource(imagesId.imageResourceId),
             contentDescription = "",

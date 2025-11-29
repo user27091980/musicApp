@@ -57,7 +57,7 @@ val rowModifier = Modifier
 
 //row para las cards de info
 val rowCardModifier = Modifier
-    .padding(10.dp, 120.dp, 10.dp, 5.dp)
+    .padding(10.dp, 120.dp, 10.dp, 100.dp)
 
 //row para el lazyRow
 val lazyRowMod = Modifier

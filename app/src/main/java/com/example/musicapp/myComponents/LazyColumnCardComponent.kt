@@ -1,6 +1,7 @@
 package com.example.musicapp.myComponents
 
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Card
@@ -8,8 +9,12 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
 import com.example.musicapp.data.DatasourceAeStrings
+import com.example.musicapp.data.DatasourceAphxStrings
 import com.example.musicapp.data.DatasourceBocStrings
+import com.example.musicapp.data.DatasourceKyussStrings
+import com.example.musicapp.data.DatasourceToolStrings
 import com.example.musicapp.data.StringsId
 
 @Composable
@@ -37,9 +42,8 @@ fun StringList(stringList: List<StringsId>, modifier: Modifier = Modifier) {
 //pasamos como parámetro un imagesId
 @Composable
 fun Strings(stringsId: StringsId) {
-    Box() {
-        Card{
-
+    Box {
+        Card(modifier = Modifier.padding(5.dp)) {
             Text(stringResource(stringsId.stringResourceId))
         }
     }
@@ -60,9 +64,29 @@ fun LazyCardColumnAeComponent() {
 }
 
 @Composable
-fun LazyCardColumnBocComponent(){
+fun LazyCardColumnBocComponent() {
 
-    StringList(stringList= DatasourceBocStrings().loadStringsBoc())
+    StringList(stringList = DatasourceBocStrings().loadStringsBoc())
 
+}
+
+@Composable
+fun LazyCardColumnAphxComponent() {
+
+    StringList(stringList = DatasourceAphxStrings().loadStringsAphx())
+
+}
+
+@Composable
+fun LazyCardColumnKyussComponent() {
+
+    StringList(stringList = DatasourceKyussStrings().loadStringsKyuss())
+
+}
+
+@Composable
+fun LazyCardColumnToolComponent() {
+
+    StringList(stringList = DatasourceToolStrings().loadStringsTool())
 
 }

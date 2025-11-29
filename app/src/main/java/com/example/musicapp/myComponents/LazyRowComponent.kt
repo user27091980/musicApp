@@ -55,7 +55,7 @@ del lazyRow
 @Composable
 fun Images(albumsId: AlbumsId) {
 
-    Box() {
+    Box {
         Image(
             painter = painterResource(albumsId.discsResourceId),
             contentDescription = "",
