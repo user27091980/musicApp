@@ -33,8 +33,6 @@ fun RegisterScreenPage() {
 
         Row(
             Modifier.padding(95.dp, 410.dp),
-
-
         )
         {
             ButtonAcept(button)

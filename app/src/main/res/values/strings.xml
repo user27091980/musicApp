@@ -23,19 +23,24 @@
     <string name="links">links</string>
     <!--cadenas de texto para los bandas-->
     <string name="aeText">
-        Autechre es un dúo de música electrónica conformado por Rob Brown y Sean Booth
-        ,ambos provenientes de Rochdale, Gran Mánchester.Fundado en 1987,
+        \n
+        Autechre es un dúo de música electrónica conformado por Rob
+        Brown y Sean Booth,ambos provenientes de Rochdale, Gran Mánchester.Fundado en 1987,
         son uno de los artistas más destacados de Warp Records,
         un sello conocido por su pionera música electrónica y a través del cual
         todos los álbumes de Autechre han sido publicados.
-        </string>
+        \n
+    </string>
     <string name="aeInfo">
-        Género: IDM, ambient, techno,\nexperimental\n
+        \n
+        Género: IDM, ambient, techno,experimental\n
         Miembros:Sean Booth, Robert Brown\n
-        Discográfica: Warp Records
+        Discográfica: Warp Records\n
         Website: http://autechre.ws/
+        \n
     </string>
     <string name="aeDiscs">
+        \n
         Incunabula (1993)\n
         Amber UK #81 (1994)\n
         Tri Repetae UK #86 (1995)\n
@@ -51,6 +56,7 @@
         NTS Sessions 1-4 (2018)\n
         SIGN (2020)\n
         PLUS (2020)\n
+        \n
     </string>
     <string name="bocText">
         Dúo de música electrónica escocés, formado por los hermanos Michael Sandison y Marcus Eoin.
@@ -58,42 +64,56 @@
         aunque en su álbum "The Campfire Headphase", impera un aire folk.
     </string>
     <string name="bocInfo">
+        \n
         Género: IDM, ambient, techno,\nexperimental\n
-        Miembros:Mike Sandison, Marcus Eoins
+        Miembros:Mike Sandison, Marcus Eoins\n
         Discográfica: Warp Records/Skam records
+        \n
     </string>
     <string name="bocDiscs">
+        \n
         Music Has the Right to Children - agosto de 1998 (Warp/Skam). CD, 2xLP.
         Geogaddi - febrero de 2002 (Warp/Music70). 3xLP, CD.
         The Campfire Headphase - octubre de 2005 (WarpLP123). 2XLP, CD, iTunes, Bleep.
         Tomorrow\'s Harvest - junio de 2013 (Warp). LP, CD, Bleep.
+        \n
     </string>
-    <string name="aphxText">Richard David James  más conocido como Aphex Twin.
+    <string name="aphxText">
+        \n
+        Richard David James  más conocido como Aphex Twin.
         Fue descrito por el periódico The Guardian en 2001 como «la figura más
         innovadora e influyente de la música electrónica contemporánea».
         Fundó el sello discográfico Rephlex Records en 1991 junto a Grant Wilson-Claridge.
         En 2021, la publicación Pitchfork lo incluyó en su lista de los 200 artistas más
         influyentes de los últimos 25 años.
+        \n
     </string>
     <string name="aphxInfo">
-        Género: IDM, ambient, techno, experimental, acid.
-        Miembros: Richard David James
-        Discográfica: Warp Records
+        \n
+        Género: IDM, ambient, techno, experimental, acid.\n
+        Miembros: Richard David James\n
+        Discográfica: Warp Records\n
         Website:https://aphextwin.warp.net/
+        \n
     </string>
-    <string name="kyussText">Kyuss fue un grupo estadounidense de stoner rock formado
+    <string name="kyussText">
+        \n
+        Kyuss fue un grupo estadounidense de stoner rock formado
         en 1987 en Palm Desert,  Son considerados como "los padres del stoner rock".
         La primera formación de la banda estaba integrada por John García (vocalista),
         Josh Homme (guitarra), Brant Bjork (batería), y Nick Oliveri (bajo).
         Con esta formación grabaron Wretch en 1991 y Blues for the Red Sun en 1992,
         este último producido por Chris Goss de Masters of Reality,
         el cual irá produciendo sus sucesivos discos y les dará ese sonido característico del grupo.
+        \n
     </string>
 
     <string name="kyussInfo">
-        Género: Stoner rock, desert rock, stoner metal
-        Miembros: Josh Homme, John Garcia, Alfredo Hernández, Brant Bjork, Nick Oliveri
+        \n
+        Género: Stoner rock, desert rock, stoner metal\n
+        Miembros: Josh Homme, John Garcia, Alfredo Hernández, Brant Bjork, Nick Oliveri\n
         Discográfica: Dali, Chameleon Elektra, Bong Load, Man\'s Ruin
+        \n
     </string>
 
     <string name="toolText">
@@ -107,9 +127,11 @@
     </string>
 
     <string name="toolInfo">
+        \n
         Género: Alternative metal, art rock, post-metal, progressive metal, progressive rock\n
         Miembros: Maynard James Keenan, Adam Jones, Danny Carey, Justin Chancellor\n
-        Discográfica: Dali, Chameleon Elektra, Bong Load, Man\'s Ruin\n
+        Discográfica: Dali, Chameleon Elektra, Bong Load, Man\'s Ruin
+        \n
     </string>
 
 

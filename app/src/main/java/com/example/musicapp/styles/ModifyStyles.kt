@@ -53,7 +53,7 @@ val boxModifier = Modifier
 
 //row para la imagen de cabecera
 val rowModifier = Modifier
-    .padding(1.dp, 5.dp, 1.dp, 20.dp)
+    .padding(1.dp, 15.dp, 1.dp, 20.dp)
 
 //row para las cards de info
 val rowCardModifier = Modifier
