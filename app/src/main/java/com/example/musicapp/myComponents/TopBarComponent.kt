@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Menu
+import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.Icon
@@ -37,24 +38,34 @@ fun TopBar() {
     var isExpanded by remember {
         mutableStateOf(false)
     }
-    Row(modifier = Modifier.fillMaxSize()) {
+    
+         Row(modifier = Modifier.fillMaxSize())
+         {
+            Column() {
+                IconButton(onClick = { isExpanded = true }) {
 
-        Box(
-            modifier = Modifier
-                .fillMaxSize()
-                .wrapContentSize(align = Alignment.TopStart)
-                .background(MaterialTheme.colorScheme.background),
-            contentAlignment = Alignment.TopStart
-        ) {
-            IconButton(onClick = { isExpanded = true }) {
+                    Icon(
+                        imageVector = Icons.Default.Menu,
+                        contentDescription = "menú",
+                        tint =
+                            MaterialTheme.colorScheme.primary,
 
-                Icon(
-                    imageVector = Icons.Default.Menu,
-                    contentDescription = "menú",
-                    tint =
-                        MaterialTheme.colorScheme.primary
-                )
+                        )
 
+                }
+            }
+
+            Column() {
+                IconButton(onClick = {  }) {
+
+                    Icon(
+                        imageVector = Icons.Default.Settings,
+                        contentDescription = "ajustes",
+                        tint =
+                            MaterialTheme.colorScheme.primary,
+
+                        )
+                }
             }
             /*tnemos  que tener uan variable que sea capaz de manejar el cambio en el menu(isExpanded)
             esa variable tiene como entorno en la función topBar, tenemos que "jugar con los contextos"
@@ -65,7 +76,7 @@ fun TopBar() {
 
         }
     }
-}
+
 
 
 /**
@@ -101,6 +112,7 @@ fun DropMenu(extended: Boolean, dismissRequest: () -> Unit) {
                 DropdownMenuItem(
                     text = { Text(text = stringResource(R.string.salir)) },
                     onClick = { })
+
             }
         }
     }

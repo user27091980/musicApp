@@ -1,14 +1,18 @@
 package com.example.musicapp.myComponents
 
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.example.musicapp.data.DatasourceAeStrings
 import com.example.musicapp.data.DatasourceAphxStrings
@@ -43,8 +47,13 @@ fun StringList(stringList: List<StringsId>, modifier: Modifier = Modifier) {
 @Composable
 fun Strings(stringsId: StringsId) {
     Box {
-        Card(modifier = Modifier.padding(5.dp)) {
-            Text(stringResource(stringsId.stringResourceId))
+        Card(modifier = Modifier.padding(5.dp).fillMaxWidth(),
+            colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primary)) {
+            Text(stringResource(stringsId.stringResourceId),
+                textAlign = TextAlign.Left,
+
+
+            )
         }
     }
 }

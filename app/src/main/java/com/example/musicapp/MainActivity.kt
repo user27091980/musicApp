@@ -14,6 +14,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.musicapp.myComponents.BottomBar
 import com.example.musicapp.myComponents.TopBar
 import com.example.musicapp.pages.BandAe
+import com.example.musicapp.pages.BandAphx
 import com.example.musicapp.pages.BandBoc
 import com.example.musicapp.pages.BandKyuss
 import com.example.musicapp.pages.BandTool
@@ -44,8 +45,8 @@ class MainActivity : ComponentActivity() {
                     bottomBar = { BottomBar() },
                     content = { innerPadding ->
                         //MainScreenPage(modifier = Modifier.padding(innerPadding))
-                        BandAe(modifier=Modifier.padding(innerPadding))
-                        //BandAphx(modifier=Modifier.padding(innerPadding))
+                        //BandAe(modifier=Modifier.padding(innerPadding))
+                        BandAphx(modifier=Modifier.padding(innerPadding))
                         //BandBoc(modifier=Modifier.padding(innerPadding))
                         //BandKyuss(modifier=Modifier.padding(innerPadding))
                         //BandTool(modifier=Modifier.padding(innerPadding))
@@ -68,8 +69,8 @@ fun MusicAppPreviewPage() {
         //LoginScreenPage()
         //RegisterScreenPage()
         //MainScreenPage()
-        BandAe()
-        //BandAphx()
+        //BandAe()
+        BandAphx()
         //BandBoc()
         //BandKyuss()
         //BandTool()
