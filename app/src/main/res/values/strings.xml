@@ -32,8 +32,25 @@
     <string name="aeInfo">
         Género: IDM, ambient, techno,\nexperimental\n
         Miembros:Sean Booth, Robert Brown\n
-        Discografíca: Warp Records
+        Discográfica: Warp Records
         Website: http://autechre.ws/
+    </string>
+    <string name="aeDiscs">
+        Incunabula (1993)\n
+        Amber UK #81 (1994)\n
+        Tri Repetae UK #86 (1995)\n
+        Chiastic Slide UK #130 (1997)\n
+        LP5 UK #135 (1998)\n
+        Confield UK #153 (2001)\n
+        Draft 7.30 UK #149 (2003)\n
+        Untilted UK #199 (2005)\n
+        Quaristice UK #148 (2008)\n
+        Oversteps (2010)\n
+        Exai (2013)\n
+        elseq 1-5 (2016)\n
+        NTS Sessions 1-4 (2018)\n
+        SIGN (2020)\n
+        PLUS (2020)\n
     </string>
     <string name="bocText">
         Dúo de música electrónica escocés, formado por los hermanos Michael Sandison y Marcus Eoin.
@@ -43,7 +60,57 @@
     <string name="bocInfo">
         Género: IDM, ambient, techno,\nexperimental\n
         Miembros:Mike Sandison, Marcus Eoins
-        Discografía: Warp Records/Skam records
+        Discográfica: Warp Records/Skam records
     </string>
+    <string name="bocDiscs">
+        Music Has the Right to Children - agosto de 1998 (Warp/Skam). CD, 2xLP.
+        Geogaddi - febrero de 2002 (Warp/Music70). 3xLP, CD.
+        The Campfire Headphase - octubre de 2005 (WarpLP123). 2XLP, CD, iTunes, Bleep.
+        Tomorrow\'s Harvest - junio de 2013 (Warp). LP, CD, Bleep.
+    </string>
+    <string name="aphxText">Richard David James  más conocido como Aphex Twin.
+        Fue descrito por el periódico The Guardian en 2001 como «la figura más
+        innovadora e influyente de la música electrónica contemporánea».
+        Fundó el sello discográfico Rephlex Records en 1991 junto a Grant Wilson-Claridge.
+        En 2021, la publicación Pitchfork lo incluyó en su lista de los 200 artistas más
+        influyentes de los últimos 25 años.
+    </string>
+    <string name="aphxInfo">
+        Género: IDM, ambient, techno, experimental, acid.
+        Miembros: Richard David James
+        Discográfica: Warp Records
+        Website:https://aphextwin.warp.net/
+    </string>
+    <string name="kyussText">Kyuss fue un grupo estadounidense de stoner rock formado
+        en 1987 en Palm Desert,  Son considerados como "los padres del stoner rock".
+        La primera formación de la banda estaba integrada por John García (vocalista),
+        Josh Homme (guitarra), Brant Bjork (batería), y Nick Oliveri (bajo).
+        Con esta formación grabaron Wretch en 1991 y Blues for the Red Sun en 1992,
+        este último producido por Chris Goss de Masters of Reality,
+        el cual irá produciendo sus sucesivos discos y les dará ese sonido característico del grupo.
+    </string>
+
+    <string name="kyussInfo">
+        Género: Stoner rock, desert rock, stoner metal
+        Miembros: Josh Homme, John Garcia, Alfredo Hernández, Brant Bjork, Nick Oliveri
+        Discográfica: Dali, Chameleon Elektra, Bong Load, Man\'s Ruin
+    </string>
+
+    <string name="toolText">
+        \n
+        Tool es una banda estadounidense de rock y metal alternativo formada en Los Ángeles en 1990.
+        Está integrada por el baterista Danny Carey, el guitarrista Adam Jones,
+        el vocalista Maynard James Keenan y el bajista Justin Chancellor, quien sustituyó a Paul D\'Amour en 1995.
+        Ha sido galardonada con tres premios Grammy. Debido a la incorporación de las artes visuales
+        y a sus lanzamientos extensos y complejos, la banda ha sido descrita como una banda que trasciende
+        estilos y que forma parte del rock progresivo, el rock psicodélico y el art rock.\n
+    </string>
+
+    <string name="toolInfo">
+        Género: Alternative metal, art rock, post-metal, progressive metal, progressive rock\n
+        Miembros: Maynard James Keenan, Adam Jones, Danny Carey, Justin Chancellor\n
+        Discográfica: Dali, Chameleon Elektra, Bong Load, Man\'s Ruin\n
+    </string>
+
 
 </resources>
