@@ -175,6 +175,21 @@
         \n
     </string>
 
+    <string name="TestamentText">
+        \n
+        Grupo de Trash Metal oriundos de California.
+        \n
+    </string>
+
+    <string name="TestamentInfo">
+        \n
+        Género: Trash Metal
+        Miembros: Chuck Billy - voz, Alez Skolnick - guitarras, Eric Peterson - guitarras, Steve DiGiorgio - bajo, Chris Dovas - batería.\n
+        Discografía: The Legacy, The New Order, Practice What You Preach, Souls Of Black, The Ritual, Low, Demonic, The Gathering\n
+        ,The Formation Of Damnation, Dark Roots Of Earth, The Brotherhood Of The Snake, Titans Of Creation, Para Bellum
+        \n
+
+    </string>
 
 
 </resources>
