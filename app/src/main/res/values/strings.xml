@@ -153,6 +153,28 @@
         Discográficas: Pai, K Insdustria, Producciones Malditas, Maldito records
     </string>
 
+    <string name="AngelusApatridaText">
+        \n
+        Angelus Apatrida es una banda que comenzó tocando covers y fueron a más creando\n
+        sus propias canciones. Originarios de Albacete España y con influencias del trash\n
+        metal de Megadeth, Testament y Sepultura entre otras bandas underground como ellos.\n
+        Son una banda de Trash metal pero meten detalles heavys o speed metal en muchos de sus\n
+        discos y son una banda en enorme expansión mundial gracias a su gran dominio de los\n
+        instrumentos y la tremenda voz de Guillermo Izquierdo además de la mejoría constante\n
+        Se espera que Angelus Apatrida sea el referente Español en el mundo del trash internacional
+        \n
+    </string>
+
+    <string name="AngelusApatridaInfo">
+        \n
+        Género: Trash Metal, Heavy Metal, Speed Metal\n
+        Miembros: Guillermo Izquierdo - voz, David Älvarez - guitarras, José Izquierdo - bajo, Victor Valera - batería\n
+        Discografía: Evil Unleashed, Give 'Em War, Clockwork, The Call, Hidden Evolution, Cabaret de la Guillotine\n
+        Angelus Apatrida, Aftermath
+        Discográficas: Maldito Records, K-Industria, Molusco Discos, MasterTrax y Century Media Records.
+        \n
+    </string>
+
 
 
 </resources>
