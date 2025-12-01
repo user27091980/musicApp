@@ -134,5 +134,25 @@
         \n
     </string>
 
+    <string name="aphonnicText">
+        \n
+        Aphonnic Banda Gallega de Vigo de metal alternativo que surgieron en el año 2000 procedentes\n
+        de las cenizas del grupo O Pequeno Baltimore y comenzaron con un sonido muy próximo\n
+        al nu metal. Letras con relación a todo tipo de temas sociales primeramente en inglés\n
+        que pasó al castellano en trabajos posteriores, introdujeron tintes de metalcore en su\n
+        música. Recibión el premio Maketón otorgado por la emisora LOS40 Vigo al mejor disco de\n
+        un grupo local en tres ocasiones. También fueron galardonados con el Premio Martín Codax\n
+        en la categoría de metal en 2017\n
+    </string>
+
+    <string name="aphonnicInfo">
+        \n
+        Género: Alternative metal, metalcore.\n
+        Miembros: Chechu - voz, Iago - Guitarras, Richy - bajo, Alén - batería\n
+        Discografía: Silennce, Foolproof, 6 Bajo Par, Héroes, Indomables, La Reina, Crema
+        Discográficas: Pai, K Insdustria, Producciones Malditas, Maldito records
+    </string>
+
+
 
 </resources>
