@@ -47,13 +47,18 @@ fun StringList(stringList: List<StringsId>, modifier: Modifier = Modifier) {
 @Composable
 fun Strings(stringsId: StringsId) {
     Box {
-        Card(modifier = Modifier.padding(5.dp).fillMaxWidth(),
-            colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primary)) {
-            Text(stringResource(stringsId.stringResourceId),
+        Card(
+            modifier = Modifier
+                .padding(5.dp)
+                .fillMaxWidth(),
+            colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primary)
+        ) {
+            Text(
+                stringResource(stringsId.stringResourceId),
                 textAlign = TextAlign.Left,
 
 
-            )
+                )
         }
     }
 }

@@ -18,7 +18,7 @@ import com.example.musicapp.styles.estiloTextoBotones
 //Componentes botones de todo el programa.
 //boton login
 @Composable
-fun ButtonLogin(modifier: Modifier=Modifier) {
+fun ButtonLogin(modifier: Modifier = Modifier) {
 
     Button(
         onClick = {},
@@ -42,7 +42,7 @@ fun ButtonLogin(modifier: Modifier=Modifier) {
  */
 //boton para el registro
 @Composable
-fun ButtonRegister(modifier: Modifier= Modifier) {
+fun ButtonRegister(modifier: Modifier = Modifier) {
 
     Button(
         onClick = {},
@@ -64,17 +64,17 @@ fun ButtonRegister(modifier: Modifier= Modifier) {
  */
 //botón para aceptar
 @Composable
-fun ButtonAcept(modifier: Modifier=Modifier) {
+fun ButtonAcept(modifier: Modifier = Modifier) {
 
     Button(
         onClick = {},
         colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.primary,
 
-        ),
+            ),
 
 
-    ) {
+        ) {
         Text(
             text = stringResource(R.string.boton_aceptar),
             style = estiloTextoBotones
@@ -89,7 +89,7 @@ fun ButtonAcept(modifier: Modifier=Modifier) {
  */
 //botón de cancelación
 @Composable
-fun ButtonCancel(modifier: Modifier= Modifier) {
+fun ButtonCancel(modifier: Modifier = Modifier) {
 
     Button(
         onClick = {},

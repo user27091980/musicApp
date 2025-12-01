@@ -1,6 +1,5 @@
 package com.example.musicapp.myComponents
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -38,45 +37,44 @@ fun TopBar() {
     var isExpanded by remember {
         mutableStateOf(false)
     }
-    
-         Row(modifier = Modifier.fillMaxSize())
-         {
-            Column() {
-                IconButton(onClick = { isExpanded = true }) {
 
-                    Icon(
-                        imageVector = Icons.Default.Menu,
-                        contentDescription = "menú",
-                        tint =
-                            MaterialTheme.colorScheme.primary,
+    Row(modifier = Modifier.fillMaxSize())
+    {
+        Column() {
+            IconButton(onClick = { isExpanded = true }) {
 
-                        )
+                Icon(
+                    imageVector = Icons.Default.Menu,
+                    contentDescription = "menú",
+                    tint =
+                        MaterialTheme.colorScheme.primary,
 
-                }
+                    )
+
             }
-
-            Column() {
-                IconButton(onClick = {  }) {
-
-                    Icon(
-                        imageVector = Icons.Default.Settings,
-                        contentDescription = "ajustes",
-                        tint =
-                            MaterialTheme.colorScheme.primary,
-
-                        )
-                }
-            }
-            /*tnemos  que tener uan variable que sea capaz de manejar el cambio en el menu(isExpanded)
-            esa variable tiene como entorno en la función topBar, tenemos que "jugar con los contextos"
-            topBar conoce la variable isExpanded es la que se encarga de la acción, acto seguido simplemente
-            en la fun dropMenu invocamos al dismiss request
-            */
-            DropMenu(extended = isExpanded, { isExpanded = false })
-
         }
-    }
 
+        Column() {
+            IconButton(onClick = { }) {
+
+                Icon(
+                    imageVector = Icons.Default.Settings,
+                    contentDescription = "ajustes",
+                    tint =
+                        MaterialTheme.colorScheme.primary,
+
+                    )
+            }
+        }
+        /*tnemos  que tener uan variable que sea capaz de manejar el cambio en el menu(isExpanded)
+        esa variable tiene como entorno en la función topBar, tenemos que "jugar con los contextos"
+        topBar conoce la variable isExpanded es la que se encarga de la acción, acto seguido simplemente
+        en la fun dropMenu invocamos al dismiss request
+        */
+        DropMenu(extended = isExpanded, { isExpanded = false })
+
+    }
+}
 
 
 /**

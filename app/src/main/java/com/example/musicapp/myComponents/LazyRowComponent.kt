@@ -28,9 +28,9 @@ Componente LazyRow recoge las imagnes de la listas de el paquete data de las cla
 @Composable
 fun ImagesRowList(imagesRowList: List<AlbumsId>, modifier: Modifier = Modifier) {
 
-    LazyRow(modifier=Modifier) {
+    LazyRow(modifier = Modifier) {
 
-        items(imagesRowList ){
+        items(imagesRowList) {
 
                 albumsId ->
             Images(
@@ -64,6 +64,7 @@ fun Images(albumsId: AlbumsId) {
         )
     }
 }
+
 /**
  *
  * @function
@@ -87,6 +88,7 @@ fun LazyRowComponentBoc() {
     ImagesRowList(imagesRowList = DatasourceBocPics().loadAlbumsBoc())
 
 }
+
 @Composable
 fun LazyRowComponentAphx() {
 

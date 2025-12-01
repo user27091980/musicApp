@@ -44,8 +44,8 @@ class MainActivity : ComponentActivity() {
                     topBar = { TopBar() },
                     bottomBar = { BottomBar() },
                     content = { innerPadding ->
-                        //MainScreenPage(modifier = Modifier.padding(innerPadding))
-                        BandAe(modifier=Modifier.padding(innerPadding))
+                        MainScreenPage(modifier = Modifier.padding(innerPadding))
+                        //BandAe(modifier=Modifier.padding(innerPadding))
                         //BandAphx(modifier=Modifier.padding(innerPadding))
                         //BandBoc(modifier=Modifier.padding(innerPadding))
                         //BandKyuss(modifier=Modifier.padding(innerPadding))
@@ -68,8 +68,8 @@ fun MusicAppPreviewPage() {
         //SplashScreenPage()
         //LoginScreenPage()
         //RegisterScreenPage()
-        //MainScreenPage()
-        BandAe()
+        MainScreenPage()
+        //BandAe()
         //BandAphx()
         //BandBoc()
         //BandKyuss()
