@@ -71,5 +71,4 @@ val cardModifier = Modifier
 val cardText = TextStyle()
 //usado para la info del grupo
 
-
-
+val cameraMod=Modifier.padding(290.dp,720.dp,10.dp,10.dp )

@@ -18,7 +18,6 @@ import com.example.musicapp.R
 Función que se encarga de la barra inferior(BottomBar), con sus correspondientes iconos
 guardados en una lista denominada como items.
  */
-// TODO("INTRODUCIR STRINGRESOURCES")
 @Composable
 fun BottomBar() {
     var selectedItem by remember { mutableStateOf(0) }
