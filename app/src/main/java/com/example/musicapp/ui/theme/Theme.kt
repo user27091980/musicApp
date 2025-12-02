@@ -9,13 +9,14 @@ import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color.Companion.Black
+import androidx.compose.ui.graphics.Color.Companion.DarkGray
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
     primary = SoftGreen80,
     secondary = SoftBlue80,
     tertiary = SoftBlue,
-    surface = DarkBlue,
+    surface = DarkGray,
     background = Black,
 )
 
@@ -23,7 +24,7 @@ private val LightColorScheme = lightColorScheme(
     primary = DarkGreen80,
     secondary = DarkerGreen,
     tertiary = DarkBlue,
-    surface = DarkBlue,
+    surface = DarkGray,
     background = Black,
 
     /* Other default colors to override

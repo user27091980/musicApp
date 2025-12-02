@@ -21,6 +21,13 @@
     <string name="buscar">búsqueda</string>
     <string name="salir">salir</string>
     <string name="links">links</string>
+    <!--strings para las cards-->
+    <string name="aphex">Aphex Twin</string>
+    <string name="boc">Boards of Canada</string>
+    <string name="tool">Tool</string>
+    <string name="ae">Autechre</string>
+    <string name="venetian">Venetian snares</string>
+    <string name="kyuss">Kyuss</string>
     <!--cadenas de texto para los bandas-->
     <string name="aeText">
         \n

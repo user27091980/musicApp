@@ -27,7 +27,7 @@ fun BottomBar() {
         BottomItems.BottomBarItem(label = stringResource(R.string.buscar), Icons.Default.Search),
         BottomItems.BottomBarItem(label = stringResource(R.string.perfil), Icons.Default.Person)
     )
-//barrra de navegación.
+//barra de navegación.
     NavigationBar(
         containerColor = MaterialTheme.colorScheme.background,
         contentColor = MaterialTheme.colorScheme.onPrimaryContainer
