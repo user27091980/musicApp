@@ -53,11 +53,11 @@ val boxModifier = Modifier
 
 //row para la imagen de cabecera
 val rowModifier = Modifier
-    .padding(1.dp, 15.dp, 1.dp, 20.dp)
+    .padding(1.dp, 20.dp, 1.dp, 20.dp)
 
 //row para las cards de info
 val rowCardModifier = Modifier
-    .padding(10.dp, 120.dp, 10.dp, 100.dp)
+    .padding(10.dp, 120.dp, 10.dp, 180.dp)
 
 //row para el lazyRow
 val lazyRowMod = Modifier

@@ -27,7 +27,7 @@ fun RegisterScreenPage() {
         Column(
             Modifier.padding(60.dp, 220.dp),
 
-        ) {
+            ) {
             TextFieldsComponent()
         }
 

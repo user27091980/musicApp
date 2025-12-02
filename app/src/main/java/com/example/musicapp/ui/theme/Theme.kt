@@ -36,6 +36,7 @@ private val LightColorScheme = lightColorScheme(
     onSurface = Color(0xFF1C1B1F),
     */
 )
+
 //configuraión de temas por parámetros
 @Composable
 fun MusicAppTheme(
@@ -50,9 +51,9 @@ fun MusicAppTheme(
             val context = LocalContext.current
             if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
         }
-/*tema óscuro o tema claro, podriamos seleccionarlos por usuarios
-    accesibilidad podriamos cambiar los colores de toda la aplicación
- */
+        /*tema óscuro o tema claro, podriamos seleccionarlos por usuarios
+            accesibilidad podriamos cambiar los colores de toda la aplicación
+         */
         darkTheme -> DarkColorScheme
         else -> LightColorScheme
     }

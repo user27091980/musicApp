@@ -28,7 +28,7 @@ fun BandAphx(modifier: Modifier = Modifier) {
             )
         }
 
-        Row (rowCardModifier){
+        Row(rowCardModifier) {
             LazyCardColumnAphxComponent()
         }
         Row(lazyRowMod) {

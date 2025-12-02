@@ -24,17 +24,23 @@
     <!--cadenas de texto para los bandas-->
     <string name="aeText">
         \n
-        Autechre es un dúo de música electrónica conformado por Rob
-        Brown y Sean Booth,ambos provenientes de Rochdale, Gran Mánchester.Fundado en 1987,
-        son uno de los artistas más destacados de Warp Records,
-        un sello conocido por su pionera música electrónica y a través del cual
-        todos los álbumes de Autechre han sido publicados.
+        Autechre es un dúo de música\n
+        electrónica conformado por Rob\n
+        Brown y Sean Booth, ambos\n
+        provenientes de Rochdale, Gran\n
+        Mánchester. Fundado en 1987, son\n
+        uno de los artistas más\n
+        destacados de Warp Records,\n
+        un sello conocido por su pionera\n
+        música electrónica y a través\n
+        del cual todos sus álbumes han\n
+        sido publicados.
         \n
     </string>
     <string name="aeInfo">
         \n
-        Género: IDM, ambient, techno,experimental\n
-        Miembros:Sean Booth, Robert Brown\n
+        Género: IDM, ambient, techno,\n experimental\n
+        Miembros:Sean Booth, Robert\n Brown\n
         Discográfica: Warp Records\n
         Website: http://autechre.ws/
         \n
@@ -55,8 +61,9 @@
         elseq 1-5 (2016)\n
         NTS Sessions 1-4 (2018)\n
         SIGN (2020)\n
-        PLUS (2020)\n
+        PLUS (2020)
         \n
+
     </string>
     <string name="bocText">
         Dúo de música electrónica escocés, formado por los hermanos Michael Sandison y Marcus Eoin.
