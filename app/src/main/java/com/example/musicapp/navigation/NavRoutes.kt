@@ -12,6 +12,29 @@ object SplashScreen
 @Serializable
 object Login
 
+@Serializable
+object Regist
+
+@Serializable
+object Principal
+
+@Serializable
+object AeBand
+
+@Serializable
+object AphxBand
+
+@Serializable
+object BocBand
+
+@Serializable
+object KyussBand
+
+@Serializable
+object ToolBand
+
+@Serializable
+object User
 /*
 @Composable
 fun NavGraph(){
