@@ -7,31 +7,31 @@ import kotlinx.serialization.Serializable
 
 //ya tenemos objeto creado para la parte de la ruta
 @Serializable
-object SplashScreen
+object SplashScreenPage
 
 @Serializable
-object Login
+class LoginPage ()
 
 @Serializable
-object Regist
+class RegisterPage ()
 
 @Serializable
-object Principal
+object MainScreenPage
 
 @Serializable
-object AeBand
+object BandAe
 
 @Serializable
-object AphxBand
+object BandAphex
 
 @Serializable
-object BocBand
+object BandBoc
 
 @Serializable
-object KyussBand
+object BandKyussPage
 
 @Serializable
-object ToolBand
+object BandToolPage
 
 @Serializable
 object User
