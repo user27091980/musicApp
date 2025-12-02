@@ -74,6 +74,7 @@ fun ButtonAcept(modifier: Modifier = Modifier) {
             ),
 
 
+
         ) {
         Text(
             text = stringResource(R.string.boton_aceptar),
