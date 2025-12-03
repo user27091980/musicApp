@@ -179,4 +179,64 @@
         \n
     </string>
 
+    <string name="aphonnicText">
+        \n
+        Aphonnic Banda Gallega de Vigo de metal alternativo que surgieron en el año 2000 procedentes\n
+        de las cenizas del grupo O Pequeno Baltimore y comenzaron con un sonido muy próximo\n
+        al nu metal. Letras con relación a todo tipo de temas sociales primeramente en inglés\n
+        que pasó al castellano en trabajos posteriores, introdujeron tintes de metalcore en su\n
+        música. Recibión el premio Maketón otorgado por la emisora LOS40 Vigo al mejor disco de\n
+        un grupo local en tres ocasiones. También fueron galardonados con el Premio Martín Codax\n
+        en la categoría de metal en 2017
+        \n
+    </string>
+
+    <string name="aphonnicInfo">
+        \n
+        Género: Alternative metal, metalcore.\n
+        Miembros: Chechu - voz, Iago - Guitarras, Richy - bajo, Alén - batería\n
+        Discografía: Silennce, Foolproof, 6 Bajo Par, Héroes, Indomables, La Reina, Crema
+        Discográficas: Pai, K Insdustria, Producciones Malditas, Maldito records
+        \n
+    </string>
+
+    <string name="AngelusApatridaText">
+        \n
+        Angelus Apatrida es una banda que comenzó tocando covers y fueron a más creando\n
+        sus propias canciones. Originarios de Albacete España y con influencias del trash\n
+        metal de Megadeth, Testament y Sepultura entre otras bandas underground como ellos.\n
+        Son una banda de Trash metal pero meten detalles heavys o speed metal en muchos de sus\n
+        discos y son una banda en enorme expansión mundial gracias a su gran dominio de los\n
+        instrumentos y la tremenda voz de Guillermo Izquierdo además de la mejoría constante\n
+        Se espera que Angelus Apatrida sea el referente Español en el mundo del trash internacional
+        \n
+    </string>
+
+    <string name="AngelusApatridaInfo">
+        \n
+        Género: Trash Metal, Heavy Metal, Speed Metal\n
+        Miembros: Guillermo Izquierdo - voz, David Älvarez - guitarras, José Izquierdo - bajo, Victor Valera - batería\n
+        Discografía: Evil Unleashed, Give 'Em War, Clockwork, The Call, Hidden Evolution, Cabaret de la Guillotine\n
+        Angelus Apatrida, Aftermath
+        Discográficas: Maldito Records, K-Industria, Molusco Discos, MasterTrax y Century Media Records.
+        \n
+    </string>
+
+    <string name="TestamentText">
+        \n
+        Grupo de Trash Metal oriundos de California.
+        \n
+    </string>
+
+    <string name="TestamentInfo">
+        \n
+        Género: Trash Metal
+        Miembros: Chuck Billy - voz, Alez Skolnick - guitarras, Eric Peterson - guitarras, Steve DiGiorgio - bajo, Chris Dovas - batería.\n
+        Discografía: The Legacy, The New Order, Practice What You Preach, Souls Of Black, The Ritual, Low, Demonic, The Gathering\n
+        ,The Formation Of Damnation, Dark Roots Of Earth, The Brotherhood Of The Snake, Titans Of Creation, Para Bellum
+        \n
+
+    </string>
+
+
 </resources>
