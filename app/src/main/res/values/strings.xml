@@ -1,10 +1,12 @@
 <resources>
     <string name="app_name">music</string>
+
     <!--cadena de texto para botones-->
     <string name="boton_aceptar">aceptar</string>
     <string name="boton_cancelar">cancelar</string>
     <string name="boton_login">login</string>
     <string name="boton_register">register</string>
+
     <!--cadenas de texto para topbar, y bottombar.-->
     <string name="top_bar">top bar</string>
     <string name="menu_discos">discos</string>
@@ -21,6 +23,7 @@
     <string name="buscar">búsqueda</string>
     <string name="salir">salir</string>
     <string name="links">links</string>
+
     <!--strings para las cards-->
     <string name="aphex">Aphex Twin</string>
     <string name="boc">Boards of Canada</string>
@@ -28,6 +31,7 @@
     <string name="ae">Autechre</string>
     <string name="venetian">Venetian snares</string>
     <string name="kyuss">Kyuss</string>
+
     <!--cadenas de texto para los bandas-->
     <string name="aeText">
         \n
@@ -84,12 +88,13 @@
         Discográfica: Warp Records/Skam records
         \n
     </string>
+
     <string name="bocDiscs">
         \n
-        Music Has the Right to Children - agosto de 1998 (Warp/Skam). CD, 2xLP.
-        Geogaddi - febrero de 2002 (Warp/Music70). 3xLP, CD.
-        The Campfire Headphase - octubre de 2005 (WarpLP123). 2XLP, CD, iTunes, Bleep.
-        Tomorrow\'s Harvest - junio de 2013 (Warp). LP, CD, Bleep.
+        Music Has the Right to Children\n
+        Geogaddi\n
+        The Campfire Headphase\n
+        Tomorrow\'s Harvest\n
         \n
     </string>
     <string name="aphxText">
@@ -110,17 +115,27 @@
         Website:https://aphextwin.warp.net/
         \n
     </string>
-    <string name="kyussText">
+    <string name="aphxDiscs">
         \n
-        Kyuss fue un grupo estadounidense de stoner rock formado
-        en 1987 en Palm Desert,  Son considerados como "los padres del stoner rock".
-        La primera formación de la banda estaba integrada por John García (vocalista),
-        Josh Homme (guitarra), Brant Bjork (batería), y Nick Oliveri (bajo).
-        Con esta formación grabaron Wretch en 1991 y Blues for the Red Sun en 1992,
-        este último producido por Chris Goss de Masters of Reality,
-        el cual irá produciendo sus sucesivos discos y les dará ese sonido característico del grupo.
+        Selected Ambient Works 85–92\n
+        Selected Ambient Works Volume II\n
+        …I Care Because You Do\n
+        Richard D. James Album\n
+        Drukqs\n
+        Syro\n
         \n
     </string>
+    <string name="kyussText">
+    \n
+    Kyuss fue un grupo estadounidense de stoner rock formado
+    en 1987 en Palm Desert, Son considerados como "los padres del stoner rock".
+    La primera formación de la banda estaba integrada por John García (vocalista),
+    Josh Homme (guitarra), Brant Bjork (batería), y Nick Oliveri (bajo).
+    Con esta formación grabaron Wretch en 1991 y Blues for the Red Sun en 1992,
+    este último producido por Chris Goss de Masters of Reality,
+    el cual irá produciendo sus sucesivos discos y les dará ese sonido característico del grupo.
+    \n
+</string>
 
     <string name="kyussInfo">
         \n
@@ -130,6 +145,12 @@
         \n
     </string>
 
+    <string name="kyussDisc">
+        Wretch\n
+        Blues for the Red Sun\n
+        Welcome to Sky Valley\n
+        And the Circus Leaves Town\n
+    </string>
     <string name="toolText">
         \n
         Tool es una banda estadounidense de rock y metal alternativo formada en Los Ángeles en 1990.
@@ -137,7 +158,8 @@
         el vocalista Maynard James Keenan y el bajista Justin Chancellor, quien sustituyó a Paul D\'Amour en 1995.
         Ha sido galardonada con tres premios Grammy. Debido a la incorporación de las artes visuales
         y a sus lanzamientos extensos y complejos, la banda ha sido descrita como una banda que trasciende
-        estilos y que forma parte del rock progresivo, el rock psicodélico y el art rock.\n
+        estilos y que forma parte del rock progresivo, el rock psicodélico y el art rock.
+        \n
     </string>
 
     <string name="toolInfo">
@@ -145,6 +167,15 @@
         Género: Alternative metal, art rock, post-metal, progressive metal, progressive rock\n
         Miembros: Maynard James Keenan, Adam Jones, Danny Carey, Justin Chancellor\n
         Discográfica: Dali, Chameleon Elektra, Bong Load, Man\'s Ruin
+        \n
+    </string>
+    <string name="toolDisc">
+        \n
+        Undertow\n
+        Aenima\n
+        Lateralus\n
+        10.000 Days\n
+        Fear Inoculum
         \n
     </string>
 

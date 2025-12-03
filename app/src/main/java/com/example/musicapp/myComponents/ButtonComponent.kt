@@ -8,7 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import com.example.musicapp.R
-import com.example.musicapp.styles.estiloTextoBotones
+import com.example.musicapp.styles.styleButtonText
 
 /**
  * @author perfecto
@@ -30,7 +30,7 @@ fun ButtonLogin(modifier: Modifier = Modifier) {
 
         Text(
             text = stringResource(R.string.boton_login),
-            style = estiloTextoBotones,
+            style = styleButtonText,
         )
     }
 }
@@ -52,7 +52,7 @@ fun ButtonRegister(modifier: Modifier = Modifier) {
     ) {
         Text(
             text = stringResource(R.string.boton_register),
-            style = estiloTextoBotones
+            style = styleButtonText
         )
     }
 }
@@ -78,7 +78,7 @@ fun ButtonAcept(modifier: Modifier = Modifier) {
         ) {
         Text(
             text = stringResource(R.string.boton_aceptar),
-            style = estiloTextoBotones
+            style = styleButtonText
         )
     }
 }
@@ -100,7 +100,7 @@ fun ButtonCancel(modifier: Modifier = Modifier) {
     ) {
         Text(
             text = stringResource(R.string.boton_cancelar),
-            style = estiloTextoBotones
+            style = styleButtonText
         )
     }
 }

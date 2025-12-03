@@ -14,6 +14,7 @@ import androidx.compose.ui.res.stringResource
 import com.example.musicapp.data.DatasourceMainScreenPics
 import com.example.musicapp.data.BandsId
 import com.example.musicapp.styles.lazyColumnCardModifier
+import com.example.musicapp.styles.styleTextCards
 
 /**
  * @author="Andrés"
@@ -51,7 +52,7 @@ fun CardsList(cardsList: List<BandsId>, modifier: Modifier = Modifier) {
 @Composable
 fun Cards(bandsId: BandsId) {
 
-    Card{
+    Card() {
 
         Image(
             painter = painterResource(bandsId.imageResourceId),
@@ -60,8 +61,8 @@ fun Cards(bandsId: BandsId) {
         )
         Text(
 
-            text = stringResource(bandsId.stringResourceId)
-
+            text = stringResource(bandsId.stringResourceId),
+            style = styleTextCards
         )
 
     }

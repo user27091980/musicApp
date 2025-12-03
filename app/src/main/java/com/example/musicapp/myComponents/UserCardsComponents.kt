@@ -11,7 +11,7 @@ import com.example.musicapp.R
 import com.example.musicapp.styles.boxModifier
 import com.example.musicapp.styles.cardModifier
 import com.example.musicapp.styles.colModifier
-import com.example.musicapp.styles.estiloTexto
+import com.example.musicapp.styles.styleText
 
 /**
  * @author Perfecto
@@ -25,13 +25,13 @@ fun UserCardsComponents(modifier: Modifier = Modifier, materialTheme: Any) {
         Column(colModifier) {
 
             Text(
-                text = stringResource(R.string.perfil), style = estiloTexto
+                text = stringResource(R.string.perfil), style = styleText
             )
 
             //fila priemra
             Card(cardModifier) {
                 Text(
-                    text = stringResource(R.string.usuario), style = estiloTexto
+                    text = stringResource(R.string.usuario), style = styleText
                 )
             }
             //fila priemra
@@ -41,7 +41,7 @@ fun UserCardsComponents(modifier: Modifier = Modifier, materialTheme: Any) {
 
                 Text(
                     text = stringResource(R.string.nombre),
-                    style = estiloTexto
+                    style = styleText
                 )
 
             }
@@ -52,7 +52,7 @@ fun UserCardsComponents(modifier: Modifier = Modifier, materialTheme: Any) {
 
                 Text(
                     text = stringResource(R.string.ciudad),
-                    style = estiloTexto,
+                    style = styleText,
                 )
             }
 
@@ -61,7 +61,7 @@ fun UserCardsComponents(modifier: Modifier = Modifier, materialTheme: Any) {
 
                 Text(
                     text = stringResource(R.string.pais),
-                    style = estiloTexto,
+                    style = styleText,
                 )
             }
 
@@ -69,7 +69,7 @@ fun UserCardsComponents(modifier: Modifier = Modifier, materialTheme: Any) {
 
                 Text(
                     text = stringResource(R.string.email),
-                    style = estiloTexto,
+                    style = styleText,
                 )
             }
         }
