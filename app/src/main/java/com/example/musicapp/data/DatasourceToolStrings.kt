@@ -9,6 +9,7 @@ class DatasourceToolStrings {
 
             StringsId(R.string.toolText),
             StringsId(R.string.toolInfo),
+            StringsId(R.string.toolDisc)
 
             )
     }

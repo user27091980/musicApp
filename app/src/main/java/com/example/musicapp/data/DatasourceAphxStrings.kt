@@ -9,6 +9,7 @@ class DatasourceAphxStrings {
 
             StringsId(R.string.aphxText),
             StringsId(R.string.aphxInfo),
+            StringsId(R.string.aphxDiscs)
 
             )
     }

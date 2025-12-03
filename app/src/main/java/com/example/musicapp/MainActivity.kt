@@ -31,10 +31,6 @@ import com.example.musicapp.ui.theme.MusicAppTheme
 import kotlinx.serialization.Serializable
 
 
-
-
-
-
 /**
  * @author="Andrés"
  * @param
@@ -59,12 +55,12 @@ class MainActivity : ComponentActivity() {
                     content = { innerPadding ->
 
                         //MainScreenPage(modifier = Modifier.padding(innerPadding))
-                        BandAe(modifier=Modifier.padding(innerPadding))
+                        //BandAe(modifier = Modifier.padding(innerPadding))
                         //BandAphx(modifier=Modifier.padding(innerPadding))
                         //BandBoc(modifier=Modifier.padding(innerPadding))
                         //BandKyuss(modifier=Modifier.padding(innerPadding))
                         //BandTool(modifier=Modifier.padding(innerPadding))
-                        //UserInfoScreenPage(modifier = Modifier.padding(innerPadding))
+                        UserInfoScreenPage(modifier = Modifier.padding(innerPadding))
                     }
                 )
                 //SplashScreenPage()
@@ -83,12 +79,12 @@ fun MusicAppPreviewPage() {
         //LoginScreenPage()
         //RegisterScreenPage()
         //MainScreenPage()
-        BandAe()
+        //BandAe()
         //BandAphx()
         //BandBoc()
         //BandKyuss()
         //BandTool()
-        //UserInfoScreenPage()
+        UserInfoScreenPage()
     }
 }
 

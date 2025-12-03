@@ -18,7 +18,7 @@ import androidx.compose.ui.unit.sp
  * @function
  */
 //value para el estilo de texto
-val estiloTexto = TextStyle(
+val styleText = TextStyle(
 
     fontSize = 18.sp,
     textAlign = TextAlign.Center,
@@ -26,11 +26,18 @@ val estiloTexto = TextStyle(
     )
 
 //value para el etilo de texto en los botones
-val estiloTextoBotones = TextStyle(
+val styleButtonText = TextStyle(
 
-    fontSize = 15.sp,
+    fontSize = 20.sp,
     textAlign = TextAlign.Center,
     color = Color.Black
+
+)
+
+val styleTextCards = TextStyle(
+
+    fontSize = 45.sp,
+    textAlign = TextAlign.Center
 
 )
 
@@ -65,11 +72,11 @@ val lazyRowMod = Modifier
 
 //modificadores para cards
 val cardModifier = Modifier
-    .size(width = 180.dp, height = 100.dp)
-    .padding(10.dp)
+    .size(width = 300.dp, height = 100.dp)
+    .padding(15.dp)
 
 //modificador para las cards del mainScreen.
 val lazyColumnCardModifier= Modifier
     .padding(5.dp,60.dp,5.dp,100.dp)
 //value para el posicionamiento del icono de la cámara.
-val cameraMod=Modifier.padding(290.dp,720.dp,10.dp,10.dp )
+val cameraMod=Modifier.padding(300.dp,720.dp,10.dp,10.dp )

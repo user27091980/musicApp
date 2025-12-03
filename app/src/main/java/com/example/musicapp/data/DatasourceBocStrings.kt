@@ -9,7 +9,8 @@ class DatasourceBocStrings {
         return listOf(
 
             StringsId(R.string.bocText),
-            StringsId(R.string.bocInfo)
+            StringsId(R.string.bocInfo),
+            StringsId(R.string.bocDiscs)
 
         )
     }

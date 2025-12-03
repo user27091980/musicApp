@@ -10,7 +10,7 @@ class DatasourceKyussStrings {
 
             StringsId(R.string.kyussText),
             StringsId(R.string.kyussInfo),
-
+            StringsId(R.string.kyussDisc)
             )
     }
 }

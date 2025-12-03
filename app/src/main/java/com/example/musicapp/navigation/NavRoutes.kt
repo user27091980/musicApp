@@ -3,6 +3,7 @@ package com.example.musicapp.navigation
 import android.window.SplashScreen
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 import kotlinx.serialization.Serializable
 
 //ya tenemos objeto creado para la parte de la ruta
@@ -10,10 +11,10 @@ import kotlinx.serialization.Serializable
 object SplashScreenPage
 
 @Serializable
-class LoginPage ()
+object LoginPage
 
 @Serializable
-class RegisterPage ()
+object RegisterPage
 
 @Serializable
 object MainScreenPage
@@ -35,7 +36,6 @@ object BandToolPage
 
 @Serializable
 object User
-/*
-@Composable
-fun NavGraph(){
-*/
+
+
+
