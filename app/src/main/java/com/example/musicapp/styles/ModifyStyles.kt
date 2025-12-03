@@ -49,7 +49,7 @@ val colModifier = Modifier
     .padding(20.dp, 130.dp, 20.dp, 110.dp)
 val boxModifier = Modifier
     .fillMaxSize()
-    .padding(5.dp, 30.dp, 5.dp, 50.dp)
+    .padding(5.dp, 30.dp, 5.dp, 90.dp)
 
 //row para la imagen de cabecera
 val rowModifier = Modifier
@@ -57,7 +57,7 @@ val rowModifier = Modifier
 
 //row para las cards de info
 val rowCardModifier = Modifier
-    .padding(10.dp, 120.dp, 10.dp, 180.dp)
+    .padding(10.dp, 140.dp, 10.dp, 180.dp)
 
 //row para el lazyRow
 val lazyRowMod = Modifier
@@ -68,7 +68,8 @@ val cardModifier = Modifier
     .size(width = 180.dp, height = 100.dp)
     .padding(10.dp)
 
-val cardText = TextStyle()
-//usado para la info del grupo
-
+//modificador para las cards del mainScreen.
+val lazyColumnCardModifier= Modifier
+    .padding(5.dp,60.dp,5.dp,100.dp)
+//value para el posicionamiento del icono de la cámara.
 val cameraMod=Modifier.padding(290.dp,720.dp,10.dp,10.dp )

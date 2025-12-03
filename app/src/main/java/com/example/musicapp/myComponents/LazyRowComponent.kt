@@ -33,7 +33,7 @@ fun ImagesRowList(imagesRowList: List<AlbumsId>, modifier: Modifier = Modifier) 
         items(imagesRowList) {
 
                 albumsId ->
-            Images(
+            Cards(
 
                 albumsId = albumsId,
                 //añadir clickable
@@ -53,7 +53,7 @@ Recoge los ids de AlbumsId para poder configurar esas imágenes dentro de cada r
 del lazyRow
  */
 @Composable
-fun Images(albumsId: AlbumsId) {
+fun Cards(albumsId: AlbumsId) {
 
     Box {
         Image(
