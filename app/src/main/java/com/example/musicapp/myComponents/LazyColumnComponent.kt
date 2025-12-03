@@ -13,7 +13,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import com.example.musicapp.data.DatasourceMainScreenPics
 import com.example.musicapp.data.BandsId
-import com.example.musicapp.styles.boxModifier
+import com.example.musicapp.styles.lazyColumnCardModifier
 
 /**
  * @author="Andrés"
@@ -23,18 +23,19 @@ import com.example.musicapp.styles.boxModifier
 //Función que recorrerá el DataSourcesPics le pasamos un modifier y una lista por parámetro
 
 @Composable
-fun ImagesList(imagesList: List<BandsId>, modifier: Modifier = Modifier) {
+fun CardsList(cardsList: List<BandsId>, modifier: Modifier = Modifier) {
+    Box(lazyColumnCardModifier) {
+        LazyColumn(modifier = modifier) {
 
-    LazyColumn(modifier = modifier) {
+            items(cardsList) {
 
-        items(imagesList) {
+                    imagesId ->
+                Cards(
+                    bandsId = imagesId,
+                    //añadir clickable
 
-                imagesId ->
-            Cards(
-                bandsId = imagesId,
-                //añadir clickable
-
-            )
+                )
+            }
         }
     }
 
@@ -49,19 +50,22 @@ fun ImagesList(imagesList: List<BandsId>, modifier: Modifier = Modifier) {
 //pasamos como parámetro un bandsId
 @Composable
 fun Cards(bandsId: BandsId) {
-    Box() {
-        Card {
-            Image(
-                painter = painterResource(bandsId.imageResourceId),
-                contentDescription = "",
-                contentScale = ContentScale.Inside,
-            )
-            Text(
-                text = stringResource(bandsId.stringResourceId)
 
-            )
-        }
+    Card{
+
+        Image(
+            painter = painterResource(bandsId.imageResourceId),
+            contentDescription = "",
+            contentScale = ContentScale.Fit,
+        )
+        Text(
+
+            text = stringResource(bandsId.stringResourceId)
+
+        )
+
     }
+
 }
 
 /**
@@ -72,9 +76,9 @@ fun Cards(bandsId: BandsId) {
 //a esta función le mandamos la función ImagesList se crea un imagesList para
 //que recorra el DataSourcesPics.
 @Composable
-fun LazyColumnComponent() {
+fun LazyColumnComponent(modifier: Modifier = Modifier) {
 
-    ImagesList(imagesList = DatasourceMainScreenPics().LoadImagesId())
+    CardsList(cardsList = DatasourceMainScreenPics().LoadImagesId())
 
 }
 
