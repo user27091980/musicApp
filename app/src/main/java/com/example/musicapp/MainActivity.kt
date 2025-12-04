@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
@@ -19,12 +20,15 @@ import com.example.musicapp.navigation.BandAePage
 import com.example.musicapp.navigation.BandAphxPage
 import com.example.musicapp.navigation.BandBocPage
 import com.example.musicapp.navigation.BandKyussPage
+import com.example.musicapp.navigation.BandToolPage
 import com.example.musicapp.navigation.LoginPage
 import com.example.musicapp.navigation.LoginRegScreen
 import com.example.musicapp.navigation.MainScreenPage
 import com.example.musicapp.navigation.RegisterPage
+import com.example.musicapp.navigation.UserInfoPage
 import com.example.musicapp.pages.Login
 import com.example.musicapp.pages.LoginRegScreen
+import com.example.musicapp.pages.MainScreenPage
 import com.example.musicapp.pages.RegisterScreenPage
 import com.example.musicapp.pages.SplashScreenPage
 import com.example.musicapp.ui.theme.MusicAppTheme
@@ -55,7 +59,7 @@ class MainActivity : ComponentActivity() {
                     //creamos el NavHost con el grafo de navegación
                         NavHost(
                             navController = navController,
-                            startDestination = SplashScreenPage
+                            startDestination = SplashScreenPage()
                         ) {
                             composable<LoginRegScreen>{}
                             composable<LoginPage>{}
@@ -65,10 +69,12 @@ class MainActivity : ComponentActivity() {
                             composable<BandAphxPage>{}
                             composable<BandBocPage>{}
                             composable<BandKyussPage>{}
+                            composable<BandToolPage>{}
+                            composable<UserInfoPage>{ }
 
 
                         }
-                        //MainScreenPage(modifier = Modifier.padding(innerPadding))
+                        MainScreenPage(modifier = Modifier.padding(innerPadding))
                         //BandAe(modifier = Modifier.padding(innerPadding))
                         //BandAphx(modifier=Modifier.padding(innerPadding))
                         //BandBoc(modifier=Modifier.padding(innerPadding))
@@ -81,7 +87,7 @@ class MainActivity : ComponentActivity() {
                 //SplashScreenPage()
                 //LoginRegScreen()
                 //RegisterScreenPage()
-                Login()
+                //Login()
             }
         }
     }
@@ -92,10 +98,10 @@ class MainActivity : ComponentActivity() {
 fun MusicAppPreviewPage() {
     MusicAppTheme {
         //SplashScreenPage()
-        Login()
+        //Login()
         //LoginRegScreen()
         //RegisterScreenPage()
-        //MainScreenPage()
+        MainScreenPage()
         //BandAe()
         //BandAphx()
         //BandBoc()
