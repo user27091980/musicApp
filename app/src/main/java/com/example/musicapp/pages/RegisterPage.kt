@@ -37,7 +37,6 @@ fun RegisterScreenPage() {
         {
             ButtonAcept(button)
             ButtonCancel(button)
-
         }
 
     }
