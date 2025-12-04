@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -24,18 +25,13 @@ import com.example.musicapp.styles.styleButtonText
 fun ButtonLogin(modifier: Modifier = Modifier) {
 
     Button(
-        onClick = {},
-        colors = ButtonDefaults.buttonColors(
-            containerColor = MaterialTheme.colorScheme.primary
-        )
-    )
-    {
-
-        Text(
-            text = stringResource(R.string.boton_login),
-            style = styleButtonText,
-        )
+        onClick = { /* TODO: lógica login */ },
+        modifier = Modifier.fillMaxWidth(),
+        shape = RoundedCornerShape(20.dp)
+    ) {
+        Text("Login")
     }
+
 }
 
 /**
@@ -47,16 +43,12 @@ fun ButtonLogin(modifier: Modifier = Modifier) {
 @Composable
 fun ButtonRegister(modifier: Modifier = Modifier) {
 
-    Button(
-        onClick = {},
-        colors = ButtonDefaults.buttonColors(
-            containerColor = MaterialTheme.colorScheme.primary
-        )
+    FilledTonalButton(
+        onClick = { /* TODO: lógica registro */ },
+
+        shape = RoundedCornerShape(20.dp)
     ) {
-        Text(
-            text = stringResource(R.string.boton_register),
-            style = styleButtonText
-        )
+        Text("Registro")
     }
 }
 
@@ -72,7 +64,7 @@ fun ButtonAcept(modifier: Modifier = Modifier) {
     Button(
 
             onClick = { /* TODO: lógica login */ },
-            modifier = Modifier.fillMaxWidth(),
+
             shape = RoundedCornerShape(20.dp)
 
         ) {

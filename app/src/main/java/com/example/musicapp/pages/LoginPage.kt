@@ -40,7 +40,6 @@ fun LoginScreen() {
                     colors = listOf(Color.DarkGray, Color.Black) // verde Spotify → negro
                 )
             )
-
     )
     {
         Column(
@@ -50,22 +49,10 @@ fun LoginScreen() {
         ) {
 
             // Botón Login
-            Button(
-                onClick = { /* TODO: lógica login */ },
-                modifier = Modifier.fillMaxWidth(),
-                shape = RoundedCornerShape(20.dp)
-            ) {
-                Text("Login")
-            }
+            ButtonLogin()
 
             // Botón Registro con estilo tonal
-            FilledTonalButton(
-                onClick = { /* TODO: lógica registro */ },
-                modifier = Modifier.fillMaxWidth(),
-                shape = RoundedCornerShape(20.dp)
-            ) {
-                Text("Registro")
-            }
+            ButtonRegister()
         }
     }
 }

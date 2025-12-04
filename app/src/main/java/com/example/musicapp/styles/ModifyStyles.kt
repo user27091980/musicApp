@@ -28,9 +28,9 @@ val styleText = TextStyle(
 //value para el etilo de texto en los botones
 val styleButtonText = TextStyle(
 
-    fontSize = 20.sp,
+    fontSize = 15.sp,
     textAlign = TextAlign.Center,
-    color = Color.Black
+    color = Color.White
 
 )
 
@@ -43,7 +43,7 @@ val styleTextCards = TextStyle(
 
 //modificador para boton
 val button = Modifier
-    .size(width = 300.dp, height = 50.dp)
+    .size(width = 100.dp, height = 100.dp)
 
 //modificador para imagéns
 val imageModifier = Modifier
