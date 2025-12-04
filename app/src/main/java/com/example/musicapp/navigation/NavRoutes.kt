@@ -17,6 +17,9 @@ class LoginPage(val email:String){}
 class RegisterPage(val email:String, val user:String)
 
 @Serializable
+class LoginRegScreen
+
+@Serializable
 class MainScreenPage()
 
 @Serializable

@@ -15,6 +15,7 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.musicapp.myComponents.ButtonAcept
 import com.example.musicapp.myComponents.TextFieldPassComponent
 import com.example.musicapp.myComponents.TextFieldUserComponent
 
@@ -35,6 +36,7 @@ fun Login() {
             Text("LOGIN", color = Color.White)
             TextFieldUserComponent()
             TextFieldPassComponent()
+            ButtonAcept()
         }
     }
 }

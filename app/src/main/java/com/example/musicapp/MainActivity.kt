@@ -10,12 +10,23 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.musicapp.myComponents.BottomBar
 import com.example.musicapp.myComponents.TopBar
+import com.example.musicapp.navigation.BandAePage
+import com.example.musicapp.navigation.BandAphxPage
+import com.example.musicapp.navigation.BandBocPage
+import com.example.musicapp.navigation.BandKyussPage
+import com.example.musicapp.navigation.LoginPage
+import com.example.musicapp.navigation.LoginRegScreen
+import com.example.musicapp.navigation.MainScreenPage
+import com.example.musicapp.navigation.RegisterPage
 import com.example.musicapp.pages.Login
 import com.example.musicapp.pages.LoginRegScreen
 import com.example.musicapp.pages.RegisterScreenPage
+import com.example.musicapp.pages.SplashScreenPage
 import com.example.musicapp.ui.theme.MusicAppTheme
 
 
@@ -31,7 +42,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-
+            //creamos el navController
             val navController = rememberNavController()
 
             MusicAppTheme {
@@ -41,12 +52,22 @@ class MainActivity : ComponentActivity() {
                     topBar = { TopBar() },
                     bottomBar = { BottomBar() },
                     content = { innerPadding ->
-
-
-                        /*NavHost(
+                    //creamos el NavHost con el grafo de navegación
+                        NavHost(
                             navController = navController,
-                            startDestination = SplashScreenPage()
-                        ) {}*/
+                            startDestination = SplashScreenPage
+                        ) {
+                            composable<LoginRegScreen>{}
+                            composable<LoginPage>{}
+                            composable<RegisterPage>{}
+                            composable<MainScreenPage>{}
+                            composable<BandAePage>{}
+                            composable<BandAphxPage>{}
+                            composable<BandBocPage>{}
+                            composable<BandKyussPage>{}
+
+
+                        }
                         //MainScreenPage(modifier = Modifier.padding(innerPadding))
                         //BandAe(modifier = Modifier.padding(innerPadding))
                         //BandAphx(modifier=Modifier.padding(innerPadding))
