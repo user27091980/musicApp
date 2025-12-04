@@ -14,27 +14,27 @@ object SplashScreenPage
 class LoginPage(val email:String){}
 
 @Serializable
-object RegisterPage
+class RegisterPage(val email:String, val user:String)
 
 @Serializable
-object MainScreenPage
+class MainScreenPage()
 
 @Serializable
-object BandAe
+class BandAePage()
 
 @Serializable
-object BandAphex
+class BandAphxPage()
 
 @Serializable
-object BandBoc
+class BandBocPage()
 
 @Serializable
-object BandKyussPage
+class BandKyussPage()
 
 @Serializable
-object BandToolPage
+class BandToolPage()
 
 @Serializable
-object User
+class UserInfoPage()
 
 @Serializable class DialogPage(){}
