@@ -1,32 +1,22 @@
 package com.example.musicapp
 
 import android.os.Bundle
-import android.window.SplashScreen
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.rememberNavController
 import com.example.musicapp.myComponents.BottomBar
 import com.example.musicapp.myComponents.TopBar
-import com.example.musicapp.pages.BandAe
-import com.example.musicapp.pages.BandAphx
-import com.example.musicapp.pages.BandBoc
-import com.example.musicapp.pages.BandKyuss
-import com.example.musicapp.pages.BandTool
-import com.example.musicapp.pages.LoginScreen
-
-import com.example.musicapp.pages.MainScreenPage
+import com.example.musicapp.pages.Login
+import com.example.musicapp.pages.LoginRegScreen
 import com.example.musicapp.pages.RegisterScreenPage
-import com.example.musicapp.pages.SplashScreenPage
-import com.example.musicapp.pages.UserInfoScreenPage
 import com.example.musicapp.ui.theme.MusicAppTheme
-import kotlinx.serialization.Serializable
 
 
 /**
@@ -42,7 +32,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
 
-
+            val navController = rememberNavController()
 
             MusicAppTheme {
                 //andamiaje,
@@ -52,6 +42,11 @@ class MainActivity : ComponentActivity() {
                     bottomBar = { BottomBar() },
                     content = { innerPadding ->
 
+
+                        /*NavHost(
+                            navController = navController,
+                            startDestination = SplashScreenPage()
+                        ) {}*/
                         //MainScreenPage(modifier = Modifier.padding(innerPadding))
                         //BandAe(modifier = Modifier.padding(innerPadding))
                         //BandAphx(modifier=Modifier.padding(innerPadding))
@@ -59,11 +54,13 @@ class MainActivity : ComponentActivity() {
                         //BandKyuss(modifier=Modifier.padding(innerPadding))
                         //BandTool(modifier=Modifier.padding(innerPadding))
                         //UserInfoScreenPage(modifier = Modifier.padding(innerPadding))
+
                     }
                 )
                 //SplashScreenPage()
-                RegisterScreenPage()
-               // LoginScreen()
+                //LoginRegScreen()
+                //RegisterScreenPage()
+                Login()
             }
         }
     }
@@ -74,8 +71,9 @@ class MainActivity : ComponentActivity() {
 fun MusicAppPreviewPage() {
     MusicAppTheme {
         //SplashScreenPage()
-        //LoginScreen()
-        RegisterScreenPage()
+        Login()
+        //LoginRegScreen()
+        //RegisterScreenPage()
         //MainScreenPage()
         //BandAe()
         //BandAphx()

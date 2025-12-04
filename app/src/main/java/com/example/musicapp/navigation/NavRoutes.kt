@@ -11,7 +11,7 @@ import kotlinx.serialization.Serializable
 object SplashScreenPage
 
 @Serializable
-object LoginPage
+class LoginPage(val email:String){}
 
 @Serializable
 object RegisterPage
@@ -37,5 +37,4 @@ object BandToolPage
 @Serializable
 object User
 
-
-
+@Serializable class DialogPage(){}
