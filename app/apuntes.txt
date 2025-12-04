@@ -1,3 +1,6 @@
+Enlace: https://medium.com/@akshaysarapure/intents-in-android-for-jetpack-compose-users-dc0391601b9b
+        https://developer.android.com/training/basics/intents/sending
+
 Intent:
 
     implicito----> no tiene una aplicación concreta, realizar una acción sin identificar
@@ -17,3 +20,4 @@ Intent:
         </intent>
         </queries>
 
+https://bitbucket.org/profesorpermuta/workspace/projects/PMDM
