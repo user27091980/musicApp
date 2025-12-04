@@ -1,12 +1,23 @@
 package com.example.musicapp.pages
 
-/*import androidx.compose.foundation.background
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Button
+import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.musicapp.styles.button
@@ -19,28 +30,42 @@ import com.example.musicapp.myComponents.ButtonRegister
  * @function
  */
 @Composable
-fun LoginScreenPage() {
+fun LoginScreen() {
 
     Box(
-        Modifier
-            .background(MaterialTheme.colorScheme.background)
-    ) {
+        modifier = Modifier
+            .fillMaxSize()
+            .background(
+                Brush.verticalGradient(
+                    colors = listOf(Color.DarkGray, Color.Black) // verde Spotify → negro
+                )
+            )
 
-
-        Row(
-            modifier = Modifier
-                .padding(150.dp, 350.dp)
+    )
+    {
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(20.dp),
+            modifier = Modifier.padding(10.dp, 400.dp, 10.dp, 150.dp)
         ) {
 
-            ButtonLogin(button)
+            // Botón Login
+            Button(
+                onClick = { /* TODO: lógica login */ },
+                modifier = Modifier.fillMaxWidth(),
+                shape = RoundedCornerShape(20.dp)
+            ) {
+                Text("Login")
+            }
 
-
-        }
-        Row(
-            modifier = Modifier
-                .padding(141.dp, 400.dp)
-        ) {
-            ButtonRegister(button)
+            // Botón Registro con estilo tonal
+            FilledTonalButton(
+                onClick = { /* TODO: lógica registro */ },
+                modifier = Modifier.fillMaxWidth(),
+                shape = RoundedCornerShape(20.dp)
+            ) {
+                Text("Registro")
+            }
         }
     }
 }
@@ -48,9 +73,10 @@ fun LoginScreenPage() {
 @Preview
 @Composable
 fun LoginScreenPagePreview() {
-    LoginScreenPage()
-}*/
+    LoginScreen()
+}
 
+/*
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -117,9 +143,4 @@ fun LoginScreen() {
         }
     }
 }
-
-@Preview
-@Composable
-fun LoginScreenPagePreview() {
-    LoginScreen()
-}
+*/
