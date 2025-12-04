@@ -12,9 +12,6 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.navigation.compose.NavHost
-import androidx.navigation.compose.composable
-import androidx.navigation.compose.rememberNavController
 import com.example.musicapp.myComponents.BottomBar
 import com.example.musicapp.myComponents.TopBar
 import com.example.musicapp.pages.BandAe
@@ -22,6 +19,8 @@ import com.example.musicapp.pages.BandAphx
 import com.example.musicapp.pages.BandBoc
 import com.example.musicapp.pages.BandKyuss
 import com.example.musicapp.pages.BandTool
+import com.example.musicapp.pages.LoginScreen
+
 import com.example.musicapp.pages.MainScreenPage
 import com.example.musicapp.pages.RegisterScreenPage
 import com.example.musicapp.pages.SplashScreenPage
@@ -43,7 +42,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
 
-            val navController = rememberNavController()
+
 
             MusicAppTheme {
                 //andamiaje,
@@ -53,7 +52,7 @@ class MainActivity : ComponentActivity() {
                     bottomBar = { BottomBar() },
                     content = { innerPadding ->
 
-                        //MainScreenPage(modifier = Modifier.padding(innerPadding))
+                        MainScreenPage(modifier = Modifier.padding(innerPadding))
                         //BandAe(modifier = Modifier.padding(innerPadding))
                         //BandAphx(modifier=Modifier.padding(innerPadding))
                         BandBoc(modifier=Modifier.padding(innerPadding))
@@ -64,7 +63,7 @@ class MainActivity : ComponentActivity() {
                 )
                 //SplashScreenPage()
                 //RegisterScreenPage()
-                //LoginScreenPage()
+                //LoginScreen()
             }
         }
     }
@@ -75,9 +74,9 @@ class MainActivity : ComponentActivity() {
 fun MusicAppPreviewPage() {
     MusicAppTheme {
         //SplashScreenPage()
-        //LoginScreenPage()
+        //LoginScreen()
         //RegisterScreenPage()
-        //MainScreenPage()
+        MainScreenPage()
         //BandAe()
         //BandAphx()
         BandBoc()
