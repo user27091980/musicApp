@@ -21,3 +21,7 @@ Intent:
         </queries>
 
 https://bitbucket.org/profesorpermuta/workspace/projects/PMDM
+
+Navigation
+Dialog
+Services:
