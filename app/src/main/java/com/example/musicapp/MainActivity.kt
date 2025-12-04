@@ -62,8 +62,8 @@ class MainActivity : ComponentActivity() {
                     }
                 )
                 //SplashScreenPage()
-                //RegisterScreenPage()
-                LoginScreen()
+                RegisterScreenPage()
+               // LoginScreen()
             }
         }
     }
@@ -74,8 +74,8 @@ class MainActivity : ComponentActivity() {
 fun MusicAppPreviewPage() {
     MusicAppTheme {
         //SplashScreenPage()
-        LoginScreen()
-        //RegisterScreenPage()
+        //LoginScreen()
+        RegisterScreenPage()
         //MainScreenPage()
         //BandAe()
         //BandAphx()

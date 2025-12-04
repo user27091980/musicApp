@@ -45,7 +45,7 @@ fun ButtonRegister(modifier: Modifier = Modifier) {
 
     FilledTonalButton(
         onClick = { /* TODO: lógica registro */ },
-
+        modifier = Modifier.fillMaxWidth(),
         shape = RoundedCornerShape(20.dp)
     ) {
         Text("Registro")
@@ -63,11 +63,11 @@ fun ButtonAcept(modifier: Modifier = Modifier) {
 
     Button(
 
-            onClick = { /* TODO: lógica login */ },
+        onClick = { /* TODO: lógica login */ },
 
-            shape = RoundedCornerShape(20.dp)
+        shape = RoundedCornerShape(20.dp)
 
-        ) {
+    ) {
         Text(
             text = stringResource(R.string.boton_aceptar),
             style = styleButtonText
@@ -86,7 +86,7 @@ fun ButtonCancel(modifier: Modifier = Modifier) {
 
     Button(
         onClick = { /* TODO: lógica login */ },
-        modifier = Modifier.fillMaxWidth(),
+
         shape = RoundedCornerShape(20.dp)
 
     ) {
