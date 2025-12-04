@@ -64,7 +64,6 @@ fun ButtonAcept(modifier: Modifier = Modifier) {
     Button(
 
         onClick = { /* TODO: lógica login */ },
-
         shape = RoundedCornerShape(20.dp)
 
     ) {
@@ -86,7 +85,6 @@ fun ButtonCancel(modifier: Modifier = Modifier) {
 
     Button(
         onClick = { /* TODO: lógica login */ },
-
         shape = RoundedCornerShape(20.dp)
 
     ) {
