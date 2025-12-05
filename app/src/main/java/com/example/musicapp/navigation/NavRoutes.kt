@@ -8,7 +8,7 @@ import kotlinx.serialization.Serializable
 
 //ya tenemos objeto creado para la parte de la ruta
 @Serializable
-class SplashScreenPage
+class SplashScreenPage()
 
 @Serializable
 class LoginPage(val email:String){}
@@ -17,7 +17,7 @@ class LoginPage(val email:String){}
 class RegisterPage(val email:String, val user:String)
 
 @Serializable
-class LoginRegScreen
+class LoginRegScreen()
 
 @Serializable
 class MainScreenPage()
