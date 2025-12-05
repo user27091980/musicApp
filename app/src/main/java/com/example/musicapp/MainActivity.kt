@@ -33,7 +33,12 @@ import com.example.musicapp.pages.RegisterScreenPage
 import com.example.musicapp.pages.SplashScreenPage
 import com.example.musicapp.ui.theme.MusicAppTheme
 
+/*
+TODO(revise:problema Process: com.example.musicapp, PID: 5711
+    java.lang.IllegalStateException: Cannot find startDestination kotlin.Unit from NavGraph.
+    Ensure the starting NavDestination was added with route from KClass.)
 
+ */
 /**
  * @author="Andrés"
  * @param

@@ -8,7 +8,7 @@ import kotlinx.serialization.Serializable
 
 //ya tenemos objeto creado para la parte de la ruta
 @Serializable
-object SplashScreenPage
+class SplashScreenPage
 
 @Serializable
 class LoginPage(val email:String){}
