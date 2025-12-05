@@ -25,6 +25,7 @@ import com.example.musicapp.navigation.LoginPage
 import com.example.musicapp.navigation.LoginRegScreen
 import com.example.musicapp.navigation.MainScreenPage
 import com.example.musicapp.navigation.RegisterPage
+import com.example.musicapp.navigation.SplashScreenPage
 import com.example.musicapp.navigation.UserInfoPage
 import com.example.musicapp.pages.Login
 import com.example.musicapp.pages.LoginRegScreen
@@ -34,11 +35,11 @@ import com.example.musicapp.pages.SplashScreenPage
 import com.example.musicapp.ui.theme.MusicAppTheme
 
 /*
-TODO(revise:problema Process: com.example.musicapp, PID: 5711
-    java.lang.IllegalStateException: Cannot find startDestination kotlin.Unit from NavGraph.
-    Ensure the starting NavDestination was added with route from KClass.)
-
- */
+TODO(revise:
+ FATAL EXCEPTION: main Process: com.example.musicapp, PID: 5988 kotlinx.serialization.SerializationException:
+    Serializer for class 'Companion' is not found.
+    Please ensure that class is marked as '@Serializable' and that the serialization compiler plugin is applied..)
+*/
 /**
  * @author="Andrés"
  * @param
@@ -64,8 +65,9 @@ class MainActivity : ComponentActivity() {
                     //creamos el NavHost con el grafo de navegación
                         NavHost(
                             navController = navController,
-                            startDestination = SplashScreenPage()
+                            startDestination = SplashScreenPage
                         ) {
+                            composable<SplashScreenPage>{}
                             composable<LoginRegScreen>{}
                             composable<LoginPage>{}
                             composable<RegisterPage>{}
@@ -79,7 +81,7 @@ class MainActivity : ComponentActivity() {
 
 
                         }
-                        MainScreenPage(modifier = Modifier.padding(innerPadding))
+                        //MainScreenPage(modifier = Modifier.padding(innerPadding))
                         //BandAe(modifier = Modifier.padding(innerPadding))
                         //BandAphx(modifier=Modifier.padding(innerPadding))
                         //BandBoc(modifier=Modifier.padding(innerPadding))
@@ -106,7 +108,7 @@ fun MusicAppPreviewPage() {
         //Login()
         //LoginRegScreen()
         //RegisterScreenPage()
-        MainScreenPage()
+       MainScreenPage()
         //BandAe()
         //BandAphx()
         //BandBoc()
