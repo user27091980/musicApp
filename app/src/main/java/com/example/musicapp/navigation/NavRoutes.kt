@@ -7,7 +7,7 @@ import kotlinx.serialization.Serializable
 //ya tenemos objeto creado para la parte de la rutas
 //object lo ponemos si es estático
 @Serializable
-object SplashScreenPage
+class SplashScreenPage
 
 @Serializable
 class LoginPage(val email:String){}
