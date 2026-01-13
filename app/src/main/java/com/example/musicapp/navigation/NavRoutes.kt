@@ -6,9 +6,10 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import kotlinx.serialization.Serializable
 
-//ya tenemos objeto creado para la parte de la ruta
+//ya tenemos objeto creado para la parte de la rut
+//object lo ponemos si es estático
 @Serializable
-class SplashScreenPage()
+object SplashScreenPage
 
 @Serializable
 class LoginPage(val email:String){}
@@ -17,27 +18,28 @@ class LoginPage(val email:String){}
 class RegisterPage(val email:String, val user:String)
 
 @Serializable
-class LoginRegScreen()
+object LoginRegScreen
 
 @Serializable
-class MainScreenPage()
+object MainScreenPage
 
 @Serializable
-class BandAePage()
+object BandAePage
 
 @Serializable
-class BandAphxPage()
+object BandAphxPage
 
 @Serializable
-class BandBocPage()
+object BandBocPage
 
 @Serializable
-class BandKyussPage()
+object BandKyussPage
 
 @Serializable
-class BandToolPage()
+object BandToolPage
 
 @Serializable
-class UserInfoPage()
+object UserInfoPage
 
-@Serializable class DialogPage(){}
+@Serializable
+object DialogPage

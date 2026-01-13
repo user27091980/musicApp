@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -62,25 +63,26 @@ class MainActivity : ComponentActivity() {
                     topBar = { TopBar() },
                     bottomBar = { BottomBar() },
                     content = { innerPadding ->
-                    //creamos el NavHost con el grafo de navegación
-                        NavHost(
-                            navController = navController,
-                            startDestination = SplashScreenPage
-                        ) {
-                            composable<SplashScreenPage>{}
-                            composable<LoginRegScreen>{}
-                            composable<LoginPage>{}
-                            composable<RegisterPage>{}
-                            composable<MainScreenPage>{}
-                            composable<BandAePage>{}
-                            composable<BandAphxPage>{}
-                            composable<BandBocPage>{}
-                            composable<BandKyussPage>{}
-                            composable<BandToolPage>{}
-                            composable<UserInfoPage>{ }
-
-
+                        Box(modifier= Modifier.padding(paddingValues = innerPadding)){
+                            NavHost(
+                                navController = navController,
+                                startDestination = SplashScreenPage
+                            ) {
+                                composable<SplashScreenPage>{}
+                                composable<LoginRegScreen>{}
+                                composable<LoginPage>{}
+                                composable<RegisterPage>{}
+                                composable<MainScreenPage>{}
+                                composable<BandAePage>{}
+                                composable<BandAphxPage>{}
+                                composable<BandBocPage>{}
+                                composable<BandKyussPage>{}
+                                composable<BandToolPage>{}
+                                composable<UserInfoPage>{ }
+                            }
                         }
+                    //creamos el NavHost con el grafo de navegación
+
                         //MainScreenPage(modifier = Modifier.padding(innerPadding))
                         //BandAe(modifier = Modifier.padding(innerPadding))
                         //BandAphx(modifier=Modifier.padding(innerPadding))
