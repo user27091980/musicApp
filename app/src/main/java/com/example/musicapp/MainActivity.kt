@@ -35,12 +35,6 @@ import com.example.musicapp.pages.RegisterScreenPage
 import com.example.musicapp.pages.SplashScreenPage
 import com.example.musicapp.ui.theme.MusicAppTheme
 
-/*
-TODO(revise:
- FATAL EXCEPTION: main Process: com.example.musicapp, PID: 5988 kotlinx.serialization.SerializationException:
-    Serializer for class 'Companion' is not found.
-    Please ensure that class is marked as '@Serializable' and that the serialization compiler plugin is applied..)
-*/
 /**
  * @author="Andrés"
  * @param
@@ -81,22 +75,11 @@ class MainActivity : ComponentActivity() {
                                 composable<UserInfoPage>{ }
                             }
                         }
-                    //creamos el NavHost con el grafo de navegación
 
-                        //MainScreenPage(modifier = Modifier.padding(innerPadding))
-                        //BandAe(modifier = Modifier.padding(innerPadding))
-                        //BandAphx(modifier=Modifier.padding(innerPadding))
-                        //BandBoc(modifier=Modifier.padding(innerPadding))
-                        //BandKyuss(modifier=Modifier.padding(innerPadding))
-                        //BandTool(modifier=Modifier.padding(innerPadding))
-                        //UserInfoScreenPage(modifier = Modifier.padding(innerPadding))
 
                     }
                 )
-                //SplashScreenPage()
-                //LoginRegScreen()
-                //RegisterScreenPage()
-                //Login()
+
             }
         }
     }
