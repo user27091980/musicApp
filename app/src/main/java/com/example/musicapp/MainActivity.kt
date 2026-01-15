@@ -33,6 +33,7 @@ import com.example.musicapp.pages.BandTool
 import com.example.musicapp.pages.Login
 import com.example.musicapp.pages.LoginRegScreen
 import com.example.musicapp.pages.MainScreenPage
+import com.example.musicapp.pages.RegisterScreenPage
 import com.example.musicapp.pages.SplashScreenPage
 import com.example.musicapp.pages.UserInfoScreenPage
 import com.example.musicapp.ui.theme.MusicAppTheme
@@ -75,7 +76,7 @@ class MainActivity : ComponentActivity() {
                                     Login()
                                 }
                                 composable<RegisterPage> {
-
+                                    RegisterScreenPage()
                                 }
                                 composable<MainScreenPage> {
                                     MainScreenPage()
