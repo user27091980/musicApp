@@ -74,7 +74,9 @@ class MainActivity : ComponentActivity() {
                                 composable<LoginPage> {
                                     Login()
                                 }
-                                composable<RegisterPage> {}
+                                composable<RegisterPage> {
+
+                                }
                                 composable<MainScreenPage> {
                                     MainScreenPage()
                                 }
