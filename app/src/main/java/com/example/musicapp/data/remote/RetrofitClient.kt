@@ -1,4 +1,4 @@
-package com.example.musicapp.data.remote.dto
+package com.example.musicapp.data.remote
 
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
