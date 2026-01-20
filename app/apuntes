@@ -8,3 +8,5 @@ pasos para retrofit:
     api: diferentes endpoints a los que me voy a conectar.(responsabilidad simple)
     crearemos una separacion lógica entre entidades
     RetrofitClient.kt -> conf.general de retrofit(archivo obligatorio)
+
+3.Crear un repo que emplee retrofit(casi obligatorio) tenerlo separado en una clase
