@@ -1,0 +1,10 @@
+
+
+pasos para retrofit:
+
+1. dar permisos de internet en manifest(obligatorio)
+2. paquete para codigo de retrofit (NO OBLIGATORIO)(carpeta remote):
+    dto: represetna los objetos de la api, lo que se mueve entre le movil y el api(I/O)
+    api: diferentes endpoints a los que me voy a conectar.(responsabilidad simple)
+    crearemos una separacion lógica entre entidades
+    RetrofitClient.kt -> conf.general de retrofit(archivo obligatorio)
