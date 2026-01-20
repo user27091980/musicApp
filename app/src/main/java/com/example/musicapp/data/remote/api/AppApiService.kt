@@ -1,4 +1,4 @@
-package com.example.musicapp.network
+package com.example.musicapp.data.remote.api
 
 /**
  * @author Andrés
@@ -14,4 +14,3 @@ interface AppApiService {
 
  */
 }
-//crearemos un dataclass con el nombre del nombreREsponse

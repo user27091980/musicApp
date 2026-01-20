@@ -37,7 +37,7 @@ fun BandAe(modifier: Modifier = Modifier) {
 
 
         }
-        Row(flowMod){
+        Row(flowMod) {
             FlowAe()
         }
 
