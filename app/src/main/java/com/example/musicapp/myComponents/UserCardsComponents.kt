@@ -14,9 +14,9 @@ import com.example.musicapp.styles.colModifier
 import com.example.musicapp.styles.styleText
 
 /**
- * @author Perfecto
+ * @author Andrés
  * @param
- * @function
+ *
  */
 @Composable
 fun UserCardsComponents(modifier: Modifier = Modifier, materialTheme: Any) {

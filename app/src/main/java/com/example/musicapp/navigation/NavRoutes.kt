@@ -1,7 +1,9 @@
 package com.example.musicapp.navigation
 
 import kotlinx.serialization.Serializable
-
+/**
+ * @author Andrés
+ */
 //ya tenemos objeto creado para la parte de la rutas
 //object lo ponemos si es estático
 @Serializable

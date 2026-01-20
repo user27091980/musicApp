@@ -1,4 +1,9 @@
 package com.example.musicapp.network
+
+/**
+ * @author Andrés
+ */
+
 //singleton
 object RetrofitClient {
 

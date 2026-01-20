@@ -22,6 +22,10 @@ import com.example.musicapp.data.DatasourceKyussStrings
 import com.example.musicapp.data.DatasourceToolStrings
 import com.example.musicapp.data.StringsId
 
+/**
+ * @author Andrés
+ * @param
+ */
 @Composable
 fun StringList(stringList: List<StringsId>, modifier: Modifier = Modifier) {
 
@@ -35,7 +39,6 @@ fun StringList(stringList: List<StringsId>, modifier: Modifier = Modifier) {
             )
         }
     }
-
 }
 
 /**

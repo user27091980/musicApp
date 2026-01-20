@@ -2,6 +2,9 @@ package com.example.musicapp.data
 
 import com.example.musicapp.R
 
+/**
+ * @author Andrés
+ */
 class DatasourceAeStrings {
 
     fun loadStringsAe():List<StringsId>{
@@ -11,6 +14,8 @@ class DatasourceAeStrings {
             StringsId(R.string.aeText),
             StringsId(R.string.aeInfo),
             StringsId(R.string.aeDiscs)
+
         )
     }
 }
+

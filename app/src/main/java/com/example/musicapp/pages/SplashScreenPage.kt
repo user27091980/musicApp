@@ -5,9 +5,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.musicapp.myComponents.GridViewComponent
 
 /**
- * @author Perfecto
- * @param
- * @function
+ * @author Andrés
  */
 @Composable
 fun SplashScreenPage() {

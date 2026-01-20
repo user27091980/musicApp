@@ -16,6 +16,9 @@ import com.example.musicapp.styles.lazyRowMod
 import com.example.musicapp.styles.rowCardModifier
 import com.example.musicapp.styles.rowModifier
 
+/**
+ * @author Andrés
+ */
 @Composable
 fun BandBoc(modifier: Modifier = Modifier) {
 

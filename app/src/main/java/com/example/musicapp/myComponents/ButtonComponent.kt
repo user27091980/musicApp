@@ -13,7 +13,7 @@ import com.example.musicapp.R
 import com.example.musicapp.styles.styleButtonText
 
 /**
- * @author perfecto
+ * @author Andres
  * @function
  * @param
  */

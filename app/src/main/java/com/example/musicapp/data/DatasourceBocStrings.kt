@@ -2,6 +2,9 @@ package com.example.musicapp.data
 
 import com.example.musicapp.R
 
+/**
+ * @author Andrés
+ */
 class DatasourceBocStrings {
 
     fun loadStringsBoc(): List<StringsId> {

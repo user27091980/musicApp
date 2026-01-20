@@ -1,4 +1,4 @@
-package com.example.musicapp.myComponents
+package com.example.musicapp.myComponentsw
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.text.KeyboardOptions

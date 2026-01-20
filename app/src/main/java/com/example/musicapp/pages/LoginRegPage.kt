@@ -17,9 +17,7 @@ import com.example.musicapp.myComponents.ButtonLogin
 import com.example.musicapp.myComponents.ButtonRegister
 
 /**
- * @author Perfecto
- * @param
- * @function
+ * @author Andrés
  */
 @Composable
 fun LoginRegScreen() {
