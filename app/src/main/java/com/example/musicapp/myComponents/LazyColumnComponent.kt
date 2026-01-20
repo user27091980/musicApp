@@ -39,7 +39,6 @@ fun CardsList(cardsList: List<BandsId>, modifier: Modifier = Modifier) {
             }
         }
     }
-
 }
 
 /**

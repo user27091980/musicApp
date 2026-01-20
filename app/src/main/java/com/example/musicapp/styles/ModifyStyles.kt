@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ModifierLocalBeyondBoundsLayout
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -70,6 +71,8 @@ val rowCardModifier = Modifier
 val lazyRowMod = Modifier
     .padding(5.dp, 600.dp, 5.dp, 5.dp)
 
+val flowMod = Modifier
+    .padding()
 //modificadores para cards
 val cardModifier = Modifier
     .size(width = 300.dp, height = 100.dp)

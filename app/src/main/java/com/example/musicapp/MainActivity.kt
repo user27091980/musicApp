@@ -64,7 +64,7 @@ class MainActivity : ComponentActivity() {
                         Box(modifier = Modifier) {
                             NavHost(
                                 navController = navController,
-                                startDestination = SplashScreenPage
+                                startDestination = BandAePage
                             ) {
                                 composable<SplashScreenPage> {
                                     SplashScreenPage()

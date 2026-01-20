@@ -9,14 +9,18 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.musicapp.R
+import com.example.musicapp.myComponents.FlowAe
 import com.example.musicapp.myComponents.LazyCardColumnAeComponent
-
 import com.example.musicapp.myComponents.LazyRowComponentAe
 import com.example.musicapp.styles.boxModifier
+import com.example.musicapp.styles.flowMod
 import com.example.musicapp.styles.lazyRowMod
 import com.example.musicapp.styles.rowCardModifier
 import com.example.musicapp.styles.rowModifier
 
+/**
+ * @author Andrés
+ */
 @Composable
 fun BandAe(modifier: Modifier = Modifier) {
 
@@ -30,7 +34,14 @@ fun BandAe(modifier: Modifier = Modifier) {
         }
         Row(rowCardModifier) {
             LazyCardColumnAeComponent()
+
+
         }
+        Row(flowMod){
+            FlowAe()
+        }
+
+
         Row(lazyRowMod) {
             LazyRowComponentAe()
         }

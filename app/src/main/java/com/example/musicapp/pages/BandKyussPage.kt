@@ -16,6 +16,9 @@ import com.example.musicapp.styles.boxModifier
 import com.example.musicapp.styles.rowCardModifier
 import com.example.musicapp.styles.rowModifier
 
+/**
+ * @author Andrés
+ */
 @Composable
 fun BandKyuss(modifier: Modifier = Modifier) {
 

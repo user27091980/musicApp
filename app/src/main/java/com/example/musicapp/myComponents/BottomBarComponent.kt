@@ -11,7 +11,7 @@ import com.example.musicapp.data.BottomItems
 import com.example.musicapp.R
 
 /**
- * @author: Perfecto
+ * @author: Andrés
  * @function
  */
 /*
