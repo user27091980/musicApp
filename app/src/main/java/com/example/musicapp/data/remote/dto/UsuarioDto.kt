@@ -7,10 +7,10 @@ class UsuarioDto (
     @SerializedName("id")
     val id: String,
 
-    @SerializedName("")
+    @SerializedName("name")
     val name: String,
 
-    @SerializedName("")
+    @SerializedName("passwd")
     val passwd: String,
 
 

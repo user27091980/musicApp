@@ -13,6 +13,7 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.example.musicapp.myComponents.ButtonLogin
 import com.example.musicapp.myComponents.ButtonRegister
 
@@ -20,7 +21,7 @@ import com.example.musicapp.myComponents.ButtonRegister
  * @author Andrés
  */
 @Composable
-fun LoginRegScreen() {
+fun LoginRegScreen(navController: NavController) {
 
     Box(
         modifier = Modifier
@@ -39,18 +40,13 @@ fun LoginRegScreen() {
         ) {
 
             // Botón Login
-            ButtonLogin()
+            ButtonLogin(navController)
 
             // Botón Registro con estilo tonal
-            ButtonRegister()
+            ButtonRegister(navController)
         }
     }
 }
 
-@Preview
-@Composable
-fun LoginRegScreenPagePreview() {
-    LoginRegScreen()
-}
 
 

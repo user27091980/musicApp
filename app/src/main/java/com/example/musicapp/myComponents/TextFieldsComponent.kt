@@ -2,6 +2,7 @@ package com.example.musicapp.myComponentsw
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.foundation.text.input.rememberTextFieldState
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Visibility
 import androidx.compose.material.icons.filled.VisibilityOff
@@ -68,6 +69,7 @@ fun TextFieldPassComponent() {
     var passwordVisible by remember { mutableStateOf(false) }
 
     TextField(
+        state = rememberTextFieldState(initialText = "PASSWORD"),
         value = pass,
         onValueChange = { pass = it },
         label = { Text("password") },

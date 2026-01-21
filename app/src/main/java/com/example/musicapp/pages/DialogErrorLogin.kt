@@ -9,7 +9,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 
-/*ejemplo dialog
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun DialogErrorPage(
@@ -20,7 +20,7 @@ fun DialogErrorPage(
     AlertDialog(
 
         title = {
-            Text("¿Confirmar registro?")
+            Text("ERROR EN EL REGISTRO")
         },
         confirmButton = {
 
@@ -29,8 +29,20 @@ fun DialogErrorPage(
                 Text("sí")
             }
 
-        }
+        },
+        onDismissRequest = TODO(),
+        modifier = TODO(),
+        dismissButton = TODO(),
+        icon = TODO(),
+        text = TODO(),
+        shape = TODO(),
+        containerColor = TODO(),
+        iconContentColor = TODO(),
+        titleContentColor = TODO(),
+        textContentColor = TODO(),
+        tonalElevation = TODO(),
+        properties = TODO()
     )
 }
 
- */
+

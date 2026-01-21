@@ -3,11 +3,13 @@ package com.example.musicapp.pages
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
+import androidx.compose.material3.Card
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavController
 import com.example.musicapp.R
 import com.example.musicapp.myComponents.FlowAe
 import com.example.musicapp.myComponents.LazyCardColumnAeComponent
@@ -16,13 +18,14 @@ import com.example.musicapp.styles.boxModifier
 import com.example.musicapp.styles.flowMod
 import com.example.musicapp.styles.lazyRowMod
 import com.example.musicapp.styles.rowCardModifier
+import com.example.musicapp.styles.rowFlowModifier
 import com.example.musicapp.styles.rowModifier
 
 /**
  * @author Andrés
  */
 @Composable
-fun BandAe(modifier: Modifier = Modifier) {
+fun BandAe( navController: NavController,modifier: Modifier = Modifier,) {
 
     Box(boxModifier) {
         Row(rowModifier) {
@@ -36,21 +39,17 @@ fun BandAe(modifier: Modifier = Modifier) {
             LazyCardColumnAeComponent()
 
 
-        }
-        Row(flowMod) {
-            FlowAe()
-        }
 
+        }
+        Row(rowFlowModifier){
+            Card(){
+                FlowAe()
+            }
 
+        }
         Row(lazyRowMod) {
             LazyRowComponentAe()
         }
     }
 }
 
-
-@Preview
-@Composable
-fun BandPrev() {
-    BandAe()
-}

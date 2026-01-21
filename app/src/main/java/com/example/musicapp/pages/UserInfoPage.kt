@@ -5,6 +5,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavController
 import com.example.musicapp.myComponents.FloatCamera
 import com.example.musicapp.myComponents.UserCardsComponents
 import com.example.musicapp.styles.cameraMod
@@ -15,7 +16,7 @@ import com.example.musicapp.styles.cameraMod
  * @function
  */
 @Composable
-fun UserInfoScreenPage(modifier: Modifier = Modifier) {
+fun UserInfoScreenPage(navController: NavController,modifier: Modifier = Modifier) {
 
     Row {
         UserCardsComponents(
@@ -27,10 +28,3 @@ fun UserInfoScreenPage(modifier: Modifier = Modifier) {
     }
 }
 
-@Preview
-@Composable
-fun UserPrev() {
-
-    UserInfoScreenPage()
-
-}

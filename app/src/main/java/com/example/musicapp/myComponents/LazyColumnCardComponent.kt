@@ -1,6 +1,7 @@
 package com.example.musicapp.myComponents
 
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
@@ -21,6 +22,7 @@ import com.example.musicapp.data.DatasourceBocStrings
 import com.example.musicapp.data.DatasourceKyussStrings
 import com.example.musicapp.data.DatasourceToolStrings
 import com.example.musicapp.data.StringsId
+import com.example.musicapp.styles.flowMod
 
 /**
  * @author Andrés
@@ -77,6 +79,7 @@ fun Strings(stringsId: StringsId) {
 fun LazyCardColumnAeComponent() {
 
     StringList(stringList = DatasourceAeStrings().loadStringsAe())
+
 
 }
 

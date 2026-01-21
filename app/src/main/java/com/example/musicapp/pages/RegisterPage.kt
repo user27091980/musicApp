@@ -1,5 +1,6 @@
 package com.example.musicapp.pages
 
+import android.R.attr.onClick
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -10,8 +11,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.LinkAnnotation
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.example.musicapp.myComponents.ButtonAcept
 import com.example.musicapp.myComponents.ButtonCancel
 
@@ -25,7 +28,7 @@ import com.example.musicapp.styles.button
  */
 @Composable
 
-fun RegisterScreenPage() {
+fun RegisterScreenPage(navController: NavController) {
 
     Box(
         modifier = Modifier
@@ -47,16 +50,12 @@ fun RegisterScreenPage() {
             Modifier.padding(95.dp, 400.dp,),
         )
         {
-            ButtonAcept(button)
+
+            ButtonAcept(
+                button)
             ButtonCancel(button)
         }
 
     }
 
-}
-
-@Preview
-@Composable
-fun RegPreview() {
-    RegisterScreenPage()
 }

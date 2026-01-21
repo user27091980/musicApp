@@ -9,7 +9,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.example.musicapp.R
+import com.example.musicapp.navigation.MainScreenPage
+import com.example.musicapp.navigation.RegisterPage
+import com.example.musicapp.navigation.UserInfoPage
 import com.example.musicapp.styles.styleButtonText
 
 /**
@@ -20,10 +24,10 @@ import com.example.musicapp.styles.styleButtonText
 //Componentes botones de todo el programa.
 //boton login
 @Composable
-fun ButtonLogin(modifier: Modifier = Modifier) {
+fun ButtonLogin(navController: NavController, modifier: Modifier = Modifier) {
 
     Button(
-        onClick = { /* TODO: lógica login */ },
+        onClick = { navController.navigate(MainScreenPage) },
         modifier = Modifier.fillMaxWidth(),
         shape = RoundedCornerShape(20.dp)
     ) {
@@ -33,16 +37,16 @@ fun ButtonLogin(modifier: Modifier = Modifier) {
 }
 
 /**
- * @author perfecto
+ * @author andrés
  * @function
  * @param
  */
 //boton para el registro
 @Composable
-fun ButtonRegister(modifier: Modifier = Modifier) {
+fun ButtonRegister(navController: NavController, modifier: Modifier = Modifier) {
 
     FilledTonalButton(
-        onClick = { /* TODO: lógica registro */ },
+        onClick = { navController.navigate(RegisterPage) },
         modifier = Modifier.fillMaxWidth(),
         shape = RoundedCornerShape(20.dp)
     ) {
@@ -51,17 +55,17 @@ fun ButtonRegister(modifier: Modifier = Modifier) {
 }
 
 /**
- * @author perfecto
+ * @author Andrés
  * @function
  * @param
  */
 //botón para aceptar
 @Composable
-fun ButtonAcept(modifier: Modifier = Modifier) {
+fun ButtonAcept(navController: NavController, modifier: Modifier = Modifier) {
 
     Button(
 
-        onClick = { /* TODO: lógica login */ },
+        onClick = { navController.navigate(UserInfoPage) },
         shape = RoundedCornerShape(20.dp)
 
     ) {
@@ -73,16 +77,16 @@ fun ButtonAcept(modifier: Modifier = Modifier) {
 }
 
 /**
- * @author perfecto
+ * @author andrés
  * @function
  * @param
  */
 //botón de cancelación
 @Composable
-fun ButtonCancel(modifier: Modifier = Modifier) {
+fun ButtonCancel(navController: NavController,modifier: Modifier = Modifier) {
 
     Button(
-        onClick = { /* TODO: lógica login */ },
+        onClick = { navController.navigate(MainScreenPage) },
         shape = RoundedCornerShape(20.dp)
 
     ) {
