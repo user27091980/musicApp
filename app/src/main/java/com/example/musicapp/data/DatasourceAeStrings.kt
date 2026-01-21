@@ -12,8 +12,7 @@ class DatasourceAeStrings {
         return listOf(
 
             StringsId(R.string.aeText),
-            StringsId(R.string.aeInfo),
-            StringsId(R.string.aeDiscs)
+
 
         )
     }

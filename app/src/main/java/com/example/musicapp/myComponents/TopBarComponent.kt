@@ -24,7 +24,9 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.navigation.NavHostController
 import com.example.musicapp.R
+import com.example.musicapp.navigation.MainScreenPage
 
 /**
  * @author andres
@@ -84,7 +86,7 @@ fun TopBar() {
  */
 //función que se encarga del comportamiento del menú desplegable y de los elementos que lo conitenen
 @Composable
-fun DropMenu(extended: Boolean, dismissRequest: () -> Unit) {
+fun DropMenu(navHostController: NavHostController,extended: Boolean, dismissRequest: () -> Unit) {
 
     Column(Modifier.padding()) {
         Box(
@@ -103,7 +105,7 @@ fun DropMenu(extended: Boolean, dismissRequest: () -> Unit) {
 
                 DropdownMenuItem(
                     text = { Text(text = stringResource(R.string.inicio)) },
-                    onClick = { })
+                    onClick = {navHostController.navigate(MainScreenPage) })
                 DropdownMenuItem(
                     text = { Text(text = stringResource(R.string.links)) },
                     onClick = { })

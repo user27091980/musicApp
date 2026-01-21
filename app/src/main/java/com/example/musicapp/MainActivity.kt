@@ -50,7 +50,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            //creamos el navController
+            //creamos el navController: responsable de navegar entre los destinos
             val navController = rememberNavController()
 
             MusicAppTheme {
@@ -60,45 +60,53 @@ class MainActivity : ComponentActivity() {
                     topBar = { TopBar() },
                     bottomBar = { BottomBar() },
                     content = { innerPadding ->
+
                         var p = innerPadding;
+
                         Box(modifier = Modifier) {
+                            /**
+                             * NavHost: Es el elemento componible que funciona como contenedor para
+                             * mostrar el destino actual del NavGraph.
+                             */
                             NavHost(
                                 navController = navController,
-                                startDestination = BandAePage
+                                startDestination = SplashScreenPage
                             ) {
                                 composable<SplashScreenPage> {
-                                    SplashScreenPage()
+                                    SplashScreenPage(
+                                    )
                                 }
                                 composable<LoginRegScreen> {
-                                    LoginRegScreen()
+                                    LoginRegScreen(navController)
                                 }
                                 composable<LoginPage> {
-                                    Login()
+                                    Login(navController)
                                 }
                                 composable<RegisterPage> {
-                                    RegisterScreenPage()
+                                    RegisterScreenPage(navController)
                                 }
                                 composable<MainScreenPage> {
-                                    MainScreenPage()
+                                    MainScreenPage(navController)
                                 }
                                 composable<BandAePage> {
-                                    BandAe()
+                                    BandAe(navController)
                                 }
                                 composable<BandAphxPage> {
-                                    BandAphx()
+                                    BandAphx(navController)
                                 }
                                 composable<BandBocPage> {
-                                    BandBoc()
+                                    BandBoc(navController)
                                 }
                                 composable<BandKyussPage> {
-                                    BandKyuss()
+                                    BandKyuss(navController)
                                 }
                                 composable<BandToolPage> {
-                                    BandTool()
+                                    BandTool(navController)
                                 }
                                 composable<UserInfoPage> {
-                                    UserInfoScreenPage()
+                                    UserInfoScreenPage(navController)
                                 }
+
                             }
                         }
                     }

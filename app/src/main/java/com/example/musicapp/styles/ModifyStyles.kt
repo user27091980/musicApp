@@ -84,3 +84,6 @@ val lazyColumnCardModifier = Modifier
 
 //value para el posicionamiento del icono de la cámara.
 val cameraMod = Modifier.padding(300.dp, 720.dp, 10.dp, 10.dp)
+
+
+val rowFlowModifier = Modifier.padding(300.dp,100.dp,500.dp, 10.dp)

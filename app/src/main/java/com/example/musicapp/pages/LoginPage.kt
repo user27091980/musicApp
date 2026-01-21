@@ -14,6 +14,7 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.example.musicapp.myComponents.ButtonAcept
 import com.example.musicapp.myComponentsw.TextFieldPassComponent
 import com.example.musicapp.myComponentsw.TextFieldUserComponent
@@ -22,7 +23,7 @@ import com.example.musicapp.myComponentsw.TextFieldUserComponent
  * @author Andrés
  */
 @Composable
-fun Login() {
+fun Login(navController: NavController) {
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -38,16 +39,8 @@ fun Login() {
             Text("LOGIN", color = Color.White)
             TextFieldUserComponent()
             TextFieldPassComponent()
-            ButtonAcept()
+            ButtonAcept(navController)
 
         }
     }
-}
-
-
-@Preview
-@Composable
-fun LoginPrev() {
-
-    Login()
 }
