@@ -39,9 +39,7 @@ fun BandAe(modifier: Modifier = Modifier,) {
 
         }
         Row(rowFlowModifier){
-            Card(){
-                FlowAe()
-            }
+
 
         }
         Row(lazyRowMod) {
@@ -55,4 +53,5 @@ fun BandAe(modifier: Modifier = Modifier,) {
 fun BandAePrev(){
 
     BandAe()
+
 }

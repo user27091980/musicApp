@@ -73,7 +73,7 @@ class MainActivity : ComponentActivity() {
                              */
                             NavHost(
                                 navController = navController,
-                                startDestination = SplashScreenPage()
+                                startDestination = BandAePage
                             ) {
                                 composable<SplashScreenPage> {
                                     SplashScreen(navController)
@@ -94,7 +94,9 @@ class MainActivity : ComponentActivity() {
                                     BandAe()
                                 }
                                 composable<BandAphxPage> {
-                                    BandAphx(navController)
+                                    BandAphx(
+
+                                    )
                                 }
                                 composable<BandBocPage> {
                                     BandBoc(navController)

@@ -1,8 +1,11 @@
 package com.example.musicapp.myComponents
 
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -16,6 +19,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import com.example.musicapp.R
 import com.example.musicapp.data.DatasourceAeStrings
 import com.example.musicapp.data.DatasourceAphxStrings
 import com.example.musicapp.data.DatasourceBocStrings
@@ -78,35 +82,67 @@ fun Strings(stringsId: StringsId) {
 @Composable
 fun LazyCardColumnAeComponent() {
 
-    StringList(stringList = DatasourceAeStrings().loadStringsAe())
+    Box() {
+        Column() {
 
+            StringList(stringList = DatasourceAeStrings().loadStringsAe())
+            Spacer(modifier = Modifier.height(80.dp))
+            Text(stringResource(R.string.genre))
+            Spacer(modifier = Modifier.height(80.dp))
+            FlowAe()
+        }
+    }
 
 }
 
 @Composable
 fun LazyCardColumnBocComponent() {
-
-    StringList(stringList = DatasourceBocStrings().loadStringsBoc())
-
+    Box() {
+        Column() {
+            StringList(stringList = DatasourceBocStrings().loadStringsBoc())
+            Spacer(modifier = Modifier.height(80.dp))
+            Text(stringResource(R.string.genre))
+            Spacer(modifier = Modifier.height(80.dp))
+            FlowBoc()
+        }
+    }
 }
 
 @Composable
 fun LazyCardColumnAphxComponent() {
-
-    StringList(stringList = DatasourceAphxStrings().loadStringsAphx())
-
+    Box() {
+        Column() {
+            StringList(stringList = DatasourceAphxStrings().loadStringsAphx())
+            Spacer(modifier = Modifier.height(80.dp))
+            Text(stringResource(R.string.genre))
+            Spacer(modifier = Modifier.height(80.dp))
+            FlowAphx()
+        }
+    }
 }
 
 @Composable
 fun LazyCardColumnKyussComponent() {
-
-    StringList(stringList = DatasourceKyussStrings().loadStringsKyuss())
-
+    Box() {
+        Column() {
+            StringList(stringList = DatasourceKyussStrings().loadStringsKyuss())
+            Spacer(modifier = Modifier.height(80.dp))
+            Text(stringResource(R.string.genre))
+            Spacer(modifier = Modifier.height(80.dp))
+            FlowKyuss()
+        }
+    }
 }
 
 @Composable
 fun LazyCardColumnToolComponent() {
-
-    StringList(stringList = DatasourceToolStrings().loadStringsTool())
-
+    Box(){
+        Column(){
+            StringList(stringList = DatasourceToolStrings().loadStringsTool())
+            Spacer(modifier = Modifier.height(80.dp))
+            Text(stringResource(R.string.genre))
+            Spacer(modifier = Modifier.height(80.dp))
+            FlowTool()
+        }
+    }
 }
