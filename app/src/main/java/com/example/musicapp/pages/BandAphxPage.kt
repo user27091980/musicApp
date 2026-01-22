@@ -21,7 +21,7 @@ import com.example.musicapp.styles.rowModifier
  * @author Andrés
  */
 @Composable
-fun BandAphx( navController: NavController,modifier: Modifier = Modifier) {
+fun BandAphx( modifier: Modifier = Modifier) {
 
     Box(boxModifier) {
         Row(rowModifier) {
@@ -41,4 +41,10 @@ fun BandAphx( navController: NavController,modifier: Modifier = Modifier) {
 
         }
     }
+}
+@Preview
+@Composable
+fun BandAphxPrev(){
+
+    BandAphx()
 }

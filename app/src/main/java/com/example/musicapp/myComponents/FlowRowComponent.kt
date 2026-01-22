@@ -8,54 +8,62 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.example.musicapp.R
 
 /**
  * @author Andrés
  */
 @Composable
-fun FlowAe(){
+fun FlowAe() {
 
-    FlowRow(modifier = Modifier.padding(8.dp)){
-        TagItem("idm")
+    FlowRow(modifier = Modifier.padding(8.dp)) {
+        TagItem(stringResource(R.string.idm))
+        TagItem(stringResource(R.string.experimental))
+    }
+
+}
+
+@Composable
+fun FlowAphx() {
+
+    FlowRow(modifier = Modifier.padding(8.dp)) {
+        TagItem(stringResource(R.string.idm))
+        TagItem(stringResource(R.string.experimental))
 
     }
 }
 
 @Composable
-fun FlowAphx(){
+fun FlowBoc() {
 
-    FlowRow(modifier = Modifier.padding(8.dp)){
-        TagItem("idm")
-
-    }
-}
-
-@Composable
-fun FlowBoc(){
-
-    FlowRow(modifier = Modifier.padding(8.dp)){
-        TagItem("idm")
+    FlowRow(modifier = Modifier.padding(8.dp)) {
+        TagItem(stringResource(R.string.idm))
+        TagItem(stringResource(R.string.experimental))
 
     }
 }
 
 @Composable
-fun FlowKyuss(){
+fun FlowKyuss() {
 
-    FlowRow(modifier = Modifier.padding(8.dp)){
-        TagItem("idm")
+    FlowRow(modifier = Modifier.padding(10.dp)) {
+        TagItem(stringResource(R.string.stoner))
+        TagItem(stringResource(R.string.dessert))
 
     }
 }
+
 @Composable
-fun FlowTool(){
+fun FlowTool() {
 
-    FlowRow(modifier = Modifier.padding(8.dp)){
-        TagItem("idm")
-
+    FlowRow(modifier = Modifier.padding(10.dp)) {
+        TagItem(stringResource(R.string.metal))
+        TagItem(stringResource(R.string.altmetal))
     }
 }
+
 @Composable
 fun TagItem(text: String, onClick: () -> Unit = {}) {
     FilterChip(

@@ -162,7 +162,6 @@
 
     <string name="toolInfo">
         \n
-        Género: Alternative metal, art rock, post-metal, progressive metal, progressive rock\n
         Miembros: Maynard James Keenan, Adam Jones, Danny Carey, Justin Chancellor\n
         Discográfica: Dali, Chameleon Elektra, Bong Load, Man\'s Ruin
         \n
@@ -177,10 +176,28 @@
         \n
     </string>
 
-    <string name="genres">
+    <string name="altmetal">
         Alternative metal
-
-
     </string>
-
+    <string name="genre">
+        estilo
+    </string>
+    <string name="idm">
+        idm
+    </string>
+    <string name="experimental">
+        experimental
+    </string>
+    <string name="downtempo">
+        downtempo
+    </string>
+    <string name="stoner">
+        stoner
+    </string>
+    <string name="dessert">
+        desert rock
+    </string>
+    <string name="metal">
+        progressive metal
+    </string>
 </resources>
