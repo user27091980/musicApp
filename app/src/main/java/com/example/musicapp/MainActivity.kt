@@ -23,6 +23,7 @@ import com.example.musicapp.navigation.LoginPage
 import com.example.musicapp.navigation.LoginRegScreen
 import com.example.musicapp.navigation.MainScreenPage
 import com.example.musicapp.navigation.RegisterPage
+import com.example.musicapp.navigation.SettingsScreen
 import com.example.musicapp.navigation.SplashScreenPage
 import com.example.musicapp.navigation.UserInfoPage
 import com.example.musicapp.pages.BandAe
@@ -34,6 +35,8 @@ import com.example.musicapp.pages.Login
 import com.example.musicapp.pages.LoginRegScreen
 import com.example.musicapp.pages.MainScreenPage
 import com.example.musicapp.pages.RegisterScreenPage
+import com.example.musicapp.pages.SettingsScreen
+import com.example.musicapp.pages.SplashScreen
 import com.example.musicapp.pages.SplashScreenPage
 import com.example.musicapp.pages.UserInfoScreenPage
 import com.example.musicapp.ui.theme.MusicAppTheme
@@ -70,11 +73,10 @@ class MainActivity : ComponentActivity() {
                              */
                             NavHost(
                                 navController = navController,
-                                startDestination = SplashScreenPage
+                                startDestination = SplashScreenPage()
                             ) {
                                 composable<SplashScreenPage> {
-                                    SplashScreenPage(
-                                    )
+                                    SplashScreen(navController)
                                 }
                                 composable<LoginRegScreen> {
                                     LoginRegScreen(navController)
@@ -89,7 +91,7 @@ class MainActivity : ComponentActivity() {
                                     MainScreenPage(navController)
                                 }
                                 composable<BandAePage> {
-                                    BandAe(navController)
+                                    BandAe()
                                 }
                                 composable<BandAphxPage> {
                                     BandAphx(navController)
@@ -106,7 +108,9 @@ class MainActivity : ComponentActivity() {
                                 composable<UserInfoPage> {
                                     UserInfoScreenPage(navController)
                                 }
-
+                               /*composable<SettingsScreen>{
+                                    SettingsScreen()
+                                }*/
                             }
                         }
                     }

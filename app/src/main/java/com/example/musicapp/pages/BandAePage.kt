@@ -15,7 +15,6 @@ import com.example.musicapp.myComponents.FlowAe
 import com.example.musicapp.myComponents.LazyCardColumnAeComponent
 import com.example.musicapp.myComponents.LazyRowComponentAe
 import com.example.musicapp.styles.boxModifier
-import com.example.musicapp.styles.flowMod
 import com.example.musicapp.styles.lazyRowMod
 import com.example.musicapp.styles.rowCardModifier
 import com.example.musicapp.styles.rowFlowModifier
@@ -25,7 +24,7 @@ import com.example.musicapp.styles.rowModifier
  * @author Andrés
  */
 @Composable
-fun BandAe( navController: NavController,modifier: Modifier = Modifier,) {
+fun BandAe(modifier: Modifier = Modifier,) {
 
     Box(boxModifier) {
         Row(rowModifier) {
@@ -37,8 +36,6 @@ fun BandAe( navController: NavController,modifier: Modifier = Modifier,) {
         }
         Row(rowCardModifier) {
             LazyCardColumnAeComponent()
-
-
 
         }
         Row(rowFlowModifier){
@@ -53,3 +50,9 @@ fun BandAe( navController: NavController,modifier: Modifier = Modifier,) {
     }
 }
 
+@Preview
+@Composable
+fun BandAePrev(){
+
+    BandAe()
+}
