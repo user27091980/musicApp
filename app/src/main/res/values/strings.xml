@@ -84,7 +84,6 @@
     </string>
     <string name="bocInfo">
         \n
-        Género: IDM, ambient, techno,\nexperimental\n
         Miembros:Mike Sandison, Marcus Eoins\n
         Discográfica: Warp Records/Skam records
         \n
@@ -110,7 +109,6 @@
     </string>
     <string name="aphxInfo">
         \n
-        Género: IDM, ambient, techno, experimental, acid.\n
         Miembros: Richard David James\n
         Discográfica: Warp Records\n
         Website:https://aphextwin.warp.net/
@@ -140,14 +138,13 @@
 
     <string name="kyussInfo">
         \n
-        Género: Stoner rock, desert rock, stoner metal\n
         Miembros: Josh Homme, John Garcia, Alfredo Hernández, Brant Bjork, Nick Oliveri\n
         Discográfica: Dali, Chameleon Elektra, Bong Load, Man\'s Ruin
         \n
     </string>
 
     <string name="kyussDisc">
-        Wretch\n
+        Wretch
         Blues for the Red Sun\n
         Welcome to Sky Valley\n
         And the Circus Leaves Town\n
@@ -180,5 +177,10 @@
         \n
     </string>
 
+    <string name="genres">
+        Alternative metal
+
+
+    </string>
 
 </resources>
