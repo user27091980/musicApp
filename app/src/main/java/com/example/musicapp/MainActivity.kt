@@ -12,6 +12,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.core.splashscreen.SplashScreen
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -28,8 +29,19 @@ import com.example.musicapp.navigation.MainScreenPage
 import com.example.musicapp.navigation.RegisterPage
 import com.example.musicapp.navigation.SplashScreenPage
 import com.example.musicapp.navigation.UserInfoPage
-import com.example.musicapp.ui.theme.pages.MainScreenPage
-import com.example.musicapp.ui.theme.themes.MusicAppTheme
+import com.example.musicapp.pages.BandAe
+import com.example.musicapp.pages.BandAphx
+import com.example.musicapp.pages.BandBoc
+import com.example.musicapp.pages.BandKyuss
+import com.example.musicapp.pages.BandTool
+import com.example.musicapp.pages.Login
+import com.example.musicapp.pages.LoginRegScreen
+import com.example.musicapp.pages.MainScreenPage
+import com.example.musicapp.pages.RegisterScreenPage
+import com.example.musicapp.pages.SplashScreen
+import com.example.musicapp.pages.SplashScreenPage
+import com.example.musicapp.pages.UserInfoScreenPage
+import com.example.musicapp.ui.theme.MusicAppTheme
 
 /**
  * @author="Andrés"
@@ -58,18 +70,46 @@ class MainActivity : ComponentActivity() {
                                 navController = navController,
                                 startDestination = SplashScreenPage
                             ) {
+                                composable<SplashScreenPage> {
+                                    SplashScreen(navController)
+                                }
+                                composable<LoginRegScreen> {
+                                    LoginRegScreen()
+                                }
+                                composable<LoginPage> {
+                                    Login()
+                                }
+                                composable<RegisterPage> {
+                                    RegisterScreenPage()
+                                }
+                                composable<MainScreenPage> {
+                                    MainScreenPage()
+                                }
+                                composable<BandAePage> {
+                                    BandAe()
+                                }
+                                composable<BandAphxPage> {
+                                    BandAphx(
 
-                                composable<SplashScreenPage> {}
-                                composable<LoginRegScreen> {}
-                                composable<LoginPage> {}
-                                composable<RegisterPage> {}
-                                composable<MainScreenPage> {}
-                                composable<BandAePage> {}
-                                composable<BandAphxPage> {}
-                                composable<BandBocPage> {}
-                                composable<BandKyussPage> {}
-                                composable<BandToolPage> {}
-                                composable<UserInfoPage> { }
+                                    )
+                                }
+                                composable<BandBocPage> {
+                                    BandBoc()
+                                }
+                                composable<BandKyussPage> {
+                                    BandKyuss()
+                                }
+                                composable<BandToolPage> {
+                                    BandTool()
+                                }
+                                composable<UserInfoPage> {
+                                    UserInfoScreenPage()
+                                }
+                               /*composable<SettingsScreen>{
+                                    SettingsScreen()
+                                }
+
+                                */
                             }
                         }
 

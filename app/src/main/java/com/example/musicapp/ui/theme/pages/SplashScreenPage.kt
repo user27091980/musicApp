@@ -32,7 +32,7 @@ fun SplashScreenPage() {
 
 @Preview
 @Composable
-fun SplashPrev() {
+fun SplashPrev(){
 
     SplashScreenPage()
 

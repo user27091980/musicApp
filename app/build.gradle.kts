@@ -69,6 +69,7 @@ dependencies {
     implementation(libs.retrofit2)
     implementation(libs.retrofit2.converter.gson)
     implementation(libs.okhttp.logging)
+    implementation(libs.androidx.core.splashscreen)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

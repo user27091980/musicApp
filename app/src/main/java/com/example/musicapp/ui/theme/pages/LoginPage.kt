@@ -48,7 +48,7 @@ fun Login() {
 
 @Preview
 @Composable
-fun LoginPrev() {
+fun LoginPrev(){
 
     Login()
 
