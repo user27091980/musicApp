@@ -23,14 +23,16 @@ fun UserInfoScreenPage(modifier: Modifier = Modifier) {
             materialTheme = MaterialTheme.colorScheme.background
         )
     }
-    Row(cameraMod){
-        FloatCamera {  }
+
+    //TODO("Not yet implemented")
+    Row(cameraMod) {
+        FloatCamera { }
     }
 }
 
 @Preview
 @Composable
-fun UserInfoPrev(){
+fun UserInfoPrev() {
 
     UserInfoScreenPage()
 

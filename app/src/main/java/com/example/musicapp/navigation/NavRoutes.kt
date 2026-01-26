@@ -12,10 +12,10 @@ import kotlinx.serialization.Serializable
 object SplashScreenPage
 
 @Serializable
-class LoginPage(val email:String){}
+class LoginPage(val email: String) {}
 
 @Serializable
-class RegisterPage(val email:String, val user:String)
+class RegisterPage(val email: String, val user: String)
 
 @Serializable
 object LoginRegScreen

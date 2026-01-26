@@ -32,7 +32,7 @@ fun DialogPage(
 
         },
         dismissButton = {
-            TextButton(onClick = onCancel){
+            TextButton(onClick = onCancel) {
                 Text("no")
             }
         }
