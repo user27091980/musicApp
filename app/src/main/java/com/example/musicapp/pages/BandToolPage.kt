@@ -21,7 +21,7 @@ import com.example.musicapp.styles.rowModifier
  * @author Andrés
  */
 @Composable
-fun BandTool(navController: NavController, modifier: Modifier = Modifier) {
+fun BandTool(modifier: Modifier = Modifier) {
 
     Box(boxModifier) {
         Row(rowModifier) {
@@ -46,3 +46,10 @@ fun BandTool(navController: NavController, modifier: Modifier = Modifier) {
     }
 }
 
+@Preview
+@Composable
+fun BandToolPrev(){
+
+    BandTool()
+
+}

@@ -16,9 +16,9 @@ import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 
 @Composable
-fun SettingsScreen(navController: NavController,viewModel: NavHostController) {
+fun SettingsScreen(viewModel: NavHostController) {
 
-    val darkMode by viewModel.darkMode.collectAsState()
+    //val darkMode by viewModel.darkMode.collectAsState()
 
     Column(
         modifier = Modifier

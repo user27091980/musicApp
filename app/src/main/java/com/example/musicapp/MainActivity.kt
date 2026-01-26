@@ -79,16 +79,16 @@ class MainActivity : ComponentActivity() {
                                     SplashScreen(navController)
                                 }
                                 composable<LoginRegScreen> {
-                                    LoginRegScreen(navController)
+                                    LoginRegScreen()
                                 }
                                 composable<LoginPage> {
-                                    Login(navController)
+                                    Login()
                                 }
                                 composable<RegisterPage> {
-                                    RegisterScreenPage(navController)
+                                    RegisterScreenPage()
                                 }
                                 composable<MainScreenPage> {
-                                    MainScreenPage(navController)
+                                    MainScreenPage()
                                 }
                                 composable<BandAePage> {
                                     BandAe()
@@ -99,20 +99,22 @@ class MainActivity : ComponentActivity() {
                                     )
                                 }
                                 composable<BandBocPage> {
-                                    BandBoc(navController)
+                                    BandBoc()
                                 }
                                 composable<BandKyussPage> {
-                                    BandKyuss(navController)
+                                    BandKyuss()
                                 }
                                 composable<BandToolPage> {
-                                    BandTool(navController)
+                                    BandTool()
                                 }
                                 composable<UserInfoPage> {
-                                    UserInfoScreenPage(navController)
+                                    UserInfoScreenPage()
                                 }
                                /*composable<SettingsScreen>{
                                     SettingsScreen()
-                                }*/
+                                }
+
+                                */
                             }
                         }
                     }
