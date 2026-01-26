@@ -28,7 +28,7 @@ import com.example.musicapp.styles.button
  */
 @Composable
 
-fun RegisterScreenPage(navController: NavController) {
+fun RegisterScreenPage() {
 
     Box(
         modifier = Modifier
@@ -57,5 +57,12 @@ fun RegisterScreenPage(navController: NavController) {
         }
 
     }
+
+}
+@Preview
+@Composable
+fun RegScreenPrev(){
+
+    RegisterScreenPage()
 
 }

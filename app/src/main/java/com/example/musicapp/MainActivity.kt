@@ -6,12 +6,9 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -26,13 +23,22 @@ import com.example.musicapp.navigation.LoginPage
 import com.example.musicapp.navigation.LoginRegScreen
 import com.example.musicapp.navigation.MainScreenPage
 import com.example.musicapp.navigation.RegisterPage
+import com.example.musicapp.navigation.SettingsScreen
 import com.example.musicapp.navigation.SplashScreenPage
 import com.example.musicapp.navigation.UserInfoPage
+import com.example.musicapp.pages.BandAe
+import com.example.musicapp.pages.BandAphx
+import com.example.musicapp.pages.BandBoc
+import com.example.musicapp.pages.BandKyuss
+import com.example.musicapp.pages.BandTool
 import com.example.musicapp.pages.Login
 import com.example.musicapp.pages.LoginRegScreen
 import com.example.musicapp.pages.MainScreenPage
 import com.example.musicapp.pages.RegisterScreenPage
+import com.example.musicapp.pages.SettingsScreen
+import com.example.musicapp.pages.SplashScreen
 import com.example.musicapp.pages.SplashScreenPage
+import com.example.musicapp.pages.UserInfoScreenPage
 import com.example.musicapp.ui.theme.MusicAppTheme
 
 /**
@@ -47,7 +53,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            //creamos el navController
+            //creamos el navController: responsable de navegar entre los destinos
             val navController = rememberNavController()
 
             MusicAppTheme {
@@ -57,51 +63,63 @@ class MainActivity : ComponentActivity() {
                     topBar = { TopBar() },
                     bottomBar = { BottomBar() },
                     content = { innerPadding ->
-                        Box(modifier= Modifier.padding(paddingValues = innerPadding)){
+
+                        var p = innerPadding;
+
+                        Box(modifier = Modifier) {
+                            /**
+                             * NavHost: Es el elemento componible que funciona como contenedor para
+                             * mostrar el destino actual del NavGraph.
+                             */
                             NavHost(
                                 navController = navController,
-                                startDestination = SplashScreenPage
+                                startDestination = BandAePage
                             ) {
-                                composable<SplashScreenPage>{}
-                                composable<LoginRegScreen>{}
-                                composable<LoginPage>{}
-                                composable<RegisterPage>{}
-                                composable<MainScreenPage>{}
-                                composable<BandAePage>{}
-                                composable<BandAphxPage>{}
-                                composable<BandBocPage>{}
-                                composable<BandKyussPage>{}
-                                composable<BandToolPage>{}
-                                composable<UserInfoPage>{ }
+                                composable<SplashScreenPage> {
+                                    SplashScreen(navController)
+                                }
+                                composable<LoginRegScreen> {
+                                    LoginRegScreen(navController)
+                                }
+                                composable<LoginPage> {
+                                    Login(navController)
+                                }
+                                composable<RegisterPage> {
+                                    RegisterScreenPage(navController)
+                                }
+                                composable<MainScreenPage> {
+                                    MainScreenPage(navController)
+                                }
+                                composable<BandAePage> {
+                                    BandAe()
+                                }
+                                composable<BandAphxPage> {
+                                    BandAphx(
+
+                                    )
+                                }
+                                composable<BandBocPage> {
+                                    BandBoc(navController)
+                                }
+                                composable<BandKyussPage> {
+                                    BandKyuss(navController)
+                                }
+                                composable<BandToolPage> {
+                                    BandTool(navController)
+                                }
+                                composable<UserInfoPage> {
+                                    UserInfoScreenPage(navController)
+                                }
+                               /*composable<SettingsScreen>{
+                                    SettingsScreen()
+                                }*/
                             }
                         }
-
-
                     }
                 )
-
             }
         }
     }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun MusicAppPreviewPage() {
-    MusicAppTheme {
-        //SplashScreenPage()
-        //Login()
-        //LoginRegScreen()
-        //RegisterScreenPage()
-       MainScreenPage()
-        //BandAe()
-        //BandAphx()
-        //BandBoc()
-        //BandKyuss()
-        //BandTool()
-        //UserInfoScreenPage()
-    }
-
 }
 
 

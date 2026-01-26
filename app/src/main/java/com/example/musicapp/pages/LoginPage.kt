@@ -23,7 +23,7 @@ import com.example.musicapp.myComponentsw.TextFieldUserComponent
  * @author Andrés
  */
 @Composable
-fun Login(navController: NavController) {
+fun Login() {
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -43,4 +43,12 @@ fun Login(navController: NavController) {
 
         }
     }
+}
+
+@Preview
+@Composable
+fun LoginPrev(){
+
+    Login()
+
 }

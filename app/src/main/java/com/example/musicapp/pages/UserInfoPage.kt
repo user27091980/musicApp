@@ -16,7 +16,7 @@ import com.example.musicapp.styles.cameraMod
  * @function
  */
 @Composable
-fun UserInfoScreenPage(navController: NavController,modifier: Modifier = Modifier) {
+fun UserInfoScreenPage(modifier: Modifier = Modifier) {
 
     Row {
         UserCardsComponents(
@@ -28,3 +28,10 @@ fun UserInfoScreenPage(navController: NavController,modifier: Modifier = Modifie
     }
 }
 
+@Preview
+@Composable
+fun UserInfoPrev(){
+
+    UserInfoScreenPage()
+
+}

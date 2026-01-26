@@ -12,8 +12,16 @@ import com.example.musicapp.myComponents.LazyColumnComponent
  * @function
  */
 @Composable
-fun MainScreenPage(navController: NavController,modifier: Modifier = Modifier) {
+fun MainScreenPage(modifier: Modifier = Modifier) {
 
     LazyColumnComponent()
+
+}
+
+@Preview
+@Composable
+fun MainPrev(){
+
+    MainScreenPage()
 
 }

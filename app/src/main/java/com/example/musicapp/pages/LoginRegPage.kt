@@ -21,7 +21,7 @@ import com.example.musicapp.myComponents.ButtonRegister
  * @author Andrés
  */
 @Composable
-fun LoginRegScreen(navController: NavController) {
+fun LoginRegScreen() {
 
     Box(
         modifier = Modifier
@@ -48,4 +48,11 @@ fun LoginRegScreen(navController: NavController) {
     }
 }
 
+@Preview
+@Composable
+fun LoginRegPrev(){
+
+    LoginRegScreen()
+
+}
 
