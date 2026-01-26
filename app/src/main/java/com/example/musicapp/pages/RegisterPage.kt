@@ -47,21 +47,23 @@ fun RegisterScreenPage() {
         }
 
         Row(
-            Modifier.padding(95.dp, 400.dp,),
+            Modifier.padding(95.dp, 400.dp),
         )
         {
 
             ButtonAcept(
-                button)
+                button
+            )
             ButtonCancel(button)
         }
 
     }
 
 }
+
 @Preview
 @Composable
-fun RegScreenPrev(){
+fun RegScreenPrev() {
 
     RegisterScreenPage()
 

@@ -36,11 +36,9 @@ fun BandAe(modifier: Modifier = Modifier,) {
         }
         Row(rowCardModifier) {
             LazyCardColumnAeComponent()
-
         }
         Row(rowFlowModifier){
-
-
+            FlowAe()
         }
         Row(lazyRowMod) {
             LazyRowComponentAe()

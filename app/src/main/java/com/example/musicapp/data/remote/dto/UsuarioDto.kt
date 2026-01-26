@@ -2,7 +2,7 @@ package com.example.musicapp.data.remote.dto
 
 import com.google.gson.annotations.SerializedName
 
-class UsuarioDto (
+class UsuarioDto(
 
     @SerializedName("id")
     val id: String,
@@ -12,6 +12,5 @@ class UsuarioDto (
 
     @SerializedName("passwd")
     val passwd: String,
-
-
-)
+    
+    )

@@ -33,9 +33,11 @@ fun Login() {
                 )
             )
     ) {
-        Column(horizontalAlignment = Alignment.CenterHorizontally,
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.spacedBy(20.dp),
-            modifier = Modifier.padding(50.dp, 340.dp, 10.dp, 150.dp)) {
+            modifier = Modifier.padding(50.dp, 340.dp, 10.dp, 150.dp)
+        ) {
             Text("LOGIN", color = Color.White)
             TextFieldUserComponent()
             TextFieldPassComponent()
@@ -47,7 +49,7 @@ fun Login() {
 
 @Preview
 @Composable
-fun LoginPrev(){
+fun LoginPrev() {
 
     Login()
 

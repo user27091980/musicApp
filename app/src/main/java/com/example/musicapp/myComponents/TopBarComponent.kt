@@ -107,7 +107,7 @@ fun DropMenu(navHostController: NavHostController,extended: Boolean, dismissRequ
                     text = { Text(text = stringResource(R.string.inicio)) },
                     onClick = {navHostController.navigate(MainScreenPage) })
                 DropdownMenuItem(
-                    text = { Text(text = stringResource(R.string.links)) },
+                    text = { Text(text = stringResource(R.string.search)) },
                     onClick = { })
                 DropdownMenuItem(
                     text = { Text(text = stringResource(R.string.salir)) },

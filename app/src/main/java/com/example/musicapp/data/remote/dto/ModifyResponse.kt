@@ -3,7 +3,7 @@ package com.example.musicapp.data.remote.dto
 import com.google.gson.annotations.SerializedName
 import kotlinx.serialization.SerialName
 
-data class ModifyResponse (
+data class ModifyResponse(
 
     @SerializedName("id")
     val id: String,
@@ -12,4 +12,4 @@ data class ModifyResponse (
     val message: String,
 
 
-)
+    )

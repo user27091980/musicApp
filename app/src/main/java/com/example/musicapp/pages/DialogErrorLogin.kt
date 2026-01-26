@@ -15,7 +15,7 @@ import androidx.compose.runtime.Composable
 fun DialogErrorPage(
     onConfirm: () -> Unit,
 
-) {
+    ) {
 
     AlertDialog(
 
