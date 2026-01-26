@@ -21,7 +21,7 @@ import com.example.musicapp.styles.rowModifier
  * @author Andrés
  */
 @Composable
-fun BandKyuss(navController: NavController,modifier: Modifier = Modifier) {
+fun BandKyuss(modifier: Modifier = Modifier) {
 
     Box(boxModifier) {
         Row(rowModifier) {
@@ -42,3 +42,10 @@ fun BandKyuss(navController: NavController,modifier: Modifier = Modifier) {
     }
 }
 
+@Preview
+@Composable
+fun BandKyussPrev(){
+
+    BandKyuss()
+
+}

@@ -21,7 +21,7 @@ import com.example.musicapp.styles.rowModifier
  * @author Andrés
  */
 @Composable
-fun BandBoc(navController: NavController,modifier: Modifier = Modifier,) {
+fun BandBoc(modifier: Modifier = Modifier,) {
 
     Box(boxModifier) {
         Row(rowModifier) {
@@ -44,3 +44,10 @@ fun BandBoc(navController: NavController,modifier: Modifier = Modifier,) {
 }
 
 
+@Preview
+@Composable
+fun BandBocPrev(){
+
+    BandBoc()
+
+}
