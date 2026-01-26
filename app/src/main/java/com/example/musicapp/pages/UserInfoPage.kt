@@ -32,7 +32,7 @@ fun UserInfoScreenPage(modifier: Modifier = Modifier) {
 
 @Preview
 @Composable
-fun UserInfoPrev() {
+fun UserInfoPrev(){
 
     UserInfoScreenPage()
 

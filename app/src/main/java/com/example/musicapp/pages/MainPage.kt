@@ -20,7 +20,7 @@ fun MainScreenPage(modifier: Modifier = Modifier) {
 
 @Preview
 @Composable
-fun MainPrev() {
+fun MainPrev(){
 
     MainScreenPage()
 
