@@ -31,3 +31,11 @@ fun SplashScreenPage() {
 
 }
 
+@Preview
+@Composable
+fun SplashPrev(){
+
+    SplashScreenPage()
+
+}
+
