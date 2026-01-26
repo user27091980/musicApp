@@ -2,7 +2,6 @@ package com.example.musicapp.network
 
 import okhttp3.Response
 import com.google.gson.annotations.SerializedName
-import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
