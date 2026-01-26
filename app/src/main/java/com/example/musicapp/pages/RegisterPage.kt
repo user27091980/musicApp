@@ -60,10 +60,9 @@ fun RegisterScreenPage() {
     }
 
 }
-
 @Preview
 @Composable
-fun RegScreenPrev() {
+fun RegScreenPrev(){
 
     RegisterScreenPage()
 

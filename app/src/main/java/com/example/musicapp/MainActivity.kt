@@ -62,18 +62,46 @@ class MainActivity : ComponentActivity() {
                                 navController = navController,
                                 startDestination = SplashScreenPage
                             ) {
+                                composable<SplashScreenPage> {
+                                    SplashScreen(navController)
+                                }
+                                composable<LoginRegScreen> {
+                                    LoginRegScreen()
+                                }
+                                composable<LoginPage> {
+                                    Login()
+                                }
+                                composable<RegisterPage> {
+                                    RegisterScreenPage()
+                                }
+                                composable<MainScreenPage> {
+                                    MainScreenPage()
+                                }
+                                composable<BandAePage> {
+                                    BandAe()
+                                }
+                                composable<BandAphxPage> {
+                                    BandAphx(
 
-                                composable<SplashScreenPage> {}
-                                composable<LoginRegScreen> {}
-                                composable<LoginPage> {}
-                                composable<RegisterPage> {}
-                                composable<MainScreenPage> {}
-                                composable<BandAePage> {}
-                                composable<BandAphxPage> {}
-                                composable<BandBocPage> {}
-                                composable<BandKyussPage> {}
-                                composable<BandToolPage> {}
-                                composable<UserInfoPage> { }
+                                    )
+                                }
+                                composable<BandBocPage> {
+                                    BandBoc()
+                                }
+                                composable<BandKyussPage> {
+                                    BandKyuss()
+                                }
+                                composable<BandToolPage> {
+                                    BandTool()
+                                }
+                                composable<UserInfoPage> {
+                                    UserInfoScreenPage()
+                                }
+                               /*composable<SettingsScreen>{
+                                    SettingsScreen()
+                                }
+
+                                */
                             }
                         }
 
