@@ -1,19 +1,21 @@
 package com.example.musicapp.navigation
 
+import android.window.SplashScreen
+import androidx.compose.runtime.Composable
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 import kotlinx.serialization.Serializable
-/**
- * @author Andrés
- */
-//ya tenemos objeto creado para la parte de la rutas
+
+//ya tenemos objeto creado para la parte de la rut
 //object lo ponemos si es estático
 @Serializable
 object SplashScreenPage
 
 @Serializable
-class LoginPage(val email:String){}
+class LoginPage(val email: String) {}
 
 @Serializable
-class RegisterPage(val email:String, val user:String)
+class RegisterPage(val email: String, val user: String)
 
 @Serializable
 object LoginRegScreen
@@ -41,6 +43,3 @@ object UserInfoPage
 
 @Serializable
 object DialogPage
-
-@Serializable
-object SettingsScreen
