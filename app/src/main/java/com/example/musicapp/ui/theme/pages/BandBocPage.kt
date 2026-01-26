@@ -1,4 +1,4 @@
-package com.example.musicapp.pages
+package com.example.musicapp.ui.theme.pages
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
@@ -8,7 +8,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.navigation.NavController
 import com.example.musicapp.R
 import com.example.musicapp.myComponents.LazyCardColumnBocComponent
 import com.example.musicapp.myComponents.LazyRowComponentBoc

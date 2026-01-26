@@ -1,9 +1,8 @@
-package com.example.musicapp.pages
+package com.example.musicapp.ui.theme.pages
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.navigation.NavController
 import com.example.musicapp.myComponents.LazyColumnComponent
 
 /**

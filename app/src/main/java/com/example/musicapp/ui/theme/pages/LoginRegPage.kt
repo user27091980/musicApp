@@ -1,4 +1,4 @@
-package com.example.musicapp.pages
+package com.example.musicapp.ui.theme.pages
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement

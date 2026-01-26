@@ -1,4 +1,4 @@
-package com.example.musicapp.pages
+package com.example.musicapp.ui.theme.pages
 
 /**
  * @author Andrés

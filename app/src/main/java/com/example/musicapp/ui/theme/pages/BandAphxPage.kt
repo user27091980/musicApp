@@ -1,55 +1,49 @@
-package com.example.musicapp.pages
+package com.example.musicapp.ui.theme.pages
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
-import androidx.compose.material3.Card
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.navigation.NavController
 import com.example.musicapp.R
-import com.example.musicapp.myComponents.FlowAe
-import com.example.musicapp.myComponents.LazyCardColumnAeComponent
-import com.example.musicapp.myComponents.LazyRowComponentAe
-import com.example.musicapp.styles.boxModifier
+import com.example.musicapp.myComponents.LazyCardColumnAphxComponent
+import com.example.musicapp.myComponents.LazyRowComponentAphx
 import com.example.musicapp.styles.lazyRowMod
+import com.example.musicapp.styles.boxModifier
 import com.example.musicapp.styles.rowCardModifier
-import com.example.musicapp.styles.rowFlowModifier
 import com.example.musicapp.styles.rowModifier
 
 /**
  * @author Andrés
  */
 @Composable
-fun BandAe(modifier: Modifier = Modifier,) {
+fun BandAphx( modifier: Modifier = Modifier) {
 
     Box(boxModifier) {
         Row(rowModifier) {
             Image(
-                painter = painterResource(R.drawable.autechre_sticker),
+                painter = painterResource(R.drawable.aphx),
                 contentDescription = "",
                 contentScale = ContentScale.Inside,
             )
         }
+
         Row(rowCardModifier) {
-            LazyCardColumnAeComponent()
-        }
-        Row(rowFlowModifier){
-            FlowAe()
+            LazyCardColumnAphxComponent()
         }
         Row(lazyRowMod) {
-            LazyRowComponentAe()
+
+            LazyRowComponentAphx()
+
         }
     }
 }
-
 @Preview
 @Composable
-fun BandAePrev(){
+fun BandAphxPrev(){
 
-    BandAe()
-
+    BandAphx()
 }

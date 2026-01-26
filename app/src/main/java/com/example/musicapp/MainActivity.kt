@@ -28,12 +28,8 @@ import com.example.musicapp.navigation.MainScreenPage
 import com.example.musicapp.navigation.RegisterPage
 import com.example.musicapp.navigation.SplashScreenPage
 import com.example.musicapp.navigation.UserInfoPage
-import com.example.musicapp.pages.Login
-import com.example.musicapp.pages.LoginRegScreen
-import com.example.musicapp.pages.MainScreenPage
-import com.example.musicapp.pages.RegisterScreenPage
-import com.example.musicapp.pages.SplashScreenPage
-import com.example.musicapp.ui.theme.MusicAppTheme
+import com.example.musicapp.ui.theme.pages.MainScreenPage
+import com.example.musicapp.ui.theme.themes.MusicAppTheme
 
 /**
  * @author="Andrés"
