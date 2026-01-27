@@ -26,7 +26,7 @@
 
     <!--strings para las cards-->
     <string name="aphex">Aphex Twin</string>
-    <string name="boc">Boards of Canada ajkshdkajshdkjashdkjasdhkjashdkjashdkjashdkajshdkajshaksjdhkajshdkajsdhkajsdhs</string>
+    <string name="boc">Boards of Canada</string>
     <string name="tool">Tool</string>
     <string name="ae">Autechre</string>
     <string name="venetian">Venetian snares</string>
@@ -48,15 +48,15 @@
         sido publicados.
         \n
     </string>
-    <string name="aeInfo">
-        \n
-        Miembros:Sean Booth, Robert\n Brown\n
-        Discográfica: Warp Records\n
-        Website: http://autechre.ws/
-        \n
+    <string name="aeMiembros">
+        Sean Booth, Robert\n Brown
     </string>
-
-
+    <string name="discografica">
+        Warp Records
+    </string>
+    <string name="webAe">
+        http://autechre.ws/
+    </string>
     <string name="aeDiscs">
         \n
         Incunabula (1993)\n
@@ -82,13 +82,12 @@
         En sus canciones se notan influencias psicodélicas y ciertos virajes puramente hip hop,
         aunque en su álbum "The Campfire Headphase", impera un aire folk.
     </string>
-    <string name="bocInfo">
-        \n
-        Miembros:Mike Sandison, Marcus Eoins\n
-        Discográfica: Warp Records/Skam records
-        \n
+    <string name="bocMiembros">
+        Mike Sandison, Marcus Eoins
     </string>
-
+    <string name="discogSkam">
+        Skam records
+    </string>
     <string name="bocDiscs">
         \n
         Music Has the Right to Children\n
@@ -107,13 +106,13 @@
         influyentes de los últimos 25 años.
         \n
     </string>
-    <string name="aphxInfo">
-        \n
-        Miembros: Richard David James\n
-        Discográfica: Warp Records\n
-        Website:https://aphextwin.warp.net/
-        \n
+    <string name="aphxMiembro">
+        Richard David James
     </string>
+    <string name="aphexWeb">
+        Website:https://aphextwin.warp.net/
+    </string>
+
     <string name="aphxDiscs">
         \n
         Selected Ambient Works 85–92\n
@@ -136,13 +135,12 @@
     \n
 </string>
 
-    <string name="kyussInfo">
-        \n
-        Miembros: Josh Homme, John Garcia, Alfredo Hernández, Brant Bjork, Nick Oliveri\n
-        Discográfica: Dali, Chameleon Elektra, Bong Load, Man\'s Ruin
-        \n
+    <string name="kyussMiembros">
+        Josh Homme, John Garcia, Alfredo Hernández, Brant Bjork, Nick Oliveri
     </string>
-
+    <string name="discografiKyuss">
+        Dali, Chameleon Elektra, Bong Load, Man\'s Ruin
+    </string>
     <string name="kyussDisc">
         Wretch
         Blues for the Red Sun\n
@@ -160,11 +158,11 @@
         \n
     </string>
 
-    <string name="toolInfo">
-        \n
-        Miembros: Maynard James Keenan, Adam Jones, Danny Carey, Justin Chancellor\n
-        Discográfica: Dali, Chameleon Elektra, Bong Load, Man\'s Ruin
-        \n
+    <string name="toolMiembros">
+        Maynard James Keenan, Adam Jones, Danny Carey, Justin Chancellor
+    </string>
+    <string name="discoTool">
+        Dali, Chameleon Elektra, Bong Load, Man\'s Ruin
     </string>
     <string name="toolDisc">
         \n

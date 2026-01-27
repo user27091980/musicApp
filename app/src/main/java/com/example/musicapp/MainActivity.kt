@@ -105,16 +105,13 @@ class MainActivity : ComponentActivity() {
                                 composable<UserInfoPage> {
                                     UserInfoScreenPage()
                                 }
-                                composable<SettingsPage>{
+                                composable<SettingsPage> {
                                     SettingsScreen()
                                 }
-
-
                             }
                         }
                     }
                 )
-
             }
         }
     }

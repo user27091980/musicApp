@@ -94,11 +94,14 @@ fun LazyCardColumnKyussComponent() {
 fun LazyCardColumnToolComponent() {
     Box() {
         Column() {
-            Text(text = stringResource(R.string.toolText))
-            Spacer(modifier = Modifier.height(80.dp))
-            Text(stringResource(R.string.genre))
-            Spacer(modifier = Modifier.height(80.dp))
-            FlowTool()
+            Card() {
+                Text(text = stringResource(R.string.toolText))
+            }
+                Spacer(modifier = Modifier.height(80.dp))
+                Text(stringResource(R.string.genre))
+                Spacer(modifier = Modifier.height(80.dp))
+                FlowTool()
+
         }
     }
 }
