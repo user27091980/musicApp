@@ -18,16 +18,15 @@ fun MusicNavGraph() {
     val navController = rememberNavController()
     NavHost(navController = navController, startDestination = Routes.List) {
         composable(Routes.List) {
-            PokemonListScreen { Id ->
-                navController.navigate("detail/$pokemonId")
-            }
-        }
-        composable(
-            route = Routes.Detail,
-            arguments = listOf(navArgument("pokemonId") { type = NavType.IntType })
-        ) { backStackEntry ->
-            val pokemonId = backStackEntry.arguments?.getInt("pokemonId") ?: return@composable
-            PokemonDetailScreen(pokemonId = pokemonId)
+
+
         }
     }
+    composable(
+        route = Routes.Detail,
+        arguments = listOf(navArgument("pokemonId") { type = NavType.IntType })
+    ) { backStackEntry ->
+
+    }
+}
 }

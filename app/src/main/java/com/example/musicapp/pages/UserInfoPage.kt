@@ -5,7 +5,6 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.navigation.NavController
 import com.example.musicapp.myComponents.FloatCamera
 import com.example.musicapp.myComponents.UserCardsComponents
 import com.example.musicapp.styles.cameraMod
@@ -32,7 +31,7 @@ fun UserInfoScreenPage(modifier: Modifier = Modifier) {
 
 @Preview
 @Composable
-fun UserInfoPrev(){
+fun UserInfoPrev() {
 
     UserInfoScreenPage()
 

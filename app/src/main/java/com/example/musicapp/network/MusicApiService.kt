@@ -12,12 +12,16 @@ interface MusicApiService {
     @GET("music/{id}")
     //@Path en la ruta que hemos definido arriba va a coger el id que pasamos por parámetro y lo escribmos.
     //toda acción enviada por un retrofit devuelve un objeto response.
-    suspend fun getMusic(@Path("id") id:Int): Response<musicResponse>
+    suspend fun getMusic(@Path("id") id: Int): Response<musicResponse>
 
     @GET("music")
-    suspend fun getMusicList(@Query("limit") limit: Int = 50, @Query("offset") offset: Int = 0): Response<MusicListResponse>
+    suspend fun getMusicList(
+        @Query("limit") limit: Int = 50,
+        @Query("offset") offset: Int = 0
+    ): Response<MusicListResponse>
 
 }
+
 //crearemos un dataclass con el nombre del nombreREsponse
 data class MusicResponse(
     val id: Int,
@@ -31,6 +35,7 @@ data class MusicResponse(
 data class MusicListResponse(
     val results: List<MusicListItem>
 )
+
 data class MusicListItem(
     val name: String,
     val url: String

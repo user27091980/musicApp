@@ -3,13 +3,11 @@ package com.example.musicapp.pages
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
-import androidx.compose.material3.Card
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.navigation.NavController
 import com.example.musicapp.R
 import com.example.musicapp.myComponents.FlowAe
 import com.example.musicapp.myComponents.LazyCardColumnAeComponent
@@ -24,7 +22,7 @@ import com.example.musicapp.styles.rowModifier
  * @author Andrés
  */
 @Composable
-fun BandAe(modifier: Modifier = Modifier,) {
+fun BandAe(modifier: Modifier = Modifier) {
 
     Box(boxModifier) {
         Row(rowModifier) {
@@ -37,7 +35,7 @@ fun BandAe(modifier: Modifier = Modifier,) {
         Row(rowCardModifier) {
             LazyCardColumnAeComponent()
         }
-        Row(rowFlowModifier){
+        Row(rowFlowModifier) {
             FlowAe()
         }
         Row(lazyRowMod) {
@@ -48,7 +46,7 @@ fun BandAe(modifier: Modifier = Modifier,) {
 
 @Preview
 @Composable
-fun BandAePrev(){
+fun BandAePrev() {
 
     BandAe()
 

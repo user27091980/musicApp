@@ -8,7 +8,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.navigation.NavController
 import com.example.musicapp.R
 import com.example.musicapp.myComponents.LazyCardColumnToolComponent
 import com.example.musicapp.myComponents.LazyRowComponentTool
@@ -48,7 +47,7 @@ fun BandTool(modifier: Modifier = Modifier) {
 
 @Preview
 @Composable
-fun BandToolPrev(){
+fun BandToolPrev() {
 
     BandTool()
 

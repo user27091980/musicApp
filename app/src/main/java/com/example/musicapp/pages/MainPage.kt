@@ -3,7 +3,6 @@ package com.example.musicapp.pages
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.navigation.NavController
 import com.example.musicapp.myComponents.LazyColumnComponent
 
 /**
@@ -20,7 +19,7 @@ fun MainScreenPage(modifier: Modifier = Modifier) {
 
 @Preview
 @Composable
-fun MainPrev(){
+fun MainPrev() {
 
     MainScreenPage()
 

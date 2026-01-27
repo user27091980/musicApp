@@ -12,7 +12,6 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.core.splashscreen.SplashScreen
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -39,9 +38,8 @@ import com.example.musicapp.pages.LoginRegScreen
 import com.example.musicapp.pages.MainScreenPage
 import com.example.musicapp.pages.RegisterScreenPage
 import com.example.musicapp.pages.SplashScreen
-import com.example.musicapp.pages.SplashScreenPage
 import com.example.musicapp.pages.UserInfoScreenPage
-import com.example.musicapp.ui.theme.MusicAppTheme
+import com.example.musicapp.ui.theme.themes.MusicAppTheme
 
 /**
  * @author="Andrés"
@@ -105,15 +103,13 @@ class MainActivity : ComponentActivity() {
                                 composable<UserInfoPage> {
                                     UserInfoScreenPage()
                                 }
-                               /*composable<SettingsScreen>{
-                                    SettingsScreen()
-                                }
+                                /*composable<SettingsScreen>{
+                                     SettingsScreen()
+                                 }
 
-                                */
+                                 */
                             }
                         }
-
-
                     }
                 )
 
