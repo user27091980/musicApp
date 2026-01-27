@@ -26,6 +26,7 @@ import com.example.musicapp.navigation.LoginPage
 import com.example.musicapp.navigation.LoginRegScreen
 import com.example.musicapp.navigation.MainScreenPage
 import com.example.musicapp.navigation.RegisterPage
+import com.example.musicapp.navigation.SettingsPage
 import com.example.musicapp.navigation.SplashScreenPage
 import com.example.musicapp.navigation.UserInfoPage
 import com.example.musicapp.pages.BandAe
@@ -37,6 +38,7 @@ import com.example.musicapp.pages.Login
 import com.example.musicapp.pages.LoginRegScreen
 import com.example.musicapp.pages.MainScreenPage
 import com.example.musicapp.pages.RegisterScreenPage
+import com.example.musicapp.pages.SettingsScreen
 import com.example.musicapp.pages.SplashScreen
 import com.example.musicapp.pages.UserInfoScreenPage
 import com.example.musicapp.ui.theme.themes.MusicAppTheme
@@ -103,11 +105,11 @@ class MainActivity : ComponentActivity() {
                                 composable<UserInfoPage> {
                                     UserInfoScreenPage()
                                 }
-                                /*composable<SettingsScreen>{
-                                     SettingsScreen()
-                                 }
+                                composable<SettingsPage>{
+                                    SettingsScreen()
+                                }
 
-                                 */
+
                             }
                         }
                     }

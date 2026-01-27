@@ -27,6 +27,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavHostController
 import com.example.musicapp.R
 import com.example.musicapp.navigation.MainScreenPage
+import com.example.musicapp.pages.SettingsScreen
 
 /**
  * @author andres
@@ -57,7 +58,7 @@ fun TopBar() {
         }
 
         Column() {
-            IconButton(onClick = { }) {
+            IconButton(onClick = {navController.navigate(SettingsScreen}) {
 
                 Icon(
                     imageVector = Icons.Default.Settings,

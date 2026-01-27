@@ -2,7 +2,6 @@ package com.example.musicapp.myComponents
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -20,86 +19,39 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.example.musicapp.R
-import com.example.musicapp.data.DatasourceAeStrings
-import com.example.musicapp.data.DatasourceAphxStrings
-import com.example.musicapp.data.DatasourceBocStrings
-import com.example.musicapp.data.DatasourceKyussStrings
-import com.example.musicapp.data.DatasourceToolStrings
 import com.example.musicapp.data.StringsId
-import com.example.musicapp.styles.flowMod
-
-/**
- * @author Andrés
- * @param
- */
-@Composable
-fun StringList(stringList: List<StringsId>, modifier: Modifier = Modifier) {
-
-    LazyColumn(modifier = modifier) {
-
-        items(stringList) {
-
-                stringsId ->
-            Strings(
-                stringsId = stringsId,
-            )
-        }
-    }
-}
 
 /**
  * @author="Andrés"
  * @param
  * @function
  */
-//creamos la función imagen para poder acceder a ellas y poder realizar el contenscale
-//pasamos como parámetro un imagesId
-@Composable
-fun Strings(stringsId: StringsId) {
-    Box {
-        Card(
-            modifier = Modifier
-                .padding(5.dp)
-                .fillMaxWidth(),
-            colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)
-        ) {
-            Text(
-                stringResource(stringsId.stringResourceId),
-                textAlign = TextAlign.Left,
-                color = Color.White
-            )
-        }
-    }
-}
 
-/**
- * @author="Andrés"
- * @param
- * @function
- */
-//a esta función le mandamos la función ImagesList se crea un imagesList para
-//que recorra el DataSourcesPics.
 @Composable
 fun LazyCardColumnAeComponent() {
 
     Box() {
-        Column() {
+        Column {
+            Card(){
+                Text(text = stringResource(R.string.aeText))
+            }
 
-            StringList(stringList = DatasourceAeStrings().loadStringsAe())
             Spacer(modifier = Modifier.height(80.dp))
             Text(stringResource(R.string.genre))
             Spacer(modifier = Modifier.height(80.dp))
             FlowAe()
         }
     }
-
 }
+
 
 @Composable
 fun LazyCardColumnBocComponent() {
     Box() {
         Column() {
-            StringList(stringList = DatasourceBocStrings().loadStringsBoc())
+            Card() {
+                Text(text = stringResource(R.string.bocText))
+            }
             Spacer(modifier = Modifier.height(80.dp))
             Text(stringResource(R.string.genre))
             Spacer(modifier = Modifier.height(80.dp))
@@ -112,7 +64,9 @@ fun LazyCardColumnBocComponent() {
 fun LazyCardColumnAphxComponent() {
     Box() {
         Column() {
-            StringList(stringList = DatasourceAphxStrings().loadStringsAphx())
+            Card() {
+                Text(text = stringResource(R.string.aphxText))
+            }
             Spacer(modifier = Modifier.height(80.dp))
             Text(stringResource(R.string.genre))
             Spacer(modifier = Modifier.height(80.dp))
@@ -125,7 +79,9 @@ fun LazyCardColumnAphxComponent() {
 fun LazyCardColumnKyussComponent() {
     Box() {
         Column() {
-            StringList(stringList = DatasourceKyussStrings().loadStringsKyuss())
+            Card() {
+                Text(text = stringResource(R.string.kyussText))
+            }
             Spacer(modifier = Modifier.height(80.dp))
             Text(stringResource(R.string.genre))
             Spacer(modifier = Modifier.height(80.dp))
@@ -136,9 +92,9 @@ fun LazyCardColumnKyussComponent() {
 
 @Composable
 fun LazyCardColumnToolComponent() {
-    Box(){
-        Column(){
-            StringList(stringList = DatasourceToolStrings().loadStringsTool())
+    Box() {
+        Column() {
+            Text(text = stringResource(R.string.toolText))
             Spacer(modifier = Modifier.height(80.dp))
             Text(stringResource(R.string.genre))
             Spacer(modifier = Modifier.height(80.dp))
