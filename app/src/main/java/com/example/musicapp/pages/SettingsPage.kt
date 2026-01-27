@@ -13,7 +13,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 
 @Composable
-fun SettingsScreen(viewModel: NavHostController) {
+fun SettingsScreen(/*viewModel: NavHostController*/) {
 
     //val darkMode by viewModel.darkMode.collectAsState()
 

@@ -24,7 +24,7 @@ fun MusicNavGraph() {
     }
     composable(
         route = Routes.Detail,
-        arguments = listOf(navArgument("pokemonId") { type = NavType.IntType })
+        arguments = listOf(navArgument("musicId") { type = NavType.IntType })
     ) { backStackEntry ->
 
     }

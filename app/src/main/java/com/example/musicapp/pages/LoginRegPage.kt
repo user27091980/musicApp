@@ -55,5 +55,5 @@ fun LoginRegPrev() {
 
 }
 
-}
+
 
