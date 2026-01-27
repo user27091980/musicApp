@@ -1,4 +1,4 @@
-package com.example.musicapp.ui.theme.pages
+package com.example.musicapp.pages
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer

@@ -61,12 +61,15 @@ fun ButtonRegister(navController: NavController, modifier: Modifier = Modifier) 
  */
 //botón para aceptar
 @Composable
+
 fun ButtonAcept(navController: NavController, modifier: Modifier = Modifier) {
+
 
     Button(
 
         onClick = { navController.navigate(UserInfoPage) },
-        shape = RoundedCornerShape(20.dp)
+        shape = RoundedCornerShape(20.dp),
+
 
     ) {
         Text(
@@ -87,7 +90,8 @@ fun ButtonCancel(navController: NavController,modifier: Modifier = Modifier) {
 
     Button(
         onClick = { navController.navigate(MainScreenPage) },
-        shape = RoundedCornerShape(20.dp)
+        shape = RoundedCornerShape(20.dp),
+
 
     ) {
         Text(

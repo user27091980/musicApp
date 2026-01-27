@@ -1,4 +1,4 @@
-package com.example.musicapp.ui.theme.pages
+package com.example.musicapp.pages
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -32,7 +32,7 @@ fun SplashScreenPage() {
 
 @Preview
 @Composable
-fun SplashPrev(){
+fun SplashPrev() {
 
     SplashScreenPage()
 

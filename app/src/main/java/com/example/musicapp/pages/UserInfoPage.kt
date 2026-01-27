@@ -1,4 +1,4 @@
-package com.example.musicapp.ui.theme.pages
+package com.example.musicapp.pages
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.material3.MaterialTheme
@@ -31,7 +31,7 @@ fun UserInfoScreenPage(modifier: Modifier = Modifier) {
 
 @Preview
 @Composable
-fun UserInfoPrev(){
+fun UserInfoPrev() {
 
     UserInfoScreenPage()
 

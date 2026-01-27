@@ -1,4 +1,4 @@
-package com.example.musicapp.ui.theme.pages
+package com.example.musicapp.pages
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -19,7 +19,7 @@ fun MainScreenPage(modifier: Modifier = Modifier) {
 
 @Preview
 @Composable
-fun MainPrev(){
+fun MainPrev() {
 
     MainScreenPage()
 
