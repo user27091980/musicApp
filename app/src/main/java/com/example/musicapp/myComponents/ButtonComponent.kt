@@ -11,6 +11,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.musicapp.R
+import com.example.musicapp.navigation.LoginPage
 import com.example.musicapp.navigation.MainScreenPage
 import com.example.musicapp.navigation.RegisterPage
 import com.example.musicapp.navigation.UserInfoPage
@@ -89,7 +90,7 @@ fun ButtonAcept(navController: NavController, modifier: Modifier = Modifier) {
 fun ButtonCancel(navController: NavController,modifier: Modifier = Modifier) {
 
     Button(
-        onClick = { navController.navigate(MainScreenPage) },
+        onClick = { navController.navigate(LoginPage) },
         shape = RoundedCornerShape(20.dp),
 
 

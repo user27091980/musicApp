@@ -41,7 +41,6 @@ fun FlowBoc() {
     FlowRow(modifier = Modifier.padding(8.dp)) {
         TagItem(stringResource(R.string.idm))
         TagItem(stringResource(R.string.experimental))
-
     }
 }
 
@@ -61,6 +60,9 @@ fun FlowTool() {
     FlowRow(modifier = Modifier.padding(10.dp)) {
         TagItem(stringResource(R.string.metal))
         TagItem(stringResource(R.string.altmetal))
+    }
+    FlowRow(modifier = Modifier.padding(10.dp)){
+        TagItem(stringResource(R.string.toolInfo))
     }
 }
 

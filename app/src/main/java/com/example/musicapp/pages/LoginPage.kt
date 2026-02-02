@@ -34,7 +34,7 @@ import com.example.musicapp.viewmodel.LoginViewModel
  * @author Andrés
  */
 @Composable
-fun Login(navController: NavHostController, loginViewModel: LoginViewModel = viewModel()) {
+fun Login( loginViewModel: LoginViewModel = viewModel(),navController: NavHostController,) {
 
     val savedStateHandle = navController.currentBackStackEntry?.savedStateHandle
 

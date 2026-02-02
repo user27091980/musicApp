@@ -1,4 +1,4 @@
-package com.example.musicapp.navigation
+/*package com.example.musicapp.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavType
@@ -29,4 +29,4 @@ fun MusicNavGraph() {
 
     }
 }
-}
+*/

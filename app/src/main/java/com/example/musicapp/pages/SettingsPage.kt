@@ -35,7 +35,7 @@ fun SettingsScreen(/*viewModel: NavHostController*/) {
 
         SettingSwitch(
             title = "Dark Mode",
-            checked = darkMode,
+            checked = true,
             onCheckedChange = true,
         )
 
@@ -50,20 +50,20 @@ fun SettingsScreen(/*viewModel: NavHostController*/) {
 }
 
 @Composable
+fun SettingItem(title: String, value: String) {
+    TODO("Not yet implemented")
+}
+
+@Composable
+fun SectionTitle(x0: String) {
+    TODO("Not yet implemented")
+}
+
+@Composable
 fun SettingSwitch(
     title: String,
     checked: Boolean,
     onCheckedChange: Boolean
 ) {
-    TODO("Not yet implemented")
-}
-
-@Composable
-fun SectionTitle(string: String) {
-    TODO("Not yet implemented")
-}
-
-@Composable
-fun SettingItem(title: String, value: String) {
     TODO("Not yet implemented")
 }
