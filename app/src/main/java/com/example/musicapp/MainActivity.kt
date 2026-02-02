@@ -77,7 +77,7 @@ class MainActivity : ComponentActivity() {
                                     LoginRegScreen()
                                 }
                                 composable<LoginPage> {
-                                    Login()
+                                    Login(navController)
                                 }
                                 composable<RegisterPage> {
                                     RegisterScreenPage()

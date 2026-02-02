@@ -9,11 +9,14 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.musicapp.R
+import com.example.musicapp.myComponents.FlowAe
+import com.example.musicapp.myComponents.FlowAphx
 import com.example.musicapp.myComponents.LazyCardColumnAphxComponent
 import com.example.musicapp.myComponents.LazyRowComponentAphx
 import com.example.musicapp.styles.lazyRowMod
 import com.example.musicapp.styles.boxModifier
 import com.example.musicapp.styles.rowCardModifier
+import com.example.musicapp.styles.rowFlowModifier
 import com.example.musicapp.styles.rowModifier
 
 /**
@@ -33,6 +36,9 @@ fun BandAphx(modifier: Modifier = Modifier) {
 
         Row(rowCardModifier) {
             LazyCardColumnAphxComponent()
+        }
+        Row(rowFlowModifier) {
+            FlowAphx()
         }
         Row(lazyRowMod) {
 

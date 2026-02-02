@@ -9,11 +9,14 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.musicapp.R
+import com.example.musicapp.myComponents.FlowAe
+import com.example.musicapp.myComponents.FlowKyuss
 import com.example.musicapp.myComponents.LazyCardColumnKyussComponent
 import com.example.musicapp.myComponents.LazyRowComponentKyuss
 import com.example.musicapp.styles.lazyRowMod
 import com.example.musicapp.styles.boxModifier
 import com.example.musicapp.styles.rowCardModifier
+import com.example.musicapp.styles.rowFlowModifier
 import com.example.musicapp.styles.rowModifier
 
 /**
@@ -32,6 +35,9 @@ fun BandKyuss(modifier: Modifier = Modifier) {
         }
         Row(rowCardModifier) {
             LazyCardColumnKyussComponent()
+        }
+        Row(rowFlowModifier) {
+            FlowKyuss()
         }
         Row(lazyRowMod) {
 

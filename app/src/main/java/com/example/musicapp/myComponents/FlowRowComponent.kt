@@ -11,6 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.modifier.modifierLocalConsumer
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.LinkAnnotation
 import androidx.compose.ui.unit.dp
 import com.example.musicapp.R
 
@@ -56,6 +57,7 @@ fun FlowAphx() {
 fun FlowBoc() {
 
     FlowRow(modifier = Modifier.padding(8.dp)) {
+
         TagItem(stringResource(R.string.idm))
         TagItem(stringResource(R.string.experimental))
     }
@@ -75,7 +77,7 @@ fun FlowKyuss() {
         TagItem(stringResource(R.string.stoner))
         TagItem(stringResource(R.string.dessert))
     }
-    FlowRow(modifier = Modifier.padding(10.dp)){
+    FlowRow(modifier = Modifier.padding(10.dp)) {
         TagItem(stringResource(R.string.kyussMiembros))
         TagItem(stringResource(R.string.kyussDisc))
         TagItem(stringResource(R.string.discografiKyuss))
