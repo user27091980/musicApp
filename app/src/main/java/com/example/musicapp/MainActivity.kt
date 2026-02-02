@@ -77,9 +77,7 @@ class MainActivity : ComponentActivity() {
                                     LoginRegScreen()
                                 }
                                 composable<LoginPage> {
-                                    Login(
-                                        navController = TODO(),
-                                    )
+                                    Login()
                                 }
                                 composable<RegisterPage> {
                                     RegisterScreenPage()
@@ -110,8 +108,6 @@ class MainActivity : ComponentActivity() {
                                 composable<SettingsPage> {
                                     SettingsScreen()
                                 }
-
-
                             }
                         }
                     }
@@ -138,7 +134,6 @@ fun MusicAppPreviewPage() {
         //BandTool()
         //UserInfoScreenPage()
     }
-
 }
 
 

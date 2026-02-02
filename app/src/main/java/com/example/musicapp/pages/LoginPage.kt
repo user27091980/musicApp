@@ -23,7 +23,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
@@ -97,15 +96,7 @@ fun Login( loginViewModel: LoginViewModel = viewModel(),navController: NavHostCo
                 }
             )
             ButtonAcept(navController)
-
         }
     }
 }
 
-@Preview
-@Composable
-fun LoginPrev() {
-
-    Login()
-
-}

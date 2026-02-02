@@ -1,19 +1,21 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
-    kotlin("plugin.serialization") version "2.0.21"
 }
 
 android {
     namespace = "com.example.musicapp"
-    compileSdk = 36
+    compileSdk {
+        version = release(26)
+    }
 
     defaultConfig {
         applicationId = "com.example.musicapp"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -34,11 +36,10 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
-    kotlin{
+    kotlin {
         compilerOptions{
             jvmTarget = JvmTarget.JVM_11
         }
-
     }
     buildFeatures {
         compose = true
@@ -46,7 +47,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -55,21 +55,16 @@ dependencies {
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
-    implementation(libs.androidx.ui)
-    implementation(libs.androidx.compose.animation.core.lint)
-    implementation(libs.androidx.material3)
-    implementation(libs.material3)
-    implementation(libs.androidx.compose.foundation.layout)
-    implementation("androidx.compose.material3:material3:1.2.0")
-    implementation("androidx.compose.material:material-icons-extended:1.6.0")
-    implementation(libs.material)
-    implementation(libs.androidx.compose.ui.unit)
-    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.navigation.compose) // Added navigation-compose dependency
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+
+    implementation(libs.coil.compose)
+    implementation(libs.coil.network.okhttp)
 
     implementation(libs.retrofit2)
     implementation(libs.retrofit2.converter.gson)
     implementation(libs.okhttp.logging)
-    implementation(libs.androidx.core.splashscreen)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
@@ -78,5 +73,4 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
-
 }
