@@ -12,7 +12,10 @@ class DatasourceToolPics {
 
         return listOf(
 
-            AlbumsDTO(R.drawable._591911),
+            AlbumsDTO(
+                R.drawable._591911,
+                imageResourceId = TODO()
+            ),
             AlbumsDTO(R.drawable.c0010220__10913),
             AlbumsDTO(R.drawable.tool_fear),
             AlbumsDTO(R.drawable.aenima),

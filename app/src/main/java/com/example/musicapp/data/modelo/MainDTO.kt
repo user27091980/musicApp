@@ -3,4 +3,4 @@ package com.example.musicapp.data.modelo
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 
-data class AlbumsDTO(@DrawableRes val imageResourceId: Int)
+data class MainDTO(@StringRes val stringResourceId: Int, @DrawableRes val imageResourceId: Int)

@@ -9,7 +9,6 @@ class UsuarioRepo {
         val usuarios = ArrayList<UsuariosDTO>(
             listOf(
                 UsuariosDTO(0, "user1", "1234"),
-
                 )
         )
         var currId = 4
@@ -53,6 +52,4 @@ class UsuarioRepo {
         else
             onError()
     }
-
-
 }
