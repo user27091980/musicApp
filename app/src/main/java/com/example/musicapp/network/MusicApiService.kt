@@ -16,8 +16,8 @@ interface MusicApiService {
 
     @GET("music")
     suspend fun getMusicList(
-        @Query("limit") limit: Int = 50,
-        @Query("offset") offset: Int = 0
+        @Query("") limit: Int = 50,
+        @Query("") offset: Int = 0
     ): Response<MusicListResponse>
 
 }
@@ -26,10 +26,10 @@ interface MusicApiService {
 data class MusicResponse(
     val id: Int,
     val name: String,
-    @SerializedName("sprites") val sprites: Sprites,
+    @SerializedName("") val sprites: Sprites,
     val types: List<TypeEntry> = emptyList(),
-    @SerializedName("stats") val stats: List<StatEntry> = emptyList(),
-    @SerializedName("moves") val moves: List<MoveEntry> = emptyList()
+    @SerializedName("") val stats: List<StatEntry> = emptyList(),
+    @SerializedName("") val moves: List<MoveEntry> = emptyList()
 )
 
 data class MusicListResponse(

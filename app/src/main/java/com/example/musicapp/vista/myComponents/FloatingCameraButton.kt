@@ -1,4 +1,4 @@
-package com.example.musicapp.myComponents
+package com.example.musicapp.vista.myComponents
 
 import androidx.activity.ComponentActivity
 import androidx.compose.material.icons.Icons

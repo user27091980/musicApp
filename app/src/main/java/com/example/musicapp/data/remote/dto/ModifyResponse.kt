@@ -11,5 +11,4 @@ data class ModifyResponse(
     @SerializedName("message")
     val message: String,
 
-
     )

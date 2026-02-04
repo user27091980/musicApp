@@ -1,4 +1,4 @@
-package com.example.musicapp.pages
+package com.example.musicapp.vista.pages
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.material3.MaterialTheme
