@@ -56,7 +56,7 @@ fun TopBar(navController: NavController) {
         }
 
         Column() {
-            IconButton(onClick = { navController.navigate(SettingsScreen)}) {
+            IconButton(onClick = { navController.navigate(SettingsScreen) }) {
 
                 Icon(
                     imageVector = Icons.Default.Settings,
@@ -104,7 +104,7 @@ fun DropMenu(navHostController: NavHostController, extended: Boolean, dismissReq
 
                 DropdownMenuItem(
                     text = { Text(text = stringResource(R.string.inicio)) },
-                    onClick = {navHostController.navigate(MainScreenPage) })
+                    onClick = { navHostController.navigate(MainScreenPage) })
                 DropdownMenuItem(
                     text = { Text(text = stringResource(R.string.search)) },
                     onClick = { })

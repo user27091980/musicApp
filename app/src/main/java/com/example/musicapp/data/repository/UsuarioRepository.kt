@@ -5,12 +5,13 @@ import com.example.musicapp.data.modelo.UsuariosDTO
 
 class UsuarioRepo {
 
-    companion object{
+    companion object {
         val usuarios = ArrayList<UsuariosDTO>(
             listOf(
                 UsuariosDTO(0, "user1", "1234"),
 
-            ))
+                )
+        )
         var currId = 4
     }
 
@@ -47,7 +48,7 @@ class UsuarioRepo {
         onSuccess: () -> Unit,
         onError: () -> Unit
     ) {
-        if(usuarios.removeIf { it.id == id })
+        if (usuarios.removeIf { it.id == id })
             onSuccess()
         else
             onError()
