@@ -9,15 +9,14 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.musicapp.R
-import com.example.musicapp.myComponents.FlowAe
-import com.example.musicapp.myComponents.FlowTool
-import com.example.musicapp.myComponents.LazyCardColumnToolComponent
-import com.example.musicapp.myComponents.LazyRowComponentTool
-import com.example.musicapp.styles.lazyRowMod
 import com.example.musicapp.styles.boxModifier
+import com.example.musicapp.styles.lazyRowMod
 import com.example.musicapp.styles.rowCardModifier
 import com.example.musicapp.styles.rowFlowModifier
 import com.example.musicapp.styles.rowModifier
+import com.example.musicapp.vista.myComponents.FlowTool
+import com.example.musicapp.vista.myComponents.LazyCardColumnToolComponent
+import com.example.musicapp.vista.myComponents.LazyRowComponentTool
 
 /**
  * @author Andrés
