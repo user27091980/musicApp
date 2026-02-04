@@ -62,7 +62,7 @@ class MainActivity : ComponentActivity() {
                 //andamiaje,
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
-                    topBar = { TopBar() },
+                    topBar = { TopBar(navController) },
                     bottomBar = { BottomBar() },
                     content = { innerPadding ->
                         Box(modifier = Modifier.padding(paddingValues = innerPadding)) {
@@ -104,7 +104,7 @@ class MainActivity : ComponentActivity() {
                                     UserInfoScreenPage()
                                 }
                                 composable<SettingsPage> {
-                                    SettingsScreen()
+                                    SettingsScreen(navController)
                                 }
                             }
                         }
