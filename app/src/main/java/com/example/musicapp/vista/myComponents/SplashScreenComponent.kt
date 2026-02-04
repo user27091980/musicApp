@@ -12,7 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.example.musicapp.data.AlbumsId
+import com.example.musicapp.data.modelo.AlbumsDTO
 import com.example.musicapp.data.DatasourceAlbumsPics
 import com.example.musicapp.styles.imageModifier
 
@@ -29,7 +29,7 @@ import com.example.musicapp.styles.imageModifier
  etc
  */
 @Composable
-fun ImagesAlbumsList(albumsList: List<AlbumsId>, modifier: Modifier = Modifier) {
+fun ImagesAlbumsList(albumsList: List<AlbumsDTO>, modifier: Modifier = Modifier) {
 
     LazyVerticalGrid(
         columns = GridCells.Fixed(4),
@@ -44,7 +44,7 @@ fun ImagesAlbumsList(albumsList: List<AlbumsId>, modifier: Modifier = Modifier) 
                 albumsId ->
             ImagesAlbums(
 
-                albumsId = albumsId,
+                albumsDTO = albumsId,
 
 
                 )
@@ -55,11 +55,11 @@ fun ImagesAlbumsList(albumsList: List<AlbumsId>, modifier: Modifier = Modifier) 
 
 //función que se encarga de la gestión de las imágenes en cuanto a carcterísticas visuales
 @Composable
-fun ImagesAlbums(albumsId: AlbumsId) {
+fun ImagesAlbums(albumsDTO: AlbumsDTO) {
 
     Box() {
         Image(
-            painter = painterResource(albumsId.discsResourceId),
+            painter = painterResource(albumsDTO.discsResourceId),
             contentDescription = "",
             contentScale = ContentScale.Inside,
             modifier = imageModifier

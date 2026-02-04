@@ -12,7 +12,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import com.example.musicapp.data.DatasourceMainScreenPics
-import com.example.musicapp.data.BandsId
+import com.example.musicapp.data.modelo.BandsDTO
 import com.example.musicapp.styles.lazyColumnCardModifier
 import com.example.musicapp.styles.styleTextCards
 
@@ -24,7 +24,7 @@ import com.example.musicapp.styles.styleTextCards
 //Función que recorrerá el DataSourcesPics le pasamos un modifier y una lista por parámetro
 
 @Composable
-fun CardsList(cardsList: List<BandsId>, modifier: Modifier = Modifier) {
+fun CardsList(cardsList: List<BandsDTO>, modifier: Modifier = Modifier) {
     Box(lazyColumnCardModifier) {
         LazyColumn(modifier = modifier) {
 
@@ -32,7 +32,7 @@ fun CardsList(cardsList: List<BandsId>, modifier: Modifier = Modifier) {
 
                     imagesId ->
                 Cards(
-                    bandsId = imagesId,
+                    bandsDTO = imagesId,
                     //añadir clickable
 
                 )
@@ -47,20 +47,20 @@ fun CardsList(cardsList: List<BandsId>, modifier: Modifier = Modifier) {
  * @function
  */
 //creamos la función imagen para poder acceder a ellas y poder realizar el contenscale
-//pasamos como parámetro un bandsId
+//pasamos como parámetro un bandsDTO
 @Composable
-fun Cards(bandsId: BandsId) {
+fun Cards(bandsDTO: BandsDTO) {
 
     Card() {
 
         Image(
-            painter = painterResource(bandsId.imageResourceId),
+            painter = painterResource(bandsDTO.imageResourceId),
             contentDescription = "",
             contentScale = ContentScale.Fit,
         )
         Text(
 
-            text = stringResource(bandsId.stringResourceId),
+            text = stringResource(bandsDTO.stringResourceId),
             style = styleTextCards
         )
 

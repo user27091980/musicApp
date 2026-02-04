@@ -8,7 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
-import com.example.musicapp.data.AlbumsId
+import com.example.musicapp.data.modelo.AlbumsDTO
 import com.example.musicapp.data.DatasourceAePics
 import com.example.musicapp.data.DatasourceAphxPics
 import com.example.musicapp.data.DatasourceBocPics
@@ -26,7 +26,7 @@ import com.example.musicapp.styles.imageModifier
 Componente LazyRow recoge las imagnes de la listas de el paquete data de las clases  para poder añadirlas a la fila.
  */
 @Composable
-fun ImagesRowList(imagesRowList: List<AlbumsId>, modifier: Modifier = Modifier) {
+fun ImagesRowList(imagesRowList: List<AlbumsDTO>, modifier: Modifier = Modifier) {
 
     LazyRow(modifier = Modifier) {
 
@@ -35,7 +35,7 @@ fun ImagesRowList(imagesRowList: List<AlbumsId>, modifier: Modifier = Modifier) 
                 albumsId ->
             Cards(
 
-                albumsId = albumsId,
+                albumsDTO = albumsId,
                 //añadir clickable
 
             )
@@ -49,15 +49,15 @@ fun ImagesRowList(imagesRowList: List<AlbumsId>, modifier: Modifier = Modifier) 
  * @function
  */
 /*
-Recoge los ids de AlbumsId para poder configurar esas imágenes dentro de cada recuadro
+Recoge los ids de AlbumsDTO para poder configurar esas imágenes dentro de cada recuadro
 del lazyRow
  */
 @Composable
-fun Cards(albumsId: AlbumsId) {
+fun Cards(albumsDTO: AlbumsDTO) {
 
     Box {
         Image(
-            painter = painterResource(albumsId.discsResourceId),
+            painter = painterResource(albumsDTO.discsResourceId),
             contentDescription = "",
             contentScale = ContentScale.FillWidth,
             modifier = imageModifier
