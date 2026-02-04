@@ -58,17 +58,15 @@ dependencies {
     implementation(libs.androidx.ui)
     implementation(libs.androidx.compose.animation.core.lint)
     implementation(libs.androidx.material3)
-    implementation(libs.material3)
     implementation(libs.androidx.compose.foundation.layout)
-    implementation("androidx.compose.material3:material3:1.2.0")
-    implementation("androidx.compose.material:material-icons-extended:1.6.0")
-    implementation(libs.material)
-    implementation(libs.androidx.compose.ui.unit)
     implementation(libs.androidx.navigation.compose)
+
     implementation(libs.retrofit2)
     implementation(libs.retrofit2.converter.gson)
     implementation(libs.okhttp.logging)
+
     implementation(libs.androidx.core.splashscreen)
+    implementation(libs.navigation.compose)
 
     testImplementation(libs.junit)
 

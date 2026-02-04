@@ -7,9 +7,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentSize
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Menu
-import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.Icon
@@ -24,10 +21,11 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import com.example.musicapp.R
 import com.example.musicapp.navigation.MainScreenPage
-import com.example.musicapp.pages.SettingsScreen
+import com.example.musicapp.vista.pages.SettingsScreen
 
 /**
  * @author andres
@@ -35,7 +33,7 @@ import com.example.musicapp.pages.SettingsScreen
  */
 //componente de topAppBar se compome de una topbar y un menú desplegable
 @Composable
-fun TopBar() {
+fun TopBar(navController: NavController) {
 
     var isExpanded by remember {
         mutableStateOf(false)
@@ -58,7 +56,7 @@ fun TopBar() {
         }
 
         Column() {
-            IconButton(onClick = {navController.navigate(SettingsScreen}) {
+            IconButton(onClick = { navController.navigate(SettingsScreen)}) {
 
                 Icon(
                     imageVector = Icons.Default.Settings,
@@ -87,7 +85,7 @@ fun TopBar() {
  */
 //función que se encarga del comportamiento del menú desplegable y de los elementos que lo conitenen
 @Composable
-fun DropMenu(navHostController: NavHostController,extended: Boolean, dismissRequest: () -> Unit) {
+fun DropMenu(navHostController: NavHostController, extended: Boolean, dismissRequest: () -> Unit) {
 
     Column(Modifier.padding()) {
         Box(
