@@ -1,6 +1,6 @@
 package com.example.musicapp.vista.pages
 
-dimport androidx.compose.runtime.Composable
+import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
