@@ -1,4 +1,4 @@
-package com.example.musicapp.data
+package com.example.musicapp.data.modelo
 
 import androidx.annotation.DrawableRes
 
@@ -8,4 +8,4 @@ import androidx.annotation.DrawableRes
  */
 /*clase de datos  para las imágenes, permitirá recorrer en una lista para poder añadirlas
 a lazy column*/
-data class AlbumsId(@DrawableRes val discsResourceId: Int)
+data class AlbumsDTO(@DrawableRes val discsResourceId: Int)

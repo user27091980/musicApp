@@ -1,22 +1,23 @@
 package com.example.musicapp.data
 
 import com.example.musicapp.R
+import com.example.musicapp.data.modelo.AlbumsDTO
 
 /**
  * @author Andrés
  */
 class DatasourceBocPics {
 
-    fun loadAlbumsBoc(): List<AlbumsId> {
+    fun loadAlbumsBoc(): List<AlbumsDTO> {
 
         return listOf(
 
-            AlbumsId(R.drawable._25995),
-            AlbumsId(R.drawable.oip_356430257),
-            AlbumsId(R.drawable._x1900_000000_80_0_0),
-            AlbumsId(R.drawable.a0074571247_16),
-            AlbumsId(R.drawable.a1262104559_16),
-            AlbumsId(R.drawable._3e67eef),
+            AlbumsDTO(R.drawable._25995),
+            AlbumsDTO(R.drawable.oip_356430257),
+            AlbumsDTO(R.drawable._x1900_000000_80_0_0),
+            AlbumsDTO(R.drawable.a0074571247_16),
+            AlbumsDTO(R.drawable.a1262104559_16),
+            AlbumsDTO(R.drawable._3e67eef),
 
         )
     }
