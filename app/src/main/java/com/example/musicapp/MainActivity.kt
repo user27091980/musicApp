@@ -81,9 +81,7 @@ class MainActivity : ComponentActivity() {
                                     BandAe()
                                 }
                                 composable<BandAphxPage> {
-                                    BandAphx(
-
-                                    )
+                                    BandAphx()
                                 }
                                 composable<BandBocPage> {
                                     BandBoc()
