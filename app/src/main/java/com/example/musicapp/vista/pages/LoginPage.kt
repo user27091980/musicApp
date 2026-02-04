@@ -1,4 +1,4 @@
-package com.example.musicapp.pages
+package com.example.musicapp.vista.pages
 
 import android.util.Log
 import androidx.compose.foundation.background

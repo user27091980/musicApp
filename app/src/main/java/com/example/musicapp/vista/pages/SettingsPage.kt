@@ -1,4 +1,4 @@
-package com.example.musicapp.pages
+package com.example.musicapp.vista.pages
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer

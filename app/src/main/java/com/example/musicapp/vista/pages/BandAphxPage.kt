@@ -1,4 +1,4 @@
-package com.example.musicapp.pages
+package com.example.musicapp.vista.pages
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
@@ -10,9 +10,9 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.musicapp.R
 import com.example.musicapp.myComponents.FlowAe
-import com.example.musicapp.myComponents.FlowTool
-import com.example.musicapp.myComponents.LazyCardColumnToolComponent
-import com.example.musicapp.myComponents.LazyRowComponentTool
+import com.example.musicapp.myComponents.FlowAphx
+import com.example.musicapp.myComponents.LazyCardColumnAphxComponent
+import com.example.musicapp.myComponents.LazyRowComponentAphx
 import com.example.musicapp.styles.lazyRowMod
 import com.example.musicapp.styles.boxModifier
 import com.example.musicapp.styles.rowCardModifier
@@ -23,29 +23,26 @@ import com.example.musicapp.styles.rowModifier
  * @author Andrés
  */
 @Composable
-fun BandTool(modifier: Modifier = Modifier) {
+fun BandAphx(modifier: Modifier = Modifier) {
 
     Box(boxModifier) {
         Row(rowModifier) {
             Image(
-
-                painter = painterResource(R.drawable._72c6afb9c9fe878a6fa0796dcc74648),
+                painter = painterResource(R.drawable.aphx),
                 contentDescription = "",
                 contentScale = ContentScale.Inside,
-
-                )
+            )
         }
+
         Row(rowCardModifier) {
-
-            LazyCardColumnToolComponent()
-
+            LazyCardColumnAphxComponent()
         }
         Row(rowFlowModifier) {
-            FlowTool()
+            FlowAphx()
         }
         Row(lazyRowMod) {
 
-            LazyRowComponentTool()
+            LazyRowComponentAphx()
 
         }
     }
@@ -53,8 +50,7 @@ fun BandTool(modifier: Modifier = Modifier) {
 
 @Preview
 @Composable
-fun BandToolPrev() {
+fun BandAphxPrev() {
 
-    BandTool()
-
+    BandAphx()
 }

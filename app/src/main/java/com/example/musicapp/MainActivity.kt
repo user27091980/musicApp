@@ -15,8 +15,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.musicapp.myComponents.BottomBar
-import com.example.musicapp.myComponents.TopBar
+import com.example.musicapp.vista.myComponents.BottomBar
+import com.example.musicapp.vista.myComponents.TopBar
 import com.example.musicapp.navigation.BandAePage
 import com.example.musicapp.navigation.BandAphxPage
 import com.example.musicapp.navigation.BandBocPage
@@ -29,18 +29,18 @@ import com.example.musicapp.navigation.RegisterPage
 import com.example.musicapp.navigation.SettingsPage
 import com.example.musicapp.navigation.SplashScreenPage
 import com.example.musicapp.navigation.UserInfoPage
-import com.example.musicapp.pages.BandAe
-import com.example.musicapp.pages.BandAphx
-import com.example.musicapp.pages.BandBoc
-import com.example.musicapp.pages.BandKyuss
-import com.example.musicapp.pages.BandTool
-import com.example.musicapp.pages.Login
-import com.example.musicapp.pages.LoginRegScreen
-import com.example.musicapp.pages.MainScreenPage
-import com.example.musicapp.pages.RegisterScreenPage
-import com.example.musicapp.pages.SettingsScreen
-import com.example.musicapp.pages.SplashScreen
-import com.example.musicapp.pages.UserInfoScreenPage
+import com.example.musicapp.vista.pages.BandAe
+import com.example.musicapp.vista.pages.BandAphx
+import com.example.musicapp.vista.pages.BandBoc
+import com.example.musicapp.vista.pages.BandKyuss
+import com.example.musicapp.vista.pages.BandTool
+import com.example.musicapp.vista.pages.Login
+import com.example.musicapp.vista.pages.LoginRegScreen
+import com.example.musicapp.vista.pages.MainScreenPage
+import com.example.musicapp.vista.pages.RegisterScreenPage
+import com.example.musicapp.vista.pages.SettingsScreen
+import com.example.musicapp.vista.pages.SplashScreen
+import com.example.musicapp.vista.pages.UserInfoScreenPage
 import com.example.musicapp.ui.theme.themes.MusicAppTheme
 
 /**

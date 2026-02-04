@@ -1,4 +1,4 @@
-package com.example.musicapp.myComponents
+package com.example.musicapp.vista.myComponents
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Box
