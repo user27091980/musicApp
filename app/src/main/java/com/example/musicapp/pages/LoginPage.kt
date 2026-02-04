@@ -1,29 +1,59 @@
 package com.example.musicapp.pages
 
+import android.util.Log
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.text.input.PasswordVisualTransformation
+import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.navigation.NavController
+import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.navigation.NavHostController
 import com.example.musicapp.myComponents.ButtonAcept
-import com.example.musicapp.myComponentsw.TextFieldPassComponent
-import com.example.musicapp.myComponentsw.TextFieldUserComponent
+import com.example.musicapp.viewmodel.LoginViewModel
 
 /**
  * @author Andrés
  */
 @Composable
-fun Login() {
+fun Login(navController: NavHostController, loginViewModel: LoginViewModel = viewModel()) {
+
+    val savedStateHandle = navController.currentBackStackEntry?.savedStateHandle
+
+    val deleteResult = savedStateHandle
+        ?.getStateFlow<Boolean?>("deleteResult", null)
+        ?.collectAsState()
+
+    // Cuando llegue el resultado
+    LaunchedEffect(deleteResult?.value) {
+        if (deleteResult?.value == true) {
+            Log.i("DIALOG", "borrado true")
+        } else {
+            Log.i("DIALOG", "borrado false")
+
+        }
+
+    }
+    val uiState by loginViewModel.uiState.collectAsState()
+
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -39,8 +69,33 @@ fun Login() {
             modifier = Modifier.padding(50.dp, 340.dp, 10.dp, 150.dp)
         ) {
             Text("LOGIN", color = Color.White)
-            TextFieldUserComponent()
-            TextFieldPassComponent()
+            //TextFieldUserComponent()
+            OutlinedTextField(
+                value = uiState.email,
+                onValueChange = { loginViewModel.onEmailChange(it) },
+                label = { Text("Email") },
+                modifier = Modifier.fillMaxWidth(),
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email)
+            )
+
+            //TextFieldPassComponent()
+            OutlinedTextField(
+                value = uiState.password,
+                onValueChange = { loginViewModel.onPasswordChange(it) },
+                label = { Text("Password") },
+                modifier = Modifier.fillMaxWidth(),
+                visualTransformation = if (uiState.passwordVisible) VisualTransformation.None
+                else PasswordVisualTransformation(),
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
+                trailingIcon = {
+                    val text = if (uiState.passwordVisible) "Hide" else "Show"
+                    TextButton(onClick = {
+                        loginViewModel.togglePasswordVisibility()
+                    }) {
+                        Text(text)
+                    }
+                }
+            )
             ButtonAcept(navController)
 
         }
@@ -49,7 +104,7 @@ fun Login() {
 
 @Preview
 @Composable
-fun LoginPrev(){
+fun LoginPrev() {
 
     Login()
 

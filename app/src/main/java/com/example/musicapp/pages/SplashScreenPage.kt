@@ -6,7 +6,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
 import com.example.musicapp.myComponents.GridViewComponent
 import com.example.musicapp.navigation.MainScreenPage
-import com.example.musicapp.navigation.RegisterPage
 import kotlinx.coroutines.delay
 
 /**
@@ -33,7 +32,7 @@ fun SplashScreenPage() {
 
 @Preview
 @Composable
-fun SplashPrev(){
+fun SplashPrev() {
 
     SplashScreenPage()
 
