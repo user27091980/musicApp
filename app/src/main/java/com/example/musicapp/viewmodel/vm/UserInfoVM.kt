@@ -1,6 +1,4 @@
-package com.example.musicapp.viewmodel
-
-import androidx.lifecycle.ViewModel
+package com.example.musicapp.viewmodel.vm
 
 /**class UsuarioViewModel : ViewModel() {
     viewModelScope.launch{

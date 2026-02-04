@@ -1,18 +1,15 @@
 package com.example.musicapp.network
 
-import com.example.musicapp.data.entity.Grupo
-import com.google.gson.annotations.SerializedName
+import com.example.musicapp.data.entity.Band
 import retrofit2.Response
-import retrofit2.http.Body
 import retrofit2.http.GET
-import retrofit2.http.PUT
 import retrofit2.http.Path
 
 
 interface MusicApiService {
 //RUTA
 
-//    @GET("music/{id}")
+    //    @GET("music/{id}")
 //    //@Path en la ruta que hemos definido arriba va a coger el id que pasamos por parámetro y lo escribmos.
 //    //toda acción enviada por un retrofit devuelve un objeto response.
 //    suspend fun getMusic(@Path("id") id: Int): Response<musicResponse>
@@ -24,23 +21,31 @@ interface MusicApiService {
 //    ): Response<MusicListResponse>
 //
     @GET("json/grupo/{id}")
-    suspend fun getGroupById(@Path("id") id: String): Response<Grupo>
+    suspend fun getGroupById(@Path("id") id: String): Response<Band>
 
     @GET("json/grupo")
-    suspend fun getGroupAll() : Response<List<Grupo>>
+    suspend fun getGroupAll(): Response<List<Band>>
 
-    @PUT("json/grupo")
-    suspend fun creaGrupo(@Body grupo: Grupo):
+    @GET("json/grupo/texto")
+    suspend fun getGroupText(@Path("texto") contenido: String): Response<Band>
 
+    @GET("json/grupo/fotos")
+    suspend fun getGroupAllPics(): Response<List<Band>>
 
+    @GET("json/grupo/fotoCabecera")
+    suspend fun getGroupHeader(@Path("fotoCabecera") pic: String): Response<Band>
+
+    @GET("json/grupo/etiquetas")
+    suspend fun getGroupTags(@Path("etiquetas") tags:String): Response<Band>
 
 //crearemos un dataclass con el nombre del nombreREsponse
 
-data class MusicListResponse(
-    val results: List<MusicListItem>
-)
+    data class MusicListResponse(
+        val results: List<MusicListItem>
+    )
 
-data class MusicListItem(
-    val name: String,
-    val url: String
-)
+    data class MusicListItem(
+        val name: String,
+        val url: String
+    )
+}

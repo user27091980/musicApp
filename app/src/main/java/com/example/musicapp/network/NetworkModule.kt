@@ -1,6 +1,7 @@
 package com.example.pokedex.network
 
-import com.example.musicapp.network.AppApiService
+
+import com.example.musicapp.network.MusicApiService
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -33,5 +34,5 @@ object NetworkModule {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
-    val appApiService: AppApiService = retrofit.create(AppApiService::class.java)
+    val appApiService: MusicApiService = retrofit.create(MusicApiService::class.java)
 }

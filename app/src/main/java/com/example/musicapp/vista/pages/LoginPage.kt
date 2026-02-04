@@ -28,7 +28,7 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import com.example.musicapp.viewmodel.LoginViewModel
+import com.example.musicapp.viewmodel.vm.LoginViewModel
 import com.example.musicapp.vista.myComponents.ButtonAcept
 
 /**

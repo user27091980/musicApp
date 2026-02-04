@@ -1,14 +1,14 @@
 package com.example.gestorclase.data.repositorio
 
-import com.example.musicapp.data.modelo.UsuariosDTO
+import com.example.musicapp.data.modelo.UsersDTO
 
-
+//repositorio gestión usuarios
 class UsuarioRepo {
 
     companion object {
-        val usuarios = ArrayList<UsuariosDTO>(
+        val usuarios = ArrayList<UsersDTO>(
             listOf(
-                UsuariosDTO(0, "user1", "1234"),
+                UsersDTO(0, "user1", "1234"),
                 )
         )
         var currId = 4
@@ -18,13 +18,13 @@ class UsuarioRepo {
     //crud
 
 
-    fun readAll(onSuccess: (List<UsuariosDTO>) -> Unit, onError: () -> Unit) {
+    fun readAll(onSuccess: (List<UsersDTO>) -> Unit, onError: () -> Unit) {
         onSuccess(usuarios)
     }
 
     fun crear(
-        est: UsuariosDTO,
-        onSuccess: (usuarioCreado: UsuariosDTO) -> Unit,
+        est: UsersDTO,
+        onSuccess: (usuarioCreado: UsersDTO) -> Unit,
         onError: () -> Unit
     ) {
 
@@ -35,7 +35,7 @@ class UsuarioRepo {
 
     fun read(
         id: Int,
-        onSuccess: (usuarioCreado: UsuariosDTO?) -> Unit,
+        onSuccess: (usuarioCreado: UsersDTO?) -> Unit,
         onError: () -> Unit
     ) {
 

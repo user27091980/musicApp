@@ -1,6 +1,7 @@
-package com.example.musicapp.viewmodel
+package com.example.musicapp.viewmodel.vm
 
 import androidx.lifecycle.ViewModel
+import com.example.musicapp.viewmodel.uistate.LoginUiState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -11,7 +12,7 @@ import kotlinx.coroutines.flow.update
  *
  */
 
-// In LoginViewModel.kt
+// In LoginVM.kt
 class LoginViewModel : ViewModel() {
 
     private val _uiState = MutableStateFlow(LoginUiState())
@@ -30,15 +31,7 @@ class LoginViewModel : ViewModel() {
     }
 }
 
-// A data class to hold all the state for the screen
-data class LoginUiState(
-    val email: String = "",
-    val password: String = "",
-    val passwordVisible: Boolean = false
-) {
-    // Computed property for enabling the button
-    val isLoginButtonEnabled: Boolean
-        get() = email.isNotBlank() && password.isNotBlank()
-}
+
+
 
 
