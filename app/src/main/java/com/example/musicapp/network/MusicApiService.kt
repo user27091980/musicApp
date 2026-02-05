@@ -19,25 +19,27 @@ interface MusicApiService {
 //        @Query("") limit: Int = 50,
 //        @Query("") offset: Int = 0
 //    ): Response<MusicListResponse>
-//
-    @GET("json/grupo/{id}")
-    suspend fun getGroupById(@Path("id") id: String): Response<Band>
+//==============ENDPOINTS================
+    @GET("json/band/{id}")
+    suspend fun getBandById(@Path("id") id: String): Response<Band>
 
-    @GET("json/grupo")
-    suspend fun getGroupAll(): Response<List<Band>>
+    @GET("json/nombre")
+    suspend fun getBandName(@Path("nombre") name: String) : Response<Band>
 
-    @GET("json/grupo/texto")
-    suspend fun getGroupText(@Path("texto") contenido: String): Response<Band>
+    @GET("json/texto")
+    suspend fun getBandText(@Path("texto") content: String): Response<Band>
 
-    @GET("json/grupo/fotos")
-    suspend fun getGroupAllPics(): Response<List<Band>>
+    @GET("json/foto")
+    suspend fun getBandPic(@Path("foto") photos:String ): Response<List<Band>>
 
-    @GET("json/grupo/fotoCabecera")
-    suspend fun getGroupHeader(@Path("fotoCabecera") pic: String): Response<Band>
+    @GET("json/fotoCabecera")
+    suspend fun getBandHeader(@Path("fotoCabecera") headPic: String): Response<Band>
 
-    @GET("json/grupo/etiquetas")
-    suspend fun getGroupTags(@Path("etiquetas") tags:String): Response<Band>
+    @GET("json/etiquetas")
+    suspend fun getBandTags(@Path("etiquetas") tags:String): Response<Band>
 
+    @GET("json/discos")
+    suspend fun getBandDiscos(@Path("discos") albums:String) : Response<List<Band>>
 //crearemos un dataclass con el nombre del nombreREsponse
 
     data class MusicListResponse(

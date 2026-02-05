@@ -19,7 +19,6 @@ class DatasourceMainScreenPics() {
             BandsDTO(R.string.kyuss, R.drawable.kyuss,),
             BandsDTO(R.string.ae, R.drawable.autechre_tree1),
             BandsDTO(R.string.aphex, R.drawable.a1664460568_10),
-            BandsDTO(R.string.venetian, R.drawable.venetiansnares),
             BandsDTO(R.string.tool, R.drawable.tool_band_2753374979)
 
         )
