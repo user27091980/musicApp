@@ -7,6 +7,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentSize
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Menu
+import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.Icon
@@ -56,7 +59,7 @@ fun TopBar(navController: NavController) {
         }
 
         Column() {
-            IconButton(onClick = { navController.navigate(SettingsScreen) }) {
+            IconButton(onClick = { navController.navigate("settings") }) {
 
                 Icon(
                     imageVector = Icons.Default.Settings,
@@ -72,7 +75,12 @@ fun TopBar(navController: NavController) {
         topBar conoce la variable isExpanded es la que se encarga de la acción, acto seguido simplemente
         en la fun dropMenu invocamos al dismiss request
         */
-        DropMenu(extended = isExpanded, { isExpanded = false })
+        DropMenu(
+            navController = navController,
+            expanded = isExpanded,
+            dismissRequest = { isExpanded = false }
+        )
+
 
     }
 }
@@ -85,7 +93,11 @@ fun TopBar(navController: NavController) {
  */
 //función que se encarga del comportamiento del menú desplegable y de los elementos que lo conitenen
 @Composable
-fun DropMenu(navHostController: NavHostController, extended: Boolean, dismissRequest: () -> Unit) {
+fun DropMenu(
+    navController: NavController,
+    expanded: Boolean,
+    dismissRequest: () -> Unit
+) {
 
     Column(Modifier.padding()) {
         Box(
@@ -98,13 +110,13 @@ fun DropMenu(navHostController: NavHostController, extended: Boolean, dismissReq
 
             }
             DropdownMenu(
-                extended,
+                expanded,
                 onDismissRequest = dismissRequest
             ) {
 
                 DropdownMenuItem(
                     text = { Text(text = stringResource(R.string.inicio)) },
-                    onClick = { navHostController.navigate(MainScreenPage) })
+                    onClick = { navController.navigate(MainScreenPage) })
                 DropdownMenuItem(
                     text = { Text(text = stringResource(R.string.search)) },
                     onClick = { })

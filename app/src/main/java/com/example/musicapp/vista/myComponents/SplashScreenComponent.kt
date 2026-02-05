@@ -59,7 +59,7 @@ fun ImagesAlbums(albumsDTO: AlbumsDTO) {
 
     Box() {
         Image(
-            painter = painterResource(albumsDTO.discsResourceId),
+            painter = painterResource(albumsDTO.imageResourceId),
             contentDescription = "",
             contentScale = ContentScale.Inside,
             modifier = imageModifier
