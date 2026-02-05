@@ -17,12 +17,11 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 
 @Composable
-fun SettingsScreen() {
+fun SettingsScreen(navController: NavHostController) {
 
     var darkMode by remember { mutableStateOf(false) }
 
@@ -72,11 +71,4 @@ fun SettingSwitch(
             onCheckedChange = onCheckedChange
         )
     }
-}
-
-@Preview
-@Composable
-fun PrevSettingsScreen(){
-
-    SettingsScreen()
 }
