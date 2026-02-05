@@ -104,7 +104,7 @@ class MainActivity : ComponentActivity() {
                                     UserInfoScreenPage()
                                 }
                                 composable<SettingsPage> {
-                                    SettingsScreen(navController)
+                                    SettingsScreen()
                                 }
                             }
                         }
