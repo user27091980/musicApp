@@ -5,6 +5,10 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.res.stringResource
 import com.example.musicapp.data.BottomItems
 import com.example.musicapp.R
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.Search
+import androidx.compose.material.icons.filled.Person
 
 /**
  * @author: Andrés

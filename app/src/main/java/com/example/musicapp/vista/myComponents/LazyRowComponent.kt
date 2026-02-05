@@ -57,7 +57,7 @@ fun Cards(albumsDTO: AlbumsDTO) {
 
     Box {
         Image(
-            painter = painterResource(albumsDTO.discsResourceId),
+            painter = painterResource(albumsDTO.imageResourceId),
             contentDescription = "",
             contentScale = ContentScale.FillWidth,
             modifier = imageModifier

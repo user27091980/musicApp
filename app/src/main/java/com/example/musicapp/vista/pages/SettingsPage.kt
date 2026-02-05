@@ -1,21 +1,30 @@
 package com.example.musicapp.vista.pages
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 
 @Composable
-fun SettingsScreen(viewModel: NavHostController) {
+fun SettingsScreen() {
 
-    //val darkMode by viewModel.darkMode.collectAsState()
+    var darkMode by remember { mutableStateOf(false) }
 
     Column(
         modifier = Modifier
@@ -31,39 +40,43 @@ fun SettingsScreen(viewModel: NavHostController) {
         Spacer(modifier = Modifier.height(24.dp))
 
         // Appearance
-        SectionTitle("Appearance")
+        Text("Appearance", style = MaterialTheme.typography.titleMedium)
 
         SettingSwitch(
             title = "Dark Mode",
             checked = darkMode,
-            onCheckedChange = true,
+            onCheckedChange = { darkMode = it },
         )
 
         // About
-        SectionTitle("made by Andrés Canabal Poncela")
 
-        SettingItem(
-            title = "App Version",
-            value = "1.0.0"
-        )
+        Text("App Version: 1.0", style = MaterialTheme.typography.titleMedium)
+
     }
 }
+
 
 @Composable
 fun SettingSwitch(
     title: String,
     checked: Boolean,
-    onCheckedChange: Boolean
+    onCheckedChange: (Boolean) -> Unit
 ) {
-    TODO("Not yet implemented")
+    Row(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.SpaceBetween
+    ) {
+        Text(title)
+        Switch(
+            checked = checked,
+            onCheckedChange = onCheckedChange
+        )
+    }
 }
 
+@Preview
 @Composable
-fun SectionTitle(string: String) {
-    TODO("Not yet implemented")
-}
+fun PrevSettingsScreen(){
 
-@Composable
-fun SettingItem(title: String, value: String) {
-    TODO("Not yet implemented")
+    SettingsScreen()
 }

@@ -1,4 +1,4 @@
-package com.example.gestorclase.data.repositorio
+package com.example.musicapp.data.repository
 
 import com.example.musicapp.data.modelo.UsersDTO
 
@@ -12,11 +12,11 @@ class UsuarioRepo {
                 )
         )
         var currId = 4
+
     }
 
 
     //crud
-
 
     fun readAll(onSuccess: (List<UsersDTO>) -> Unit, onError: () -> Unit) {
         onSuccess(usuarios)

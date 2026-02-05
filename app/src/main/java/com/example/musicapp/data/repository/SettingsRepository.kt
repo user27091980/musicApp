@@ -1,17 +1,24 @@
 package com.example.musicapp.data.repository
 
-/*import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.Flow
 
-//repositorio para la configuración.
 class SettingsRepository(
-    private val dataStoreManager: DataStoreManager,
-    private var darkModeFlow: Boolean
+    private val dataStoreManager: DataStoreManager
 ) {
 
-    private val darkModeFlow: Flow<Boolean> = dataStoreManager
+    val darkModeFlow: Flow<Boolean> =
+        dataStoreManager.darkModeFlow
 
     suspend fun setDarkMode(enabled: Boolean) {
         dataStoreManager.setDarkMode(enabled)
     }
 }
-*/
+
+class DataStoreManager {
+
+    val darkModeFlow: Flow<Boolean> = TODO()
+
+    suspend fun setDarkMode(enabled: Boolean) {
+        // guardar en DataStore
+    }
+}
