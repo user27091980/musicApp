@@ -69,7 +69,7 @@ fun TextFieldPassComponent() {
     var passwordVisible by remember { mutableStateOf(false) }
 
     TextField(
-        state = rememberTextFieldState(initialText = "PASSWORD"),
+
         value = pass,
         onValueChange = { pass = it },
         label = { Text("password") },
