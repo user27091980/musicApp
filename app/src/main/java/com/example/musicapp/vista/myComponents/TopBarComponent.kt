@@ -27,7 +27,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import com.example.musicapp.R
-import com.example.musicapp.navigation.MainScreenPage
+import com.example.musicapp.navigation.MainScreenRoute
 import com.example.musicapp.vista.pages.SettingsScreen
 
 /**
@@ -116,7 +116,7 @@ fun DropMenu(
 
                 DropdownMenuItem(
                     text = { Text(text = stringResource(R.string.inicio)) },
-                    onClick = { navController.navigate(MainScreenPage) })
+                    onClick = { navController.navigate(MainScreenRoute) })
                 DropdownMenuItem(
                     text = { Text(text = stringResource(R.string.search)) },
                     onClick = { })
