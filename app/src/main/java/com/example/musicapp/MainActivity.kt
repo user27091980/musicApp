@@ -105,7 +105,7 @@ class MainActivity : ComponentActivity() {
                                     UserInfoScreenPage()
                                 }
                                 composable<SettingsPage> {
-                                    SettingsScreen()
+                                    SettingsScreen(navController)
                                 }
                             }
                         }
@@ -116,23 +116,6 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@Preview(showBackground = true)
-@Composable
-fun MusicAppPreviewPage() {
-    MusicAppTheme {
-        SplashScreenPage()
-        //Login()
-        //LoginRegScreen()
-        //RegisterScreenPage()
-        //MainScreenPage()
-        //BandAe()
-        //BandAphx()
-        //BandBoc()
-        //BandKyuss()
-        //BandTool()
-        //UserInfoScreenPage()
-    }
 
-}
 
 
