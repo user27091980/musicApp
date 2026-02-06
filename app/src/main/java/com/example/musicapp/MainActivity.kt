@@ -64,7 +64,7 @@ class MainActivity : ComponentActivity() {
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
                     topBar = { TopBar(navController) },
-                    bottomBar = { BottomBar() },
+                    bottomBar = { BottomBar(navController) },
                     content = { innerPadding ->
                         Box(modifier = Modifier.padding(paddingValues = innerPadding)) {
                             NavHost(
@@ -81,7 +81,7 @@ class MainActivity : ComponentActivity() {
                                     Login(navController)
                                 }
                                 composable<RegisterRoute> {
-                                    RegisterScreenPage()
+                                    RegisterScreenPage(navController)
                                 }
                                 composable<MainScreenRoute> {
                                     MainScreenPage()
