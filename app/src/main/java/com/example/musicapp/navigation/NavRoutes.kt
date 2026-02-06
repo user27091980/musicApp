@@ -4,41 +4,65 @@ import kotlinx.serialization.Serializable
 
 //ya tenemos objeto creado para la parte de la rut
 //object lo ponemos si es estático
+//no tiene sentido que tengamos clases vacias, es algo innecesario
+
+
+//para kotlin serialization ideal agrupar:
 @Serializable
-object SplashScreenPage
+sealed interface NavRoute
 
 @Serializable
-class LoginPage(val email: String) {}
+object SplashScreenPage: NavRoute
+
+/*emplear data class para rutas con parámetros:
+Kotlin NO genera automáticamente:
+equals()
+hashCode()
+toString()
+copy()
+destructuring (component1())
+Eso significa que dos rutas con el mismo contenido NO son iguales
+en Resumen:
+
+class → algo con lógica, identidad propia
+data class → solo datos
+
+En navegación:
+Rutas con parámetros → data class
+Rutas sin parámetros → object
+*/
+@Serializable
+data class LoginPage(val email: String): NavRoute
 
 @Serializable
-class RegisterPage(val email: String, val user: String)
+data class RegisterPage(val email: String, val user: String): NavRoute
 
 @Serializable
-object LoginRegScreen
+object LoginRegScreen: NavRoute
 
 @Serializable
-object MainScreenPage
+object MainScreenPage : NavRoute
 
 @Serializable
-object BandAePage
+object BandAePage: NavRoute
 
 @Serializable
-object BandAphxPage
+object BandAphxPage : NavRoute
 
 @Serializable
-object BandBocPage
+object BandBocPage: NavRoute
 
 @Serializable
-object BandKyussPage
+object BandKyussPage: NavRoute
 
 @Serializable
-object BandToolPage
+object BandToolPage: NavRoute
 
 @Serializable
-object UserInfoPage
+object UserInfoPage: NavRoute
 
 @Serializable
 object DialogPage
 
 @Serializable
-object SettingsPage
+object SettingsPage: NavRoute

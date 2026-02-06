@@ -42,6 +42,7 @@ import com.example.musicapp.vista.pages.SettingsScreen
 import com.example.musicapp.vista.pages.SplashScreen
 import com.example.musicapp.vista.pages.UserInfoScreenPage
 import com.example.musicapp.ui.theme.themes.MusicAppTheme
+import com.example.musicapp.vista.pages.SplashScreenPage
 
 /**
  * @author="Andrés"
@@ -119,11 +120,11 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MusicAppPreviewPage() {
     MusicAppTheme {
-        //SplashScreenPage()
+        SplashScreenPage()
         //Login()
         //LoginRegScreen()
         //RegisterScreenPage()
-        MainScreenPage()
+        //MainScreenPage()
         //BandAe()
         //BandAphx()
         //BandBoc()

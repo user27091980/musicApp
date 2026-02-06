@@ -1,24 +1,40 @@
 package com.example.musicapp.data.repository
 
+import android.content.Context
+import androidx.datastore.preferences.core.booleanPreferencesKey
+import androidx.datastore.preferences.core.edit
+import androidx.datastore.preferences.preferencesDataStore
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.map
 
-class SettingsRepository(
-    private val dataStoreManager: DataStoreManager
-) {
+// Crear DataStore en el Context
+private val Context.dataStore by preferencesDataStore(name = "settings")
 
-    val darkModeFlow: Flow<Boolean> =
-        dataStoreManager.darkModeFlow
+class DataStoreManager(private val context: Context) {
 
+    companion object {
+        private val DARK_MODE_KEY = booleanPreferencesKey("dark_mode")
+    }
+
+    // Flow que emite el valor actual del modo oscuro
+    val darkModeFlow: Flow<Boolean> = context.dataStore.data
+        .map { preferences ->
+            preferences[DARK_MODE_KEY] ?: false
+        }
+
+    // Función para guardar el valor
     suspend fun setDarkMode(enabled: Boolean) {
-        dataStoreManager.setDarkMode(enabled)
+        context.dataStore.edit { preferences ->
+            preferences[DARK_MODE_KEY] = enabled
+        }
     }
 }
 
-class DataStoreManager {
+class SettingsRepository(private val dataStoreManager: DataStoreManager) {
 
-    val darkModeFlow: Flow<Boolean> = TODO()
+    val darkModeFlow: Flow<Boolean> = dataStoreManager.darkModeFlow
 
     suspend fun setDarkMode(enabled: Boolean) {
-        // guardar en DataStore
+        dataStoreManager.setDarkMode(enabled)
     }
 }
