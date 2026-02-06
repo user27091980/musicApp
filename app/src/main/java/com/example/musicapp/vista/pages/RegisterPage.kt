@@ -13,6 +13,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import androidx.navigation.NavHostController
 import com.example.musicapp.myComponentsw.TextFieldsComponent
 import com.example.musicapp.styles.button
 import com.example.musicapp.vista.myComponents.ButtonAcept
@@ -25,7 +26,7 @@ import com.example.musicapp.vista.myComponents.ButtonCancel
  */
 @Composable
 
-fun RegisterScreenPage() {
+fun RegisterScreenPage(navController: NavHostController) {
 
     Box(
         modifier = Modifier
@@ -62,6 +63,6 @@ fun RegisterScreenPage() {
 @Composable
 fun RegScreenPrev() {
 
-    RegisterScreenPage()
+    RegisterScreenPage(navController)
 
 }

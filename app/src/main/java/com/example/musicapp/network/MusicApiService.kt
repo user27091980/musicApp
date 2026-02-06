@@ -4,6 +4,7 @@ import com.example.musicapp.data.entity.Band
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path
+import retrofit2.http.Query
 
 
 interface MusicApiService {
@@ -21,33 +22,34 @@ interface MusicApiService {
 //    ): Response<MusicListResponse>
 //==============ENDPOINTS================
     @GET("json/band/{id}")
-    suspend fun getBandById(@Path("id") id: String): Response<Band>
+    suspend fun getBandById(@Query("id") id: String): Response<Band>
+    //endpoint dinámico
+    @GET("json/nombre/{nombre}")
+    suspend fun getBandName(@Query("nombre") name: String) : Response<Band>
 
-    @GET("json/nombre")
-    suspend fun getBandName(@Path("nombre") name: String) : Response<Band>
+    @GET("json/band/texto/")
+    suspend fun getBandText(@Query("texto") content: String): Response<Band>
 
-    @GET("json/texto")
-    suspend fun getBandText(@Path("texto") content: String): Response<Band>
+    @GET("json/band/{id}/foto/")
+    suspend fun getBandPic(@Query("foto") photos:String ): Response<List<Band>>
 
-    @GET("json/foto")
-    suspend fun getBandPic(@Path("foto") photos:String ): Response<List<Band>>
-
-    @GET("json/fotoCabecera")
-    suspend fun getBandHeader(@Path("fotoCabecera") headPic: String): Response<Band>
+    @GET("json/band/{id}/fotoCabecera/")
+    suspend fun getBandHeader(@Query("fotoCabecera") headPic: String): Response<Band>
 
     @GET("json/etiquetas")
-    suspend fun getBandTags(@Path("etiquetas") tags:String): Response<Band>
+    suspend fun getBandTags(@Query("etiquetas") tags:String): Response<Band>
 
-    @GET("json/discos")
-    suspend fun getBandDiscos(@Path("discos") albums:String) : Response<List<Band>>
+    @GET("json/band/{id}/discos")
+    suspend fun getBandDiscos(@Query("discos") albums:String) : Response<List<Band>>
 //crearemos un dataclass con el nombre del nombreREsponse
 
-    data class MusicListResponse(
-        val results: List<MusicListItem>
+    data class Tag(
+        val id:String,
+        val name: String
     )
 
-    data class MusicListItem(
-        val name: String,
-        val url: String
+    data class Album(
+        val id:String,
+        val photos: String
     )
 }
