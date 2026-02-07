@@ -66,6 +66,8 @@ dependencies {
     implementation("androidx.compose.material:material-icons-extended")
     // Preferences DataStore
     implementation("androidx.datastore:datastore-preferences:1.2.0")
+    implementation("androidx.compose.foundation:foundation:1.4.3")
+    implementation("androidx.compose.material3:material3:1.2.0")
     // Kotlin Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
@@ -76,6 +78,7 @@ dependencies {
 
     implementation(libs.androidx.core.splashscreen)
     implementation(libs.navigation.compose)
+    implementation(libs.material3)
 
     testImplementation(libs.junit)
 
