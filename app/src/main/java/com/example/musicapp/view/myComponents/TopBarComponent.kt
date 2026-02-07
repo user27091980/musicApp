@@ -1,4 +1,4 @@
-package com.example.musicapp.vista.myComponents
+package com.example.musicapp.view.myComponents
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -25,10 +25,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavController
-import androidx.navigation.NavHostController
 import com.example.musicapp.R
 import com.example.musicapp.navigation.MainScreenRoute
-import com.example.musicapp.vista.pages.SettingsScreen
 
 /**
  * @author andres

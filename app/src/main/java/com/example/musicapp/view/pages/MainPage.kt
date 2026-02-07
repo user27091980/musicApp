@@ -1,9 +1,9 @@
-package com.example.musicapp.vista.pages
+package com.example.musicapp.view.pages
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.musicapp.vista.myComponents.LazyColumnComponent
+import com.example.musicapp.view.myComponents.LazyColumnComponent
 
 /**
  * @author="Andrés"

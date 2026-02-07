@@ -26,20 +26,20 @@ import com.example.musicapp.navigation.SettingsRoute
 import com.example.musicapp.navigation.SplashRoute
 import com.example.musicapp.navigation.UserInfoRoute
 import com.example.musicapp.ui.theme.themes.MusicAppTheme
-import com.example.musicapp.vista.myComponents.BottomBar
-import com.example.musicapp.vista.myComponents.TopBar
-import com.example.musicapp.vista.pages.BandAe
-import com.example.musicapp.vista.pages.BandAphx
-import com.example.musicapp.vista.pages.BandBoc
-import com.example.musicapp.vista.pages.BandKyuss
-import com.example.musicapp.vista.pages.BandTool
-import com.example.musicapp.vista.pages.Login
-import com.example.musicapp.vista.pages.LoginRegScreen
-import com.example.musicapp.vista.pages.MainScreenPage
-import com.example.musicapp.vista.pages.RegisterScreenPage
-import com.example.musicapp.vista.pages.SettingsScreen
-import com.example.musicapp.vista.pages.SplashScreen
-import com.example.musicapp.vista.pages.UserInfoScreenPage
+import com.example.musicapp.view.myComponents.BottomBar
+import com.example.musicapp.view.myComponents.TopBar
+import com.example.musicapp.view.pages.BandAe
+import com.example.musicapp.view.pages.BandAphx
+import com.example.musicapp.view.pages.BandBoc
+import com.example.musicapp.view.pages.BandKyuss
+import com.example.musicapp.view.pages.BandTool
+import com.example.musicapp.view.pages.Login
+import com.example.musicapp.view.pages.LoginRegScreen
+import com.example.musicapp.view.pages.MainScreenPage
+import com.example.musicapp.view.pages.RegisterScreenPage
+import com.example.musicapp.view.pages.SettingsScreen
+import com.example.musicapp.view.pages.SplashScreen
+import com.example.musicapp.view.pages.UserInfoScreenPage
 
 /**
  * @author="Andrés"

@@ -1,4 +1,4 @@
-package com.example.musicapp.vista.myComponents
+package com.example.musicapp.view.myComponents
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.shape.RoundedCornerShape

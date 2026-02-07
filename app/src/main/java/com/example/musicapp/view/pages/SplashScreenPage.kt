@@ -1,12 +1,11 @@
-package com.example.musicapp.vista.pages
+package com.example.musicapp.view.pages
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
-import androidx.navigation.compose.rememberNavController
 import com.example.musicapp.navigation.MainScreenRoute
-import com.example.musicapp.vista.myComponents.GridViewComponent
+import com.example.musicapp.view.myComponents.GridViewComponent
 import kotlinx.coroutines.delay
 
 /**

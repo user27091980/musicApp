@@ -1,10 +1,8 @@
-package com.example.musicapp.vista.myComponents
+package com.example.musicapp.view.myComponents
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.FilterChip
@@ -149,6 +147,11 @@ fun FlowTool() {
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             TagItem(stringResource(R.string.discoTool))
+        }
+        Row(
+            horizontalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            TagItem(stringResource(R.string.toolDisc))
         }
     }
 }

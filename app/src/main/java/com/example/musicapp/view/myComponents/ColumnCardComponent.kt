@@ -1,4 +1,4 @@
-package com.example.musicapp.vista.myComponents
+package com.example.musicapp.view.myComponents
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -37,9 +37,9 @@ fun CardColumnAeComponent() {
             Card {
                 Text(text = stringResource(R.string.aeText))
             }
-            Spacer(modifier = Modifier.height(60.dp))
+            Spacer(modifier = Modifier.height(10.dp))
             FlowAe()
-            Spacer(modifier = Modifier.height(15.dp))
+            Spacer(modifier = Modifier.height(10.dp))
         }
     }
 }
@@ -59,7 +59,7 @@ fun CardColumnBocComponent() {
                 Text(text = stringResource(R.string.bocText))
             }
 
-            Spacer(modifier = Modifier.height(60.dp))
+            Spacer(modifier = Modifier.height(10.dp))
             FlowBoc()
             Spacer(modifier = Modifier.height(10.dp))
         }
