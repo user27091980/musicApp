@@ -78,7 +78,7 @@ fun Cards(bandsDTO: BandsDTO) {
 @Composable
 fun LazyColumnComponent(modifier: Modifier = Modifier) {
 
-    CardsList(cardsList = DatasourceMainScreenPics().LoadImagesId())
+    CardsList(cardsList = DatasourceMainScreenPics().loadImagesId())
 
 }
 
