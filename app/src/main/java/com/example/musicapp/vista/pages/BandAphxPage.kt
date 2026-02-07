@@ -4,7 +4,6 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
@@ -13,7 +12,7 @@ import com.example.musicapp.styles.boxModifier
 import com.example.musicapp.styles.lazyRowMod
 import com.example.musicapp.styles.rowCardModifier
 import com.example.musicapp.styles.rowModifier
-import com.example.musicapp.vista.myComponents.LazyCardColumnAphxComponent
+import com.example.musicapp.vista.myComponents.CardColumnAphxComponent
 import com.example.musicapp.vista.myComponents.LazyRowComponentAphx
 
 /**
@@ -24,25 +23,25 @@ fun BandAphx() {
 
     Box(boxModifier) {
 
-            Row(rowModifier) {
-                Image(
-                    painter = painterResource(R.drawable.aphx),
-                    contentDescription = "",
-                    contentScale = ContentScale.Inside,
-                )
-            }
+        Row(rowModifier) {
+            Image(
+                painter = painterResource(R.drawable.aphx),
+                contentDescription = "",
+                contentScale = ContentScale.Inside,
+            )
+        }
 
-            Row(rowCardModifier) {
-                LazyCardColumnAphxComponent()
-            }
+        Row(rowCardModifier) {
+            CardColumnAphxComponent()
+        }
 
-            Row(lazyRowMod) {
+        Row(lazyRowMod) {
 
-                LazyRowComponentAphx()
+            LazyRowComponentAphx()
 
-            }
         }
     }
+}
 
 @Preview
 @Composable
