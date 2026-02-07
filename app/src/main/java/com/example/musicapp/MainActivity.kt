@@ -116,23 +116,5 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@Preview(showBackground = true)
-@Composable
-fun MusicAppPreviewPage() {
-    MusicAppTheme {
-        SplashScreenPage()
-        //Login()
-        //LoginRegScreen()
-        //RegisterScreenPage()
-        //MainScreenPage()
-        //BandAe()
-        //BandAphx()
-        //BandBoc()
-        //BandKyuss()
-        //BandTool()
-        //UserInfoScreenPage()
-    }
-
-}
 
 
