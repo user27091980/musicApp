@@ -9,12 +9,12 @@ plugins {
 
 android {
     namespace = "com.example.musicapp"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.musicapp"
-        minSdk = 26
-        targetSdk = 35
+        minSdk = 23
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
@@ -43,6 +43,7 @@ android {
     buildFeatures {
         compose = true
     }
+    buildToolsVersion = "36.0.0"
 }
 
 dependencies {
@@ -64,10 +65,10 @@ dependencies {
     implementation("androidx.compose.material:material-icons-core")
     implementation("androidx.compose.material:material-icons-extended")
     // Preferences DataStore
-    implementation("androidx.datastore:datastore-preferences:1.1.0-alpha05")
+    implementation("androidx.datastore:datastore-preferences:1.2.0")
     // Kotlin Coroutines
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
 
     implementation(libs.retrofit2)
     implementation(libs.retrofit2.converter.gson)

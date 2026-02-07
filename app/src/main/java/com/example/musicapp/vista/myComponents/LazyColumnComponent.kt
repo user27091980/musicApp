@@ -11,7 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import com.example.musicapp.data.DatasourceMainScreenPics
+import com.example.musicapp.data.dataSources.DatasourceMainScreenPics
 import com.example.musicapp.data.modelo.BandsDTO
 import com.example.musicapp.styles.lazyColumnCardModifier
 import com.example.musicapp.styles.styleTextCards

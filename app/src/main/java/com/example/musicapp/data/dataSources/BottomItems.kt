@@ -1,4 +1,4 @@
-package com.example.musicapp.data
+package com.example.musicapp.data.dataSources
 
 import androidx.compose.ui.graphics.vector.ImageVector
 /**

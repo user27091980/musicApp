@@ -3,7 +3,7 @@ package com.example.musicapp.vista.myComponents
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.res.stringResource
-import com.example.musicapp.data.BottomItems
+import com.example.musicapp.data.dataSources.BottomItems
 import com.example.musicapp.R
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
