@@ -1,4 +1,4 @@
-package com.example.musicapp.vista.pages
+package com.example.musicapp.view.pages
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
@@ -12,40 +12,45 @@ import com.example.musicapp.styles.boxModifier
 import com.example.musicapp.styles.lazyRowMod
 import com.example.musicapp.styles.rowCardModifier
 import com.example.musicapp.styles.rowModifier
-import com.example.musicapp.vista.myComponents.CardColumnAphxComponent
-import com.example.musicapp.vista.myComponents.LazyRowComponentAphx
+import com.example.musicapp.view.myComponents.CardColumnToolComponent
+import com.example.musicapp.view.myComponents.LazyRowComponentTool
 
 /**
  * @author Andrés
  */
 @Composable
-fun BandAphx() {
+fun BandTool() {
 
     Box(boxModifier) {
 
         Row(rowModifier) {
             Image(
-                painter = painterResource(R.drawable.aphx),
+
+                painter = painterResource(R.drawable._72c6afb9c9fe878a6fa0796dcc74648),
                 contentDescription = "",
                 contentScale = ContentScale.Inside,
-            )
-        }
 
+                )
+        }
         Row(rowCardModifier) {
-            CardColumnAphxComponent()
+
+            CardColumnToolComponent()
+
         }
 
         Row(lazyRowMod) {
 
-            LazyRowComponentAphx()
+            LazyRowComponentTool()
 
         }
     }
 }
 
+
 @Preview
 @Composable
-fun BandAphxPrev() {
+fun BandToolPrev() {
 
-    BandAphx()
+    BandTool()
+
 }

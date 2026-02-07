@@ -1,4 +1,4 @@
-package com.example.musicapp.vista.pages
+package com.example.musicapp.view.pages
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
@@ -12,35 +12,31 @@ import com.example.musicapp.styles.boxModifier
 import com.example.musicapp.styles.lazyRowMod
 import com.example.musicapp.styles.rowCardModifier
 import com.example.musicapp.styles.rowModifier
-import com.example.musicapp.vista.myComponents.CardColumnToolComponent
-import com.example.musicapp.vista.myComponents.LazyRowComponentTool
+import com.example.musicapp.view.myComponents.CardColumnBocComponent
+import com.example.musicapp.view.myComponents.LazyRowComponentBoc
 
 /**
  * @author Andrés
  */
 @Composable
-fun BandTool() {
+fun BandBoc() {
 
     Box(boxModifier) {
 
         Row(rowModifier) {
             Image(
-
-                painter = painterResource(R.drawable._72c6afb9c9fe878a6fa0796dcc74648),
+                painter = painterResource(R.drawable.boards_of_canada_by_necronomiconofgod_d6ycbne_fullview),
                 contentDescription = "",
                 contentScale = ContentScale.Inside,
-
-                )
+            )
         }
         Row(rowCardModifier) {
-
-            CardColumnToolComponent()
-
+            CardColumnBocComponent()
         }
 
         Row(lazyRowMod) {
 
-            LazyRowComponentTool()
+            LazyRowComponentBoc()
 
         }
     }
@@ -49,8 +45,8 @@ fun BandTool() {
 
 @Preview
 @Composable
-fun BandToolPrev() {
+fun BandBocPrev() {
 
-    BandTool()
+    BandBoc()
 
 }

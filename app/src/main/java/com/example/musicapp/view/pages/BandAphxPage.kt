@@ -1,8 +1,7 @@
-package com.example.musicapp.vista.pages
+package com.example.musicapp.view.pages
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.layout.ContentScale
@@ -13,41 +12,40 @@ import com.example.musicapp.styles.boxModifier
 import com.example.musicapp.styles.lazyRowMod
 import com.example.musicapp.styles.rowCardModifier
 import com.example.musicapp.styles.rowModifier
-import com.example.musicapp.vista.myComponents.CardColumnAeComponent
-import com.example.musicapp.vista.myComponents.LazyRowComponentAe
+import com.example.musicapp.view.myComponents.CardColumnAphxComponent
+import com.example.musicapp.view.myComponents.LazyRowComponentAphx
 
 /**
  * @author Andrés
  */
 @Composable
-fun BandAe() {
+fun BandAphx() {
 
     Box(boxModifier) {
 
         Row(rowModifier) {
             Image(
-                painter = painterResource(R.drawable.autechre_sticker),
+                painter = painterResource(R.drawable.aphx),
                 contentDescription = "",
                 contentScale = ContentScale.Inside,
             )
         }
-        Row(rowCardModifier) {
-            CardColumnAeComponent()
 
+        Row(rowCardModifier) {
+            CardColumnAphxComponent()
         }
 
-
         Row(lazyRowMod) {
-            LazyRowComponentAe()
+
+            LazyRowComponentAphx()
+
         }
     }
 }
 
-
 @Preview
 @Composable
-fun BandAePrev() {
+fun BandAphxPrev() {
 
-    BandAe()
-
+    BandAphx()
 }

@@ -1,33 +1,28 @@
-package com.example.musicapp.vista.pages
+package com.example.musicapp.view.pages
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import com.example.musicapp.myComponentsw.TextFieldsComponent
-import com.example.musicapp.styles.button
-import com.example.musicapp.vista.myComponents.ButtonAcept
-import com.example.musicapp.vista.myComponents.ButtonCancel
+import com.example.musicapp.view.myComponents.ButtonLogin
+import com.example.musicapp.view.myComponents.ButtonRegister
 
 /**
- * @author="Andrés"
- * @param
- * @function
+ * @author Andrés
  */
 @Composable
-
-fun RegisterScreenPage(navController: NavHostController) {
+fun LoginRegScreen(navController: NavHostController) {
 
     Box(
         modifier = Modifier
@@ -37,33 +32,30 @@ fun RegisterScreenPage(navController: NavHostController) {
                     colors = listOf(Color.DarkGray, Color.Black) // verde Spotify → negro
                 )
             )
-    ) {
+    )
+    {
         Column(
-            Modifier.padding(60.dp, 220.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(20.dp),
+            modifier = Modifier.padding(10.dp, 400.dp, 10.dp, 150.dp)
+        ) {
 
-            ) {
-            TextFieldsComponent()
+            // Botón Login
+            ButtonLogin(navController)
+
+            // Botón Registro con estilo tonal
+            ButtonRegister(navController)
         }
-
-        Row(
-            Modifier.padding(95.dp, 400.dp),
-        )
-        {
-
-            ButtonAcept(
-                button as NavController
-            )
-            ButtonCancel(button)
-        }
-
     }
-
 }
 
 @Preview
 @Composable
-fun RegScreenPrev() {
+fun LoginRegPrev() {
 
-    RegisterScreenPage(navController = rememberNavController())
+    LoginRegScreen(navController = rememberNavController())
 
 }
+
+
+
