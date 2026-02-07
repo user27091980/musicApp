@@ -23,7 +23,7 @@ fun LazyCardColumnAeComponent() {
 
     Box() {
         Column {
-            Card(){
+            Card() {
                 Text(text = stringResource(R.string.aeText))
             }
 
@@ -58,10 +58,11 @@ fun LazyCardColumnAphxComponent() {
             Card() {
                 Text(text = stringResource(R.string.aphxText))
             }
-            Spacer(modifier = Modifier.height(80.dp))
+            Spacer(modifier = Modifier.height(10.dp))
             Text(stringResource(R.string.genre))
-            Spacer(modifier = Modifier.height(80.dp))
+            Spacer(modifier = Modifier.height(10.dp))
             FlowAphx()
+            Spacer(modifier = Modifier.height(10.dp))
         }
     }
 }
@@ -73,10 +74,11 @@ fun LazyCardColumnKyussComponent() {
             Card() {
                 Text(text = stringResource(R.string.kyussText))
             }
-            Spacer(modifier = Modifier.height(80.dp))
+            Spacer(modifier = Modifier.height(10.dp))
             Text(stringResource(R.string.genre))
-            Spacer(modifier = Modifier.height(80.dp))
+            Spacer(modifier = Modifier.height(10.dp))
             FlowKyuss()
+            Spacer(modifier = Modifier.height(10.dp))
         }
     }
 }
@@ -88,10 +90,11 @@ fun LazyCardColumnToolComponent() {
             Card() {
                 Text(text = stringResource(R.string.toolText))
             }
-                Spacer(modifier = Modifier.height(80.dp))
-                Text(stringResource(R.string.genre))
-                Spacer(modifier = Modifier.height(80.dp))
-                FlowTool()
+            Spacer(modifier = Modifier.height(10.dp))
+            Text(stringResource(R.string.genre))
+            Spacer(modifier = Modifier.height(10.dp))
+            FlowTool()
+            Spacer(modifier = Modifier.height(10.dp))
 
         }
     }
