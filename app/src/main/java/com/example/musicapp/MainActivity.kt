@@ -66,7 +66,11 @@ class MainActivity : ComponentActivity() {
                     topBar = { TopBar(navController) },
                     bottomBar = { BottomBar(navController) },
                     content = { innerPadding ->
-                        Box(modifier = Modifier.padding(paddingValues = innerPadding)) {
+                        Box(
+                            modifier = Modifier
+                                .fillMaxSize()
+                                .padding(innerPadding)
+                        ) {
                             NavHost(
                                 navController = navController,
                                 startDestination = SplashRoute

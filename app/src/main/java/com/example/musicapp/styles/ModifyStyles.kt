@@ -71,8 +71,7 @@ val rowCardModifier = Modifier
 val lazyRowMod = Modifier
     .padding(5.dp, 600.dp, 5.dp, 5.dp)
 
-val flowMod = Modifier
-    .padding()
+
 //modificadores para cards
 val cardModifier = Modifier
     .size(width = 300.dp, height = 100.dp)
