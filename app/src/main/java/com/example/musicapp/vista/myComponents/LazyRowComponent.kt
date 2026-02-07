@@ -9,11 +9,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import com.example.musicapp.data.modelo.AlbumsDTO
-import com.example.musicapp.data.DatasourceAePics
-import com.example.musicapp.data.DatasourceAphxPics
-import com.example.musicapp.data.DatasourceBocPics
-import com.example.musicapp.data.DatasourceKyussPics
-import com.example.musicapp.data.DatasourceToolPics
+import com.example.musicapp.data.dataSources.DatasourceAePics
+import com.example.musicapp.data.dataSources.DatasourceAphxPics
+import com.example.musicapp.data.dataSources.DatasourceBocPics
+import com.example.musicapp.data.dataSources.DatasourceKyussPics
+import com.example.musicapp.data.dataSources.DatasourceToolPics
 import com.example.musicapp.styles.imageModifier
 
 /**

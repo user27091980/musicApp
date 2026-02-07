@@ -1,4 +1,4 @@
-package com.example.musicapp.data
+package com.example.musicapp.data.dataSources
 
 import com.example.musicapp.R
 import com.example.musicapp.data.modelo.BandsDTO
@@ -15,11 +15,11 @@ class DatasourceMainScreenPics() {
 
         return listOf(
 
-            BandsDTO(R.string.boc, R.drawable.boards_20of_20canada_20new_20mix_20warp),
-            BandsDTO(R.string.kyuss, R.drawable.kyuss,),
-            BandsDTO(R.string.ae, R.drawable.autechre_tree1),
-            BandsDTO(R.string.aphex, R.drawable.a1664460568_10),
-            BandsDTO(R.string.tool, R.drawable.tool_band_2753374979)
+            BandsDTO(R.drawable.boards_20of_20canada_20new_20mix_20warp,R.string.boc ),
+            BandsDTO( R.drawable.kyuss,R.string.kyuss),
+            BandsDTO(R.drawable.autechre_tree1,R.string.ae),
+            BandsDTO(R.drawable.a1664460568_10,R.string.aphex),
+            BandsDTO(R.drawable.tool_band_2753374979,R.string.tool, )
 
         )
     }
