@@ -20,7 +20,7 @@ import com.example.musicapp.vista.myComponents.LazyRowComponentAphx
  * @author Andrés
  */
 @Composable
-fun BandAphx(modifier: Modifier = Modifier) {
+fun BandAphx() {
 
     Box(boxModifier) {
 

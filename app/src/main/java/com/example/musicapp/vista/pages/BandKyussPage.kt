@@ -20,7 +20,7 @@ import com.example.musicapp.vista.myComponents.LazyRowComponentKyuss
  * @author Andrés
  */
 @Composable
-fun BandKyuss(modifier: Modifier = Modifier) {
+fun BandKyuss() {
 
     Box(boxModifier) {
 

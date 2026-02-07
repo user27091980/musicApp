@@ -20,7 +20,7 @@ import com.example.musicapp.vista.myComponents.LazyRowComponentAe
  * @author Andrés
  */
 @Composable
-fun BandAe(modifier: Modifier = Modifier) {
+fun BandAe() {
 
     Box(boxModifier) {
 
