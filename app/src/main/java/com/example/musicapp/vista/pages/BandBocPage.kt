@@ -12,9 +12,7 @@ import com.example.musicapp.R
 import com.example.musicapp.styles.boxModifier
 import com.example.musicapp.styles.lazyRowMod
 import com.example.musicapp.styles.rowCardModifier
-import com.example.musicapp.styles.rowFlowModifier
 import com.example.musicapp.styles.rowModifier
-import com.example.musicapp.vista.myComponents.FlowBoc
 import com.example.musicapp.vista.myComponents.LazyCardColumnBocComponent
 import com.example.musicapp.vista.myComponents.LazyRowComponentBoc
 
@@ -22,9 +20,10 @@ import com.example.musicapp.vista.myComponents.LazyRowComponentBoc
  * @author Andrés
  */
 @Composable
-fun BandBoc(modifier: Modifier = Modifier) {
+fun BandBoc() {
 
     Box(boxModifier) {
+
         Row(rowModifier) {
             Image(
                 painter = painterResource(R.drawable.boards_of_canada_by_necronomiconofgod_d6ycbne_fullview),
@@ -36,9 +35,6 @@ fun BandBoc(modifier: Modifier = Modifier) {
             LazyCardColumnBocComponent()
         }
 
-        Row(rowFlowModifier) {
-            FlowBoc()
-        }
         Row(lazyRowMod) {
 
             LazyRowComponentBoc()

@@ -9,9 +9,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -41,7 +39,6 @@ import com.example.musicapp.vista.pages.MainScreenPage
 import com.example.musicapp.vista.pages.RegisterScreenPage
 import com.example.musicapp.vista.pages.SettingsScreen
 import com.example.musicapp.vista.pages.SplashScreen
-import com.example.musicapp.vista.pages.SplashScreenPage
 import com.example.musicapp.vista.pages.UserInfoScreenPage
 
 /**
@@ -66,7 +63,11 @@ class MainActivity : ComponentActivity() {
                     topBar = { TopBar(navController) },
                     bottomBar = { BottomBar(navController) },
                     content = { innerPadding ->
-                        Box(modifier = Modifier.padding(paddingValues = innerPadding)) {
+                        Box(
+                            modifier = Modifier
+                                .fillMaxSize()
+                                .padding(innerPadding)
+                        ) {
                             NavHost(
                                 navController = navController,
                                 startDestination = SplashRoute

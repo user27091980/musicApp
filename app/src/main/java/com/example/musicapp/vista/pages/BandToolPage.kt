@@ -12,9 +12,7 @@ import com.example.musicapp.R
 import com.example.musicapp.styles.boxModifier
 import com.example.musicapp.styles.lazyRowMod
 import com.example.musicapp.styles.rowCardModifier
-import com.example.musicapp.styles.rowFlowModifier
 import com.example.musicapp.styles.rowModifier
-import com.example.musicapp.vista.myComponents.FlowTool
 import com.example.musicapp.vista.myComponents.LazyCardColumnToolComponent
 import com.example.musicapp.vista.myComponents.LazyRowComponentTool
 
@@ -22,9 +20,10 @@ import com.example.musicapp.vista.myComponents.LazyRowComponentTool
  * @author Andrés
  */
 @Composable
-fun BandTool(modifier: Modifier = Modifier) {
+fun BandTool() {
 
     Box(boxModifier) {
+
         Row(rowModifier) {
             Image(
 
@@ -39,9 +38,7 @@ fun BandTool(modifier: Modifier = Modifier) {
             LazyCardColumnToolComponent()
 
         }
-        Row(rowFlowModifier) {
-            FlowTool()
-        }
+
         Row(lazyRowMod) {
 
             LazyRowComponentTool()
@@ -49,6 +46,7 @@ fun BandTool(modifier: Modifier = Modifier) {
         }
     }
 }
+
 
 @Preview
 @Composable

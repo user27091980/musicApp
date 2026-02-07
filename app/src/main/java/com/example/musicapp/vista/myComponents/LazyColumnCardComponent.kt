@@ -27,10 +27,9 @@ fun LazyCardColumnAeComponent() {
                 Text(text = stringResource(R.string.aeText))
             }
 
-            Spacer(modifier = Modifier.height(80.dp))
-            Text(stringResource(R.string.genre))
-            Spacer(modifier = Modifier.height(80.dp))
+            Spacer(modifier = Modifier.height(10.dp))
             FlowAe()
+            Spacer(modifier = Modifier.height(10.dp))
         }
     }
 }
@@ -43,10 +42,11 @@ fun LazyCardColumnBocComponent() {
             Card() {
                 Text(text = stringResource(R.string.bocText))
             }
-            Spacer(modifier = Modifier.height(80.dp))
-            Text(stringResource(R.string.genre))
-            Spacer(modifier = Modifier.height(80.dp))
+
+
+            Spacer(modifier = Modifier.height(10.dp))
             FlowBoc()
+            Spacer(modifier = Modifier.height(10.dp))
         }
     }
 }
@@ -58,8 +58,7 @@ fun LazyCardColumnAphxComponent() {
             Card() {
                 Text(text = stringResource(R.string.aphxText))
             }
-            Spacer(modifier = Modifier.height(10.dp))
-            Text(stringResource(R.string.genre))
+
             Spacer(modifier = Modifier.height(10.dp))
             FlowAphx()
             Spacer(modifier = Modifier.height(10.dp))
@@ -75,8 +74,6 @@ fun LazyCardColumnKyussComponent() {
                 Text(text = stringResource(R.string.kyussText))
             }
             Spacer(modifier = Modifier.height(10.dp))
-            Text(stringResource(R.string.genre))
-            Spacer(modifier = Modifier.height(10.dp))
             FlowKyuss()
             Spacer(modifier = Modifier.height(10.dp))
         }
@@ -90,8 +87,7 @@ fun LazyCardColumnToolComponent() {
             Card() {
                 Text(text = stringResource(R.string.toolText))
             }
-            Spacer(modifier = Modifier.height(10.dp))
-            Text(stringResource(R.string.genre))
+
             Spacer(modifier = Modifier.height(10.dp))
             FlowTool()
             Spacer(modifier = Modifier.height(10.dp))

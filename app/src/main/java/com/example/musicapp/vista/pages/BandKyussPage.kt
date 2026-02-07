@@ -12,9 +12,7 @@ import com.example.musicapp.R
 import com.example.musicapp.styles.boxModifier
 import com.example.musicapp.styles.lazyRowMod
 import com.example.musicapp.styles.rowCardModifier
-import com.example.musicapp.styles.rowFlowModifier
 import com.example.musicapp.styles.rowModifier
-import com.example.musicapp.vista.myComponents.FlowKyuss
 import com.example.musicapp.vista.myComponents.LazyCardColumnKyussComponent
 import com.example.musicapp.vista.myComponents.LazyRowComponentKyuss
 
@@ -22,29 +20,28 @@ import com.example.musicapp.vista.myComponents.LazyRowComponentKyuss
  * @author Andrés
  */
 @Composable
-fun BandKyuss(modifier: Modifier = Modifier) {
+fun BandKyuss() {
 
     Box(boxModifier) {
-        Row(rowModifier) {
-            Image(
-                painter = painterResource(R.drawable._98_logo),
-                contentDescription = "",
-                contentScale = ContentScale.Inside,
-            )
-        }
-        Row(rowCardModifier) {
-            LazyCardColumnKyussComponent()
-        }
-        Row(rowFlowModifier) {
-            FlowKyuss()
-        }
-        Row(lazyRowMod) {
 
-            LazyRowComponentKyuss()
+            Row(rowModifier) {
+                Image(
+                    painter = painterResource(R.drawable._98_logo),
+                    contentDescription = "",
+                    contentScale = ContentScale.Inside,
+                )
+            }
+            Row(rowCardModifier) {
+                LazyCardColumnKyussComponent()
+            }
 
+            Row(lazyRowMod) {
+
+                LazyRowComponentKyuss()
+
+            }
         }
     }
-}
 
 @Preview
 @Composable

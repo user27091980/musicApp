@@ -12,9 +12,7 @@ import com.example.musicapp.R
 import com.example.musicapp.styles.boxModifier
 import com.example.musicapp.styles.lazyRowMod
 import com.example.musicapp.styles.rowCardModifier
-import com.example.musicapp.styles.rowFlowModifier
 import com.example.musicapp.styles.rowModifier
-import com.example.musicapp.vista.myComponents.FlowAphx
 import com.example.musicapp.vista.myComponents.LazyCardColumnAphxComponent
 import com.example.musicapp.vista.myComponents.LazyRowComponentAphx
 
@@ -22,30 +20,29 @@ import com.example.musicapp.vista.myComponents.LazyRowComponentAphx
  * @author Andrés
  */
 @Composable
-fun BandAphx(modifier: Modifier = Modifier) {
+fun BandAphx() {
 
     Box(boxModifier) {
-        Row(rowModifier) {
-            Image(
-                painter = painterResource(R.drawable.aphx),
-                contentDescription = "",
-                contentScale = ContentScale.Inside,
-            )
-        }
 
-        Row(rowCardModifier) {
-            LazyCardColumnAphxComponent()
-        }
-        Row(rowFlowModifier) {
-            FlowAphx()
-        }
-        Row(lazyRowMod) {
+            Row(rowModifier) {
+                Image(
+                    painter = painterResource(R.drawable.aphx),
+                    contentDescription = "",
+                    contentScale = ContentScale.Inside,
+                )
+            }
 
-            LazyRowComponentAphx()
+            Row(rowCardModifier) {
+                LazyCardColumnAphxComponent()
+            }
 
+            Row(lazyRowMod) {
+
+                LazyRowComponentAphx()
+
+            }
         }
     }
-}
 
 @Preview
 @Composable
