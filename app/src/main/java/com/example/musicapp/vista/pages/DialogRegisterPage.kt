@@ -40,3 +40,11 @@ fun DialogPage(
     )
 }
 
+
+/*@Preview
+@Composable
+fun PreviewDialog(){
+
+    DialogPage() { }
+}
+*/
