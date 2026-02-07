@@ -9,6 +9,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Person
+import androidx.navigation.NavHostController
 
 /**
  * @author: Andrés
@@ -19,7 +20,7 @@ Función que se encarga de la barra inferior(BottomBar), con sus correspondiente
 guardados en una lista denominada como items.
  */
 @Composable
-fun BottomBar() {
+fun BottomBar(navController: NavHostController) {
     var selectedItem by remember { mutableStateOf(0) }
 
     val items = listOf(

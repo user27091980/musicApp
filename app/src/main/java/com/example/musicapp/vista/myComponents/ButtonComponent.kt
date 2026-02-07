@@ -11,9 +11,9 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.musicapp.R
-import com.example.musicapp.navigation.MainScreenPage
-import com.example.musicapp.navigation.RegisterPage
-import com.example.musicapp.navigation.UserInfoPage
+import com.example.musicapp.navigation.MainScreenRoute
+import com.example.musicapp.navigation.RegisterRoute
+import com.example.musicapp.navigation.UserInfoRoute
 import com.example.musicapp.styles.styleButtonText
 
 /**
@@ -27,7 +27,7 @@ import com.example.musicapp.styles.styleButtonText
 fun ButtonLogin(navController: NavController, modifier: Modifier = Modifier) {
 
     Button(
-        onClick = { navController.navigate(MainScreenPage) },
+        onClick = { navController.navigate(MainScreenRoute) },
         modifier = Modifier.fillMaxWidth(),
         shape = RoundedCornerShape(20.dp)
     ) {
@@ -46,7 +46,7 @@ fun ButtonLogin(navController: NavController, modifier: Modifier = Modifier) {
 fun ButtonRegister(navController: NavController, modifier: Modifier = Modifier) {
 
     FilledTonalButton(
-        onClick = { navController.navigate(RegisterPage) },
+        onClick = { navController.navigate(RegisterRoute) },
         modifier = Modifier.fillMaxWidth(),
         shape = RoundedCornerShape(20.dp)
     ) {
@@ -67,7 +67,7 @@ fun ButtonAcept(navController: NavController, modifier: Modifier = Modifier) {
 
     Button(
 
-        onClick = { navController.navigate(UserInfoPage) },
+        onClick = { navController.navigate(UserInfoRoute) },
         shape = RoundedCornerShape(20.dp),
 
 
@@ -89,7 +89,7 @@ fun ButtonAcept(navController: NavController, modifier: Modifier = Modifier) {
 fun ButtonCancel(navController: NavController,modifier: Modifier = Modifier) {
 
     Button(
-        onClick = { navController.navigate(MainScreenPage) },
+        onClick = { navController.navigate(MainScreenRoute) },
         shape = RoundedCornerShape(20.dp),
 
 

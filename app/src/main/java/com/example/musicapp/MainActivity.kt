@@ -15,20 +15,21 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.musicapp.navigation.BandAeRoute
+import com.example.musicapp.navigation.BandAphxRoute
+import com.example.musicapp.navigation.BandBocRoute
+import com.example.musicapp.navigation.BandKyussRoute
+import com.example.musicapp.navigation.BandToolRoute
+import com.example.musicapp.navigation.LoginRegRoute
+import com.example.musicapp.navigation.LoginRoute
+import com.example.musicapp.navigation.MainScreenRoute
+import com.example.musicapp.navigation.RegisterRoute
+import com.example.musicapp.navigation.SettingsRoute
+import com.example.musicapp.navigation.SplashRoute
+import com.example.musicapp.navigation.UserInfoRoute
+import com.example.musicapp.ui.theme.themes.MusicAppTheme
 import com.example.musicapp.vista.myComponents.BottomBar
 import com.example.musicapp.vista.myComponents.TopBar
-import com.example.musicapp.navigation.BandAePage
-import com.example.musicapp.navigation.BandAphxPage
-import com.example.musicapp.navigation.BandBocPage
-import com.example.musicapp.navigation.BandKyussPage
-import com.example.musicapp.navigation.BandToolPage
-import com.example.musicapp.navigation.LoginPage
-import com.example.musicapp.navigation.LoginRegScreen
-import com.example.musicapp.navigation.MainScreenPage
-import com.example.musicapp.navigation.RegisterPage
-import com.example.musicapp.navigation.SettingsPage
-import com.example.musicapp.navigation.SplashScreenPage
-import com.example.musicapp.navigation.UserInfoPage
 import com.example.musicapp.vista.pages.BandAe
 import com.example.musicapp.vista.pages.BandAphx
 import com.example.musicapp.vista.pages.BandBoc
@@ -40,9 +41,8 @@ import com.example.musicapp.vista.pages.MainScreenPage
 import com.example.musicapp.vista.pages.RegisterScreenPage
 import com.example.musicapp.vista.pages.SettingsScreen
 import com.example.musicapp.vista.pages.SplashScreen
-import com.example.musicapp.vista.pages.UserInfoScreenPage
-import com.example.musicapp.ui.theme.themes.MusicAppTheme
 import com.example.musicapp.vista.pages.SplashScreenPage
+import com.example.musicapp.vista.pages.UserInfoScreenPage
 
 /**
  * @author="Andrés"
@@ -64,47 +64,47 @@ class MainActivity : ComponentActivity() {
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
                     topBar = { TopBar(navController) },
-                    bottomBar = { BottomBar() },
+                    bottomBar = { BottomBar(navController) },
                     content = { innerPadding ->
                         Box(modifier = Modifier.padding(paddingValues = innerPadding)) {
                             NavHost(
                                 navController = navController,
-                                startDestination = SplashScreenPage
+                                startDestination = SplashRoute
                             ) {
-                                composable<SplashScreenPage> {
+                                composable<SplashRoute> {
                                     SplashScreen(navController)
                                 }
-                                composable<LoginRegScreen> {
+                                composable<LoginRegRoute> {
                                     LoginRegScreen(navController)
                                 }
-                                composable<LoginPage> {
+                                composable<LoginRoute> {
                                     Login(navController)
                                 }
-                                composable<RegisterPage> {
-                                    RegisterScreenPage()
+                                composable<RegisterRoute> {
+                                    RegisterScreenPage(navController)
                                 }
-                                composable<MainScreenPage> {
+                                composable<MainScreenRoute> {
                                     MainScreenPage()
                                 }
-                                composable<BandAePage> {
+                                composable<BandAeRoute> {
                                     BandAe()
                                 }
-                                composable<BandAphxPage> {
+                                composable<BandAphxRoute> {
                                     BandAphx()
                                 }
-                                composable<BandBocPage> {
+                                composable<BandBocRoute> {
                                     BandBoc()
                                 }
-                                composable<BandKyussPage> {
+                                composable<BandKyussRoute> {
                                     BandKyuss()
                                 }
-                                composable<BandToolPage> {
+                                composable<BandToolRoute> {
                                     BandTool()
                                 }
-                                composable<UserInfoPage> {
+                                composable<UserInfoRoute> {
                                     UserInfoScreenPage()
                                 }
-                                composable<SettingsPage> {
+                                composable<SettingsRoute> {
                                     SettingsScreen(navController)
                                 }
                             }
@@ -116,6 +116,23 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@Preview(showBackground = true)
+@Composable
+fun MusicAppPreviewPage() {
+    MusicAppTheme {
+        SplashScreenPage()
+        //Login()
+        //LoginRegScreen()
+        //RegisterScreenPage()
+        //MainScreenPage()
+        //BandAe()
+        //BandAphx()
+        //BandBoc()
+        //BandKyuss()
+        //BandTool()
+        //UserInfoScreenPage()
+    }
 
+}
 
 
