@@ -63,7 +63,7 @@ fun ButtonRegister(navController: NavController, modifier: Modifier = Modifier) 
 //botón para aceptar
 @Composable
 
-fun ButtonAcept(navController: NavController, modifier: Modifier = Modifier) {
+fun ButtonAcept(navController: NavController) {
 
 
     Button(
@@ -87,7 +87,7 @@ fun ButtonAcept(navController: NavController, modifier: Modifier = Modifier) {
  */
 //botón de cancelación
 @Composable
-fun ButtonCancel(navController: NavController, modifier: Modifier = Modifier) {
+fun ButtonCancel(navController: NavController) {
 
     Button(
         onClick = { navController.navigate(MainScreenRoute) },
