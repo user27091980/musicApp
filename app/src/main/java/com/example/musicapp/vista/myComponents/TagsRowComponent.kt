@@ -2,9 +2,7 @@ package com.example.musicapp.vista.myComponents
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.FilterChip
@@ -20,7 +18,7 @@ import com.example.musicapp.R
  * @author Andrés
  */
 @Composable
-fun FlowAe() {
+fun TagAe() {
     Column(
         modifier = Modifier.padding(8.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp) // separación vertical entre filas
@@ -51,7 +49,7 @@ fun FlowAe() {
 
 
 @Composable
-fun FlowAphx() {
+fun TagAphx() {
     Column(
         modifier = Modifier.padding(8.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp) // separación vertical entre filas
@@ -72,7 +70,7 @@ fun FlowAphx() {
 }
 
 @Composable
-fun FlowBoc() {
+fun TagBoc() {
     Column(
         modifier = Modifier.padding(8.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp) // separación vertical entre filas
@@ -99,7 +97,7 @@ fun FlowBoc() {
 }
 
 @Composable
-fun FlowKyuss() {
+fun TagKyuss() {
     Column(
         modifier = Modifier.padding(8.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp) // separación vertical entre filas
@@ -129,7 +127,7 @@ fun FlowKyuss() {
 }
 
 @Composable
-fun FlowTool() {
+fun TagTool() {
     Column(
         modifier = Modifier.padding(8.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp) // separación vertical entre filas

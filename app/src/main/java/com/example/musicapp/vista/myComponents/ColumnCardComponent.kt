@@ -38,7 +38,7 @@ fun CardColumnAeComponent() {
                 Text(text = stringResource(R.string.aeText))
             }
             Spacer(modifier = Modifier.height(60.dp))
-            FlowAe()
+            TagAe()
             Spacer(modifier = Modifier.height(15.dp))
         }
     }
@@ -60,7 +60,7 @@ fun CardColumnBocComponent() {
             }
 
             Spacer(modifier = Modifier.height(60.dp))
-            FlowBoc()
+            TagBoc()
             Spacer(modifier = Modifier.height(10.dp))
         }
     }
@@ -81,7 +81,7 @@ fun CardColumnAphxComponent() {
             }
 
             Spacer(modifier = Modifier.height(10.dp))
-            FlowAphx()
+            TagAphx()
             Spacer(modifier = Modifier.height(10.dp))
         }
     }
@@ -101,7 +101,7 @@ fun CardColumnKyussComponent() {
                 Text(text = stringResource(R.string.kyussText))
             }
             Spacer(modifier = Modifier.height(10.dp))
-            FlowKyuss()
+            TagKyuss()
             Spacer(modifier = Modifier.height(10.dp))
         }
     }
@@ -122,7 +122,7 @@ fun CardColumnToolComponent() {
             }
 
             Spacer(modifier = Modifier.height(10.dp))
-            FlowTool()
+            TagTool()
             Spacer(modifier = Modifier.height(10.dp))
         }
     }
