@@ -37,9 +37,10 @@ import com.example.musicapp.R
 fun TopBar(navController: NavController) {
 
     var isExpanded by remember { mutableStateOf(false) }
+    // Contexto y activity para abrir enlaces o cerrar app
     val context = LocalContext.current
     val activity = context as? Activity
-
+    //en una fila el icono de ajustes y el menú desplegable
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -47,7 +48,7 @@ fun TopBar(navController: NavController) {
         verticalAlignment = Alignment.CenterVertically
     )
     {
-
+        //botón para el menú
         IconButton(onClick = { isExpanded = true }) {
 
             Icon(
@@ -59,7 +60,7 @@ fun TopBar(navController: NavController) {
                 )
 
         }
-//abrir ajustes
+    //abrir ajustes
         IconButton(onClick = { navController.navigate("settings") }) {
 
             Icon(
@@ -76,6 +77,7 @@ fun TopBar(navController: NavController) {
             onDismissRequest = { isExpanded = false },
             modifier = Modifier.fillMaxWidth()
         ) {
+            //abrimos Lastfm
             DropdownMenuItem(
                 text = { Text(text = stringResource(R.string.menu_last)) },
                 onClick = {
@@ -89,6 +91,7 @@ fun TopBar(navController: NavController) {
                     }
                 }
             )
+            //abrimos Discogs
             DropdownMenuItem(
                 text = { Text(text = stringResource(R.string.discos)) },
                 onClick = {
