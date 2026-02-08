@@ -1,4 +1,4 @@
-package com.example.musicapp.vista.myComponents
+package com.example.musicapp.view.myComponents
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
@@ -149,6 +149,11 @@ fun TagTool() {
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             TagItem(stringResource(R.string.discoTool))
+        }
+        Row(
+            horizontalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            TagItem(stringResource(R.string.toolDisc))
         }
     }
 }

@@ -1,4 +1,4 @@
-package com.example.musicapp.vista.pages
+package com.example.musicapp.view.pages
 
 import android.util.Log
 import androidx.compose.foundation.background
@@ -29,7 +29,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.musicapp.viewmodel.vm.LoginViewModel
-import com.example.musicapp.vista.myComponents.ButtonAcept
+import com.example.musicapp.view.myComponents.ButtonAcept
 
 /**
  * @author Andrés

@@ -1,4 +1,4 @@
-package com.example.musicapp.vista.pages
+package com.example.musicapp.view.pages
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
@@ -12,8 +12,8 @@ import com.example.musicapp.styles.boxModifier
 import com.example.musicapp.styles.lazyRowMod
 import com.example.musicapp.styles.rowCardModifier
 import com.example.musicapp.styles.rowModifier
-import com.example.musicapp.vista.myComponents.CardColumnAeComponent
-import com.example.musicapp.vista.myComponents.LazyRowComponentAe
+import com.example.musicapp.view.myComponents.CardColumnAeComponent
+import com.example.musicapp.view.myComponents.LazyRowComponentAe
 
 /**
  * @author Andrés
