@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.LinkAnnotation
 import androidx.compose.ui.unit.dp
 import com.example.musicapp.R
 
@@ -18,10 +19,10 @@ import com.example.musicapp.R
  * @author Andrés
  */
 @Composable
-fun FlowAe() {
+fun TagAe() {
     Column(
         modifier = Modifier.padding(8.dp),
-        verticalArrangement = Arrangement.spacedBy(12.dp) // separación vertical entre filas
+        verticalArrangement = Arrangement.spacedBy(10.dp) // separación vertical entre filas
     ) {
 
         Row(
@@ -49,12 +50,13 @@ fun FlowAe() {
 
 
 @Composable
-fun FlowAphx() {
+fun TagAphx() {
     Column(
         modifier = Modifier.padding(8.dp),
-        verticalArrangement = Arrangement.spacedBy(12.dp) // separación vertical entre filas
+        verticalArrangement = Arrangement.spacedBy(10.dp) // separación vertical entre filas
     ) {
         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+
             TagItem(stringResource(R.string.idm))
             TagItem(stringResource(R.string.experimental))
         }
@@ -70,10 +72,10 @@ fun FlowAphx() {
 }
 
 @Composable
-fun FlowBoc() {
+fun TagBoc() {
     Column(
         modifier = Modifier.padding(8.dp),
-        verticalArrangement = Arrangement.spacedBy(12.dp) // separación vertical entre filas
+        verticalArrangement = Arrangement.spacedBy(10.dp) // separación vertical entre filas
     ) {
         Row(
             horizontalArrangement = Arrangement.spacedBy(8.dp)
@@ -97,10 +99,10 @@ fun FlowBoc() {
 }
 
 @Composable
-fun FlowKyuss() {
+fun TagKyuss() {
     Column(
         modifier = Modifier.padding(8.dp),
-        verticalArrangement = Arrangement.spacedBy(12.dp) // separación vertical entre filas
+        verticalArrangement = Arrangement.spacedBy(10.dp) // separación vertical entre filas
     ) {
         Row(
             horizontalArrangement = Arrangement.spacedBy(8.dp)
@@ -127,7 +129,7 @@ fun FlowKyuss() {
 }
 
 @Composable
-fun FlowTool() {
+fun TagTool() {
     Column(
         modifier = Modifier.padding(8.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp) // separación vertical entre filas
