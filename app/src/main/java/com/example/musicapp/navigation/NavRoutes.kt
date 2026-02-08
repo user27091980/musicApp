@@ -31,6 +31,7 @@ En navegación:
 Rutas con parámetros → data class
 Rutas sin parámetros → object
 */
+
 @Serializable
 data class LoginRoute(val email: String): NavRoute
 

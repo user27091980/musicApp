@@ -70,7 +70,8 @@ class MainActivity : ComponentActivity() {
                         ) {
                             NavHost(
                                 navController = navController,
-                                startDestination = MainScreenRoute
+                                startDestination = MainScreenRoute,
+                                modifier = Modifier.padding(innerPadding)
                             ) {
                                 composable<SplashRoute> {
                                     SplashScreen(navController)

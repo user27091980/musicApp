@@ -105,7 +105,7 @@ fun TopBar(navController: NavController) {
                     }
                 }
             )
-            /*
+
             DropdownMenuItem(
                 text = { Text(text = stringResource(R.string.salir)) },
                 onClick = {
@@ -113,7 +113,7 @@ fun TopBar(navController: NavController) {
                     activity?.finishAffinity() // cerrar app
                 }
             )
-            */
+
         }
     }
 }
