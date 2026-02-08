@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.LinkAnnotation
 import androidx.compose.ui.unit.dp
 import com.example.musicapp.R
 
@@ -21,7 +22,7 @@ import com.example.musicapp.R
 fun TagAe() {
     Column(
         modifier = Modifier.padding(8.dp),
-        verticalArrangement = Arrangement.spacedBy(12.dp) // separación vertical entre filas
+        verticalArrangement = Arrangement.spacedBy(10.dp) // separación vertical entre filas
     ) {
 
         Row(
@@ -52,9 +53,10 @@ fun TagAe() {
 fun TagAphx() {
     Column(
         modifier = Modifier.padding(8.dp),
-        verticalArrangement = Arrangement.spacedBy(12.dp) // separación vertical entre filas
+        verticalArrangement = Arrangement.spacedBy(10.dp) // separación vertical entre filas
     ) {
         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+
             TagItem(stringResource(R.string.idm))
             TagItem(stringResource(R.string.experimental))
         }
@@ -73,7 +75,7 @@ fun TagAphx() {
 fun TagBoc() {
     Column(
         modifier = Modifier.padding(8.dp),
-        verticalArrangement = Arrangement.spacedBy(12.dp) // separación vertical entre filas
+        verticalArrangement = Arrangement.spacedBy(10.dp) // separación vertical entre filas
     ) {
         Row(
             horizontalArrangement = Arrangement.spacedBy(8.dp)
@@ -100,7 +102,7 @@ fun TagBoc() {
 fun TagKyuss() {
     Column(
         modifier = Modifier.padding(8.dp),
-        verticalArrangement = Arrangement.spacedBy(12.dp) // separación vertical entre filas
+        verticalArrangement = Arrangement.spacedBy(10.dp) // separación vertical entre filas
     ) {
         Row(
             horizontalArrangement = Arrangement.spacedBy(8.dp)
