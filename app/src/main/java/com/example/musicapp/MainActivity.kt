@@ -27,7 +27,6 @@ import com.example.musicapp.navigation.SplashRoute
 import com.example.musicapp.navigation.UserInfoRoute
 import com.example.musicapp.ui.theme.themes.MusicAppTheme
 import com.example.musicapp.view.myComponents.BottomBar
-import com.example.musicapp.view.myComponents.TopBar
 import com.example.musicapp.view.pages.BandAe
 import com.example.musicapp.view.pages.BandAphx
 import com.example.musicapp.view.pages.BandBoc
@@ -40,6 +39,7 @@ import com.example.musicapp.view.pages.RegisterScreenPage
 import com.example.musicapp.view.pages.SettingsScreen
 import com.example.musicapp.view.pages.SplashScreen
 import com.example.musicapp.view.pages.UserInfoScreenPage
+import com.example.musicapp.vista.myComponents.TopBar
 
 /**
  * @author="Andrés"

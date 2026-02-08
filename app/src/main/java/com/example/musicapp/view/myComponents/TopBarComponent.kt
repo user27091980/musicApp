@@ -70,18 +70,12 @@ fun TopBar(navController: NavController) {
 
                 )
         }
-
-
-//función que se encarga del comportamiento del menú desplegable y de los elementos que lo conitenen
-//para simplificar la apertura de los enlaces emplearemos Intent
-
-
+        // Menú desplegable
         DropdownMenu(
             expanded = isExpanded,
             onDismissRequest = { isExpanded = false },
             modifier = Modifier.fillMaxWidth()
         ) {
-
             DropdownMenuItem(
                 text = { Text(text = stringResource(R.string.menu_last)) },
                 onClick = {
@@ -108,17 +102,18 @@ fun TopBar(navController: NavController) {
                     }
                 }
             )
-            /*DropdownMenuItem(
+            /*
+            DropdownMenuItem(
                 text = { Text(text = stringResource(R.string.salir)) },
                 onClick = {
                     isExpanded = false
-                    activity?.finishAffinity() // Cierra solo esta activity
+                    activity?.finishAffinity() // cerrar app
                 }
-            )*/
+            )
+            */
         }
     }
 }
-
 
 
 
