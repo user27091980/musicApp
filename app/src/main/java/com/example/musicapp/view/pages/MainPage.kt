@@ -13,7 +13,10 @@ import com.example.musicapp.view.myComponents.LazyColumnComponent
 @Composable
 fun MainScreenPage(modifier: Modifier = Modifier) {
 
-    LazyColumnComponent()
+    LazyColumnComponent(
+        navController = TODO(),
+        modifier = TODO()
+    )
 
 }
 

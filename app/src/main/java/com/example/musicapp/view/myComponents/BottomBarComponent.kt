@@ -9,7 +9,12 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Person
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.navigation.NavHostController
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import com.example.musicapp.vista.pages.MainScreenPage
+import com.example.musicapp.vista.pages.UserInfoScreenPage
 
 /**
  * @author: Andrés
@@ -19,15 +24,20 @@ import androidx.navigation.NavHostController
 Función que se encarga de la barra inferior(BottomBar), con sus correspondientes iconos
 guardados en una lista denominada como items.
  */
+/*TODO: INTRODUCIR NAVEGACIÓN no funciona*/
 @Composable
 fun BottomBar(navController: NavHostController) {
     var selectedItem by remember { mutableStateOf(0) }
 
     val items = listOf(
-        BottomItems.BottomBarItem(label = stringResource(R.string.inicio), Icons.Default.Home),
-        BottomItems.BottomBarItem(label = stringResource(R.string.buscar), Icons.Default.Search),
-        BottomItems.BottomBarItem(label = stringResource(R.string.perfil), Icons.Default.Person)
+        BottomItems.TopButtonItems(label = stringResource(R.string.inicio), Icons.Default.Home, route ="home"),
+        BottomItems.TopButtonItems(label = stringResource(R.string.buscar), Icons.Default.Search, route="search"),
+        BottomItems.TopButtonItems(label = stringResource(R.string.perfil), Icons.Default.Person,route="profile")
     )
+
+
+
+
 //barra de navegación.
     NavigationBar(
         containerColor = MaterialTheme.colorScheme.background,
@@ -55,8 +65,14 @@ fun BottomBar(navController: NavHostController) {
                             MaterialTheme.colorScheme.onPrimaryContainer
                     )
                 },
+                //launchSingleTop opción de navegación que le dice al NavController:
+                //“Si ya estoy en esta pantalla, NO la vuelvas a crear”
                 selected = selectedItem == index,
-                onClick = { selectedItem = index }
+                onClick = {
+                    selectedItem = index
+                    navController.navigate(item.route)
+                    {launchSingleTop=true}
+                }
             )
         }
     }

@@ -10,7 +10,7 @@
     <!--cadenas de texto para topbar, y bottombar.-->
     <string name="top_bar">top bar</string>
     <string name="menu_discos">discos</string>
-    <string name="menu_inicio">inicio</string>
+    <string name="menu_last">last fm</string>
     <string name="menu_configuracion">configuración</string>
     <string name="menu_salir">salir</string>
     <string name="perfil">Pérfil de usuario:</string>
@@ -22,7 +22,7 @@
     <string name="inicio">inicio</string>
     <string name="buscar">búsqueda</string>
     <string name="salir">salir</string>
-    <string name="search">buscar</string>
+    <string name="discos">discogs</string>
 
     <!--strings para las cards-->
     <string name="aphex">Aphex Twin</string>

@@ -70,7 +70,7 @@ class MainActivity : ComponentActivity() {
                         ) {
                             NavHost(
                                 navController = navController,
-                                startDestination = SplashRoute
+                                startDestination = MainScreenRoute
                             ) {
                                 composable<SplashRoute> {
                                     SplashScreen(navController)
@@ -108,6 +108,17 @@ class MainActivity : ComponentActivity() {
                                 composable<SettingsRoute> {
                                     SettingsScreen(navController)
                                 }
+                                /*composable("home") {
+                                    MainScreenPage()
+                                }
+                                composable("search") {
+                                    UserInfoScreenPage()
+                                }
+                                composable("profile") {
+                                    UserInfoScreenPage()
+                                }
+
+                                 */
                             }
                         }
                     }

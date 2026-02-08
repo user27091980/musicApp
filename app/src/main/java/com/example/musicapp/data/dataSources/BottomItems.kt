@@ -6,9 +6,17 @@ import androidx.compose.ui.graphics.vector.ImageVector
  *
  */
 class BottomItems {
-    data class BottomBarItem(
+    /*data class BottomBarItem(
         val label: String,
         val icon: ImageVector
+    )
+
+     */
+
+    data class TopButtonItems(
+        val label: String,
+        val icon: ImageVector,
+        val route: String
     )
 
 }

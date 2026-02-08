@@ -1,12 +1,10 @@
-package com.example.musicapp.view.myComponents
+package com.example.musicapp.vista.myComponents
 
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
+import android.app.Activity
+import android.content.Intent
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Settings
@@ -23,10 +21,12 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
+import androidx.core.net.toUri
 import androidx.navigation.NavController
 import com.example.musicapp.R
-import com.example.musicapp.navigation.MainScreenRoute
 
 /**
  * @author andres
@@ -36,96 +36,90 @@ import com.example.musicapp.navigation.MainScreenRoute
 @Composable
 fun TopBar(navController: NavController) {
 
-    var isExpanded by remember {
-        mutableStateOf(false)
-    }
+    var isExpanded by remember { mutableStateOf(false) }
+    val context = LocalContext.current
+    val activity = context as? Activity
 
-    Row(modifier = Modifier.fillMaxSize())
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 16.dp, vertical = 8.dp),
+        verticalAlignment = Alignment.CenterVertically
+    )
     {
-        Column() {
-            IconButton(onClick = { isExpanded = true }) {
 
-                Icon(
-                    imageVector = Icons.Default.Menu,
-                    contentDescription = "menú",
-                    tint =
-                        MaterialTheme.colorScheme.primary,
+        IconButton(onClick = { isExpanded = true }) {
 
-                    )
+            Icon(
+                imageVector = Icons.Default.Menu,
+                contentDescription = "menú",
+                tint =
+                    MaterialTheme.colorScheme.primary,
 
-            }
+                )
+
+        }
+//abrir ajustes
+        IconButton(onClick = { navController.navigate("settings") }) {
+
+            Icon(
+                imageVector = Icons.Default.Settings,
+                contentDescription = "ajustes",
+                tint =
+                    MaterialTheme.colorScheme.primary,
+
+                )
         }
 
-        Column() {
-            IconButton(onClick = { navController.navigate("settings") }) {
 
-                Icon(
-                    imageVector = Icons.Default.Settings,
-                    contentDescription = "ajustes",
-                    tint =
-                        MaterialTheme.colorScheme.primary,
-
-                    )
-            }
-        }
-        /*tnemos  que tener uan variable que sea capaz de manejar el cambio en el menu(isExpanded)
-        esa variable tiene como entorno en la función topBar, tenemos que "jugar con los contextos"
-        topBar conoce la variable isExpanded es la que se encarga de la acción, acto seguido simplemente
-        en la fun dropMenu invocamos al dismiss request
-        */
-        DropMenu(
-            navController = navController,
-            expanded = isExpanded,
-            dismissRequest = { isExpanded = false }
-        )
-
-
-    }
-}
-
-
-/**
- * @author="Andrés"
- * @param
- * @function
- */
 //función que se encarga del comportamiento del menú desplegable y de los elementos que lo conitenen
-@Composable
-fun DropMenu(
-    navController: NavController,
-    expanded: Boolean,
-    dismissRequest: () -> Unit
-) {
+//para simplificar la apertura de los enlaces emplearemos Intent
 
-    Column(Modifier.padding()) {
-        Box(
-            modifier = Modifier
-                .fillMaxWidth()
-                .wrapContentSize(Alignment.TopCenter)
 
+        DropdownMenu(
+            expanded = isExpanded,
+            onDismissRequest = { isExpanded = false },
+            modifier = Modifier.fillMaxWidth()
         ) {
-            IconButton(onClick = { }) {
 
-            }
-            DropdownMenu(
-                expanded,
-                onDismissRequest = dismissRequest
-            ) {
-
-                DropdownMenuItem(
-                    text = { Text(text = stringResource(R.string.inicio)) },
-                    onClick = { navController.navigate(MainScreenRoute) })
-                DropdownMenuItem(
-                    text = { Text(text = stringResource(R.string.search)) },
-                    onClick = { })
-                DropdownMenuItem(
-                    text = { Text(text = stringResource(R.string.salir)) },
-                    onClick = { })
-
-            }
+            DropdownMenuItem(
+                text = { Text(text = stringResource(R.string.menu_last)) },
+                onClick = {
+                    isExpanded = false
+                    try {
+                        context.startActivity(
+                            Intent(Intent.ACTION_VIEW, "https://www.last.fm/".toUri())
+                        )
+                    } catch (e: Exception) {
+                        e.printStackTrace()
+                    }
+                }
+            )
+            DropdownMenuItem(
+                text = { Text(text = stringResource(R.string.discos)) },
+                onClick = {
+                    isExpanded = false
+                    try {
+                        context.startActivity(
+                            Intent(Intent.ACTION_VIEW, "https://www.discogs.com/".toUri())
+                        )
+                    } catch (e: Exception) {
+                        e.printStackTrace()
+                    }
+                }
+            )
+            /*DropdownMenuItem(
+                text = { Text(text = stringResource(R.string.salir)) },
+                onClick = {
+                    isExpanded = false
+                    activity?.finishAffinity() // Cierra solo esta activity
+                }
+            )*/
         }
     }
 }
+
+
 
 
 

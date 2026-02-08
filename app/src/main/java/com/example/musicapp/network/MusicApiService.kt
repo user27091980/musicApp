@@ -6,50 +6,53 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
 
-
+/*
+@Path → se usa para reemplazar partes de la URL ({id}).
+@Query → se usa para parámetros de consulta (?id=...).
+ */
 interface MusicApiService {
-//RUTA
 
-    //    @GET("music/{id}")
-//    //@Path en la ruta que hemos definido arriba va a coger el id que pasamos por parámetro y lo escribmos.
-//    //toda acción enviada por un retrofit devuelve un objeto response.
-//    suspend fun getMusic(@Path("id") id: Int): Response<musicResponse>
-//
-//    @GET("music")
-//    suspend fun getMusicList(
-//        @Query("") limit: Int = 50,
-//        @Query("") offset: Int = 0
-//    ): Response<MusicListResponse>
-//==============ENDPOINTS================
+    // Obtener banda por id
     @GET("json/band/{id}")
-    suspend fun getBandById(@Query("id") id: String): Response<Band>
-    //endpoint dinámico
-    @GET("json/nombre/{nombre}")
-    suspend fun getBandName(@Query("nombre") name: String) : Response<Band>
+    suspend fun getBandById(@Path("id") id: String): Response<Band>
 
-    @GET("json/band/texto/")
+    // Obtener banda por nombre
+    @GET("json/nombre/{nombre}")
+    suspend fun getBandName(@Path("nombre") name: String): Response<Band>
+
+    // Obtener texto de la banda
+    @GET("json/band/texto")
     suspend fun getBandText(@Query("texto") content: String): Response<Band>
 
-    @GET("json/band/{id}/foto/")
-    suspend fun getBandPic(@Query("foto") photos:String ): Response<List<Band>>
+    // Obtener fotos de la banda
+    @GET("json/band/{id}/foto")
+    suspend fun getBandPic(@Path("id") id: String): Response<List<Band>>
 
-    @GET("json/band/{id}/fotoCabecera/")
-    suspend fun getBandHeader(@Query("fotoCabecera") headPic: String): Response<Band>
+    // Foto de cabecera de la banda
+    @GET("json/band/{id}/fotoCabecera")
+    suspend fun getBandHeader(@Path("id") id: String): Response<Band>
 
+    // Etiquetas
     @GET("json/etiquetas")
-    suspend fun getBandTags(@Query("etiquetas") tags:String): Response<Band>
+    suspend fun getBandTags(@Query("etiquetas") tags: String): Response<Band>
 
+    // Discos
     @GET("json/band/{id}/discos")
-    suspend fun getBandDiscos(@Query("discos") albums:String) : Response<List<Band>>
+    suspend fun getBandDiscos(@Path("id") id: String): Response<List<Band>>
+
+    // Clases auxiliares
+    data class Tag(val id: String, val name: String)
+    data class Album(val id: String, val photos: String)
+}
+
 //crearemos un dataclass con el nombre del nombreREsponse
 
-    data class Tag(
-        val id:String,
-        val name: String
-    )
+data class Tag(
+    val id: String,
+    val name: String
+)
 
-    data class Album(
-        val id:String,
-        val photos: String
-    )
-}
+data class Album(
+    val id: String,
+    val photos: String
+)
