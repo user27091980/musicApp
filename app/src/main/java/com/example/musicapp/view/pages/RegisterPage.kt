@@ -51,9 +51,9 @@ fun RegisterScreenPage(navController: NavHostController) {
         {
 
             ButtonAcept(
-                button as NavController
+                navController
             )
-            ButtonCancel(button)
+            ButtonCancel(navController)
         }
 
     }

@@ -34,6 +34,7 @@ import com.example.musicapp.view.pages.BandKyuss
 import com.example.musicapp.view.pages.BandTool
 import com.example.musicapp.view.pages.Login
 import com.example.musicapp.view.pages.LoginRegScreen
+import com.example.musicapp.view.pages.LoginRoute
 import com.example.musicapp.view.pages.MainScreenPage
 import com.example.musicapp.view.pages.RegisterScreenPage
 import com.example.musicapp.view.pages.SettingsScreen
@@ -70,7 +71,7 @@ class MainActivity : ComponentActivity() {
                         ) {
                             NavHost(
                                 navController = navController,
-                                startDestination = MainScreenRoute,
+                                startDestination = LoginRegRoute,
                                 modifier = Modifier.padding(innerPadding)
                             ) {
                                 composable<SplashRoute> {
@@ -80,7 +81,7 @@ class MainActivity : ComponentActivity() {
                                     LoginRegScreen(navController)
                                 }
                                 composable<LoginRoute> {
-                                    Login(navController)
+                                    LoginRoute(navController = navController)
                                 }
                                 composable<RegisterRoute> {
                                     RegisterScreenPage(navController)
@@ -107,7 +108,8 @@ class MainActivity : ComponentActivity() {
                                     UserInfoScreenPage()
                                 }
                                 composable<SettingsRoute> {
-                                    SettingsScreen(navController)
+                                    SettingsScreen(
+                                    )
                                 }
                                 composable("home") {
                                     MainScreenPage(navController)

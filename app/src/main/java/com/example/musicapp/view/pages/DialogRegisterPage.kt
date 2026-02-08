@@ -5,6 +5,7 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.tooling.preview.Preview
 
 /**
  * @author Andrés
@@ -40,10 +41,11 @@ fun DialogPage(
 }
 
 
-/*@Preview
+@Preview
 @Composable
 fun PreviewDialog(){
 
-    DialogPage() { }
+    DialogPage(onConfirm = { },
+        onCancel = { })
 }
-*/
+

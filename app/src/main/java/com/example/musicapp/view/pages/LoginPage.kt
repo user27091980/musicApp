@@ -5,8 +5,10 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.OutlinedTextField
@@ -30,30 +32,21 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.musicapp.viewmodel.vm.LoginViewModel
 import com.example.musicapp.view.myComponents.ButtonAcept
+import com.example.musicapp.viewmodel.uistate.LoginUiState
 
 /**
  * @author Andrés
  */
 @Composable
-fun Login(navController: NavHostController, loginViewModel: LoginViewModel = viewModel()) {
+fun Login(
+    navController: NavHostController,
+    uiState: LoginUiState,
+    onEmailChange: (String) -> Unit,
+    onPasswordChange: (String) -> Unit,
+    onTogglePassword: () -> Unit,
 
-    val savedStateHandle = navController.currentBackStackEntry?.savedStateHandle
+) {
 
-    val deleteResult = savedStateHandle
-        ?.getStateFlow<Boolean?>("deleteResult", null)
-        ?.collectAsState()
-
-    // Cuando llegue el resultado
-    LaunchedEffect(deleteResult?.value) {
-        if (deleteResult?.value == true) {
-            Log.i("DIALOG", "borrado true")
-        } else {
-            Log.i("DIALOG", "borrado false")
-
-        }
-
-    }
-    val uiState by loginViewModel.uiState.collectAsState()
 
     Box(
         modifier = Modifier
@@ -73,7 +66,7 @@ fun Login(navController: NavHostController, loginViewModel: LoginViewModel = vie
             //TextFieldUserComponent()
             OutlinedTextField(
                 value = uiState.email,
-                onValueChange = { loginViewModel.onEmailChange(it) },
+                onValueChange = onEmailChange,
                 label = { Text("Email") },
                 modifier = Modifier.fillMaxWidth(),
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email)
@@ -82,31 +75,60 @@ fun Login(navController: NavHostController, loginViewModel: LoginViewModel = vie
             //TextFieldPassComponent()
             OutlinedTextField(
                 value = uiState.password,
-                onValueChange = { loginViewModel.onPasswordChange(it) },
+                onValueChange = onPasswordChange,
                 label = { Text("Password") },
                 modifier = Modifier.fillMaxWidth(),
-                visualTransformation = if (uiState.passwordVisible) VisualTransformation.None
-                else PasswordVisualTransformation(),
+                visualTransformation =
+                    if (uiState.passwordVisible) VisualTransformation.None
+                    else PasswordVisualTransformation(),
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
                 trailingIcon = {
-                    val text = if (uiState.passwordVisible) "Hide" else "Show"
-                    TextButton(onClick = {
-                        loginViewModel.togglePasswordVisibility()
-                    }) {
-                        Text(text)
+                    TextButton(onClick = onTogglePassword) {
+                        Text(if (uiState.passwordVisible) "Hide" else "Show")
                     }
+
                 }
             )
-            ButtonAcept(navController)
+            Spacer(modifier = Modifier.height(16.dp))
+
+            ButtonAcept(navController = navController)
 
         }
     }
 }
-
-@Preview
+//creamos el route
 @Composable
-fun LoginPrev() {
+fun LoginRoute(
+    navController: NavHostController,
+    viewModel: LoginViewModel = viewModel()
+) {
+    val uiState by viewModel.uiState.collectAsState()
 
-    Login(navController = rememberNavController())
+    Login(
+        navController = navController,
+        uiState = uiState,
+        onEmailChange = viewModel::onEmailChange,
+        onPasswordChange = viewModel::onPasswordChange,
+        onTogglePassword = viewModel::togglePasswordVisibility
+    )
+}
 
+@Preview(showBackground = true)
+@Composable
+fun LoginPreview() {
+
+    val navController = rememberNavController()
+
+    Login(
+        navController = navController,
+        uiState = LoginUiState(
+            email = "andresico@mail.com",
+            password = "123456",
+            passwordVisible = false
+        ),
+        onEmailChange = {},
+        onPasswordChange = {},
+        onTogglePassword = {},
+
+    )
 }
