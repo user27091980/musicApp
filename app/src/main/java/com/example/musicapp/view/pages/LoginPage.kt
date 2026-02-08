@@ -45,13 +45,13 @@ fun Login(navController: NavHostController, loginViewModel: LoginViewModel = vie
 
     // Cuando llegue el resultado
     LaunchedEffect(deleteResult?.value) {
-        if (deleteResult?.value == true) {
-            Log.i("DIALOG", "borrado true")
-        } else {
-            Log.i("DIALOG", "borrado false")
-
+        deleteResult?.value?.let { result ->
+            if (result) {
+                Log.i("DIALOG", "borrado true")
+            } else {
+                Log.i("DIALOG", "borrado false")
+            }
         }
-
     }
     val uiState by loginViewModel.uiState.collectAsState()
 

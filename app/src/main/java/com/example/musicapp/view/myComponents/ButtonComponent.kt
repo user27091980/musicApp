@@ -11,6 +11,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.musicapp.R
+import com.example.musicapp.navigation.LoginRoute
 import com.example.musicapp.navigation.MainScreenRoute
 import com.example.musicapp.navigation.RegisterRoute
 import com.example.musicapp.navigation.UserInfoRoute
@@ -27,7 +28,7 @@ import com.example.musicapp.styles.styleButtonText
 fun ButtonLogin(navController: NavController, modifier: Modifier = Modifier) {
 
     Button(
-        onClick = { navController.navigate(MainScreenRoute) },
+        onClick = { navController.navigate(LoginRoute) },
         modifier = Modifier.fillMaxWidth(),
         shape = RoundedCornerShape(20.dp)
     ) {
