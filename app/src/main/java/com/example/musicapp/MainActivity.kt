@@ -108,7 +108,7 @@ class MainActivity : ComponentActivity() {
                                 composable<SettingsRoute> {
                                     SettingsScreen(navController)
                                 }
-                                /*composable("home") {
+                                composable("home") {
                                     MainScreenPage()
                                 }
                                 composable("search") {
@@ -117,8 +117,6 @@ class MainActivity : ComponentActivity() {
                                 composable("profile") {
                                     UserInfoScreenPage()
                                 }
-
-                                 */
                             }
                         }
                     }
