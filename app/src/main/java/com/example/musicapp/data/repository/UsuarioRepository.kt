@@ -9,7 +9,7 @@ class UsuarioRepo {
         val usuarios = ArrayList<UsersDTO>(
             listOf(
                 UsersDTO(0, "user1", "1234"),
-                )
+            )
         )
         var currId = 4
 

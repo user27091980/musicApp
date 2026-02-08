@@ -40,19 +40,15 @@ interface MusicApiService {
     @GET("json/band/{id}/discos")
     suspend fun getBandDiscos(@Path("id") id: String): Response<List<Band>>
 
-    // Clases auxiliares
-    data class Tag(val id: String, val name: String)
-    data class Album(val id: String, val photos: String)
-}
-
 //crearemos un dataclass con el nombre del nombreREsponse
 
-data class Tag(
-    val id: String,
-    val name: String
-)
+    data class Tag(
+        val id: String,
+        val name: String
+    )
 
-data class Album(
-    val id: String,
-    val photos: String
-)
+    data class Album(
+        val id: String,
+        val photos: String
+    )
+}

@@ -19,6 +19,6 @@ class DatasourceBocPics {
             AlbumsDTO(R.drawable.a1262104559_16),
             AlbumsDTO(R.drawable._3e67eef),
 
-        )
+            )
     }
 }

@@ -11,7 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import androidx.navigation.NavHostController
+import androidx.navigation.NavController
 import com.example.musicapp.data.dataSources.DatasourceMainScreenPics
 import com.example.musicapp.data.modelo.BandsDTO
 import com.example.musicapp.styles.lazyColumnCardModifier
@@ -25,12 +25,15 @@ import com.example.musicapp.styles.styleTextCards
 //Función que recorrerá el DataSourcesPics le pasamos un modifier y una lista por parámetro
 
 @Composable
-fun CardsList(cardsList: List<BandsDTO>, navController: NavHostController, modifier: Modifier = Modifier) {
+fun CardsList(
+    cardsList: List<BandsDTO>,
+    navController: NavController.Companion,
+    modifier: Modifier = Modifier
+) {
     Box(lazyColumnCardModifier) {
         LazyColumn(modifier = modifier) {
 
-            items(cardsList) {
-                    band ->
+            items(cardsList) { band ->
                 Cards(
                     bandsDTO = band,
                     navController = navController
@@ -49,7 +52,7 @@ fun CardsList(cardsList: List<BandsDTO>, navController: NavHostController, modif
 //creamos la función imagen para poder acceder a ellas y poder realizar el contenscale
 //pasamos como parámetro un bandsDTO
 @Composable
-fun Cards(bandsDTO: BandsDTO, navController: NavHostController, modifier: Modifier = Modifier) {
+fun Cards(bandsDTO: BandsDTO, navController: NavController.Companion, modifier: Modifier = Modifier) {
 
     Card() {
 
@@ -76,12 +79,13 @@ fun Cards(bandsDTO: BandsDTO, navController: NavHostController, modifier: Modifi
 //a esta función le mandamos la función ImagesList se crea un imagesList para
 //que recorra el DataSourcesPics.
 @Composable
-fun LazyColumnComponent(navController: NavHostController, modifier: Modifier = Modifier) {
+fun LazyColumnComponent(navController: NavController.Companion, modifier: Modifier = Modifier) {
 
     CardsList(
         navController = navController,
         cardsList = DatasourceMainScreenPics().loadImagesId(),
-        modifier = modifier)
+        modifier = modifier
+    )
 
 }
 

@@ -14,7 +14,7 @@ class DatasourceAlbumsPics {
     /**
      * @param
      */
-    fun loadAlbumsBands():List<AlbumsDTO> {
+    fun loadAlbumsBands(): List<AlbumsDTO> {
 
         return listOf(
 
@@ -47,6 +47,6 @@ class DatasourceAlbumsPics {
             AlbumsDTO(R.drawable._99568_the_black_dog_my_brutal_life),
             AlbumsDTO(R.drawable.c0010220__10913),
 
-        )
+            )
     }
 }

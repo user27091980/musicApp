@@ -71,7 +71,7 @@ fun ButtonAcept(navController: NavController, modifier: Modifier = Modifier) {
         shape = RoundedCornerShape(20.dp),
 
 
-    ) {
+        ) {
         Text(
             text = stringResource(R.string.boton_aceptar),
             style = styleButtonText
@@ -86,14 +86,14 @@ fun ButtonAcept(navController: NavController, modifier: Modifier = Modifier) {
  */
 //botón de cancelación
 @Composable
-fun ButtonCancel(navController: NavController,modifier: Modifier = Modifier) {
+fun ButtonCancel(navController: NavController, modifier: Modifier = Modifier) {
 
     Button(
         onClick = { navController.navigate(MainScreenRoute) },
         shape = RoundedCornerShape(20.dp),
 
 
-    ) {
+        ) {
         Text(
             text = stringResource(R.string.boton_cancelar),
             style = styleButtonText

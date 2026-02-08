@@ -3,6 +3,8 @@ package com.example.musicapp.view.pages
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.example.musicapp.view.myComponents.LazyColumnComponent
 
 /**
@@ -11,11 +13,11 @@ import com.example.musicapp.view.myComponents.LazyColumnComponent
  * @function
  */
 @Composable
-fun MainScreenPage(modifier: Modifier = Modifier) {
+fun MainScreenPage(navController: NavController,modifier: Modifier = Modifier) {
 
     LazyColumnComponent(
-        navController = TODO(),
-        modifier = TODO()
+        navController = NavController,
+        modifier = modifier
     )
 
 }
@@ -24,6 +26,10 @@ fun MainScreenPage(modifier: Modifier = Modifier) {
 @Composable
 fun MainPrev() {
 
-    MainScreenPage()
+    val navController = rememberNavController()
+    MainScreenPage(
+        navController = navController,
+        modifier = Modifier
+    )
 
 }

@@ -16,6 +16,6 @@ class DatasourceAePics {
             AlbumsDTO(R.drawable.album_large_98280_574221d8b2b13),
             AlbumsDTO(R.drawable.a3617801006_16)
 
-            )
+        )
     }
 }

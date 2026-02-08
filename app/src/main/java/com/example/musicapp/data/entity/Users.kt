@@ -1,6 +1,7 @@
 package com.example.musicapp.data.entity
 
 import com.google.gson.annotations.SerializedName
+
 //usar singular para las clases
 data class User(
     val id: String,
