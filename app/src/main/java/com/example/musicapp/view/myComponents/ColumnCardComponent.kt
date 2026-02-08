@@ -113,7 +113,6 @@ fun CardColumnKyussComponent() {
 }
 
 
-
 @Composable
 fun CardColumnToolComponent() {
     Box() {

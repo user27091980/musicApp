@@ -69,6 +69,7 @@ class LoginViewModel(private val authRepository: AuthRepository) : ViewModel() {
         }
     }
 }
+
 // Mejor declarar el evento fuera del VM
 sealed interface LoginEvent {
     object NavigateToHome : LoginEvent

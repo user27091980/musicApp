@@ -60,7 +60,7 @@ fun TopBar(navController: NavController) {
                 )
 
         }
-    //abrir ajustes
+        //abrir ajustes
         IconButton(onClick = { navController.navigate("settings") }) {
 
             Icon(

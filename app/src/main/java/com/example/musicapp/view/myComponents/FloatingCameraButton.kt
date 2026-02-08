@@ -11,7 +11,7 @@ import androidx.compose.runtime.Composable
  * @author Andrés
  */
 
-class PicCatcher : ComponentActivity(){
+class PicCatcher : ComponentActivity() {
 
 
 }

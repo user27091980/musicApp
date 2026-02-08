@@ -23,24 +23,24 @@ fun BandKyuss() {
 
     Box(boxModifier) {
 
-            Row(rowModifier) {
-                Image(
-                    painter = painterResource(R.drawable._98_logo),
-                    contentDescription = "",
-                    contentScale = ContentScale.Inside,
-                )
-            }
-            Row(rowCardModifier) {
-               CardColumnKyussComponent()
-            }
+        Row(rowModifier) {
+            Image(
+                painter = painterResource(R.drawable._98_logo),
+                contentDescription = "",
+                contentScale = ContentScale.Inside,
+            )
+        }
+        Row(rowCardModifier) {
+            CardColumnKyussComponent()
+        }
 
-            Row(lazyRowMod) {
+        Row(lazyRowMod) {
 
-                LazyRowComponentKyuss()
+            LazyRowComponentKyuss()
 
-            }
         }
     }
+}
 
 @Preview
 @Composable

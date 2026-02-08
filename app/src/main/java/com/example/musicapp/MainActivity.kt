@@ -86,7 +86,7 @@ class MainActivity : ComponentActivity() {
                                     RegisterScreenPage(navController)
                                 }
                                 composable<MainScreenRoute> {
-                                    MainScreenPage()
+                                    MainScreenPage(navController)
                                 }
                                 composable<BandAeRoute> {
                                     BandAe()
@@ -110,7 +110,7 @@ class MainActivity : ComponentActivity() {
                                     SettingsScreen(navController)
                                 }
                                 composable("home") {
-                                    MainScreenPage()
+                                    MainScreenPage(navController)
                                 }
                                 composable("search") {
                                     UserInfoScreenPage()

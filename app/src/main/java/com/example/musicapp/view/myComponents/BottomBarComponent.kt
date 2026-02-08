@@ -27,12 +27,22 @@ fun BottomBar(navController: NavHostController) {
     var selectedItem by remember { mutableStateOf(0) }
 
     val items = listOf(
-        BottomItems.TopButtonItems(label = stringResource(R.string.inicio), Icons.Default.Home, route ="home"),
-        BottomItems.TopButtonItems(label = stringResource(R.string.buscar), Icons.Default.Search, route="search"),
-        BottomItems.TopButtonItems(label = stringResource(R.string.perfil), Icons.Default.Person,route="profile")
+        BottomItems.TopButtonItems(
+            label = stringResource(R.string.inicio),
+            Icons.Default.Home,
+            route = "home"
+        ),
+        BottomItems.TopButtonItems(
+            label = stringResource(R.string.buscar),
+            Icons.Default.Search,
+            route = "search"
+        ),
+        BottomItems.TopButtonItems(
+            label = stringResource(R.string.perfil),
+            Icons.Default.Person,
+            route = "profile"
+        )
     )
-
-
 
 
 //barra de navegación.
@@ -68,7 +78,7 @@ fun BottomBar(navController: NavHostController) {
                 onClick = {
                     selectedItem = index
                     navController.navigate(item.route)
-                    {launchSingleTop=true}
+                    { launchSingleTop = true }
                 }
             )
         }

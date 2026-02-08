@@ -12,7 +12,7 @@ import kotlinx.serialization.Serializable
 sealed interface NavRoute
 
 @Serializable
-object SplashRoute: NavRoute
+object SplashRoute : NavRoute
 
 /*emplear data class para rutas con parámetros:
 Kotlin NO genera automáticamente:
@@ -33,37 +33,37 @@ Rutas sin parámetros → object
 */
 
 @Serializable
-data class LoginRoute(val email: String): NavRoute
+data class LoginRoute(val email: String) : NavRoute
 
 @Serializable
-data class RegisterRoute(val email: String, val user: String): NavRoute
+data class RegisterRoute(val email: String, val user: String) : NavRoute
 
 @Serializable
-object LoginRegRoute: NavRoute
+object LoginRegRoute : NavRoute
 
 @Serializable
 object MainScreenRoute : NavRoute
 
 @Serializable
-object BandAeRoute: NavRoute
+object BandAeRoute : NavRoute
 
 @Serializable
 object BandAphxRoute : NavRoute
 
 @Serializable
-object BandBocRoute: NavRoute
+object BandBocRoute : NavRoute
 
 @Serializable
-object BandKyussRoute: NavRoute
+object BandKyussRoute : NavRoute
 
 @Serializable
-object BandToolRoute: NavRoute
+object BandToolRoute : NavRoute
 
 @Serializable
-object UserInfoRoute: NavRoute
+object UserInfoRoute : NavRoute
 
 @Serializable
 object DialogPage
 
 @Serializable
-object SettingsRoute: NavRoute
+object SettingsRoute : NavRoute
