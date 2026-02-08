@@ -12,8 +12,8 @@ import com.example.musicapp.styles.boxModifier
 import com.example.musicapp.styles.lazyRowMod
 import com.example.musicapp.styles.rowCardModifier
 import com.example.musicapp.styles.rowModifier
-import com.example.musicapp.view.myComponents.CardColumnAeComponent
 import com.example.musicapp.view.myComponents.LazyRowComponentAe
+import com.example.musicapp.vista.myComponents.CardColumnAeComponent
 
 /**
  * @author Andrés

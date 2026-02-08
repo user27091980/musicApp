@@ -16,6 +16,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.example.musicapp.R
+import com.example.musicapp.view.myComponents.TagAe
+import com.example.musicapp.view.myComponents.TagAphx
+import com.example.musicapp.view.myComponents.TagBoc
+import com.example.musicapp.view.myComponents.TagKyuss
+import com.example.musicapp.view.myComponents.TagTool
 
 /**
  * @author="Andrés"
@@ -106,6 +111,8 @@ fun CardColumnKyussComponent() {
         }
     }
 }
+
+
 
 @Composable
 fun CardColumnToolComponent() {
