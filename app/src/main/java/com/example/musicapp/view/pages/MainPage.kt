@@ -18,7 +18,7 @@ import com.example.musicapp.view.myComponents.LazyColumnComponent
 @Composable
 fun MainScreenPage(navController: NavController,modifier: Modifier = Modifier) {
 
-    //Component which shows a content LazyColumn
+    //Component which shows a lazycolumnt content
     //it passed a Navcontroller for the navigation between items
     LazyColumnComponent(
         navController = NavController,

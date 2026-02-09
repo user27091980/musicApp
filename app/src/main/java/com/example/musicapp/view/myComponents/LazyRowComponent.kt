@@ -1,38 +1,49 @@
 package com.example.musicapp.view.myComponents
 
+//Layouts and LazyRow
+import android.content.Intent
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
+
+//Compose
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
-import com.example.musicapp.data.modelo.AlbumsDTO
+import androidx.core.net.toUri
+
+//models and data sources
 import com.example.musicapp.data.dataSources.DatasourceAePics
 import com.example.musicapp.data.dataSources.DatasourceAphxPics
 import com.example.musicapp.data.dataSources.DatasourceBocPics
 import com.example.musicapp.data.dataSources.DatasourceKyussPics
 import com.example.musicapp.data.dataSources.DatasourceToolPics
+import com.example.musicapp.data.modelo.AlbumsClickDTO
+//images modifiers
 import com.example.musicapp.styles.imageModifier
 
 /**
  * @author="Andrés"
- * @param
- * @function
+ * @function: generic component for shows an albums images horizontal row
+ *
+ * @param: imageRowList: List of AlbumsDTO that contains the imageID and albums data
+ * @param: modifier: optional for lazyRow personalization
  */
 
-/*
-Componente LazyRow recoge las imagnes de la listas de el paquete data de las clases  para poder añadirlas a la fila.
- */
+
 @Composable
-fun ImagesRowList(imagesRowList: List<AlbumsDTO>, modifier: Modifier = Modifier) {
-
+fun ImagesRowList(imagesRowList: List<AlbumsClickDTO>, modifier: Modifier = Modifier) {
+    //for automatic horizontal scrolling
     LazyRow(modifier = Modifier) {
-
+        //range each list element
         items(imagesRowList) {
 
                 albumsId ->
+            //for each album, creates a card with an image
             Cards(
 
                 albumsDTO = albumsId,
@@ -53,9 +64,22 @@ Recoge los ids de AlbumsDTO para poder configurar esas imágenes dentro de cada 
 del lazyRow
  */
 @Composable
-fun Cards(albumsDTO: AlbumsDTO) {
+fun Cards(albumsDTO: AlbumsClickDTO) {
 
-    Box {
+    val context = LocalContext.current
+
+    Box(
+        modifier = Modifier.clickable {
+            albumsDTO.url?.let { url ->
+                try {
+                    context.startActivity(Intent(Intent.ACTION_VIEW, url.toUri()))
+                } catch (e: Exception) {
+                    e.printStackTrace()
+                }
+            }
+        }
+    )
+    {
         Image(
             painter = painterResource(albumsDTO.imageResourceId),
             contentDescription = "",
@@ -74,7 +98,7 @@ fun Cards(albumsDTO: AlbumsDTO) {
 @Composable
 fun LazyRowComponentAe() {
 
-    ImagesRowList(imagesRowList = DatasourceAePics().loadAlbumsAe())
+    ImagesRowList(imagesRowList = DatasourceAePics().loadClickableAlbumsAe())
 
 }
 
@@ -85,27 +109,27 @@ fun LazyRowComponentAe() {
 @Composable
 fun LazyRowComponentBoc() {
 
-    ImagesRowList(imagesRowList = DatasourceBocPics().loadAlbumsBoc())
+    ImagesRowList(imagesRowList = DatasourceBocPics().loadClickableAlbumsBoc())
 
 }
 
 @Composable
 fun LazyRowComponentAphx() {
 
-    ImagesRowList(imagesRowList = DatasourceAphxPics().loadAlbumsAphx())
+    ImagesRowList(imagesRowList = DatasourceAphxPics().loadClickableAlbumsAphx())
 
 }
 
 @Composable
 fun LazyRowComponentKyuss() {
 
-    ImagesRowList(imagesRowList = DatasourceKyussPics().loadAlbumsKyuss())
+    ImagesRowList(imagesRowList = DatasourceKyussPics().loadClickableAlbumsKyuss())
 
 }
 
 @Composable
 fun LazyRowComponentTool() {
 
-    ImagesRowList(imagesRowList = DatasourceToolPics().loadAlbumsTool())
+    ImagesRowList(imagesRowList = DatasourceToolPics().loadClickableAlbumsTool())
 
 }

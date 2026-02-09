@@ -1,21 +1,26 @@
 package com.example.musicapp.vista.myComponents
 
+//Compose layouts
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+//Scroll
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+//Material 3 Components
 import androidx.compose.material3.Card
 import androidx.compose.material3.Text
+//compose runtime
 import androidx.compose.runtime.Composable
+//resources
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.example.musicapp.R
+//personalized band tags
 import com.example.musicapp.view.myComponents.TagAe
 import com.example.musicapp.view.myComponents.TagAphx
 import com.example.musicapp.view.myComponents.TagBoc
@@ -23,39 +28,40 @@ import com.example.musicapp.view.myComponents.TagKyuss
 import com.example.musicapp.view.myComponents.TagTool
 
 /**
+ * Colection of card components and tags for each band
+ *
  * @author="Andrés"
- * @param
- * @function
+ *
  */
 
 @Composable
 fun CardColumnAeComponent() {
-
+    //main container box
     Box {
+        //Column for organice cards and tags
         Column(
             modifier = Modifier
-                .fillMaxSize()
                 .verticalScroll(rememberScrollState())
-                .padding(16.dp),
-            verticalArrangement = Arrangement.spacedBy(10.dp)
+                .padding(16.dp),//internal padding
+            verticalArrangement = Arrangement.spacedBy(10.dp)//separation between elements
         ) {
+            //main card with band text
             Card {
                 Text(text = stringResource(R.string.aeText))
             }
-            Spacer(modifier = Modifier.height(6.dp))
-            TagAe()
-            Spacer(modifier = Modifier.height(6.dp))
+            Spacer(modifier = Modifier.height(6.dp))//spacer between card and tags
+            TagAe()//Autechre´s tags
+            Spacer(modifier = Modifier.height(6.dp))//final spacer
         }
     }
 }
 
-
+//same as fun CardColumnAeComponent()
 @Composable
 fun CardColumnBocComponent() {
     Box() {
         Column(
             modifier = Modifier
-                .fillMaxSize()
                 .verticalScroll(rememberScrollState())
                 .padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(10.dp)
@@ -76,7 +82,6 @@ fun CardColumnAphxComponent() {
     Box() {
         Column(
             modifier = Modifier
-                .fillMaxSize()
                 .verticalScroll(rememberScrollState())
                 .padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(10.dp)
@@ -97,7 +102,6 @@ fun CardColumnKyussComponent() {
     Box() {
         Column(
             modifier = Modifier
-                .fillMaxSize()
                 .verticalScroll(rememberScrollState())
                 .padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(10.dp)
@@ -118,7 +122,6 @@ fun CardColumnToolComponent() {
     Box() {
         Column(
             modifier = Modifier
-                .fillMaxSize()
                 .verticalScroll(rememberScrollState())
                 .padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(10.dp)

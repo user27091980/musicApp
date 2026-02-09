@@ -1,46 +1,63 @@
 package com.example.musicapp.vista.myComponents
 
+//necesary classes for open links and closed the app
 import android.app.Activity
 import android.content.Intent
+//Compose layouts
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+//Material Icons
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Settings
+//Material 3 components
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+//Compose state
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+//UI and resources
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+//android utils
 import androidx.core.net.toUri
+//navigation
 import androidx.navigation.NavController
+// app resources
 import com.example.musicapp.R
 
 /**
- * @author andres
- * @param
+ * TopBar personalized component
+ *
+ * Contains:
+ * - Menu buttom
+ * - Settings buttom
+ * - DropDown menu and setttins icon
+ *
+ * @param navController navigation controller
+ * @author Andrés Canabal Poncela
  */
-//componente de topAppBar se compome de una topbar y un menú desplegable
+
 @Composable
 fun TopBar(navController: NavController) {
-
+    //manages if dropdown menu it´s open or close
     var isExpanded by remember { mutableStateOf(false) }
-    // Contexto y activity para abrir enlaces o cerrar app
+    //Context and activity for open links or close the app
     val context = LocalContext.current
+    //it tries to obtain the Activity for can close the app
     val activity = context as? Activity
-    //en una fila el icono de ajustes y el menú desplegable
+    //Row for icons and topBar
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -48,7 +65,7 @@ fun TopBar(navController: NavController) {
         verticalAlignment = Alignment.CenterVertically
     )
     {
-        //botón para el menú
+        //Menu button
         IconButton(onClick = { isExpanded = true }) {
 
             Icon(
@@ -60,7 +77,7 @@ fun TopBar(navController: NavController) {
                 )
 
         }
-        //abrir ajustes
+        //Settings button
         IconButton(onClick = { navController.navigate("settings") }) {
 
             Icon(
@@ -71,13 +88,13 @@ fun TopBar(navController: NavController) {
 
                 )
         }
-        // Menú desplegable
+        //Dropdown menu, it shows on top leff corner
         DropdownMenu(
             expanded = isExpanded,
             onDismissRequest = { isExpanded = false },
             modifier = Modifier.fillMaxWidth()
         ) {
-            //abrimos Lastfm
+            //Option for open last.fm web
             DropdownMenuItem(
                 text = { Text(text = stringResource(R.string.menu_last)) },
                 onClick = {
@@ -91,7 +108,7 @@ fun TopBar(navController: NavController) {
                     }
                 }
             )
-            //abrimos Discogs
+            //option for open discogs web
             DropdownMenuItem(
                 text = { Text(text = stringResource(R.string.discos)) },
                 onClick = {
@@ -105,7 +122,7 @@ fun TopBar(navController: NavController) {
                     }
                 }
             )
-
+            //option for closed the app
             DropdownMenuItem(
                 text = { Text(text = stringResource(R.string.salir)) },
                 onClick = {
