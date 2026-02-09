@@ -79,7 +79,7 @@ val cardModifier = Modifier
 
 //modificador para las cards del mainScreen.
 val lazyColumnCardModifier = Modifier
-    .padding(5.dp, 60.dp, 5.dp, 100.dp)
+    .padding(5.dp, 10.dp, 5.dp, 10.dp)
 
 //value para el posicionamiento del icono de la cámara.
 val cameraMod = Modifier.padding(300.dp, 720.dp, 10.dp, 10.dp)
