@@ -38,16 +38,16 @@ import com.example.musicapp.styles.imageModifier
 @Composable
 fun ImagesRowList(imagesRowList: List<AlbumsClickDTO>, modifier: Modifier = Modifier) {
     //for automatic horizontal scrolling
-    LazyRow(modifier = Modifier) {
+    LazyRow(modifier = modifier) {
         //range each list element
         items(imagesRowList) {
 
-                albumsId ->
+                albumsItem ->
             //for each album, creates a card with an image
             Cards(
 
-                albumsDTO = albumsId,
-                //añadir clickable
+                albumsDTO = albumsItem,
+
 
             )
         }
@@ -70,7 +70,7 @@ fun Cards(albumsDTO: AlbumsClickDTO) {
 
     Box(
         modifier = Modifier.clickable {
-            albumsDTO.url?.let { url ->
+            albumsDTO.url.let { url ->
                 try {
                     context.startActivity(Intent(Intent.ACTION_VIEW, url.toUri()))
                 } catch (e: Exception) {
@@ -82,7 +82,7 @@ fun Cards(albumsDTO: AlbumsClickDTO) {
     {
         Image(
             painter = painterResource(albumsDTO.imageResourceId),
-            contentDescription = "",
+            contentDescription = "album image",
             contentScale = ContentScale.FillWidth,
             modifier = imageModifier
         )
