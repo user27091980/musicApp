@@ -1,23 +1,23 @@
 package com.example.musicapp.data.dataSources
 
 import com.example.musicapp.R
-import com.example.musicapp.data.modelo.AlbumsClickDTO
+import com.example.musicapp.data.modelo.AlbumsDTO
 
 /**
  * @author Andrés
  */
 class DatasourceBocPics {
 
-    fun loadClickableAlbumsBoc(): List<AlbumsClickDTO> {
+    fun loadAlbumsBoc(): List<AlbumsDTO> {
 
         return listOf(
 
-            AlbumsClickDTO(R.drawable._25995,""),
-            AlbumsClickDTO(R.drawable.oip_356430257,""),
-            AlbumsClickDTO(R.drawable._x1900_000000_80_0_0,""),
-            AlbumsClickDTO(R.drawable.a0074571247_16,""),
-            AlbumsClickDTO(R.drawable.a1262104559_16,""),
-            AlbumsClickDTO(R.drawable._3e67eef,""),
+            AlbumsDTO(R.drawable._25995),
+            AlbumsDTO(R.drawable.oip_356430257),
+            AlbumsDTO(R.drawable._x1900_000000_80_0_0),
+            AlbumsDTO(R.drawable.a0074571247_16),
+            AlbumsDTO(R.drawable.a1262104559_16),
+            AlbumsDTO(R.drawable._3e67eef),
 
             )
     }

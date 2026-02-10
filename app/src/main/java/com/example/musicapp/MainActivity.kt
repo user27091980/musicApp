@@ -25,6 +25,7 @@ import com.example.musicapp.navigation.BandToolRoute
 import com.example.musicapp.navigation.LoginRegRoute
 import com.example.musicapp.navigation.LoginRoute
 import com.example.musicapp.navigation.MainScreenRoute
+import com.example.musicapp.navigation.ObjRoutes
 import com.example.musicapp.navigation.RegisterRoute
 import com.example.musicapp.navigation.SettingsRoute
 import com.example.musicapp.navigation.SplashRoute
@@ -33,6 +34,8 @@ import com.example.musicapp.navigation.UserInfoRoute
 import com.example.musicapp.ui.theme.themes.MusicAppTheme
 //reused components
 import com.example.musicapp.view.myComponents.BottomBar
+import com.example.musicapp.view.myComponents.ButtonAcept
+import com.example.musicapp.view.myComponents.ButtonRegister
 //Screens
 import com.example.musicapp.view.pages.BandAe
 import com.example.musicapp.view.pages.BandAphx
@@ -88,54 +91,18 @@ class MainActivity : ComponentActivity() {
                             NavHost(
                                 navController = navController,
                                 //main screen app
-                                startDestination = SplashRoute,
+                                startDestination = ObjRoutes.SPLASH,
                                 modifier = Modifier.padding(innerPadding)
                             ) {
-                                //SplashScreen
-                                composable<SplashRoute> {
-                                    SplashScreen(navController)
-                                }
                                 //register and login screen
-                                composable<LoginRegRoute> {
-                                    LoginRegScreen(navController)
+                                composable(ObjRoutes.LOGINREG) {
+                                    ButtonAcept(navController)
+                                    ButtonRegister(navController)
                                 }
-                                //login screen
-                                composable<LoginRoute> {
-                                    LoginRoute(navController = navController)
+                                composable(ObjRoutes.REGISTER){
+
                                 }
-                                //register screen
-                                composable<RegisterRoute> {
-                                    RegisterScreenPage(navController)
-                                }
-                                //main screen
-                                composable<MainScreenRoute> {
-                                    MainScreenPage(navController)
-                                }
-                                //Bands screens
-                                composable<BandAeRoute> {
-                                    BandAe()
-                                }
-                                composable<BandAphxRoute> {
-                                    BandAphx()
-                                }
-                                composable<BandBocRoute> {
-                                    BandBoc()
-                                }
-                                composable<BandKyussRoute> {
-                                    BandKyuss()
-                                }
-                                composable<BandToolRoute> {
-                                    BandTool()
-                                }
-                                //User info
-                                composable<UserInfoRoute> {
-                                    UserInfoScreenPage()
-                                }
-                                //Settings screen
-                                composable<SettingsRoute> {
-                                    SettingsScreen(
-                                    )
-                                }
+
                                 //String routes for bottom bar
                                 composable("home") {
                                     MainScreenPage(navController)

@@ -22,7 +22,7 @@ import com.example.musicapp.data.dataSources.DatasourceAphxPics
 import com.example.musicapp.data.dataSources.DatasourceBocPics
 import com.example.musicapp.data.dataSources.DatasourceKyussPics
 import com.example.musicapp.data.dataSources.DatasourceToolPics
-import com.example.musicapp.data.modelo.AlbumsClickDTO
+import com.example.musicapp.data.modelo.AlbumsDTO
 //images modifiers
 import com.example.musicapp.styles.imageModifier
 
@@ -36,7 +36,7 @@ import com.example.musicapp.styles.imageModifier
 
 
 @Composable
-fun ImagesRowList(imagesRowList: List<AlbumsClickDTO>, modifier: Modifier = Modifier) {
+fun ImagesRowList(imagesRowList: List<AlbumsDTO>, modifier: Modifier = Modifier) {
     //for automatic horizontal scrolling
     LazyRow(modifier = modifier) {
         //range each list element
@@ -64,19 +64,13 @@ Recoge los ids de AlbumsDTO para poder configurar esas imágenes dentro de cada 
 del lazyRow
  */
 @Composable
-fun Cards(albumsDTO: AlbumsClickDTO) {
+fun Cards(albumsDTO: AlbumsDTO) {
 
     val context = LocalContext.current
 
     Box(
         modifier = Modifier.clickable {
-            albumsDTO.url.let { url ->
-                try {
-                    context.startActivity(Intent(Intent.ACTION_VIEW, url.toUri()))
-                } catch (e: Exception) {
-                    e.printStackTrace()
-                }
-            }
+
         }
     )
     {
@@ -98,7 +92,7 @@ fun Cards(albumsDTO: AlbumsClickDTO) {
 @Composable
 fun LazyRowComponentAe() {
 
-    ImagesRowList(imagesRowList = DatasourceAePics().loadClickableAlbumsAe())
+    ImagesRowList(imagesRowList = DatasourceAePics().loadAlbumsAe())
 
 }
 
@@ -109,27 +103,27 @@ fun LazyRowComponentAe() {
 @Composable
 fun LazyRowComponentBoc() {
 
-    ImagesRowList(imagesRowList = DatasourceBocPics().loadClickableAlbumsBoc())
+    ImagesRowList(imagesRowList = DatasourceBocPics().loadAlbumsBoc())
 
 }
 
 @Composable
 fun LazyRowComponentAphx() {
 
-    ImagesRowList(imagesRowList = DatasourceAphxPics().loadClickableAlbumsAphx())
+    ImagesRowList(imagesRowList = DatasourceAphxPics().loadAlbumsAphx())
 
 }
 
 @Composable
 fun LazyRowComponentKyuss() {
 
-    ImagesRowList(imagesRowList = DatasourceKyussPics().loadClickableAlbumsKyuss())
+    ImagesRowList(imagesRowList = DatasourceKyussPics().loadAlbumsKyuss())
 
 }
 
 @Composable
 fun LazyRowComponentTool() {
 
-    ImagesRowList(imagesRowList = DatasourceToolPics().loadClickableAlbumsTool())
+    ImagesRowList(imagesRowList = DatasourceToolPics().loadAlbumsTool())
 
 }

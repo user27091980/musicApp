@@ -13,6 +13,7 @@ import androidx.navigation.NavController
 import com.example.musicapp.R
 import com.example.musicapp.navigation.LoginRoute
 import com.example.musicapp.navigation.MainScreenRoute
+import com.example.musicapp.navigation.ObjRoutes
 import com.example.musicapp.navigation.RegisterRoute
 import com.example.musicapp.navigation.UserInfoRoute
 import com.example.musicapp.styles.styleButtonText
@@ -47,7 +48,7 @@ fun ButtonLogin(navController: NavController, modifier: Modifier = Modifier) {
 fun ButtonRegister(navController: NavController, modifier: Modifier = Modifier) {
 
     FilledTonalButton(
-        onClick = { navController.navigate(RegisterRoute) },
+        onClick = { navController.navigate(ObjRoutes.REGISTER) },
         modifier = Modifier.fillMaxWidth(),
         shape = RoundedCornerShape(20.dp)
     ) {
@@ -68,7 +69,7 @@ fun ButtonAcept(navController: NavController) {
 
     Button(
 
-        onClick = { navController.navigate(UserInfoRoute) },
+        onClick = { navController.navigate(ObjRoutes.MAINSCREEN) },
         shape = RoundedCornerShape(20.dp),
 
 
@@ -90,7 +91,7 @@ fun ButtonAcept(navController: NavController) {
 fun ButtonCancel(navController: NavController) {
 
     Button(
-        onClick = { navController.navigate(MainScreenRoute) },
+        onClick = { navController.navigate(ObjRoutes.LOGIN) },
         shape = RoundedCornerShape(20.dp),
 
 
@@ -101,5 +102,6 @@ fun ButtonCancel(navController: NavController) {
         )
     }
 }
+
 
 

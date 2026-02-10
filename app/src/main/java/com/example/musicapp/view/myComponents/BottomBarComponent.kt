@@ -21,9 +21,10 @@ import androidx.navigation.NavHostController
 Función que se encarga de la barra inferior(BottomBar), con sus correspondientes iconos
 guardados en una lista denominada como items.
  */
-/*TODO: INTRODUCIR NAVEGACIÓN no funciona*/
+
 @Composable
 fun BottomBar(navController: NavHostController) {
+
     var selectedItem by remember { mutableStateOf(0) }
 
     val items = listOf(
