@@ -53,12 +53,13 @@ fun Login(
                 Brush.verticalGradient(
                     colors = listOf(Color.DarkGray, Color.Black) // verde Spotify → negro
                 )
-            )
+            ),
+        contentAlignment = Alignment.Center
     ) {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.spacedBy(20.dp),
-            modifier = Modifier.padding(50.dp, 340.dp, 10.dp, 150.dp)
+            modifier = Modifier.padding(horizontal = 32.dp)
         ) {
             Text("LOGIN", color = Color.White)
             //TextFieldUserComponent()
