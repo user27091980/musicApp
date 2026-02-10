@@ -2,35 +2,12 @@ package com.example.musicapp.navigation
 
 import kotlinx.serialization.Serializable
 
-//ya tenemos objeto creado para la parte de la rut
-//object lo ponemos si es estático
-//no tiene sentido que tengamos clases vacias, es algo innecesario
-
-
-//para kotlin serialization ideal agrupar:
 @Serializable
 sealed interface NavRoute
 
 @Serializable
 object SplashRoute : NavRoute
 
-/*emplear data class para rutas con parámetros:
-Kotlin NO genera automáticamente:
-equals()
-hashCode()
-toString()
-copy()
-destructuring (component1())
-Eso significa que dos rutas con el mismo contenido NO son iguales
-en Resumen:
-
-class → algo con lógica, identidad propia
-data class → solo datos
-
-En navegación:
-Rutas con parámetros → data class
-Rutas sin parámetros → object
-*/
 
 @Serializable
 data class LoginRoute(val email: String) : NavRoute
@@ -67,3 +44,27 @@ object DialogPage
 
 @Serializable
 object SettingsRoute : NavRoute
+
+/**
+ * ===APUNTES====
+ * /*emplear data class para rutas con parámetros:
+ * Kotlin NO genera automáticamente:
+ * equals()
+ * hashCode()
+ * toString()
+ * copy()
+ * destructuring (component1())
+ * Eso significa que dos rutas con el mismo contenido NO son iguales
+ * en Resumen:
+ *
+ * class → algo con lógica, identidad propia
+ * data class → solo datos
+ *
+ * En navegación:
+ * Rutas con parámetros → data class
+ * Rutas sin parámetros → object
+ *
+ * object lo ponemos si es estático
+ * no tiene sentido que tengamos clases vacias, es algo innecesario
+ *
+ */
