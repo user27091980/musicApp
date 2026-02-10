@@ -1,6 +1,6 @@
 package com.example.musicapp.view.pages
 
-//imports row, for horizontal row organization
+
 import androidx.compose.foundation.layout.Row
 //import for obtain access to the Material 3 scheme colors
 import androidx.compose.material3.MaterialTheme

@@ -19,7 +19,6 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.navigation.NavHostController
 
 @Composable
 fun SettingsScreen() {
@@ -40,10 +39,10 @@ fun SettingsScreen() {
         Spacer(modifier = Modifier.height(24.dp))
 
         // Appearance
-        Text("Appearance", style = MaterialTheme.typography.titleMedium)
+        Text("Apariencia", style = MaterialTheme.typography.titleMedium)
 
         SettingSwitch(
-            title = "Dark Mode",
+            title = "Modo óscuro",
             checked = darkMode,
             onCheckedChange = { darkMode = it },
         )
