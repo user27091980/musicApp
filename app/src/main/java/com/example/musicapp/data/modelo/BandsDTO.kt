@@ -2,7 +2,6 @@ package com.example.musicapp.data.modelo
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
-import androidx.compose.ui.text.LinkAnnotation
 
 /**
  * @author="Andrés"

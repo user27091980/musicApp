@@ -1,6 +1,7 @@
 package com.example.musicapp.network
 
 import com.example.musicapp.data.entity.Band
+import com.example.musicapp.data.modelo.BandsDTO
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -30,7 +31,7 @@ interface MusicApiService {
 
     // Foto de cabecera de la banda
     @GET("json/band/{id}/fotoCabecera")
-    suspend fun getBandHeader(@Path("id") id: String): Response<Band>
+    suspend fun getBandHeader(@Path("id") id: String): Response<BandsDTO>
 
     // Etiquetas
     @GET("json/etiquetas")

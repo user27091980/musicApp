@@ -3,7 +3,7 @@ package com.example.musicapp.data.repository
 import com.example.musicapp.data.modelo.UsersDTO
 
 //repositorio gestión usuarios
-class UsuarioRepo {
+class UserRepository {
 
     companion object {
         val usuarios = ArrayList<UsersDTO>(
