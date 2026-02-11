@@ -36,6 +36,7 @@ import androidx.core.net.toUri
 import androidx.navigation.NavController
 // app resources
 import com.example.musicapp.R
+import com.example.musicapp.navigation.ObjRoutes
 
 /**
  * TopBar personalized component
@@ -78,7 +79,7 @@ fun TopBar(navController: NavController) {
 
         }
         //Settings button
-        IconButton(onClick = { navController.navigate("settings") }) {
+        IconButton(onClick = { navController.navigate(ObjRoutes.SETTINGS) }) {
 
             Icon(
                 imageVector = Icons.Default.Settings,
