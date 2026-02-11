@@ -108,9 +108,7 @@ class MainActivity : ComponentActivity() {
                                 composable(ObjRoutes.LOGIN) {
                                     LoginRoute(navController = navController)
                                 }
-                                composable(ObjRoutes.INFOUSER) {
-                                    UserInfoScreenPage(navController)
-                                }
+
                                 composable(ObjRoutes.MAINSCREEN) {
                                     MainScreenPage(navController)
                                 }
@@ -130,10 +128,6 @@ class MainActivity : ComponentActivity() {
                                     BandTool()
                                 }
 
-
-                                composable("search") {
-                                    //TODO
-                                }
 
                             }
                         }

@@ -41,21 +41,19 @@ fun LoginRegScreen(navController: NavHostController) {
             modifier = Modifier
                 .padding(horizontal = 32.dp)
 
-        ) {
+        ){
+
 
                 ButtonLogin(
                     navController = navController,
-                    modifier = Modifier
-                        .fillMaxWidth(0.5f)
+
                 )
-
-
             // Botón Registro con estilo tonal
 
                 ButtonRegister(
                     navController = navController,
-                    modifier = Modifier
-                        .fillMaxWidth(0.5f)
+
+
 
                 )
 

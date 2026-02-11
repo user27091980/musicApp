@@ -32,7 +32,7 @@ fun ButtonLogin(navController: NavController, modifier: Modifier = Modifier) {
 
     Button(
         onClick = { navController.navigate(ObjRoutes.LOGIN) },
-        modifier = Modifier.fillMaxSize(),
+        modifier = Modifier.fillMaxWidth(),
         shape = RoundedCornerShape(20.dp)
     ) {
         Text("Login")
