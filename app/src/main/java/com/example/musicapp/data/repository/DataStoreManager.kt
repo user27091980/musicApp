@@ -8,19 +8,26 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
 // Crear DataStore en el Context
-private val Context.dataStore by preferencesDataStore(name = "settings")
+val Context.dataStore by preferencesDataStore(name = "settings")
 
-class DataStoreManager(private val context: Context) {
+class DataStoreManager {
+
+    private val context: Context
+
+    constructor(context: Context) {
+        this.context = context
+        this.darkModeFlow = context.dataStore.data
+            .map { preferences ->
+                preferences[DARK_MODE_KEY] ?: false
+            }
+    }
 
     companion object {
         private val DARK_MODE_KEY = booleanPreferencesKey("dark_mode")
     }
 
     // Flow que emite el valor actual del modo oscuro
-    val darkModeFlow: Flow<Boolean> = context.dataStore.data
-        .map { preferences ->
-            preferences[DARK_MODE_KEY] ?: false
-        }
+    val darkModeFlow: Flow<Boolean>
 
     // Función para guardar el valor
     suspend fun setDarkMode(enabled: Boolean) {
@@ -30,9 +37,16 @@ class DataStoreManager(private val context: Context) {
     }
 }
 
-class SettingsRepository(private val dataStoreManager: DataStoreManager) {
+class SettingsRepository {
 
-    val darkModeFlow: Flow<Boolean> = dataStoreManager.darkModeFlow
+    private val dataStoreManager: DataStoreManager
+
+    constructor(dataStoreManager: DataStoreManager) {
+        this.dataStoreManager = dataStoreManager
+        this.darkModeFlow = dataStoreManager.darkModeFlow
+    }
+
+    val darkModeFlow: Flow<Boolean>
 
     suspend fun setDarkMode(enabled: Boolean) {
         dataStoreManager.setDarkMode(enabled)

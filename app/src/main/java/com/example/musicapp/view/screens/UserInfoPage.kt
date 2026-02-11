@@ -1,4 +1,4 @@
-package com.example.musicapp.view.pages
+package com.example.musicapp.view.screens
 
 
 import androidx.compose.foundation.layout.Row
@@ -10,6 +10,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 //import for show the preview of the composable editor
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 //Personalized modifier of the  camera component
 import com.example.musicapp.styles.cameraMod
 //float camera component
@@ -23,7 +25,7 @@ import com.example.musicapp.view.myComponents.UserCardsComponents
  *
  */
 @Composable
-fun UserInfoScreenPage(modifier: Modifier = Modifier) {
+fun UserInfoScreenPage(navController: NavController, modifier: Modifier = Modifier) {
     //Row that contains the user info cards
     Row {
         UserCardsComponents(
@@ -42,6 +44,7 @@ fun UserInfoScreenPage(modifier: Modifier = Modifier) {
 @Composable
 fun UserInfoPrev() {
 
-    UserInfoScreenPage()
+    val navController = rememberNavController() // navController simulado para preview
+    UserInfoScreenPage(navController=navController)
 
 }

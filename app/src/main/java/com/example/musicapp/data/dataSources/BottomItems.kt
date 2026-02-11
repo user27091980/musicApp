@@ -17,7 +17,7 @@ class BottomItems {
     data class TopButtonItems(
         val label: String,
         val icon: ImageVector,
-        val route: String
+        val route: Unit
     )
 
 }

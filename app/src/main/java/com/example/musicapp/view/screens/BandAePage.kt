@@ -1,4 +1,4 @@
-package com.example.musicapp.view.pages
+package com.example.musicapp.view.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
@@ -12,40 +12,41 @@ import com.example.musicapp.styles.boxModifier
 import com.example.musicapp.styles.lazyRowMod
 import com.example.musicapp.styles.rowCardModifier
 import com.example.musicapp.styles.rowModifier
-import com.example.musicapp.view.myComponents.LazyRowComponentKyuss
-import com.example.musicapp.vista.myComponents.CardColumnKyussComponent
+import com.example.musicapp.view.myComponents.LazyRowComponentAe
+import com.example.musicapp.vista.myComponents.CardColumnAeComponent
 
 /**
  * @author Andrés
  */
 @Composable
-fun BandKyuss() {
+fun BandAe() {
 
     Box(boxModifier) {
 
         Row(rowModifier) {
             Image(
-                painter = painterResource(R.drawable._98_logo),
+                painter = painterResource(R.drawable.autechre_sticker),
                 contentDescription = "",
                 contentScale = ContentScale.Inside,
             )
         }
         Row(rowCardModifier) {
-            CardColumnKyussComponent()
+            CardColumnAeComponent()
+
         }
 
+
         Row(lazyRowMod) {
-
-            LazyRowComponentKyuss()
-
+            LazyRowComponentAe()
         }
     }
 }
 
+
 @Preview
 @Composable
-fun BandKyussPrev() {
+fun BandAePrev() {
 
-    BandKyuss()
+    BandAe()
 
 }

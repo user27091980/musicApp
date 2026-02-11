@@ -1,4 +1,4 @@
-package com.example.musicapp.view.pages
+package com.example.musicapp.view.screens
 
 //compoose imports
 import androidx.compose.runtime.Composable

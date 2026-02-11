@@ -16,13 +16,9 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.musicapp.R
-import com.example.musicapp.navigation.LoginRoute
-import com.example.musicapp.navigation.MainScreenRoute
 import com.example.musicapp.navigation.ObjRoutes
-import com.example.musicapp.navigation.RegisterRoute
-import com.example.musicapp.navigation.UserInfoRoute
 import com.example.musicapp.styles.styleButtonText
-import com.example.musicapp.view.pages.DialogPage
+import com.example.musicapp.view.screens.DialogPage
 
 /**
  * @author Andres
