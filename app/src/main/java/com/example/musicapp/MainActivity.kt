@@ -1,53 +1,26 @@
 package com.example.musicapp
-// Android basic imports
+
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-//Compose layouts basic imports
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-//Material 3
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-//Compose navigation
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-//Navigation routes(sealed classes)
-import com.example.musicapp.navigation.BandAeRoute
-import com.example.musicapp.navigation.BandAphxRoute
-import com.example.musicapp.navigation.BandBocRoute
-import com.example.musicapp.navigation.BandKyussRoute
-import com.example.musicapp.navigation.BandToolRoute
-import com.example.musicapp.navigation.LoginRegRoute
-import com.example.musicapp.navigation.LoginRoute
-import com.example.musicapp.navigation.MainScreenRoute
 import com.example.musicapp.navigation.ObjRoutes
-import com.example.musicapp.navigation.RegisterRoute
-import com.example.musicapp.navigation.SettingsRoute
-import com.example.musicapp.navigation.SplashRoute
-import com.example.musicapp.navigation.UserInfoRoute
-//app theme
 import com.example.musicapp.ui.theme.themes.MusicAppTheme
-//reused components
 import com.example.musicapp.view.myComponents.BottomBar
 import com.example.musicapp.view.myComponents.ButtonAcept
 import com.example.musicapp.view.myComponents.ButtonRegister
-//Screens
-import com.example.musicapp.view.pages.BandAe
-import com.example.musicapp.view.pages.BandAphx
-import com.example.musicapp.view.pages.BandBoc
-import com.example.musicapp.view.pages.BandKyuss
-import com.example.musicapp.view.pages.BandTool
-import com.example.musicapp.view.pages.Login
-import com.example.musicapp.view.pages.LoginRegScreen
-import com.example.musicapp.view.pages.LoginRoute
 import com.example.musicapp.view.pages.MainScreenPage
 import com.example.musicapp.view.pages.RegisterScreenPage
-import com.example.musicapp.view.pages.SettingsScreen
 import com.example.musicapp.view.pages.SplashScreen
 import com.example.musicapp.view.pages.UserInfoScreenPage
 import com.example.musicapp.vista.myComponents.TopBar
@@ -72,13 +45,31 @@ class MainActivity : ComponentActivity() {
             val navController = rememberNavController()
             //general app theme
             MusicAppTheme {
+                val currentBackStackEntry = navController.currentBackStackEntryAsState()
+                val currentRoute = currentBackStackEntry.value?.destination?.route
                 //basic App structure,
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
                     //personalized topbar
-                    topBar = { TopBar(navController) },
+                    topBar = {
+                        if (currentRoute !in listOf(
+                                ObjRoutes.SPLASH,
+                                ObjRoutes.LOGINREG,
+                                ObjRoutes.REGISTER
+                            )
+                        ) TopBar(navController)
+                    },
                     //personalized bottombar
-                    bottomBar = { BottomBar(navController) },
+                    bottomBar = {
+                        if (currentRoute in listOf(
+                                ObjRoutes.HOME,
+                                ObjRoutes.SEARCH,
+                                ObjRoutes.PROFILE
+                            )
+                        ) {
+                            BottomBar(navController)
+                        }
+                    },
                     //main content
                     content = { innerPadding ->
                         //box for wrap the content and apply padding
@@ -92,14 +83,19 @@ class MainActivity : ComponentActivity() {
                                 navController = navController,
                                 //main screen app
                                 startDestination = ObjRoutes.SPLASH,
-                                modifier = Modifier.padding(innerPadding)
-                            ) {
+
+                                ) {
+                                composable(ObjRoutes.SPLASH) {
+                                    SplashScreen(navController)
+
+                                }
                                 //register and login screen
                                 composable(ObjRoutes.LOGINREG) {
-                                    ButtonAcept(navController)
+                                    ButtonAcept({ navController.navigate(ObjRoutes.LOGINREG) })
                                     ButtonRegister(navController)
                                 }
-                                composable(ObjRoutes.REGISTER){
+                                composable(ObjRoutes.REGISTER) {
+                                    RegisterScreenPage(navController)
 
                                 }
 
@@ -108,7 +104,7 @@ class MainActivity : ComponentActivity() {
                                     MainScreenPage(navController)
                                 }
                                 composable("search") {
-                                    UserInfoScreenPage()
+                                    //TODO
                                 }
                                 composable("profile") {
                                     UserInfoScreenPage()
@@ -133,30 +129,30 @@ class MainActivity : ComponentActivity() {
  * val navController = rememberNavController()
  * Es el cerebro de la navegación
  * Guarda:
-   * Pantalla actualHistorial (back stack)
-   * Se usa para navegar
+ * Pantalla actualHistorial (back stack)
+ * Se usa para navegar
 
  * 2️⃣ startDestination:
  * Es la primera pantalla que se muestra al abrir la app
  *
  * 3️⃣ El bloque {} de NavHost
-    *Aquí defines todas las rutas posibles:
-*{
+ *Aquí defines todas las rutas posibles:
+ *{
  *  composable<SplashRoute> { ... }
  *
  *   composable<LoginRoute> { ... }
-*}
-*Cada composable es:
+ *}
+ *Cada composable es:
 
-*Una pantalla asociada a una ruta
-*¿Qué hace?
-*composable<SplashRoute> {
-*SplashScreen(navController)
-*}
-*Esto significa:
-*Cuando la ruta actual es SplashRoute
-*NavHost muestra:
-*👉 SplashScreen
+ *Una pantalla asociada a una ruta
+ *¿Qué hace?
+ *composable<SplashRoute> {
+ *SplashScreen(navController)
+ *}
+ *Esto significa:
+ *Cuando la ruta actual es SplashRoute
+ *NavHost muestra:
+ *👉 SplashScreen
  * ¿Cómo funciona la navegación en tiempo real?
  * Ejemplo real: Splash → Login
  *

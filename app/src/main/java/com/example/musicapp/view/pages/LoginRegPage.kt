@@ -4,6 +4,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
@@ -32,16 +33,18 @@ fun LoginRegScreen(navController: NavHostController) {
                     colors = listOf(Color.DarkGray, Color.Black) // verde Spotify → negro
                 )
             )
+            .padding(horizontal = 32.dp)
     )
     {
         Column(
-            horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.spacedBy(20.dp),
-            modifier = Modifier.padding(10.dp, 300.dp, 10.dp, 150.dp)
+            modifier = Modifier.fillMaxSize(),
+            verticalArrangement = Arrangement.Center, // centra los botones verticalmente
+            horizontalAlignment = Alignment.CenterHorizontally
         ) {
 
             // Botón Login
             ButtonLogin(navController)
+            Spacer(modifier = Modifier.padding(16.dp))
             // Botón Registro con estilo tonal
             ButtonRegister(navController)
         }

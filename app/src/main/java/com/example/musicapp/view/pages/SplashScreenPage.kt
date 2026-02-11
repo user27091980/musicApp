@@ -6,6 +6,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
 import com.example.musicapp.navigation.LoginRegRoute
 import com.example.musicapp.navigation.MainScreenRoute
+import com.example.musicapp.navigation.ObjRoutes
 import com.example.musicapp.view.myComponents.GridViewComponent
 import kotlinx.coroutines.delay
 
@@ -18,7 +19,9 @@ fun SplashScreen(navController: NavHostController) {
     LaunchedEffect(key1 = true) {
         delay(2000) // 2 segundos de carga simulada
         navController.popBackStack() // Eliminamos la pantalla de carga
-        navController.navigate(LoginRegRoute)
+        navController.navigate(ObjRoutes.LOGINREG) {
+            popUpTo(ObjRoutes.LOGINREG) { inclusive = true }
+        }
     }
     SplashScreenPage()
 }

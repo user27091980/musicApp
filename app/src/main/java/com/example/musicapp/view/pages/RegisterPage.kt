@@ -1,10 +1,12 @@
 package com.example.musicapp.view.pages
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -30,6 +32,7 @@ fun RegisterScreenPage(navController: NavHostController) {
     Box(
         modifier = Modifier
             .fillMaxSize()
+            .padding(horizontal = 32.dp, vertical = 100.dp)
             .background(
                 Brush.verticalGradient(
                     colors = listOf(Color.DarkGray, Color.Black) // verde Spotify → negro
@@ -37,22 +40,31 @@ fun RegisterScreenPage(navController: NavHostController) {
             )
     ) {
         Column(
-            Modifier.padding(60.dp, 220.dp),
+            Modifier
+                .fillMaxSize()
+                .padding(32.dp, 60.dp),
+            verticalArrangement = Arrangement.SpaceBetween
 
             ) {
-            TextFieldsComponent()
-        }
-
-        Row(
-            Modifier.padding(95.dp, 400.dp),
-        )
-        {
-
-            ButtonAcept(
-                navController
+            Column(modifier = Modifier.weight(1f),
+                verticalArrangement = Arrangement.Center) {
+                TextFieldsComponent()
+            }
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly
             )
-            ButtonCancel(navController)
+            {
+
+                ButtonAcept(
+                    { navController.navigate("home") }
+                )
+                ButtonCancel(navController)
+            }
+
         }
+
+
 
     }
 

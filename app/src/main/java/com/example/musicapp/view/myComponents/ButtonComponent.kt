@@ -29,7 +29,7 @@ import com.example.musicapp.styles.styleButtonText
 fun ButtonLogin(navController: NavController, modifier: Modifier = Modifier) {
 
     Button(
-        onClick = { navController.navigate(LoginRoute) },
+        onClick = { navController.navigate(ObjRoutes.LOGIN) },
         modifier = Modifier.fillMaxWidth(),
         shape = RoundedCornerShape(20.dp)
     ) {
@@ -64,12 +64,12 @@ fun ButtonRegister(navController: NavController, modifier: Modifier = Modifier) 
 //botón para aceptar
 @Composable
 
-fun ButtonAcept(navController: NavController) {
+fun ButtonAcept(onClick: () -> Unit, modifier: Modifier= Modifier) {
 
 
     Button(
 
-        onClick = { navController.navigate(ObjRoutes.MAINSCREEN) },
+        onClick = onClick,
         shape = RoundedCornerShape(20.dp),
 
 
