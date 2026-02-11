@@ -40,7 +40,7 @@ object BandToolRoute : NavRoute
 object UserInfoRoute : NavRoute
 
 @Serializable
-object DialogPage
+object DialogPage : NavRoute
 
 @Serializable
 object SettingsRoute : NavRoute

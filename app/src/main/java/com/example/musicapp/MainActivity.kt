@@ -67,9 +67,9 @@ class MainActivity : ComponentActivity() {
                     //personalized bottombar
                     bottomBar = {
                         if (currentRoute in listOf(
-                                ObjRoutes.HOME,
-                                ObjRoutes.SEARCH,
-                                ObjRoutes.PROFILE
+                                ObjRoutes.MAINSCREEN,
+                                //ObjRoutes.SEARCH,
+                                ObjRoutes.INFOUSER
                             )
                         ) {
                             BottomBar(navController)
@@ -108,10 +108,10 @@ class MainActivity : ComponentActivity() {
                                 composable(ObjRoutes.LOGIN) {
                                     LoginRoute(navController = navController)
                                 }
-                                composable(ObjRoutes.PROFILE) {
+                                composable(ObjRoutes.INFOUSER) {
                                     UserInfoScreenPage(navController)
                                 }
-                                composable(ObjRoutes.HOME) {
+                                composable(ObjRoutes.MAINSCREEN) {
                                     MainScreenPage(navController)
                                 }
                                 composable(ObjRoutes.AE) {

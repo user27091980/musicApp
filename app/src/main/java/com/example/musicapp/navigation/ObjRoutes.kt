@@ -33,7 +33,4 @@ object ObjRoutes {
     fun SettingsPage(id: String) = "SettingsRoute/$id"
 
 
-    const val HOME = "home"
-    const val SEARCH = "search"
-    const val PROFILE = "profile"
 }
