@@ -1,4 +1,4 @@
-package com.example.musicapp.view.pages
+package com.example.musicapp.view.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement

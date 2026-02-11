@@ -17,12 +17,17 @@ import androidx.navigation.compose.rememberNavController
 import com.example.musicapp.navigation.ObjRoutes
 import com.example.musicapp.ui.theme.themes.MusicAppTheme
 import com.example.musicapp.view.myComponents.BottomBar
-import com.example.musicapp.view.myComponents.ButtonAcept
-import com.example.musicapp.view.myComponents.ButtonRegister
-import com.example.musicapp.view.pages.MainScreenPage
-import com.example.musicapp.view.pages.RegisterScreenPage
-import com.example.musicapp.view.pages.SplashScreen
-import com.example.musicapp.view.pages.UserInfoScreenPage
+import com.example.musicapp.view.screens.BandAe
+import com.example.musicapp.view.screens.BandAphx
+import com.example.musicapp.view.screens.BandBoc
+import com.example.musicapp.view.screens.BandKyuss
+import com.example.musicapp.view.screens.BandTool
+import com.example.musicapp.view.screens.LoginRegScreen
+import com.example.musicapp.view.screens.LoginRoute
+import com.example.musicapp.view.screens.MainScreenPage
+import com.example.musicapp.view.screens.RegisterScreenPage
+import com.example.musicapp.view.screens.SplashScreen
+import com.example.musicapp.view.screens.UserInfoScreenPage
 import com.example.musicapp.vista.myComponents.TopBar
 
 /**App main´s activity
@@ -41,10 +46,10 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         //compose content activity
         setContent {
-            //navigation av controller
-            val navController = rememberNavController()
+
             //general app theme
             MusicAppTheme {
+                val navController = rememberNavController()
                 val currentBackStackEntry = navController.currentBackStackEntryAsState()
                 val currentRoute = currentBackStackEntry.value?.destination?.route
                 //basic App structure,
@@ -81,7 +86,7 @@ class MainActivity : ComponentActivity() {
                             //Manage the navigation between screens
                             NavHost(
                                 navController = navController,
-                                //main screen app
+
                                 startDestination = ObjRoutes.SPLASH,
 
                                 ) {
@@ -91,24 +96,45 @@ class MainActivity : ComponentActivity() {
                                 }
                                 //register and login screen
                                 composable(ObjRoutes.LOGINREG) {
-                                    ButtonAcept({ navController.navigate(ObjRoutes.LOGINREG) })
-                                    ButtonRegister(navController)
+                                    LoginRegScreen(navController = navController)
                                 }
                                 composable(ObjRoutes.REGISTER) {
                                     RegisterScreenPage(navController)
 
                                 }
-
-                                //String routes for bottom bar
-                                composable("home") {
+                                composable(ObjRoutes.INFOUSER) {
+                                    UserInfoScreenPage(navController = navController)
+                                }
+                                composable(ObjRoutes.LOGIN) {
+                                    LoginRoute(navController = navController)
+                                }
+                                composable(ObjRoutes.PROFILE) {
+                                    UserInfoScreenPage(navController)
+                                }
+                                composable(ObjRoutes.HOME) {
                                     MainScreenPage(navController)
                                 }
+                                composable(ObjRoutes.AE) {
+                                    BandAe()
+                                }
+                                composable(ObjRoutes.APHX) {
+                                    BandAphx()
+                                }
+                                composable(ObjRoutes.BOC) {
+                                    BandBoc()
+                                }
+                                composable(ObjRoutes.KYUSS) {
+                                    BandKyuss()
+                                }
+                                composable(ObjRoutes.TOOL) {
+                                    BandTool()
+                                }
+
+
                                 composable("search") {
                                     //TODO
                                 }
-                                composable("profile") {
-                                    UserInfoScreenPage()
-                                }
+
                             }
                         }
                     }

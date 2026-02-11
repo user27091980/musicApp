@@ -1,4 +1,4 @@
-package com.example.musicapp.view.pages
+package com.example.musicapp.view.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
@@ -12,40 +12,41 @@ import com.example.musicapp.styles.boxModifier
 import com.example.musicapp.styles.lazyRowMod
 import com.example.musicapp.styles.rowCardModifier
 import com.example.musicapp.styles.rowModifier
-import com.example.musicapp.view.myComponents.LazyRowComponentAphx
-import com.example.musicapp.vista.myComponents.CardColumnAphxComponent
+import com.example.musicapp.view.myComponents.LazyRowComponentBoc
+import com.example.musicapp.vista.myComponents.CardColumnBocComponent
 
 /**
  * @author Andrés
  */
 @Composable
-fun BandAphx() {
+fun BandBoc() {
 
     Box(boxModifier) {
 
         Row(rowModifier) {
             Image(
-                painter = painterResource(R.drawable.aphx),
+                painter = painterResource(R.drawable.boards_of_canada_by_necronomiconofgod_d6ycbne_fullview),
                 contentDescription = "",
                 contentScale = ContentScale.Inside,
             )
         }
-
         Row(rowCardModifier) {
-            CardColumnAphxComponent()
+            CardColumnBocComponent()
         }
 
         Row(lazyRowMod) {
 
-            LazyRowComponentAphx()
+            LazyRowComponentBoc()
 
         }
     }
 }
 
+
 @Preview
 @Composable
-fun BandAphxPrev() {
+fun BandBocPrev() {
 
-    BandAphx()
+    BandBoc()
+
 }

@@ -11,6 +11,7 @@ import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Person
 
 import androidx.navigation.NavHostController
+import com.example.musicapp.navigation.ObjRoutes
 
 
 /**
@@ -31,17 +32,18 @@ fun BottomBar(navController: NavHostController) {
         BottomItems.TopButtonItems(
             label = stringResource(R.string.inicio),
             Icons.Default.Home,
-            route = "home"
+            route = navController.navigate(ObjRoutes.MAINSCREEN)
         ),
-        BottomItems.TopButtonItems(
+        /*BottomItems.TopButtonItems(
             label = stringResource(R.string.buscar),
             Icons.Default.Search,
-            route = "search"
-        ),
+
+
+        ),*/
         BottomItems.TopButtonItems(
             label = stringResource(R.string.perfil),
             Icons.Default.Person,
-            route = "profile"
+            route = navController.navigate(ObjRoutes.INFOUSER)
         )
     )
 

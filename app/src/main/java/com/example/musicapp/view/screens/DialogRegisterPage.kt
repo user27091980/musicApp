@@ -1,4 +1,4 @@
-package com.example.musicapp.view.pages
+package com.example.musicapp.view.screens
 
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.ExperimentalMaterial3Api

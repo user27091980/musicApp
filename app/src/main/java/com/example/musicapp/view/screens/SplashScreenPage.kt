@@ -1,11 +1,9 @@
-package com.example.musicapp.view.pages
+package com.example.musicapp.view.screens
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
-import com.example.musicapp.navigation.LoginRegRoute
-import com.example.musicapp.navigation.MainScreenRoute
 import com.example.musicapp.navigation.ObjRoutes
 import com.example.musicapp.view.myComponents.GridViewComponent
 import kotlinx.coroutines.delay
