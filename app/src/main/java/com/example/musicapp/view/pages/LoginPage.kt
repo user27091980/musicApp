@@ -9,7 +9,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
@@ -62,7 +64,9 @@ fun Login(
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.spacedBy(20.dp),
-            modifier = Modifier.padding(horizontal = 32.dp)
+            modifier = Modifier
+                .padding(horizontal = 32.dp)
+
         ) {
             Text("LOGIN", color = Color.White)
             //TextFieldUserComponent()
@@ -71,7 +75,8 @@ fun Login(
                 onValueChange = onEmailChange,
                 label = { Text("Email") },
                 modifier = Modifier.fillMaxWidth(),
-                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email)
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email),
+                singleLine = true
             )
 
             //TextFieldPassComponent()
@@ -106,7 +111,7 @@ fun LoginRoute(
 ) {
     val uiState by viewModel.uiState.collectAsState()
 
-    // 👇 ESCUCHAMOS EVENTOS DE NAVEGACIÓN
+    //ESCUCHAMOS EVENTOS DE NAVEGACIÓN
     LaunchedEffect(Unit) {
         viewModel.events.collect { event ->
             when (event) {
@@ -133,8 +138,6 @@ fun LoginRoute(
 @Preview(showBackground = true)
 @Composable
 fun LoginPreview() {
-
-
 
     Login(
 
