@@ -1,7 +1,7 @@
 package com.example.musicapp.network
 
 import com.example.musicapp.data.entity.Band
-import com.example.musicapp.data.modelo.BandsDTO
+import com.example.musicapp.data.model.BandsDTO
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path

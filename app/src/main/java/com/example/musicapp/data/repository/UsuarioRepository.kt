@@ -1,6 +1,6 @@
 package com.example.musicapp.data.repository
 
-import com.example.musicapp.data.modelo.UsersDTO
+import com.example.musicapp.data.model.UsersDTO
 
 //repositorio gestión usuarios
 class UserRepository {

@@ -1,4 +1,5 @@
 package com.example.musicapp.viewmodel.uistate
+
 // A data class to hold all the state for the screen
 data class LoginUiState(
     val email: String = "",

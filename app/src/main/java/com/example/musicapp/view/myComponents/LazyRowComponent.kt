@@ -1,7 +1,6 @@
 package com.example.musicapp.view.myComponents
 
 //Layouts and LazyRow
-import android.content.Intent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
@@ -14,7 +13,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
-import androidx.core.net.toUri
 
 //models and data sources
 import com.example.musicapp.data.dataSources.DatasourceAePics
@@ -22,7 +20,7 @@ import com.example.musicapp.data.dataSources.DatasourceAphxPics
 import com.example.musicapp.data.dataSources.DatasourceBocPics
 import com.example.musicapp.data.dataSources.DatasourceKyussPics
 import com.example.musicapp.data.dataSources.DatasourceToolPics
-import com.example.musicapp.data.modelo.AlbumsDTO
+import com.example.musicapp.data.model.AlbumsDTO
 //images modifiers
 import com.example.musicapp.styles.imageModifier
 

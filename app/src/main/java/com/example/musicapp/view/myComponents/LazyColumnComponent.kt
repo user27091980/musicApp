@@ -13,7 +13,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavController
 import com.example.musicapp.data.dataSources.DatasourceMainScreenPics
-import com.example.musicapp.data.modelo.BandsDTO
+import com.example.musicapp.data.model.BandsDTO
 import com.example.musicapp.styles.lazyColumnCardModifier
 import com.example.musicapp.styles.styleTextCards
 
