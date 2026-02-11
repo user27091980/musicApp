@@ -1,7 +1,7 @@
 package com.example.musicapp.data.dataSources
 
 import com.example.musicapp.R
-import com.example.musicapp.data.modelo.GroupsDTO
+import com.example.musicapp.data.model.GroupsDTO
 
 class DataSourceBands() {
 

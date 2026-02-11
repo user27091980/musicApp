@@ -1,7 +1,7 @@
 package com.example.musicapp.data.dataSources
 
 import com.example.musicapp.R
-import com.example.musicapp.data.modelo.AlbumsDTO
+import com.example.musicapp.data.model.AlbumsDTO
 
 //clase que gestiona las imágenes de las caratulas de los discos para la primera pantalla.
 

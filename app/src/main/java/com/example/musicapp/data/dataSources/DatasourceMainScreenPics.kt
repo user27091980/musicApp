@@ -1,7 +1,7 @@
 package com.example.musicapp.data.dataSources
 
 import com.example.musicapp.R
-import com.example.musicapp.data.modelo.BandsDTO
+import com.example.musicapp.data.model.BandsDTO
 
 /**
  * @author="Andrés"
